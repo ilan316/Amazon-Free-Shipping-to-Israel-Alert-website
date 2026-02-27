@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Israel Free Ship Alert</title>
+  <meta name="description" content="אפליקציה שבודקת עבורך אוטומטית מוצרים באמזון ושולחת התראה כשנמצא משלוח חינם לישראל." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-a"></div>
+  <div class="bg-glow bg-glow-b"></div>
+
+  <header class="topbar">
+    <nav>
+      <a href="#features">יכולות</a>
+      <a href="#how">איך זה עובד</a>
+      <a href="#download">הורדה</a>
+      <a href="#disclosure">גילוי נאות</a>
+      <a href="#contact">צרו קשר</a>
+    </nav>
+    <div class="brand">
+      <span>Amazon Israel Free Ship Alert</span>
+      <span class="brand-mark">A</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Desktop App ל-Windows</p>
+        <h1>
+          מפסיקים לפספס <span>משלוח חינם לישראל</span>
+          באמזון
+        </h1>
+        <p class="lead">
+          האפליקציה בודקת אוטומטית את המוצרים שאתה בוחר, מזהה זכאות ל-Free Delivery לישראל,
+          ושולחת לך מייל רק כשיש מהלך ששווה פעולה.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#download">להורדה עכשיו</a>
+          <a class="btn btn-ghost" href="#how">איך זה עובד בפועל</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="../image.jpg" alt="Amazon Israel Free Ship Alert" />
+      </div>
+    </section>
+
+    <section class="strip">
+      <p>
+        עוקב אחרי המוצרים שלך אוטומטית, עובד ברקע, ושולח התראה רק כשבאמת יש משלוח חינם לישראל.
+      </p>
+    </section>
+
+    <section class="section" id="features">
+      <h2>למה להשתמש באפליקציה הזו</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <h3>בדיקה אוטומטית לפי תדירות שלך</h3>
+          <p>מגדירים ימים/שעות/דקות, והמערכת בודקת מחזורית את כל רשימת המוצרים שלך.</p>
+        </article>
+        <article class="card reveal">
+          <h3>התראות מייל חכמות</h3>
+          <p>מייל נשלח כשמזוהה FREE Shipping לישראל, עם מנגנון cooldown למניעת כפילויות.</p>
+        </article>
+        <article class="card reveal">
+          <h3>ניהול מוצרים גמיש</h3>
+          <p>הוספת ASIN או URL, עצירה זמנית למוצר בודד, ועדכון אוטומטי של שם מוצר כשצריך.</p>
+        </article>
+        <article class="card reveal">
+          <h3>רץ ברקע</h3>
+          <p>מינימיזציה ל-System Tray והפעלה עם עליית Windows, כדי שלא תצטרך לזכור להפעיל ידנית.</p>
+        </article>
+        <article class="card reveal">
+          <h3>עמידות לשינויים באמזון</h3>
+          <p>זיהוי טקסטים במספר סלקטורים, כולל בדיקת All Buying Options כשצריך.</p>
+        </article>
+        <article class="card reveal">
+          <h3>פוקוס על ישראל</h3>
+          <p>האפליקציה מגדירה יעד משלוח לישראל ומזהה זכאות משלוח חינם בהתאם.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <h2>איך זה עובד</h2>
+      <ol class="timeline">
+        <li class="reveal"><span>1</span> מתקינים את האפליקציה ומוסיפים מוצרים לפי ASIN או קישור.</li>
+        <li class="reveal"><span>2</span> מגדירים אימייל, תדירות בדיקה, ו-cooldown להתראות חוזרות.</li>
+        <li class="reveal"><span>3</span> האפליקציה בודקת את Amazon.com ברקע ומסמנת לכל מוצר אם הוא זכאי למשלוח חינם.</li>
+        <li class="reveal"><span>4</span> כשיש FREE Shipping לישראל, נשלח אליך מייל עם פרטי המוצר וקישור.</li>
+      </ol>
+    </section>
+
+    <section class="section download" id="download">
+      <h2>הורדה</h2>
+      <p>גרסה נוכחית: <strong>1.0.12</strong></p>
+      <div class="download-actions">
+        <a class="btn btn-primary" href="../AmazonIsraelFreeShipAlert.exe">הורדה</a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>צרו קשר</h2>
+      <form id="contact-form" class="contact-form contact-form-compact">
+        <div class="contact-layout">
+          <div class="contact-side">
+            <label for="contact-name">שם</label>
+            <input id="contact-name" name="name" type="text" required />
+
+            <label for="contact-email">אימייל</label>
+            <input id="contact-email" name="email" type="email" required />
+          </div>
+
+          <div class="contact-side">
+            <label for="contact-message">תוכן הפנייה</label>
+            <textarea id="contact-message" name="message" rows="8" required></textarea>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">שליחת פנייה</button>
+      </form>
+    </section>
+
+    <section class="section" id="disclosure">
+      <h2>גילוי נאות</h2>
+      <div class="disclosure-box">
+        <p>
+          כדי לממן את פיתוח האפליקציה ואת פעילותה השוטפת, אנו עושים שימוש בקישורים שיווקיים (Affiliate Links).
+        </p>
+        <p>
+          קישורים אלו מאפשרים לאתר ממנו אתם מבצעים רכישה לזהות שהגעתם דרך האפליקציה שלנו, ובמקרים מסוימים מזכים אותנו בעמלה קטנה, ללא תוספת עלות מצדכם.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="topbar footer-topbar">
+      <div class="brand">
+        <span>Amazon Israel Free Ship Alert</span>
+        <span class="brand-mark">A</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
