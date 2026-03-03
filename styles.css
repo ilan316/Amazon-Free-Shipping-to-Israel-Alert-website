@@ -399,17 +399,6 @@ footer {
 .footer-topbar {
   margin: 0;
   justify-content: flex-end;
-  gap: 16px;
-}
-
-.footer-links a {
-  color: #0b57d0;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 980px) {
