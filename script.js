@@ -1,4 +1,8 @@
-﻿const revealNodes = document.querySelectorAll(".reveal");
+/* ===========================
+   REVEAL ON SCROLL
+   =========================== */
+
+const revealNodes = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
@@ -10,14 +14,98 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.18 }
+    { threshold: 0.15 }
   );
 
   revealNodes.forEach((node) => observer.observe(node));
 } else {
-  // Fallback for older browsers without IntersectionObserver.
   revealNodes.forEach((node) => node.classList.add("in"));
 }
+
+/* ===========================
+   ANIMATED COUNTERS
+   =========================== */
+
+const counters = document.querySelectorAll(".counter");
+
+if ("IntersectionObserver" in window && counters.length > 0) {
+  const counterObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const el = entry.target;
+        const target = parseInt(el.dataset.target, 10);
+        const duration = 1400;
+        const start = performance.now();
+
+        const tick = (now) => {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease-out cubic
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * target).toLocaleString("he-IL");
+          if (progress < 1) requestAnimationFrame(tick);
+        };
+
+        requestAnimationFrame(tick);
+        counterObserver.unobserve(el);
+      });
+    },
+    { threshold: 0.6 }
+  );
+
+  counters.forEach((counter) => counterObserver.observe(counter));
+}
+
+/* ===========================
+   STICKY NAV SHADOW
+   =========================== */
+
+const topbar = document.getElementById("topbar");
+
+const onScroll = () => {
+  if (!topbar) return;
+  topbar.classList.toggle("scrolled", window.scrollY > 20);
+
+  // Floating CTA logic
+  const floatingCta = document.getElementById("floating-cta");
+  const downloadSection = document.getElementById("download");
+
+  if (floatingCta && downloadSection) {
+    const scrolled = window.scrollY > 450;
+    const downloadRect = downloadSection.getBoundingClientRect();
+    const nearDownload = downloadRect.top < window.innerHeight && downloadRect.bottom > 0;
+
+    if (scrolled && !nearDownload) {
+      floatingCta.classList.add("visible");
+    } else {
+      floatingCta.classList.remove("visible");
+    }
+  }
+};
+
+window.addEventListener("scroll", onScroll, { passive: true });
+
+/* ===========================
+   DOWNLOAD CLICK TRACKING
+   =========================== */
+
+["hero-download-btn", "main-download-btn", "nav-download-btn", "floating-download-btn"].forEach(
+  (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener("click", () => {
+      if (window.va) {
+        window.va("event", { name: "download_click", source: id });
+      }
+    });
+  }
+);
+
+/* ===========================
+   CONTACT FORM
+   =========================== */
 
 const contactForm = document.querySelector("#contact-form");
 
@@ -29,9 +117,7 @@ if (contactForm) {
   const submitBtn = contactForm.querySelector("button[type='submit']");
 
   const setRequiredValidity = (input, message) => {
-    if (!input) {
-      return true;
-    }
+    if (!input) return true;
     if (!input.value.trim()) {
       input.setCustomValidity(message);
       return false;
@@ -41,9 +127,7 @@ if (contactForm) {
   };
 
   [nameInput, emailInput, messageInput].forEach((input) => {
-    if (!input) {
-      return;
-    }
+    if (!input) return;
     input.addEventListener("input", () => input.setCustomValidity(""));
   });
 
@@ -56,48 +140,32 @@ if (contactForm) {
 
     if (!isNameValid || !isEmailValid || !isMessageValid || !contactForm.checkValidity()) {
       contactForm.reportValidity();
-      if (statusEl) {
-        statusEl.textContent = "יש למלא את כל שדות החובה לפני שליחה.";
-      }
+      if (statusEl) statusEl.textContent = "יש למלא את כל שדות החובה לפני שליחה.";
       return;
     }
 
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
     const payload = {
-      name,
-      email,
-      message,
+      name: nameInput.value.trim(),
+      email: emailInput.value.trim(),
+      message: messageInput.value.trim(),
       _subject: "[פנייה מהאתר] Amazon Israel Free Ship Alert",
       _captcha: "false",
       _template: "table",
     };
 
     try {
-      if (submitBtn) {
-        submitBtn.disabled = true;
-      }
-      if (statusEl) {
-        statusEl.textContent = "שולח פנייה...";
-      }
+      if (submitBtn) submitBtn.disabled = true;
+      if (statusEl) statusEl.textContent = "שולח פנייה...";
 
       const res = await fetch("https://formsubmit.co/ajax/amazonisraelalert@gmail.com", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
 
-      if (!res.ok) {
-        throw new Error("Submit failed");
-      }
+      if (!res.ok) throw new Error("Submit failed");
 
-      if (statusEl) {
-        statusEl.textContent = "הפנייה נשלחה בהצלחה.";
-      }
+      if (statusEl) statusEl.textContent = "הפנייה נשלחה בהצלחה.";
       contactForm.reset();
     } catch (err) {
       if (statusEl) {
@@ -105,9 +173,7 @@ if (contactForm) {
           'שליחה נכשלה. אפשר לשלוח ידנית לכתובת: <strong>amazonisraelalert@gmail.com</strong>';
       }
     } finally {
-      if (submitBtn) {
-        submitBtn.disabled = false;
-      }
+      if (submitBtn) submitBtn.disabled = false;
     }
   });
 }
