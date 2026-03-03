@@ -364,6 +364,21 @@ main {
   color: var(--ink-muted);
 }
 
+.legal-note {
+  margin: 0 0 10px;
+  color: var(--ink-muted);
+}
+
+.legal-note a {
+  color: #0b57d0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.legal-note a:hover {
+  text-decoration: underline;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(12px);
@@ -384,6 +399,17 @@ footer {
 .footer-topbar {
   margin: 0;
   justify-content: flex-end;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #0b57d0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 980px) {
