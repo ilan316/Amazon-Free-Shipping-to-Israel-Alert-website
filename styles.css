@@ -53,27 +53,12 @@ body {
    TOPBAR / STICKY NAV
    =========================== */
 
-#fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-
-.topbar-outer {
-  display: flex;
-  justify-content: center;
-  padding: 10px 4vw;
-}
-
 .topbar {
-  position: relative;
-  top: auto;
-  left: auto;
-  transform: none;
-  z-index: auto;
-  width: min(1140px, 100%);
+  position: sticky;
+  top: 12px;
+  z-index: 100;
+  width: min(1140px, 92vw);
+  margin: 24px auto 0;
   padding: 10px 16px;
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -186,7 +171,7 @@ body {
 
 main {
   width: min(1140px, 92vw);
-  margin: 130px auto 56px;
+  margin: 24px auto 56px;
 }
 
 /* ===========================
@@ -643,9 +628,6 @@ main {
   color: var(--ink-muted);
   border-top: 1px solid var(--line);
   padding-top: 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 /* ===========================
@@ -938,7 +920,6 @@ footer {
   margin: 0;
   justify-content: space-between;
   position: static;
-  width: 100%;
 }
 
 .footer-links {
@@ -1113,245 +1094,5 @@ footer {
 
   .floating-cta {
     display: block;
-  }
-}
-
-/* ===========================
-   URGENCY BAR
-   =========================== */
-
-.urgency-bar {
-  background: linear-gradient(90deg, var(--brand-deep), var(--brand));
-  color: #fff;
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 0.88rem;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.urgency-bar strong {
-  font-weight: 800;
-}
-
-.urgency-dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  border-radius: 50%;
-  margin-left: 8px;
-  vertical-align: middle;
-  animation: blink-dot 1.8s ease-in-out infinite;
-}
-
-@keyframes blink-dot {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.25; }
-}
-
-/* ===========================
-   LAST ALERT BADGE (HERO)
-   =========================== */
-
-.last-alert {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(22, 125, 70, 0.09);
-  border: 1px solid rgba(22, 125, 70, 0.28);
-  border-radius: 999px;
-  padding: 6px 14px;
-  font-size: 0.82rem;
-  color: #16a34a;
-  margin: 14px 0 0;
-  max-width: fit-content;
-  line-height: 1.4;
-}
-
-.live-dot {
-  width: 8px;
-  height: 8px;
-  background: #16a34a;
-  border-radius: 50%;
-  flex-shrink: 0;
-  animation: live-pulse 2s ease-out infinite;
-}
-
-@keyframes live-pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.5); }
-  70%  { box-shadow: 0 0 0 7px rgba(22, 163, 74, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
-}
-
-/* ===========================
-   GITHUB BADGE
-   =========================== */
-
-.badge-github {
-  background: #24292e;
-  border-color: #24292e;
-  color: #fff !important;
-  text-decoration: none;
-  transition: background 160ms ease;
-}
-
-.badge-github:hover {
-  background: #1a1f24;
-}
-
-/* ===========================
-   PAIN COMPARISON
-   =========================== */
-
-.pain-comparison {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  max-width: 480px;
-  margin: 24px auto 28px;
-  text-align: right;
-}
-
-.pain-col {
-  border-radius: 14px;
-  padding: 16px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.pain-bad {
-  background: rgba(220, 38, 38, 0.07);
-  border: 1px solid rgba(220, 38, 38, 0.22);
-}
-
-.pain-good {
-  background: rgba(22, 125, 70, 0.07);
-  border: 1px solid rgba(22, 125, 70, 0.22);
-}
-
-.pain-col-label {
-  font-weight: 800;
-  font-size: 0.88rem;
-  margin-bottom: 4px;
-}
-
-.pain-col-item {
-  font-size: 0.88rem;
-  color: var(--ink-muted);
-}
-
-.pain-highlight-bad strong {
-  color: #dc2626;
-}
-
-.pain-highlight-good strong {
-  color: #16a34a;
-}
-
-.pain-col-total {
-  font-weight: 800;
-  font-size: 1rem;
-  margin-top: 4px;
-  padding-top: 8px;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-.pain-bad .pain-col-total  { color: #dc2626; }
-.pain-good .pain-col-total { color: #16a34a; }
-
-/* ===========================
-   TESTIMONIAL AVATARS
-   =========================== */
-
-.testimonial-avatar {
-  display: inline-grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #fff;
-  flex-shrink: 0;
-}
-
-/* ===========================
-   DOWNLOAD STEPS
-   =========================== */
-
-.dl-steps {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin: -8px 0 28px;
-  flex-wrap: wrap;
-}
-
-.dl-step {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.65);
-}
-
-.dl-step span {
-  display: inline-grid;
-  place-items: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(255, 153, 0, 0.45);
-  color: #fff;
-  font-size: 0.68rem;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-
-.dl-sep {
-  color: rgba(255, 255, 255, 0.25);
-  font-size: 1rem;
-  user-select: none;
-}
-
-/* ===========================
-   DOWNLOAD BUTTON PULSE GLOW
-   =========================== */
-
-.btn-download-big {
-  position: relative;
-}
-
-.btn-download-big::after {
-  content: "";
-  position: absolute;
-  inset: -5px;
-  border-radius: 23px;
-  background: linear-gradient(135deg, var(--brand), var(--brand-deep));
-  opacity: 0;
-  z-index: -1;
-  animation: btn-glow 3s ease-in-out infinite;
-}
-
-@keyframes btn-glow {
-  0%, 100% { opacity: 0;    transform: scale(1); }
-  50%       { opacity: 0.22; transform: scale(1.05); }
-}
-
-/* ===========================
-   RESPONSIVE ADDITIONS
-   =========================== */
-
-@media (max-width: 680px) {
-  .pain-comparison {
-    grid-template-columns: 1fr;
-    max-width: 300px;
-  }
-
-  .last-alert {
-    font-size: 0.78rem;
   }
 }
