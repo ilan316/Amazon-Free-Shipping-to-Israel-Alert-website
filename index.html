@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amazon Israel Free Ship Alert – קבל התראה כשיש משלוח חינם לישראל</title>
+  <title>Amazon Israel Free Ship Alert - קבל התראה כשיש משלוח חינם לישראל</title>
   <meta name="description" content="אפליקציה חינמית ל-Windows שעוקבת אחרי מוצרי אמזון ושולחת מייל כשמזוהה משלוח חינם לישראל, לפי מרווח בדיקה שתגדיר. ללא רישום, ללא תשלום." />
-  <meta property="og:title" content="Amazon Israel Free Ship Alert – תדע ראשון כשיש משלוח חינם לישראל" />
+  <meta property="og:title" content="Amazon Israel Free Ship Alert - תדע ראשון כשיש משלוח חינם לישראל" />
   <meta property="og:description" content="אפליקציה חינמית שמתריעה לך כשמוצר שאתה רוצה מציע משלוח חינם לישראל באמזון, לפי מרווח בדיקה שתגדיר." />
   <meta property="og:image" content="logo-new.png" />
   <meta property="og:type" content="website" />
@@ -23,21 +23,30 @@
   <div class="bg-glow bg-glow-a"></div>
   <div class="bg-glow bg-glow-b"></div>
 
-  <!-- STICKY TOPBAR -->
-  <header class="topbar" id="topbar">
-    <div class="brand">
-      <img src="logo-new.png" alt="logo" class="brand-logo-img" />
-      <span>Amazon Israel Free Ship Alert</span>
+  <!-- FIXED SITE HEADER -->
+  <div id="fixed-header">
+    <div class="urgency-bar">
+      <span class="urgency-dot"></span>
+      לא כל המוצרים באמזון זכאים למשלוח חינם לישראל - <strong>האפליקציה מתריעה ברגע שהמוצר שלך מסומן</strong>
     </div>
-    <nav>
-      <a href="#features">יכולות</a>
-      <a href="#how">איך זה עובד</a>
-      <a href="#faq">שאלות נפוצות</a>
-      <a href="#contact">צרו קשר</a>
-      <a href="privacy.html">פרטיות</a>
-    </nav>
-    <a class="btn btn-primary btn-sm nav-cta" href="#download" id="nav-download-btn">הורד עכשיו</a>
-  </header>
+    <div class="topbar-outer">
+      <header class="topbar" id="topbar">
+        <div class="brand">
+          <img src="logo-new.png" alt="logo" class="brand-logo-img" />
+          <span>Amazon Israel Free Ship Alert</span>
+        </div>
+        <nav>
+          <a href="#features">יכולות</a>
+          <a href="#how">איך זה עובד</a>
+          <a href="guide.html">מדריך</a>
+          <a href="#faq">שאלות נפוצות</a>
+          <a href="#contact">צרו קשר</a>
+          <a href="privacy.html">פרטיות</a>
+        </nav>
+        <a class="btn btn-primary btn-sm nav-cta" href="#download" id="nav-download-btn">הורד עכשיו</a>
+      </header>
+    </div>
+  </div>
 
   <main>
     <!-- HERO -->
@@ -45,10 +54,10 @@
       <div class="hero-copy">
         <p class="eyebrow">🪟 אפליקציה ל-Windows</p>
         <h1>
-          תדע ראשון כש<span>משלוח חינם לישראל</span> זמין באמזון
+          חסוך $30+ - קבל מייל כש<span>משלוח חינם לישראל</span> זמין
         </h1>
         <p class="lead">
-          האפליקציה בודקת אוטומטית כל מוצר שתגדיר לפי מרווח שתבחר, ושולחת לך מייל כשמזוהה משלוח חינם לישראל.
+          האפליקציה בודקת אוטומטית כל מוצר שתגדיר ושולחת לך מייל <strong>מיד כשמזוהה הצעה</strong> - לפני שתפספס.
         </p>
 
         <div class="hero-badges">
@@ -61,24 +70,25 @@
         <div class="cta-row">
           <a class="btn btn-primary btn-xl" href="#download" id="hero-download-btn">
             <span>הורדה חינמית</span>
-            <small>גרסה 1.4.11 · Windows 10/11 · 17 MB</small>
+            <small>גרסה 1.7.7 · Windows 10/11 · 19 MB</small>
           </a>
           <a class="btn btn-ghost" href="#how">איך זה עובד?</a>
         </div>
+        <p class="cta-microcopy">ללא כרטיס אשראי · חינם לנצח · ניתן להסיר בכל עת</p>
 
         <div class="stats-row">
           <div class="stat">
             <div class="stat-number">
-              <strong class="counter" data-target="300">0</strong><span>+</span>
+              <strong class="counter" data-target="1500">1500</strong><span>+</span>
             </div>
-            <p>משתמשים</p>
+            <p>התראות נשלחו</p>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
             <div class="stat-number">
-              <strong class="counter" data-target="1500">0</strong><span>+</span>
+              <strong>₪150</strong><span>+</span>
             </div>
-            <p>התראות נשלחו</p>
+            <p>חסכון ממוצע לרכישה</p>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
@@ -94,21 +104,7 @@
         <div class="hero-app-card">
           <img src="logo-new.png" alt="Amazon Israel Free Ship Alert" />
         </div>
-        <div class="email-preview" dir="ltr">
-          <div class="email-preview-bar">
-            <span class="email-dot red"></span>
-            <span class="email-dot yellow"></span>
-            <span class="email-dot green"></span>
-            <span class="email-preview-label">📧 Alert Email</span>
-          </div>
-          <div class="email-preview-body">
-            <p class="email-from">From: Amazon Alert &lt;amazonisraelalert@gmail.com&gt;</p>
-            <p class="email-subject">🎉 FREE Shipping to Israel! – Anker PowerBank 26800mAh</p>
-            <div class="email-status-badge">✅ FREE Delivery to Israel available now</div>
-            <p class="email-product-name"><strong>Anker PowerBank 26800mAh</strong><br><span>ASIN: B07PZR3PVB</span></p>
-            <div class="email-link-btn">View on Amazon →</div>
-          </div>
-        </div>
+        <img src="email-preview.png" alt="דוגמה להתראה במייל" class="email-preview-img" />
       </div>
     </section>
 
@@ -123,13 +119,26 @@
 
     <!-- PAIN SECTION -->
     <section class="section pain-section">
-      <h2>כמה משלוח מאמזון לישראל עולה לך?</h2>
+      <h2>משלוח חינם קיים - אבל לא תמיד, ולא על כל מוצר</h2>
       <p class="pain-text">
-        משלוח רגיל מאמזון לישראל עולה בין <strong>$15 ל-$40</strong> לרכישה — ולעתים קרובות עולה יותר מהמוצר עצמו.
-        אמזון מציעה מדי פעם <strong>משלוח חינם לישראל</strong>, אבל ההצעות האלה מגיעות ללא הודעה מוקדמת
-        ונגמרות תוך שעות ספורות.
+        אמזון מציעה משלוח חינם לישראל ברכישת מוצרים משתתפים בסכום כולל של מעל <strong>$49</strong>, הנשלחים על ידי אמזון ומסומנים ב-<strong>"FREE Shipping to Israel"</strong>.
+        הבעיה: לא כל המוצרים זכאים, והזכאות משתנה ללא הודעה. האפליקציה עוקבת אחרי המוצרים שלך ומתריעה מיד כשהם מסומנים.
       </p>
-      <a class="btn btn-primary" href="#download">הפסק לפספס — הורד עכשיו</a>
+      <div class="pain-comparison">
+        <div class="pain-col pain-bad">
+          <div class="pain-col-label">❌ בלי האפליקציה</div>
+          <div class="pain-col-item">מוצר: $55</div>
+          <div class="pain-col-item pain-highlight-bad">משלוח: <strong>$32</strong></div>
+          <div class="pain-col-total">סה"כ: $87</div>
+        </div>
+        <div class="pain-col pain-good">
+          <div class="pain-col-label">✅ עם האפליקציה</div>
+          <div class="pain-col-item">מוצר: $55</div>
+          <div class="pain-col-item pain-highlight-good">משלוח: <strong>$0</strong></div>
+          <div class="pain-col-total">סה"כ: $55</div>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-xl" href="#download">הפסק לפספס - הורד עכשיו</a>
     </section>
 
     <!-- FEATURES -->
@@ -139,7 +148,7 @@
         <article class="card reveal">
           <div class="card-icon">⏱️</div>
           <h3>בדיקה אוטומטית לפי תדירות שלך</h3>
-          <p>מגדירים דקות/שעות/ימים, והמערכת בודקת מחזורית את כל רשימת המוצרים שלך — גם כשאתה ישן.</p>
+          <p>מגדירים דקות/שעות/ימים, והמערכת בודקת מחזורית את כל רשימת המוצרים שלך - גם כשאתה ישן.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">📧</div>
@@ -149,7 +158,7 @@
         <article class="card reveal">
           <div class="card-icon">🛍️</div>
           <h3>ניהול מוצרים פשוט</h3>
-          <p>מדביקים קישור מאמזון — האפליקציה מזהה את המוצר לבד. אפשר להשהות מעקב על מוצר ספציפי בכל עת.</p>
+          <p>מדביקים קישור מאמזון - האפליקציה מזהה את המוצר לבד. אפשר להשהות מעקב על מוצר ספציפי בכל עת.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">🖥️</div>
@@ -177,7 +186,7 @@
           <span>1</span>
           <div>
             <strong>מתקינים תוך 2 דקות</strong>
-            <p>מורידים ומפעילים את קובץ ההתקנה — הכל מוגדר אוטומטית, ללא צורך בהתקנות נוספות.</p>
+            <p>מורידים ומפעילים את קובץ ההתקנה - הכל מוגדר אוטומטית, ללא צורך בהתקנות נוספות.</p>
           </div>
         </li>
         <li class="reveal">
@@ -211,17 +220,26 @@
         <div class="testimonial-card reveal">
           <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
           <p class="testimonial-text">"חיכיתי חודשים לרכוש מארז LEGO לבן שלי. בוקר אחד קיבלתי מייל על משלוח חינם, והזמנתי מיד. כך חסכתי 170 ש״ח."</p>
-          <div class="testimonial-author">גיל מ. — תל אביב</div>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar" style="background:#f97316">ג</span>
+            גיל מ. - תל אביב
+          </div>
         </div>
         <div class="testimonial-card reveal">
           <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
           <p class="testimonial-text">"הגדרתי ארבעה מוצרים שרציתי לקנות. תוך שבוע קיבלתי התראה על אחד מהם. זה פשוט עובד, בלי צורך לעשות דבר."</p>
-          <div class="testimonial-author">מיכל ב. — חיפה</div>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar" style="background:#8b5cf6">מ</span>
+            מיכל ב. - חיפה
+          </div>
         </div>
         <div class="testimonial-card reveal">
           <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"אחי המליץ לי. ההתקנה לקחה שתי דקות בלבד, ומאז הוא פועל ברקע בשקט. התראה אחת כבר החזירה את כל הזמן שהשקעתי בהגדרה."</p>
-          <div class="testimonial-author">אורי כ. — ירושלים</div>
+          <p class="testimonial-text">"חבר מהעבודה סיפר לי על זה. ההתקנה לקחה פחות משתי דקות, ומאז זה עובד ברקע בלי שאגע בזה. מאז אני פשוט מקבל עדכון כשיש הזדמנות שבאמת שווה לבדוק."</p>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar" style="background:#0ea5e9">א</span>
+            אורי כ. - ירושלים
+          </div>
         </div>
       </div>
     </section>
@@ -231,6 +249,13 @@
       <h2>שאלות נפוצות</h2>
       <div class="faq-list">
         <details class="faq-item reveal">
+          <summary>מהם תנאי המשלוח החינם לישראל באמזון?</summary>
+          <div class="faq-body">
+            <p>אמזון מציעה משלוח חינם לישראל ברכישת מוצרים משתתפים בסכום כולל של מעל $49, הנשלחים על ידי אמזון. ההטבה תקפה למוצרים המסומנים ב-"FREE Shipping to Israel".</p>
+            <p>לא כל המוצרים זכאים לתוכנית - והרשימה משתנה. האפליקציה בודקת אוטומטית האם המוצרים שהגדרת מסומנים כזכאים, ומתריעה לך ברגע שכן.</p>
+          </div>
+        </details>
+        <details class="faq-item reveal">
           <summary>האם האפליקציה חינמית לחלוטין?</summary>
           <div class="faq-body">
             <p>כן, 100% חינמית. אין מנוי, אין תשלום חודשי ואין הפתעות נסתרות.</p>
@@ -238,24 +263,22 @@
           </div>
         </details>
         <details class="faq-item reveal">
-          <summary>האנטי-וירוס שלי מתריע על הקובץ — האם הוא בטוח?</summary>
+          <summary>האנטי-וירוס שלי מתריע על הקובץ - האם הוא בטוח?</summary>
           <div class="faq-body">
-            <p>כן, הקובץ בטוח לחלוטין. האפליקציה נכתבה ב-Python ומאורזת באמצעות PyInstaller — שיטה שלעיתים מסומנת כחשודה בגלל אופן האריזה, ולא בגלל תוכן זדוני.</p>
-            <p>הקוד המלא זמין ב-GitHub, כך שניתן לבדוק אותו באופן עצמאי.</p>
+            <p>כן, הקובץ בטוח לחלוטין. האפליקציה נכתבה ב-Python ומאורזת באמצעות PyInstaller - שיטה שלעיתים מסומנת כחשודה בגלל אופן האריזה, ולא בגלל תוכן זדוני.</p>
           </div>
         </details>
         <details class="faq-item reveal">
           <summary>אילו דרישות מערכת נדרשות?</summary>
           <div class="faq-body">
             <p>Windows 10 או 11 בגרסת 64-bit, וחיבור לאינטרנט.</p>
-            <p>Python ו-Chromium מותקנים אוטומטית במהלך ההתקנה, ואין צורך בהתקנה ידנית של דבר נוסף.</p>
           </div>
         </details>
         <details class="faq-item reveal">
           <summary>כמה פעמים האפליקציה בודקת?</summary>
           <div class="faq-body">
-            <p>ברירת המחדל היא כל שלוש שעות.</p>
-            <p>ניתן לשנות זאת בהגדרות לכל פרק זמן בין 0 דקות ל-24 שעות, בהתאם לצורך.</p>
+            <p>ברירת המחדל היא כל 6 שעות.</p>
+            <p>ניתן לשנות זאת בהגדרות ל-6 שעות, 12 שעות או 24 שעות, בהתאם לצורך.</p>
           </div>
         </details>
         <details class="faq-item reveal">
@@ -279,10 +302,23 @@
         <div class="download-badge">הורדה חינמית</div>
         <h2>מוכן להפסיק לפספס?</h2>
         <p class="download-lead">הגדרה של שתי דקות בלבד.<br>לאחר מכן שקט מוחלט, ומייל נשלח ברגע שמזוהה הצעה משתלמת.</p>
-        <a class="btn btn-download-big" href="../AmazonIsraelFreeShipAlert.exe" id="main-download-btn">
-          <span>הורד עכשיו — חינם</span>
-          <small>גרסה 1.4.11 · Windows 10/11 · 17 MB</small>
+        <div class="download-users-badge">
+          <span class="users-dot"></span>
+          הצטרף ל-500+ משתמשים שכבר חוסכים על משלוחים
+        </div>
+        <a class="btn btn-download-big" href="../AmazonIsraelFreeShipAlert_Setup.exe" id="main-download-btn">
+          <span>הורד עכשיו - חינם</span>
+          <small>גרסה 1.7.7 · Windows 10/11 · 19 MB</small>
         </a>
+        <div class="dl-steps">
+          <div class="dl-step"><span>1</span>הורד</div>
+          <span class="dl-sep">·</span>
+          <div class="dl-step"><span>2</span>הפעל .exe</div>
+          <span class="dl-sep">·</span>
+          <div class="dl-step"><span>3</span>הוסף מוצרים</div>
+          <span class="dl-sep">·</span>
+          <div class="dl-step"><span>4</span>קבל מייל</div>
+        </div>
         <div class="download-trust">
           <span>🔒 ללא רישום</span>
           <span aria-hidden="true">·</span>
@@ -290,7 +326,7 @@
           <span aria-hidden="true">·</span>
           <span>🔄 עדכונים אוטומטיים</span>
           <span aria-hidden="true">·</span>
-          <span>📂 קוד פתוח ב-GitHub</span>
+          <span>🛡️ לא נשמר מידע אישי</span>
         </div>
       </div>
     </section>
@@ -349,7 +385,7 @@
 
   <!-- Floating mobile CTA -->
   <div class="floating-cta" id="floating-cta">
-    <a class="btn btn-primary" href="#download" id="floating-download-btn">הורד עכשיו — חינם</a>
+    <a class="btn btn-primary" href="#download" id="floating-download-btn">הורד עכשיו - חינם</a>
   </div>
 
   <script src="script.js"></script>
