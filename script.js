@@ -177,3 +177,12 @@ if (contactForm) {
     }
   });
 }
+
+// Alert modal
+const alertModal = document.getElementById('alert-modal');
+const alertClose = document.getElementById('alert-modal-close');
+if (alertModal && alertClose) {
+  alertClose.addEventListener('click', () => {
+    alertModal.classList.add('hidden');
+  });
+}

@@ -1392,3 +1392,63 @@ footer {
     max-width: 300px;
   }
 }
+
+/* ===== Alert Modal ===== */
+@keyframes alertFadeIn {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.alert-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(23, 32, 51, 0.55);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+  direction: rtl;
+}
+
+.alert-modal.hidden {
+  display: none;
+}
+
+.alert-modal__box {
+  background: var(--card, #fff);
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(23, 32, 51, 0.22);
+  padding: 2.5rem 2.25rem 2rem;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  animation: alertFadeIn 0.28s ease both;
+}
+
+.alert-modal__text {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink, #172033);
+  margin: 0 0 1.5rem;
+}
+
+.alert-modal__btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--brand, #ff9900), var(--brand-deep, #ff6a00));
+  color: #fff;
+  font-family: 'Heebo', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 0.65rem 2.2rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.alert-modal__btn:hover {
+  opacity: 0.88;
+}
