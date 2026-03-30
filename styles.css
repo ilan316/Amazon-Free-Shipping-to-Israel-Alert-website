@@ -121,6 +121,24 @@ body {
   white-space: nowrap;
 }
 
+.nav-cta-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.btn-outline {
+  background: #fff;
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+}
+
+.btn-outline:hover {
+  border-color: var(--brand);
+  color: var(--brand-deep);
+}
+
 /* ===========================
    BUTTONS
    =========================== */
@@ -143,7 +161,7 @@ body {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--brand), var(--brand-deep));
-  color: #fff;
+  color: var(--ink);
   border: none;
   box-shadow: 0 10px 25px rgba(255, 153, 0, 0.33);
 }
@@ -253,12 +271,135 @@ main {
   gap: 12px;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .cta-microcopy {
   margin: 8px 0 0;
   font-size: 0.8rem;
   color: var(--ink-muted);
+}
+
+/* How it works tabs */
+.how-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.how-tab {
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  background: rgba(255,255,255,0.7);
+  color: var(--ink);
+  font-family: "Heebo", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 160ms ease;
+}
+
+.how-tab.active {
+  background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+  color: var(--ink);
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(255,153,0,0.3);
+}
+
+.how-tab:not(.active):hover {
+  border-color: var(--brand);
+}
+
+.cta-buttons-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-platforms {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  text-align: center;
+}
+
+/* Eyebrow row */
+.eyebrow-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 12px;
+}
+
+.eyebrow-row .eyebrow {
+  margin: 0;
+}
+
+.eyebrow--web {
+  background: #fff2cf;
+  border-color: #ffd37b;
+  color: var(--ink);
+}
+
+/* Web version promo strip */
+.web-version-promo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fff8ee, #fff3e0);
+  border: 1.5px solid var(--brand);
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.web-version-promo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 153, 0, 0.22);
+}
+
+.web-version-new {
+  background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.web-version-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.web-version-text strong {
+  font-size: 0.95rem;
+}
+
+.web-version-text small {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+}
+
+.web-version-arrow {
+  font-size: 1.1rem;
+  color: var(--brand-deep);
+  font-weight: 700;
 }
 
 .stats-row {
@@ -645,12 +786,91 @@ main {
 }
 
 .download-inner {
-  max-width: 540px;
+  max-width: 820px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0;
+}
+
+.choose-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.choose-card {
+  position: relative;
+  border-radius: 18px;
+  padding: 28px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.choose-card--web {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid var(--brand);
+  box-shadow: 0 8px 28px rgba(255,153,0,0.2);
+}
+
+.choose-card--win {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.choose-card-badge {
+  position: absolute;
+  top: -13px;
+  right: 50%;
+  transform: translateX(50%);
+  background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+  color: var(--ink);
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(255,153,0,0.35);
+}
+
+.choose-card-icon {
+  font-size: 2rem;
+}
+
+.choose-card h3 {
+  margin: 0;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+}
+
+.choose-card-perks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+  text-align: right;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.choose-card .btn-outline {
+  background: transparent;
+  border-color: rgba(255,255,255,0.35);
+  color: #fff;
+}
+
+.choose-card .btn-outline:hover {
+  border-color: #fff;
 }
 
 .download-badge {
@@ -1393,6 +1613,69 @@ footer {
   }
 }
 
+/* ===========================
+   MOBILE — NEW ELEMENTS
+   =========================== */
+
+@media (max-width: 980px) {
+  .choose-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .how-tabs {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 680px) {
+  /* Nav — hide cta group, show floating CTA */
+  .nav-cta-group {
+    display: none;
+  }
+
+  /* Hero CTA buttons — stack vertically */
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  /* Eyebrow row — wrap */
+  .eyebrow-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  /* How tabs */
+  .how-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 0.88rem;
+  }
+
+  /* Choose cards (download section) */
+  .choose-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* cta-platforms */
+  .cta-platforms {
+    font-size: 0.75rem;
+  }
+
+  /* cta-buttons-wrap full width */
+  .cta-buttons-wrap {
+    width: 100%;
+    align-items: center;
+  }
+}
+
 /* ===== Alert Modal ===== */
 @keyframes alertFadeIn {
   from { opacity: 0; transform: translateY(-16px); }
@@ -1451,4 +1734,104 @@ footer {
 
 .alert-modal__btn:hover {
   opacity: 0.88;
+}
+
+.alert-modal__btn--link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ===========================
+   MOBILE FULL RESPONSIVENESS
+   =========================== */
+
+@media (max-width: 980px) {
+  /* Tablet: nav might get crowded — shrink gaps */
+  .topbar nav {
+    gap: 12px;
+  }
+
+  .nav-cta-group {
+    gap: 6px;
+  }
+
+  /* Guide hero single column on tablet */
+  .guide-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-hero .hero-visuals {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  /* Topbar stacks vertically → header gets taller → push main down */
+  main {
+    margin-top: 230px;
+  }
+
+  /* Slightly smaller nav links to fit better */
+  .topbar nav a {
+    font-size: 0.85rem;
+  }
+
+  /* Section vertical spacing tighter on mobile */
+  .section {
+    margin-top: 40px;
+  }
+
+  /* Hero padding */
+  .hero {
+    gap: 24px;
+  }
+
+  /* Pain section */
+  .pain-section {
+    padding: 28px 16px;
+  }
+
+  /* Download section tighter */
+  .download-section {
+    padding: 36px 16px;
+    border-radius: 16px;
+  }
+
+  .download-lead {
+    font-size: 0.95rem;
+  }
+
+  /* Choose cards inner padding */
+  .choose-card {
+    padding: 22px 14px 18px;
+  }
+
+  /* Stats row — smaller numbers */
+  .stat-number strong {
+    font-size: 1.3rem;
+  }
+
+  /* Footer stacked */
+  .footer-topbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  /* Btn xl full width in choose-card */
+  .choose-card .btn-xl {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Urgency bar smaller text */
+  .urgency-bar {
+    font-size: 0.78rem;
+    padding: 8px 14px;
+  }
 }
