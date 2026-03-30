@@ -1741,6 +1741,12 @@ footer {
   text-decoration: none;
 }
 
+.alert-modal__divider {
+  border: none;
+  border-top: 1px solid rgba(23, 32, 51, 0.12);
+  margin: 1.5rem 0;
+}
+
 /* ===========================
    MOBILE FULL RESPONSIVENESS
    =========================== */

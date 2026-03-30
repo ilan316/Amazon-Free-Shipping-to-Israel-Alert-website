@@ -180,15 +180,8 @@ if (contactForm) {
 
 // Alert modal
 const alertModal = document.getElementById('alert-modal');
-const alertSlide1 = document.getElementById('alert-slide-1');
-const alertSlide1Btn = document.getElementById('alert-slide-1-btn');
-const alertSlide2 = document.getElementById('alert-slide-2');
 const alertClose = document.getElementById('alert-modal-close');
-if (alertModal && alertSlide1Btn && alertClose) {
-  alertSlide1Btn.addEventListener('click', () => {
-    alertSlide1.style.display = 'none';
-    alertSlide2.style.display = 'block';
-  });
+if (alertModal && alertClose) {
   alertClose.addEventListener('click', () => {
     alertModal.classList.add('hidden');
   });
