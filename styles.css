@@ -153,6 +153,7 @@ body {
   font-family: "Heebo", sans-serif;
   cursor: pointer;
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  min-height: 44px;
 }
 
 .btn:hover {
