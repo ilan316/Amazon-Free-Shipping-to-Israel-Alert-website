@@ -350,6 +350,55 @@ main {
   text-align: center;
 }
 
+/* Pricing strip */
+.pricing-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border: 1.5px solid #86efac;
+  border-radius: 12px;
+  text-align: center;
+}
+.pricing-strip-icon { font-size: 1.4rem; }
+.pricing-strip-text strong {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.95rem;
+  color: #15803d;
+  display: block;
+  margin-bottom: 2px;
+}
+.pricing-strip-text span {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+/* Security bar */
+.security-bar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.security-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  font-weight: 500;
+}
+.security-item span { font-size: 1rem; }
+
 /* Eyebrow row */
 .eyebrow-row {
   display: flex;
