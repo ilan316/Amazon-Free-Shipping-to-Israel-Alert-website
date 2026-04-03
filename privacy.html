@@ -13,7 +13,7 @@
   <style>
     .policy-wrap {
       width: min(980px, 92vw);
-      margin: 26px auto 72px;
+      margin: 150px auto 72px;
       background: rgba(255, 255, 255, 0.82);
       border: 1px solid rgba(23, 32, 51, 0.12);
       border-radius: 16px;
@@ -33,20 +33,32 @@
   </style>
 </head>
 <body>
-  <header class="topbar" id="topbar">
-    <div class="brand">
-      <img src="logo-new.png" alt="logo" class="brand-logo-img" />
-      <span>Amazon Israel Free Ship Alert</span>
+  <div id="fixed-header">
+    <div class="urgency-bar">
+      <span class="urgency-dot"></span>
+      לא כל מוצר באמזון נשלח חינם לישראל — <strong>קבל התראה ברגע שמוצר מציע משלוח חינם</strong>
     </div>
-    <nav>
-      <a href="index.html#features">יכולות</a>
-      <a href="index.html#how">איך זה עובד</a>
-      <a href="index.html#faq">שאלות נפוצות</a>
-      <a href="index.html#contact">צרו קשר</a>
-      <a href="privacy.html">פרטיות</a>
-    </nav>
-    <a class="btn btn-primary btn-sm nav-cta" href="index.html#download">הורד עכשיו</a>
-  </header>
+    <div class="topbar-outer">
+      <header class="topbar" id="topbar">
+        <div class="brand">
+          <img src="logo-new.png" alt="logo" class="brand-logo-img" />
+          <span>Amazon Israel Free Ship Alert</span>
+        </div>
+        <nav>
+          <a href="index.html#features">יכולות</a>
+          <a href="index.html#how">איך זה עובד</a>
+          <a href="guide.html">מדריך Windows</a>
+          <a href="index.html#faq">שאלות נפוצות</a>
+          <a href="index.html#contact">צרו קשר</a>
+          <a href="privacy.html">פרטיות</a>
+        </nav>
+        <div class="nav-cta-group">
+          <a class="btn btn-primary btn-sm" href="https://app.amzfreeil.com" target="_blank" aria-label="פתח גרסה מקוונת - ללא התקנה">🌐 גרסה מקוונת</a>
+          <a class="btn btn-outline btn-sm" href="index.html#download" aria-label="הורד גרסת Windows">🪟 גרסת Windows</a>
+        </div>
+      </header>
+    </div>
+  </div>
 
   <main class="policy-wrap">
     <h1>מדיניות פרטיות</h1>

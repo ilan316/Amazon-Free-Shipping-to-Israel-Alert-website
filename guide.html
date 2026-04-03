@@ -19,7 +19,7 @@
   <div id="fixed-header">
     <div class="urgency-bar">
       <span class="urgency-dot"></span>
-      לא כל המוצרים באמזון זכאים למשלוח חינם לישראל - <strong>האפליקציה מתריעה ברגע שהמוצר שלך מסומן</strong>
+      לא כל מוצר באמזון נשלח חינם לישראל — <strong>קבל התראה ברגע שמוצר מציע משלוח חינם</strong>
     </div>
     <div class="topbar-outer">
       <header class="topbar" id="topbar">
@@ -30,12 +30,15 @@
         <nav>
           <a href="index.html#features">יכולות</a>
           <a href="index.html#how">איך זה עובד</a>
-          <a href="guide.html" class="nav-active">מדריך</a>
+          <a href="guide.html" class="nav-active">מדריך Windows</a>
           <a href="index.html#faq">שאלות נפוצות</a>
           <a href="index.html#contact">צרו קשר</a>
           <a href="privacy.html">פרטיות</a>
         </nav>
-        <a class="btn btn-primary btn-sm nav-cta" href="index.html#download">הורד עכשיו</a>
+        <div class="nav-cta-group">
+          <a class="btn btn-primary btn-sm" href="https://app.amzfreeil.com" target="_blank" aria-label="פתח גרסה מקוונת - ללא התקנה">🌐 גרסה מקוונת</a>
+          <a class="btn btn-outline btn-sm" href="index.html#download" aria-label="הורד גרסת Windows">🪟 גרסת Windows</a>
+        </div>
       </header>
     </div>
   </div>
@@ -44,7 +47,7 @@
     <!-- HERO -->
     <section class="hero guide-hero">
       <div class="hero-copy">
-        <p class="eyebrow">📖 מדריך שימוש מהיר</p>
+        <p class="eyebrow">🪟 מדריך שימוש — גרסת Windows</p>
         <h1>
           איך להתחיל לחסוך<br><span>בחמישה שלבים פשוטים</span>
         </h1>
@@ -57,7 +60,7 @@
             <small>גרסה 1.7.7 · Windows 10/11 · 19 MB</small>
           </a>
         </div>
-        <p class="cta-microcopy">ללא כרטיס אשראי · חינם לנצח · ניתן להסיר בכל עת</p>
+        <p class="cta-microcopy">ללא כרטיס אשראי · ניתן להסיר בכל עת</p>
       </div>
       <div class="hero-visuals">
         <div class="hero-app-card">
@@ -169,25 +172,48 @@
     <!-- DOWNLOAD CTA -->
     <section class="section download-section" id="download">
       <div class="download-inner">
-        <div class="download-badge">הורדה חינמית</div>
         <h2>מוכן להתחיל?</h2>
-        <p class="download-lead">הורד את האפליקציה ועקוב אחר המדריך - תוך 2 דקות אתה מוגן.</p>
+        <p class="download-lead">בחר את הגרסה שמתאימה לך — שתיהן שולחות התראה במייל ברגע שמוצר מציע משלוח חינם לישראל.</p>
         <div class="download-users-badge">
           <span class="users-dot"></span>
           הצטרף ל-500+ משתמשים שכבר חוסכים על משלוחים
         </div>
-        <a class="btn btn-download-big" href="index.html#download">
-          <span>הורד עכשיו - חינם</span>
-          <small>גרסה 1.7.7 · Windows 10/11 · 19 MB</small>
-        </a>
-        <div class="download-trust">
-          <span>🔒 ללא רישום</span>
-          <span aria-hidden="true">·</span>
-          <span>✅ ללא תשלום</span>
-          <span aria-hidden="true">·</span>
-          <span>🔄 עדכונים אוטומטיים</span>
-          <span aria-hidden="true">·</span>
-          <span>🛡️ לא נשמר מידע אישי</span>
+
+        <div class="choose-cards">
+
+          <!-- WEB CARD -->
+          <div class="choose-card choose-card--web">
+            <div class="choose-card-badge">✨ מומלץ</div>
+            <div class="choose-card-icon">🌐</div>
+            <h3>גרסה מקוונת</h3>
+            <ul class="choose-card-perks">
+              <li>✅ ללא התקנה</li>
+              <li>✅ עובד מכל מכשיר</li>
+              <li>✅ ניטור בשרת 24/7</li>
+              <li>✅ מייל מסכם יומי</li>
+            </ul>
+            <a class="btn btn-primary btn-xl" href="https://app.amzfreeil.com" target="_blank">
+              <span>התחל עכשיו</span>
+              <small>הרשמה פשוטה · עובד מיד</small>
+            </a>
+          </div>
+
+          <!-- WINDOWS CARD -->
+          <div class="choose-card choose-card--win">
+            <div class="choose-card-icon">🪟</div>
+            <h3>גרסת Windows</h3>
+            <ul class="choose-card-perks">
+              <li>✅ עובד ברקע במחשב</li>
+              <li>✅ תדירות בדיקה לפי בחירה</li>
+              <li>✅ ללא רישום</li>
+              <li>✅ נתונים שמורים אצלך בלבד</li>
+            </ul>
+            <a class="btn btn-outline btn-xl" href="/api/download">
+              <span>הורד עכשיו</span>
+              <small>גרסה 1.7.7 · Windows 10/11 · 19 MB</small>
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
