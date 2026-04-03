@@ -359,8 +359,8 @@ main {
   flex-wrap: wrap;
   margin-top: 18px;
   padding: 14px 20px;
-  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
-  border: 1.5px solid #86efac;
+  background: rgba(255, 153, 0, 0.08);
+  border: 1.5px solid rgba(255, 153, 0, 0.3);
   border-radius: 12px;
   text-align: center;
 }
@@ -368,7 +368,7 @@ main {
 .pricing-strip-text strong {
   font-family: "Rubik", sans-serif;
   font-size: 0.95rem;
-  color: #15803d;
+  color: var(--ink);
   display: block;
   margin-bottom: 2px;
 }
