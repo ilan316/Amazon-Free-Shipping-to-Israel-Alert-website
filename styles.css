@@ -133,6 +133,12 @@ body {
   font-weight: 500;
 }
 
+.topbar nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
 .nav-cta {
   white-space: nowrap;
 }
@@ -308,6 +314,7 @@ main {
 
 .how-tab {
   padding: 10px 24px;
+  min-height: 44px;
   border-radius: 999px;
   border: 1.5px solid var(--line);
   background: rgba(255,255,255,0.7);
@@ -708,8 +715,8 @@ main {
 }
 
 .timeline span {
-  min-width: 36px;
-  min-height: 36px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--brand), var(--brand-deep));
   color: white;
