@@ -1916,4 +1916,22 @@ footer {
   .testimonial-author,
   .footer-copy,
   .badge { font-size: 0.875rem; }
+
+  /* Body base font 16px on mobile */
+  body { font-size: 16px; }
+
+  /* CTA buttons — full width column on mobile */
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-buttons .btn-xl {
+    width: 100%;
+    justify-content: center;
+    min-height: 56px;
+  }
+  .pricing-strip {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
