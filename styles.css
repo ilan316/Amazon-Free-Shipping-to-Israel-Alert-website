@@ -10,6 +10,22 @@
   --success: #167d46;
 }
 
+/* Skip navigation — accessibility */
+.skip-nav {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  background: var(--brand);
+  color: var(--ink);
+  padding: 8px 16px;
+  border-radius: 0 0 8px 8px;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 99999;
+  transition: top 200ms;
+}
+.skip-nav:focus { top: 0; }
+
 * {
   box-sizing: border-box;
 }
@@ -1842,4 +1858,13 @@ footer {
     font-size: 0.78rem;
     padding: 8px 14px;
   }
+
+  /* Mobile font sizes — min 14px (0.875rem) per accessibility audit */
+  .btn-xl small,
+  .cta-microcopy,
+  .cta-platforms,
+  .stat p,
+  .testimonial-author,
+  .footer-copy,
+  .badge { font-size: 0.875rem; }
 }
