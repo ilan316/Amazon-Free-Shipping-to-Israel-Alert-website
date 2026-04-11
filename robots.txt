@@ -1,3 +1,27 @@
 User-agent: *
 Allow: /
+
+# AI search crawlers — explicitly allowed for indexing and citations
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Training-only bots — blocked (not search/citation bots)
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://www.amzfreeil.com/sitemap.xml
