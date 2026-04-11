@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preview — Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fffaf1;
+      --ink: #172033;
+      --ink-muted: #4d5a70;
+      --brand: #ff9900;
+      --brand-deep: #ff6a00;
+      --card: rgba(255,255,255,0.78);
+      --line: rgba(23,32,51,0.12);
+      --border: #e8e2d8;
+      --surface: #ffffff;
+      --success: #167d46;
+      --error: #c62828;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: "Heebo", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 10%, #fff2d9 0%, rgba(255,242,217,0) 36%),
+        radial-gradient(circle at 90% 0%, #ffe6d5 0%, rgba(255,230,213,0) 34%),
+        var(--bg);
+      min-height: 100vh;
+    }
+    .bg-glow { position: fixed; z-index: -1; width: 440px; height: 440px; border-radius: 50%; filter: blur(60px); opacity: 0.35; pointer-events: none; }
+    .bg-glow-a { background: #ffc36a; top: -120px; right: -120px; }
+    .bg-glow-b { background: #ff9e80; bottom: -160px; left: -120px; }
+
+    /* Topbar */
+    #fixed-header { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; }
+    .topbar-outer { display: flex; justify-content: center; padding: 10px 4vw; }
+    .topbar {
+      width: min(1140px, 100%);
+      padding: 10px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.92);
+      box-shadow: 0 2px 16px rgba(23,32,51,0.07);
+      transition: box-shadow 200ms ease;
+    }
+    .topbar.scrolled { box-shadow: 0 8px 32px rgba(23,32,51,0.1); }
+    .brand { display: inline-flex; align-items: center; gap: 10px; font-family: "Rubik", sans-serif; font-weight: 700; color: var(--ink); text-decoration: none; }
+    .brand-logo { width: 28px; height: 28px; border-radius: 8px; object-fit: cover; }
+    .topbar-nav { display: inline-flex; gap: 18px; align-items: center; }
+    .topbar-nav a { color: var(--ink); text-decoration: none; font-weight: 500; }
+    .topbar-nav a:hover { color: var(--brand); }
+    .user-email { color: var(--ink-muted); font-size: 0.88rem; }
+    .btn-logout {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 14px; border-radius: 10px; font-size: 0.88rem; font-weight: 700;
+      font-family: "Heebo", sans-serif; cursor: pointer;
+      border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .btn-logout:hover { border-color: var(--error); color: var(--error); }
+
+    /* Page */
+    .page { max-width: 860px; margin: 0 auto; padding: 90px 16px 32px; }
+
+    /* Cards */
+    .card {
+      background: var(--card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(23,32,51,0.06);
+    }
+    .card h2 { font-family: "Rubik", sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+
+    /* Add product row */
+    .add-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .add-row input {
+      flex: 1; min-width: 200px;
+      padding: 11px 14px;
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      font-family: "Heebo", sans-serif;
+      font-size: 0.9rem;
+      background: rgba(255,255,255,0.9);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .add-row input:focus { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(255,153,0,0.15); }
+    .btn-add {
+      padding: 11px 20px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+      color: var(--ink);
+      border: none;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: "Heebo", sans-serif;
+      box-shadow: 0 4px 14px rgba(255,153,0,0.3);
+      transition: transform 0.15s, box-shadow 0.15s;
+      white-space: nowrap;
+    }
+    .btn-add:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(255,153,0,0.4); }
+
+    /* Dashboard header */
+    .dash-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; }
+    .dash-header h1 { font-family: "Rubik", sans-serif; font-size: 1.4rem; }
+    .next-check { font-size: 0.8rem; color: var(--ink-muted); }
+
+    /* Filter bar */
+    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; }
+    .filter-bar input {
+      flex: 1; min-width: 160px;
+      padding: 8px 12px;
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      font-family: "Heebo", sans-serif;
+      font-size: 0.88rem;
+      background: rgba(255,255,255,0.9);
+      outline: none;
+    }
+    .filter-bar input:focus { border-color: var(--brand); }
+    .filter-btn {
+      padding: 7px 14px;
+      border: 1.5px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      font-family: "Heebo", sans-serif;
+      cursor: pointer;
+      background: rgba(255,255,255,0.7);
+      color: var(--ink);
+      transition: all 0.15s;
+    }
+    .filter-btn:hover, .filter-btn.active { border-color: var(--brand); background: linear-gradient(135deg, var(--brand), var(--brand-deep)); color: var(--ink); }
+
+    /* Product cards */
+    .products-list { display: flex; flex-direction: column; gap: 12px; }
+    .product-card {
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: box-shadow 0.2s;
+    }
+    .product-card:hover { box-shadow: 0 6px 24px rgba(23,32,51,0.09); }
+    .product-status { font-size: 1.4rem; flex-shrink: 0; }
+    .product-info { flex: 1; }
+    .product-name { font-weight: 700; font-size: 0.95rem; margin-bottom: 3px; }
+    .product-asin { font-size: 0.78rem; color: var(--ink-muted); }
+    .product-badge {
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .badge-free { background: #edfaf3; color: var(--success); border: 1px solid #a3e6c3; }
+    .badge-paid { background: #fff2f2; color: var(--error); border: 1px solid #ffc5c5; }
+    .badge-unknown { background: #f5f5f5; color: var(--ink-muted); border: 1px solid var(--line); }
+
+    /* Footer */
+    footer {
+      width: min(1140px, 92vw);
+      margin: 40px auto 24px;
+      padding-top: 10px;
+    }
+    .footer-topbar {
+      width: min(1140px, 100%);
+      padding: 10px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.92);
+    }
+    .footer-links { display: flex; gap: 18px; }
+    .footer-links a { color: var(--ink-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+    .footer-links a:hover { color: var(--ink); }
+    .footer-copy { text-align: center; color: var(--ink-muted); font-size: 0.8rem; margin: 14px 0 0; }
+
+    /* Preview badge */
+    .preview-badge {
+      position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+      background: #172033; color: #fff; font-size: 0.8rem;
+      padding: 8px 20px; border-radius: 40px; z-index: 99999;
+      white-space: nowrap; box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      font-family: "Heebo", sans-serif;
+    }
+    .preview-badge span { color: var(--brand); font-weight: 700; }
+
+    @media (max-width: 680px) {
+      .topbar { flex-direction: column; gap: 10px; }
+      .topbar-nav { flex-wrap: wrap; justify-content: center; gap: 8px; }
+      .page { padding-top: 160px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow bg-glow-a"></div>
+  <div class="bg-glow bg-glow-b"></div>
+
+  <!-- Topbar -->
+  <div id="fixed-header">
+    <div class="topbar-outer">
+      <header class="topbar" id="topbar">
+        <div class="brand">
+          <picture>
+            <source srcset="logo-new.webp" type="image/webp">
+            <img src="logo-new.png" alt="logo" class="brand-logo" />
+          </picture>
+          <span>Amazon Israel Free Ship Alert</span>
+        </div>
+        <nav class="topbar-nav">
+          <a href="https://amzfreeil.com">אתר ראשי</a>
+          <a href="#">הגדרות</a>
+          <span class="user-email">user@example.com</span>
+        </nav>
+        <button class="btn-logout">יציאה</button>
+      </header>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <!-- Dashboard header -->
+    <div class="dash-header">
+      <h1>המוצרים שלי</h1>
+      <div class="next-check">⏱️ בדיקה הבאה: היום בשעה 20:00</div>
+    </div>
+
+    <!-- Add product -->
+    <div class="card">
+      <h2>הוסף מוצר למעקב</h2>
+      <div class="add-row">
+        <input type="text" placeholder="הדבק קישור או ASIN — ניתן להוסיף מספר ASINs מופרדים בפסיק" dir="rtl" />
+        <button class="btn-add">הוסף מוצר</button>
+      </div>
+      <p style="font-size:0.78rem;color:var(--ink-muted);margin-top:8px;">הבדיקה הבאה תתבצע אוטומטית</p>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <input type="text" placeholder="חיפוש לפי שם / ASIN..." />
+      <button class="filter-btn active">הכל</button>
+      <button class="filter-btn">✅ משלוח חינם</button>
+      <button class="filter-btn">💳 משלוח בתשלום</button>
+      <button class="filter-btn">🚫 לא נשלח לארץ</button>
+    </div>
+
+    <!-- Product list (demo) -->
+    <div class="products-list">
+      <div class="product-card">
+        <div class="product-status">✅</div>
+        <div class="product-info">
+          <div class="product-name">LEGO Star Wars The Mandalorian</div>
+          <div class="product-asin">ASIN: B09XY12345</div>
+        </div>
+        <span class="product-badge badge-free">משלוח חינם</span>
+      </div>
+      <div class="product-card">
+        <div class="product-status">💳</div>
+        <div class="product-info">
+          <div class="product-name">Sony WH-1000XM5 Wireless Headphones</div>
+          <div class="product-asin">ASIN: B09XY67890</div>
+        </div>
+        <span class="product-badge badge-paid">משלוח בתשלום</span>
+      </div>
+      <div class="product-card">
+        <div class="product-status">⏳</div>
+        <div class="product-info">
+          <div class="product-name">Kindle Paperwhite 11th Generation</div>
+          <div class="product-asin">ASIN: B08KTZ8249</div>
+        </div>
+        <span class="product-badge badge-unknown">ממתין לבדיקה</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-topbar">
+      <div class="brand">
+        <img src="logo-new.png" alt="logo" class="brand-logo" />
+        <span>Amazon Israel Free Ship Alert</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://amzfreeil.com/privacy.html">מדיניות פרטיות</a>
+        <a href="https://amzfreeil.com#disclosure">גילוי נאות</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Amazon Israel Free Ship Alert · לא שייך לאמזון בע"מ</p>
+  </footer>
+
+  <div class="preview-badge">👁️ <span>PREVIEW בלבד</span> — דף משתמש (דשבורד)</div>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('topbar').classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
+</body>
+</html>
