@@ -170,7 +170,7 @@ if (contactForm) {
     } catch (err) {
       if (statusEl) {
         statusEl.innerHTML =
-          'שליחה נכשלה. אפשר לשלוח ידנית לכתובת: <strong>amazonisraelalert@gmail.com</strong>';
+          'שליחה נכשלה. אפשר לשלוח ידנית לכתובת: <strong>alerts@amzfreeil.com</strong>';
       }
     } finally {
       if (submitBtn) submitBtn.disabled = false;
