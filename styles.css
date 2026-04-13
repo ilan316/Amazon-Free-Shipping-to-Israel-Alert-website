@@ -1967,6 +1967,11 @@ footer {
   text-align: center;
 }
 
+.blog-hero .lead {
+  margin-inline: auto;
+  text-align: center;
+}
+
 .blog-breadcrumb {
   display: flex;
   align-items: center;
