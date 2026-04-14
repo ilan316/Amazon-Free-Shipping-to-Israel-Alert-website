@@ -1146,6 +1146,42 @@ main {
   grid-template-columns: 1.2fr 1fr;
 }
 
+/* Guide tab switcher */
+.guide-tabs-outer {
+  display: flex;
+  justify-content: center;
+  padding: 32px 24px 0;
+}
+.guide-tabs {
+  display: flex;
+  gap: 8px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 6px;
+}
+.guide-tab {
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.guide-tab:hover {
+  color: var(--text);
+  background: rgba(255,255,255,0.07);
+}
+.guide-tab--active {
+  background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+  color: var(--ink);
+}
+.guide-tab--active:hover {
+  background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+  color: var(--ink);
+}
+
 .guide-steps {
   display: grid;
   gap: 20px;
