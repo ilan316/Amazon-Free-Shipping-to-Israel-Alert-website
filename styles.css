@@ -1146,6 +1146,10 @@ main {
   grid-template-columns: 1.2fr 1fr;
 }
 
+.guide-hero h1 {
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+}
+
 /* Guide tab switcher */
 .guide-tabs-outer {
   display: flex;
