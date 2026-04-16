@@ -168,7 +168,67 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;800&family=Rubik:wght@700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <noscript><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;800&family=Rubik:wght@700;800&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Critical CSS — above-the-fold styles inlined to eliminate render-blocking -->
+  <style>
+    :root{--bg:#fffaf1;--bg-soft:#ffe9bf;--ink:#172033;--ink-muted:#4d5a70;--brand:#ff9900;--brand-deep:#ff6a00;--card:rgba(255,255,255,0.78);--line:rgba(23,32,51,0.12);--success:#167d46}
+    .skip-nav{position:absolute;top:-100px;right:0;background:var(--brand);color:var(--ink);padding:8px 16px;border-radius:0 0 8px 8px;font-weight:700;text-decoration:none;z-index:99999;transition:top 200ms}
+    .skip-nav:focus{top:0}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:"Heebo","Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 10%,#fff2d9 0%,rgba(255,242,217,0) 36%),radial-gradient(circle at 90% 0%,#ffe6d5 0%,rgba(255,230,213,0) 34%),var(--bg);min-height:100%}
+    .bg-glow{position:fixed;z-index:-1;width:440px;height:440px;border-radius:50%;filter:blur(60px);opacity:.35}
+    .bg-glow-a{background:#ffc36a;top:-120px;right:-120px}
+    .bg-glow-b{background:#ff9e80;bottom:-160px;left:-120px}
+    #fixed-header{position:fixed;top:0;left:0;right:0;z-index:9999}
+    .topbar-outer{display:flex;justify-content:center;padding:10px 4vw}
+    .topbar{position:relative;width:min(1140px,100%);padding:10px 16px;border:1px solid var(--line);border-radius:14px;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(12px);background:rgba(255,255,255,0.92);transition:box-shadow 200ms ease}
+    .topbar.scrolled{box-shadow:0 8px 32px rgba(23,32,51,0.1)}
+    .brand{display:inline-flex;align-items:center;gap:10px;font-family:"Rubik",sans-serif;font-weight:700;text-decoration:none;color:var(--ink)}
+    .brand-logo-img{width:28px;height:28px;border-radius:8px;object-fit:cover}
+    .topbar nav{display:inline-flex;gap:18px}
+    .topbar a{color:var(--ink);text-decoration:none;font-weight:500}
+    .topbar nav a{display:inline-flex;align-items:center;min-height:44px}
+    .nav-cta{white-space:nowrap}
+    .nav-cta-group{display:flex;gap:8px;align-items:center;white-space:nowrap}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;border:1px solid var(--line);font-weight:700;font-family:"Heebo",sans-serif;cursor:pointer;transition:transform 160ms ease,box-shadow 160ms ease,background 160ms ease;min-height:44px}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:var(--ink);border:none;box-shadow:0 10px 25px rgba(255,153,0,0.33)}
+    .btn-primary:hover{box-shadow:0 14px 30px rgba(255,153,0,0.45)}
+    .btn-ghost{color:var(--ink);background:rgba(255,255,255,0.65)}
+    .btn-outline{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+    .btn-outline:hover{border-color:var(--brand);color:var(--brand-deep)}
+    .btn-sm{padding:8px 14px;font-size:.88rem;border-radius:10px;min-height:44px}
+    .btn-xl{padding:16px 28px;font-size:1.1rem;border-radius:14px;display:inline-flex;flex-direction:column;align-items:center;gap:3px;line-height:1.2}
+    .btn-xl small{font-weight:400;font-size:.76rem;opacity:.82}
+    main{width:min(1140px,92vw);margin:130px auto 56px}
+    .hero{display:grid;gap:32px;align-items:stretch;grid-template-columns:1.15fr 1fr}
+    .eyebrow{display:inline-block;margin:0 0 12px;padding:6px 14px;border-radius:999px;font-size:.88rem;background:#fff2cf;border:1px solid #ffd37b}
+    .hero h1{margin:0;line-height:1.1;font-family:"Rubik",sans-serif;font-weight:800;font-size:clamp(2rem,4vw,3.3rem)}
+    .hero h1 span{color:var(--brand-deep)}
+    .lead{margin:16px 0 0;color:var(--ink-muted);font-size:.82rem;max-width:90ch;line-height:1.6}
+    .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+    .badge{display:inline-block;padding:5px 12px;border-radius:999px;font-size:.82rem;font-weight:500;background:rgba(255,255,255,0.85);border:1px solid var(--line)}
+    .cta-row{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center}
+    .cta-microcopy{margin:8px 0 0;font-size:.8rem;color:var(--ink-muted)}
+    .cta-buttons-wrap{display:flex;flex-direction:column;gap:6px}
+    .cta-buttons{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+    .cta-platforms{margin:0;font-size:.8rem;color:var(--ink-muted);text-align:center}
+    .pricing-strip{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:18px;padding:14px 20px;background:rgba(255,153,0,0.08);border:1.5px solid rgba(255,153,0,0.3);border-radius:12px;text-align:center}
+    .pricing-strip-icon{font-size:1.4rem}
+    .pricing-strip-text strong{font-family:"Rubik",sans-serif;font-size:.95rem;color:var(--ink);display:block;margin-bottom:2px}
+    .pricing-strip-text span{font-size:.82rem;color:var(--ink-muted)}
+    .eyebrow-row{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px;justify-content:center}
+    .eyebrow-row .eyebrow{margin:0}
+    .eyebrow--web{background:#fff2cf;border-color:#ffd37b;color:var(--ink)}
+    .urgency-bar{background:linear-gradient(90deg,var(--brand-deep),var(--brand));color:#fff;text-align:center;padding:10px 20px;font-size:.88rem;font-weight:500;line-height:1.5}
+    .urgency-bar strong{font-weight:800}
+    .urgency-dot{display:inline-block;width:8px;height:8px;background:#fff;border-radius:50%;margin-left:8px;vertical-align:middle;animation:blink-dot 1.8s ease-in-out infinite}
+    @keyframes blink-dot{0%,100%{opacity:1}50%{opacity:.25}}
+    @media(max-width:980px){.hero{grid-template-columns:1fr;align-items:center}.topbar nav{gap:12px}.nav-cta-group{gap:6px}}
+    @media(max-width:680px){main{margin-top:230px}.topbar{flex-direction:column;gap:10px}.topbar nav{flex-wrap:wrap;justify-content:center;gap:10px 16px}.nav-cta{display:none}.topbar nav a{font-size:.85rem}.hero{gap:24px}.urgency-bar{font-size:.78rem;padding:8px 14px}.btn-xl small,.cta-microcopy,.cta-platforms,.badge{font-size:.875rem}body{font-size:16px}}
+  </style>
+  <!-- Full stylesheet — loaded async to unblock rendering -->
+  <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="styles.css" /></noscript>
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
