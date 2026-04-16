@@ -1259,6 +1259,10 @@ main {
   margin-bottom: 2px;
 }
 
+.guide-step-body p + .guide-tip {
+  margin-top: 0 !important;
+}
+
 .guide-tip {
   margin-top: 10px !important;
   padding: 10px 14px;
