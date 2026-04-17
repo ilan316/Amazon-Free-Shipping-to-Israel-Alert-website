@@ -28,10 +28,22 @@
 
 - [דף הבית](https://www.amzfreeil.com/) — הסבר על השירות, CTAs, FAQ
 - [מדריך Windows](https://www.amzfreeil.com/guide.html) — הוראות התקנה והפעלה
-- [אודות](https://www.amzfreeil.com/about.html) — מי בנה את הכלי ולמה
+- [מדריך גרסה מקוונת](https://www.amzfreeil.com/web-guide.html) — הוראות שימוש ב-app.amzfreeil.com
+- [אודות](https://www.amzfreeil.com/about.html) — מי בנה את הכלי ולמה (אילן, מפתח Python עצמאי)
 - [מדיניות פרטיות](https://www.amzfreeil.com/privacy.html)
 - [תנאי שימוש](https://www.amzfreeil.com/terms.html)
 - [אפליקציית הווב](https://app.amzfreeil.com) — הרשמה ושימוש
+
+## Blog Articles
+
+- [משלוח חינם מאמזון לישראל: המדריך המלא 2026](https://www.amzfreeil.com/blog/mishloach-hinam-amazon-israel.html) — תנאי משלוח חינם (FBA, $49 minimum), הבדל בין מוכר עצמאי לאמזון, טבלת עלויות.
+- [איך לדעת אם מוצר באמזון מגיע בחינם לישראל](https://www.amzfreeil.com/blog/eich-ladaat-mishloach-hinam-amazon-israel.html) — שלבים מעשיים לזיהוי מוצרים עם FREE Shipping לפני רכישה.
+- [המוצרים הכי כדאיים לקנות באמזון לישראל](https://www.amzfreeil.com/blog/hamutzarim-hakhi-kedaim-laknot-bamazon-israel.html) — קטגוריות מומלצות (אלקטרוניקה, ספרים, ספורט), מה לא כדאי לקנות.
+- [אמזון מול eBay לישראל — מה עדיף לקנייה? (2026)](https://www.amzfreeil.com/blog/amazon-vs-ebay-israel.html) — השוואת פלטפורמות: אמינות, מחיר, משלוח, החזרות.
+- [מכס ומע"מ על קניות מאמזון לישראל](https://www.amzfreeil.com/blog/mekhs-umaam-amazon-israel.html) — סף $130 לפטור ממכס, 18% מע"מ, חישוב לדוגמה, מדיניות Duties Included של אמזון.
+- [10 טיפים לחיסכון באמזון לישראל](https://www.amzfreeil.com/blog/10-tipim-lehisakhon-bamazon-israel.html) — אסטרטגיות מעשיות: CamelCamelCamel, Prime Day, Add-on Items, Warehouse Deals.
+- [מה זה Prime ואיך משפיע על משלוח לישראל](https://www.amzfreeil.com/blog/amazon-prime-mishloach-israel.html) — למה Prime לא מבטיח משלוח חינם לישראל, מה כן כלול, Prime Day לישראלים.
+- [מדריך מלא לקניות באמזון לישראל 2026](https://www.amzfreeil.com/blog/madrikh-kahniot-amazon-israel-2026.html) — מדריך מקיף: פתיחת חשבון, חיפוש מוצרים, תשלום, מכס, החזרות.
 
 ## FAQ Highlights
 
