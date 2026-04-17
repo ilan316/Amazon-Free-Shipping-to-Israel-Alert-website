@@ -59,6 +59,34 @@ if ("IntersectionObserver" in window && counters.length > 0) {
 }
 
 /* ===========================
+   HAMBURGER MENU
+   =========================== */
+
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const mainNav = document.getElementById("main-nav");
+
+if (hamburgerBtn && mainNav) {
+  hamburgerBtn.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    hamburgerBtn.setAttribute("aria-expanded", isOpen);
+  });
+  // סגור תפריט בלחיצה על לינק
+  mainNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+      hamburgerBtn.setAttribute("aria-expanded", "false");
+    });
+  });
+  // סגור בלחיצה מחוץ לנאב
+  document.addEventListener("click", (e) => {
+    if (!hamburgerBtn.contains(e.target) && !mainNav.contains(e.target)) {
+      mainNav.classList.remove("open");
+      hamburgerBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+}
+
+/* ===========================
    STICKY NAV SHADOW
    =========================== */
 
