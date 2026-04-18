@@ -104,8 +104,9 @@ const onScroll = () => {
     const scrolled = window.scrollY > 450;
     const downloadRect = downloadSection.getBoundingClientRect();
     const nearDownload = downloadRect.top < window.innerHeight && downloadRect.bottom > 0;
+    const nearBottom = (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 120;
 
-    if (scrolled && !nearDownload) {
+    if (scrolled && !nearDownload && !nearBottom) {
       floatingCta.classList.add("visible");
     } else {
       floatingCta.classList.remove("visible");
