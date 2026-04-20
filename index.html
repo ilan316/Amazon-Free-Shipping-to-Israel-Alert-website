@@ -243,7 +243,9 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1981109749468001');
+    fbq('init', '1981109749468001', { agent: 'tunami' });
+    fbq('set', 'PixelUtil.addPixelTracking', { trigger: 'facebook_pixel' });
+    fbq('set', 'SharedPixelId', '1981109749468001');
     fbq('track', 'PageView');
   }
   if (localStorage.getItem('cookie_consent') === '1') loadMetaPixel();
