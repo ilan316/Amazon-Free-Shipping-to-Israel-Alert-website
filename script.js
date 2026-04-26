@@ -186,7 +186,7 @@ if (contactForm) {
       if (submitBtn) submitBtn.disabled = true;
       if (statusEl) statusEl.textContent = "שולח פנייה...";
 
-      const res = await fetch("https://formsubmit.co/ajax/amazonisraelalert@gmail.com", {
+      const res = await fetch("https://formsubmit.co/ajax/alerts@amzfreeil.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
