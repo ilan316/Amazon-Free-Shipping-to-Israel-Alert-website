@@ -10,3 +10,10 @@ html,body{max-width:100%;overflow-x:hidden}
 .blog-article-tag{font-size:.78rem;color:var(--ink-muted);font-weight:500}
 .blog-article-card strong{font-size:.92rem;line-height:1.4;font-family:Rubik,sans-serif}
 .blog-article-arrow{font-size:.8rem;color:var(--brand-deep);margin-top:auto;padding-top:4px}
+
+.author-bio{display:flex;align-items:flex-start;gap:16px;margin-top:40px;padding:20px 24px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.author-bio__avatar{flex-shrink:0;width:52px;height:52px;border-radius:50%;background:var(--brand);color:#fff;font-family:Rubik,sans-serif;font-weight:700;font-size:1.4rem;display:flex;align-items:center;justify-content:center}
+.author-bio__name{margin:0 0 4px;font-family:Rubik,sans-serif;font-weight:700;font-size:1rem}
+.author-bio__desc{margin:0;font-size:.9rem;color:var(--ink-muted);line-height:1.6}
+.author-bio__desc a{color:var(--brand-deep);text-decoration:none;font-weight:500}
+.author-bio__desc a:hover{text-decoration:underline}
