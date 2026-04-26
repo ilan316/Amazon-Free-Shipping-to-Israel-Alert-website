@@ -186,10 +186,10 @@ if (contactForm) {
       if (submitBtn) submitBtn.disabled = true;
       if (statusEl) statusEl.textContent = "שולח פנייה...";
 
-      const res = await fetch("https://formsubmit.co/ajax/alerts@amzfreeil.com", {
+      const res = await fetch("https://app.amzfreeil.com/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(payload),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: payload.name, email: payload.email, message: payload.message }),
       });
 
       if (!res.ok) throw new Error("Submit failed");
