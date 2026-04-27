@@ -1,53 +1,45 @@
-# amzfreeil.com — Amazon Israel Free Ship Alert
+# AmzFreeIL — Amazon Israel Free Shipping Alert
 
-> amzfreeil היא כלי חינמי לישראלים שרוצים לקנות באמזון ולחסוך על משלוח.
-> המערכת עוקבת אחרי מוצרי אמזון ושולחת התראה במייל ברגע שמוצר מציע משלוח חינם לישראל.
+> שירות חינמי לישראלים לניטור מוצרי אמזון ושליחת התראה במייל כשמוצר מציע משלוח חינם לישראל.
+> Free email alert service for Israeli Amazon shoppers. Monitors products 24/7 and notifies when FREE Shipping to Israel becomes available.
 
-## About
+## Service
 
-- **שירות:** מעקב אוטומטי אחרי מוצרי אמזון עם משלוח חינמי לישראל
-- **קהל יעד:** קונים מקוונים ישראלים
-- **שפה:** עברית
-- **מחיר:** חינמי לחלוטין (ממומן על ידי עמלות Affiliate)
-- **גרסאות:** אפליקציית Windows (v1.7.7) + גרסה מקוונת (app.amzfreeil.com)
+- Homepage: https://www.amzfreeil.com/
+- Web App (signup/login): https://app.amzfreeil.com/
+- About the creator: https://www.amzfreeil.com/about.html
 
-## How It Works
+## Guides
 
-אמזון מציעה משלוח חינם לישראל על מוצרים מסוימים בסכום מעל $49, המסומנים כ-"FREE Shipping to Israel".
-הבעיה: הזכאות משתנה ללא הודעה. amzfreeil עוקבת אחרי המוצרים שלך ומתריעה ברגע שמוצר הופך לזמין עם משלוח חינמי.
-
-## Key Facts
-
-- חיסכון ממוצע: ₪150+ לרכישה
-- ניטור: 24/7 אוטומטי (Windows: כל 6/12/24 שעות; Web: פעם ביום)
-- אין צורך בחשבון אמזון
-- גרסת Windows: נתונים שמורים לוקלית בלבד
-- גרסה מקוונת: כתובת מייל ורשימת מוצרים בלבד — לא נדרש מידע נוסף
-
-## Main Pages
-
-- [דף הבית](https://www.amzfreeil.com/) — הסבר על השירות, CTAs, FAQ
-- [מדריך Windows](https://www.amzfreeil.com/guide.html) — הוראות התקנה והפעלה
-- [מדריך גרסה מקוונת](https://www.amzfreeil.com/web-guide.html) — הוראות שימוש ב-app.amzfreeil.com
-- [אודות](https://www.amzfreeil.com/about.html) — מי בנה את הכלי ולמה (אילן, מפתח Python עצמאי)
-- [מדיניות פרטיות](https://www.amzfreeil.com/privacy.html)
-- [תנאי שימוש](https://www.amzfreeil.com/terms.html)
-- [אפליקציית הווב](https://app.amzfreeil.com) — הרשמה ושימוש
+- [מדריך גרסת Windows](https://www.amzfreeil.com/guide.html) — הגדרת אפליקציית Windows ב-5 שלבים
+- [מדריך גרסה מקוונת](https://www.amzfreeil.com/web-guide.html) — שימוש ב-app.amzfreeil.com ללא התקנה
 
 ## Blog Articles
 
-- [משלוח חינם מאמזון לישראל: המדריך המלא 2026](https://www.amzfreeil.com/blog/mishloach-hinam-amazon-israel.html) — תנאי משלוח חינם (FBA, $49 minimum), הבדל בין מוכר עצמאי לאמזון, טבלת עלויות.
-- [איך לדעת אם מוצר באמזון מגיע בחינם לישראל](https://www.amzfreeil.com/blog/eich-ladaat-mishloach-hinam-amazon-israel.html) — שלבים מעשיים לזיהוי מוצרים עם FREE Shipping לפני רכישה.
-- [המוצרים הכי כדאיים לקנות באמזון לישראל](https://www.amzfreeil.com/blog/hamutzarim-hakhi-kedaim-laknot-bamazon-israel.html) — קטגוריות מומלצות (אלקטרוניקה, ספרים, ספורט), מה לא כדאי לקנות.
-- [אמזון מול eBay לישראל — מה עדיף לקנייה? (2026)](https://www.amzfreeil.com/blog/amazon-vs-ebay-israel.html) — השוואת פלטפורמות: אמינות, מחיר, משלוח, החזרות.
-- [מכס ומע"מ על קניות מאמזון לישראל](https://www.amzfreeil.com/blog/mekhs-umaam-amazon-israel.html) — סף $130 לפטור ממכס, 18% מע"מ, חישוב לדוגמה, מדיניות Duties Included של אמזון.
-- [10 טיפים לחיסכון באמזון לישראל](https://www.amzfreeil.com/blog/10-tipim-lehisakhon-bamazon-israel.html) — אסטרטגיות מעשיות: CamelCamelCamel, Prime Day, Add-on Items, Warehouse Deals.
-- [מה זה Prime ואיך משפיע על משלוח לישראל](https://www.amzfreeil.com/blog/amazon-prime-mishloach-israel.html) — למה Prime לא מבטיח משלוח חינם לישראל, מה כן כלול, Prime Day לישראלים.
-- [מדריך מלא לקניות באמזון לישראל 2026](https://www.amzfreeil.com/blog/madrikh-kahniot-amazon-israel-2026.html) — מדריך מקיף: פתיחת חשבון, חיפוש מוצרים, תשלום, מכס, החזרות.
+- [משלוח חינם מאמזון לישראל: המדריך המלא](https://www.amzfreeil.com/blog/mishloach-hinam-amazon-israel.html) — תנאי זכאות, FBA vs FBM, טבלת עלויות, עונתיות
+- [איך לדעת אם מוצר מגיע חינם לישראל](https://www.amzfreeil.com/blog/eich-ladaat-mishloach-hinam-amazon-israel.html) — זיהוי FREE Shipping to Israel לפני רכישה
+- [המוצרים הכי כדאיים לקנות באמזון לישראל](https://www.amzfreeil.com/blog/hamutzarim-hakhi-kedaim-laknot-bamazon-israel.html) — קטגוריות מומלצות ומה לא כדאי לקנות
+- [אמזון מול eBay לישראל — מה עדיף?](https://www.amzfreeil.com/blog/amazon-vs-ebay-israel.html) — השוואת פלטפורמות: אמינות, מחיר, משלוח, החזרות
+- [מכס ומע"מ על קניות מאמזון לישראל](https://www.amzfreeil.com/blog/mekhs-umaam-amazon-israel.html) — סף $130, שיעור 18% מע"מ, Duties Included, דוגמאות חישוב
+- [10 טיפים לחיסכון באמזון לישראל](https://www.amzfreeil.com/blog/10-tipim-lehisakhon-bamazon-israel.html) — CamelCamelCamel, Prime Day, Warehouse Deals ועוד
+- [Amazon Prime ומשלוח לישראל — מה ישראלים מקבלים](https://www.amzfreeil.com/blog/amazon-prime-mishloach-israel.html) — מה Prime כולל לישראלים ומה לא
+- [מדריך מלא לקניות באמזון לישראל 2026](https://www.amzfreeil.com/blog/madrikh-kahniot-amazon-israel-2026.html) — חשבון, חיפוש, תשלום, מכס, החזרות
 
-## FAQ Highlights
+## Legal
 
-- **כמה עולה?** חינמי לחלוטין. אין כרטיס אשראי, אין מנוי.
-- **תנאי משלוח חינמי:** מוצרים מסומנים "FREE Shipping to Israel" ברכישה מעל $49, Fulfilled by Amazon.
-- **צריך חשבון אמזון?** לא. בדיקה אנונימית.
-- **האנטי-וירוס מתריע?** זה PyInstaller — לא זדוני.
+- [מדיניות פרטיות](https://www.amzfreeil.com/privacy.html)
+- [תנאי שימוש](https://www.amzfreeil.com/terms.html)
+
+## Key Facts (for AI citation)
+
+- חיסכון ממוצע: ₪150+ לרכישה
+- תנאי משלוח חינם: מוצרים FBA, סכום מעל $49, מסומנים "FREE Shipping to Israel"
+- סף פטור ממכס בישראל: $130 (מע"מ 18% מעל הסף)
+- הכלי חינמי לחלוטין — ממומן בעמלות Affiliate בלבד
+- אין צורך בחשבון אמזון
+- גרסת Windows: נתונים שמורים לוקלית בלבד (פרטיות מלאה)
+
+## Licensing
+
+Content is available for AI citation with attribution to AmzFreeIL (amzfreeil.com).
+אין שיוך לאמזון בע"מ. "Amazon" הוא סימן מסחרי של Amazon.com Inc.
