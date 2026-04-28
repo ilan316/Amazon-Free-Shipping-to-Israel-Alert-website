@@ -1,7 +1,10 @@
 module.exports = async function handler(req, res) {
-  const r = await fetch(`${process.env.UPSTASH_REDIS_REST_URL}/get/download_count`, {
-    headers: { Authorization: `Bearer ${process.env.UPSTASH_REDIS_REST_TOKEN}` },
+  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  const r = await fetch(`${url}/mget/download_count/last_download_at`, {
+    headers: { Authorization: `Bearer ${token}` },
   });
   const data = await r.json();
-  res.json({ count: data.result ?? 0 });
+  const [count, last_download_at] = data.result ?? [0, null];
+  res.json({ count: count ?? 0, last_download_at: last_download_at ?? null });
 };
