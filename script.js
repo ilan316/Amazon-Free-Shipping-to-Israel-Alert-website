@@ -1,4 +1,4 @@
-/* ===========================
+﻿/* ===========================
    REVEAL ON SCROLL
    =========================== */
 
@@ -177,7 +177,7 @@ if (contactForm) {
       name: nameInput.value.trim(),
       email: emailInput.value.trim(),
       message: messageInput.value.trim(),
-      _subject: "[פנייה מהאתר] Amazon Israel Free Ship Alert",
+      _subject: "[פנייה מהאתר] AMZ Free Ship Alert",
       _captcha: "false",
       _template: "table",
     };

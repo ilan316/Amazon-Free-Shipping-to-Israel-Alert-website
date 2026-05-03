@@ -1,4 +1,4 @@
-# Amazon Israel Free Ship Alert — Website
+﻿# AMZ Free Ship Alert — Website
 
 ## תיאור
 אתר שיווקי לאפליקציית Windows שמנטרת מוצרי Amazon ושולחת התראה בדוא"ל כשמוזהה משלוח חינם לישראל.

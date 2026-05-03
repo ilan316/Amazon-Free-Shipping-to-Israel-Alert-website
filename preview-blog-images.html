@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Preview — תמונות בלוג: אפשרות 1 vs אפשרות 3</title>
+<style>
+  :root {
+    --bg: #fffaf1; --ink: #172033; --ink-muted: #4d5a70;
+    --brand: #ff9900; --brand-deep: #ff6a00;
+    --card: rgba(255,255,255,0.9); --line: rgba(23,32,51,0.12);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 32px 24px 64px; font-family: Heebo,"Segoe UI",sans-serif;
+    background: radial-gradient(circle at 10% 10%,#fff2d9 0,rgba(255,242,217,0) 36%),
+    radial-gradient(circle at 90% 0,#ffe6d5 0,rgba(255,230,213,0) 34%), var(--bg);
+    color: var(--ink); }
+  h1 { font-size: 1.6rem; text-align: center; margin: 0 0 8px; }
+  .subtitle { text-align: center; color: var(--ink-muted); margin: 0 0 48px; font-size: .95rem; }
+  .section-label {
+    display: inline-block; background: var(--brand); color: #fff;
+    font-weight: 700; font-size: .8rem; padding: 4px 14px; border-radius: 999px;
+    margin-bottom: 16px; letter-spacing: .04em;
+  }
+  h2 { font-size: 1.25rem; margin: 0 0 6px; }
+  .note { color: var(--ink-muted); font-size: .88rem; margin: 0 0 24px; }
+  .compare-row { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1000px; margin: 0 auto 64px; }
+  .compare-col { display: flex; flex-direction: column; gap: 16px; }
+  .option-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-weight: 700; font-size: 1.05rem; margin-bottom: 8px;
+  }
+  .opt1 { color: #0b57d0; }
+  .opt3 { color: #167d46; }
+  .tag { font-size: .75rem; font-weight: 500; padding: 2px 10px;
+    border-radius: 999px; vertical-align: middle; }
+  .tag-1 { background: #e8f0fe; color: #0b57d0; }
+  .tag-3 { background: #e6f4ea; color: #137333; }
+  hr { border: none; border-top: 2px dashed var(--line); max-width: 1000px; margin: 0 auto 48px; }
+
+  /* ===== BLOG CARD ===== */
+  .blog-index-card {
+    display: flex; flex-direction: column;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 18px; overflow: hidden;
+    text-decoration: none; color: var(--ink);
+    box-shadow: 0 2px 12px rgba(23,32,51,.07);
+  }
+  .blog-card-thumb { width: 100%; height: 160px; object-fit: cover; display: block; }
+  .blog-card-body { padding: 20px 20px 18px; display: flex; flex-direction: column; flex: 1; }
+  .blog-index-card__cat { font-size:.78rem;font-weight:700;color:var(--brand-deep);
+    text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px; }
+  .blog-index-card__title { font-weight:700;font-size:1.05rem;line-height:1.4;margin:0 0 10px; }
+  .blog-index-card__excerpt { font-size:.88rem;color:var(--ink-muted);line-height:1.65;flex:1;margin:0 0 16px; }
+  .blog-index-card__footer { display:flex;justify-content:space-between;align-items:center;
+    font-size:.78rem;color:var(--ink-muted);border-top:1px solid var(--line);padding-top:12px; }
+  .blog-index-card__read { color:var(--brand-deep);font-weight:600; }
+
+  /* ===== SVG THUMB ===== */
+  .svg-thumb { width: 100%; height: 160px; display: block; }
+
+  /* ===== ARTICLE HERO ===== */
+  .article-demo {
+    border-radius: 18px; overflow: hidden;
+    border: 1px solid var(--line); background: var(--card);
+    box-shadow: 0 2px 12px rgba(23,32,51,.07);
+  }
+  .article-hero-img { width: 100%; height: 220px; object-fit: cover; display: block; }
+  .article-hero-svg { width: 100%; height: 220px; display: block; }
+  .article-body-preview { padding: 20px 24px 18px; }
+  .article-breadcrumb { font-size: .78rem; color: var(--ink-muted); margin-bottom: 10px; }
+  .article-h1 { font-size: 1.3rem; font-weight: 800; margin: 0 0 8px; line-height: 1.3; }
+  .article-meta { font-size: .8rem; color: var(--ink-muted); margin: 0; }
+</style>
+</head>
+<body>
+
+<h1>השוואה: תמונות לבלוג</h1>
+<p class="subtitle">כרטיסיית בלוג (index) + hero במאמר — לפי שני סגנונות</p>
+
+<!-- ===== CARDS SECTION ===== -->
+<div style="max-width:1000px;margin:0 auto 8px">
+  <h2>כרטיסיות — דף index הבלוג</h2>
+  <p class="note">כך נראות הכרטיסיות עם / בלי תמונה בחלק העליון</p>
+</div>
+
+<div class="compare-row">
+
+  <!-- OPTION 1 — STOCK PHOTO -->
+  <div class="compare-col">
+    <div class="option-badge opt1">📷 אפשרות 1 — <span class="tag tag-1">Stock Photo (Unsplash)</span></div>
+    <a class="blog-index-card">
+      <img class="blog-card-thumb"
+        src="https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=600&h=320&fit=crop&auto=format&q=80"
+        alt="משלוח חינם מאמזון לישראל" />
+      <div class="blog-card-body">
+        <div class="blog-index-card__cat">🚚 מדריך קנייה</div>
+        <div class="blog-index-card__title">משלוח חינם מאמזון לישראל: המדריך המלא לשנת 2026</div>
+        <div class="blog-index-card__excerpt">מתי אמזון שולח חינם לישראל? כל מה שצריך לדעת לפני שאתה מוסיף מוצר לסל.</div>
+        <div class="blog-index-card__footer">
+          <span>12 באפריל 2026</span>
+          <span class="blog-index-card__read">קריאה: ~4 דקות ←</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- OPTION 3 — SVG -->
+  <div class="compare-col">
+    <div class="option-badge opt3">🎨 אפשרות 3 — <span class="tag tag-3">SVG Illustration</span></div>
+    <a class="blog-index-card">
+      <svg class="svg-thumb" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fff8ee"/>
+            <stop offset="100%" style="stop-color:#ffe9c8"/>
+          </linearGradient>
+        </defs>
+        <rect width="600" height="160" fill="url(#g1)"/>
+        <!-- package box -->
+        <rect x="220" y="38" width="80" height="68" rx="6" fill="#ff9900" opacity=".9"/>
+        <rect x="220" y="38" width="80" height="20" rx="4" fill="#ff6a00"/>
+        <rect x="256" y="38" width="8" height="68" fill="#ff6a00" opacity=".5"/>
+        <rect x="220" y="52" width="80" height="4" fill="#ff6a00" opacity=".3"/>
+        <!-- checkmark -->
+        <circle cx="330" cy="50" r="18" fill="#167d46"/>
+        <polyline points="321,50 327,57 342,42" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- FREE badge -->
+        <rect x="198" y="115" width="64" height="22" rx="11" fill="#ff9900"/>
+        <text x="230" y="130" font-family="Heebo,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">FREE ✓</text>
+        <!-- IL flag hint -->
+        <rect x="340" y="115" width="60" height="22" rx="11" fill="#172033" opacity=".85"/>
+        <text x="370" y="130" font-family="Heebo,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">🇮🇱 ישראל</text>
+        <!-- dots decoration -->
+        <circle cx="160" cy="55" r="28" fill="#ffd37b" opacity=".35"/>
+        <circle cx="450" cy="110" r="22" fill="#ff9900" opacity=".2"/>
+        <circle cx="480" cy="45" r="14" fill="#ff6a00" opacity=".15"/>
+        <!-- title text in SVG -->
+        <text x="300" y="20" font-family="Heebo,sans-serif" font-size="12" fill="#4d5a70" text-anchor="middle" opacity=".7">משלוח חינם מאמזון לישראל</text>
+      </svg>
+      <div class="blog-card-body">
+        <div class="blog-index-card__cat">🚚 מדריך קנייה</div>
+        <div class="blog-index-card__title">משלוח חינם מאמזון לישראל: המדריך המלא לשנת 2026</div>
+        <div class="blog-index-card__excerpt">מתי אמזון שולח חינם לישראל? כל מה שצריך לדעת לפני שאתה מוסיף מוצר לסל.</div>
+        <div class="blog-index-card__footer">
+          <span>12 באפריל 2026</span>
+          <span class="blog-index-card__read">קריאה: ~4 דקות ←</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<hr />
+
+<!-- ===== ARTICLE HERO SECTION ===== -->
+<div style="max-width:1000px;margin:0 auto 8px">
+  <h2>Hero במאמר עצמו</h2>
+  <p class="note">תמונה רחבה מתחת לכותרת, לפני תחילת הטקסט</p>
+</div>
+
+<div class="compare-row">
+
+  <!-- OPTION 1 — STOCK PHOTO HERO -->
+  <div class="compare-col">
+    <div class="option-badge opt1">📷 אפשרות 1 — <span class="tag tag-1">Stock Photo</span></div>
+    <div class="article-demo">
+      <div class="article-body-preview" style="border-bottom:1px solid var(--line)">
+        <div class="article-breadcrumb">דף הבית › בלוג › משלוח חינם</div>
+        <div class="article-h1">משלוח חינם מאמזון לישראל: המדריך המלא לשנת 2026</div>
+        <div class="article-meta">אילן · 12 באפריל 2026 · קריאה: ~4 דקות</div>
+      </div>
+      <img class="article-hero-img"
+        src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&h=440&fit=crop&auto=format&q=80"
+        alt="מחסן לוגיסטיקה ומשלוחים" />
+      <div class="article-body-preview">
+        <p style="color:var(--ink-muted);font-size:.93rem;line-height:1.7;margin:0">
+          מתי אמזון שולח חינם לישראל? זה תלוי בשלושה גורמים: מחיר המוצר, זהות המוכר, ומדיניות המשלוח הנוכחית של Amazon.com...
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTION 3 — SVG HERO -->
+  <div class="compare-col">
+    <div class="option-badge opt3">🎨 אפשרות 3 — <span class="tag tag-3">SVG Illustration</span></div>
+    <div class="article-demo">
+      <div class="article-body-preview" style="border-bottom:1px solid var(--line)">
+        <div class="article-breadcrumb">דף הבית › בלוג › משלוח חינם</div>
+        <div class="article-h1">משלוח חינם מאמזון לישראל: המדריך המלא לשנת 2026</div>
+        <div class="article-meta">אילן · 12 באפריל 2026 · קריאה: ~4 דקות</div>
+      </div>
+      <svg class="article-hero-svg" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="heroG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fff8ee"/>
+            <stop offset="100%" style="stop-color:#ffe0b2"/>
+          </linearGradient>
+          <linearGradient id="boxG" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffb300"/>
+            <stop offset="100%" style="stop-color:#ff6a00"/>
+          </linearGradient>
+        </defs>
+        <rect width="800" height="220" fill="url(#heroG)"/>
+
+        <!-- big decorative circles -->
+        <circle cx="100" cy="110" r="80" fill="#ffd37b" opacity=".25"/>
+        <circle cx="700" cy="110" r="70" fill="#ff9900" opacity=".15"/>
+        <circle cx="400" cy="220" r="100" fill="#ffe0b2" opacity=".3"/>
+
+        <!-- main box -->
+        <rect x="290" y="40" width="130" height="110" rx="10" fill="url(#boxG)"/>
+        <rect x="290" y="40" width="130" height="30" rx="8" fill="#ff6a00"/>
+        <rect x="351" y="40" width="10" height="110" fill="rgba(0,0,0,.1)"/>
+        <rect x="290" y="66" width="130" height="5" fill="rgba(0,0,0,.08)"/>
+        <!-- tape -->
+        <rect x="340" y="38" width="30" height="8" rx="3" fill="#ffe082"/>
+
+        <!-- Amazon arrow logo hint -->
+        <text x="355" y="105" font-family="Arial,sans-serif" font-size="28" font-weight="900"
+          fill="rgba(255,255,255,.9)" text-anchor="middle">a</text>
+
+        <!-- checkmark badge -->
+        <circle cx="455" cy="68" r="28" fill="#fff" stroke="#167d46" stroke-width="3"/>
+        <polyline points="443,68 451,77 469,56" fill="none" stroke="#167d46"
+          stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- FREE label -->
+        <rect x="310" y="165" width="90" height="28" rx="14" fill="#172033"/>
+        <text x="355" y="183" font-family="Heebo,sans-serif" font-size="13" font-weight="700"
+          fill="#ff9900" text-anchor="middle">FREE SHIPPING</text>
+
+        <!-- IL -->
+        <text x="510" y="115" font-family="Heebo,sans-serif" font-size="42" text-anchor="middle">🇮🇱</text>
+        <text x="510" y="138" font-family="Heebo,sans-serif" font-size="13" fill="#4d5a70"
+          text-anchor="middle" font-weight="600">ישראל</text>
+
+        <!-- arrow between box and flag -->
+        <line x1="430" y1="105" x2="480" y2="105" stroke="#ff9900" stroke-width="3"
+          stroke-dasharray="6 3" stroke-linecap="round"/>
+        <polygon points="480,100 492,105 480,110" fill="#ff9900"/>
+
+        <!-- small packages left -->
+        <rect x="155" y="85" width="55" height="45" rx="6" fill="#ffb300" opacity=".7"/>
+        <rect x="155" y="85" width="55" height="14" rx="5" fill="#ff6a00" opacity=".7"/>
+        <rect x="178" y="85" width="9" height="45" fill="rgba(0,0,0,.08)"/>
+
+        <!-- sparkles -->
+        <text x="200" y="75" font-size="18" text-anchor="middle">✨</text>
+        <text x="620" y="85" font-size="16" text-anchor="middle">📦</text>
+        <text x="650" y="155" font-size="14" text-anchor="middle">💌</text>
+      </svg>
+      <div class="article-body-preview">
+        <p style="color:var(--ink-muted);font-size:.93rem;line-height:1.7;margin:0">
+          מתי אמזון שולח חינם לישראל? זה תלוי בשלושה גורמים: מחיר המוצר, זהות המוכר, ומדיניות המשלוח הנוכחית של Amazon.com...
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<!-- ===== COMPARISON TABLE ===== -->
+<div style="max-width:700px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 32px">
+  <h2 style="margin:0 0 20px;font-size:1.1rem">השוואה מהירה</h2>
+  <table style="width:100%;border-collapse:collapse;font-size:.9rem">
+    <thead>
+      <tr style="border-bottom:2px solid var(--line)">
+        <th style="text-align:right;padding:8px 12px;color:var(--ink-muted);font-weight:600"></th>
+        <th style="text-align:center;padding:8px 12px;color:#0b57d0">📷 Stock Photo</th>
+        <th style="text-align:center;padding:8px 12px;color:#167d46">🎨 SVG</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid var(--line)">
+        <td style="padding:10px 12px;font-weight:600">מהירות ביצוע</td>
+        <td style="text-align:center;padding:10px 12px">⚡ מהיר</td>
+        <td style="text-align:center;padding:10px 12px">⚡⚡ מהיר מאוד</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line)">
+        <td style="padding:10px 12px;font-weight:600">ביצועים (LCP)</td>
+        <td style="text-align:center;padding:10px 12px">🟠 תמונה חיצונית</td>
+        <td style="text-align:center;padding:10px 12px">🟢 inline, אפס בקשות</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line)">
+        <td style="padding:10px 12px;font-weight:600">תלות חיצונית</td>
+        <td style="text-align:center;padding:10px 12px">⚠️ Unsplash CDN</td>
+        <td style="text-align:center;padding:10px 12px">✅ אין</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line)">
+        <td style="padding:10px 12px;font-weight:600">ייחודיות</td>
+        <td style="text-align:center;padding:10px 12px">🟠 תמונות גנריות</td>
+        <td style="text-align:center;padding:10px 12px">🟢 מותאם לכל מאמר</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line)">
+        <td style="padding:10px 12px;font-weight:600">רישיון / זכויות</td>
+        <td style="text-align:center;padding:10px 12px">✅ Unsplash חינמי</td>
+        <td style="text-align:center;padding:10px 12px">✅ שלנו לגמרי</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 12px;font-weight:600">SEO (alt text + og:image)</td>
+        <td style="text-align:center;padding:10px 12px">✅ תמיכה מלאה</td>
+        <td style="text-align:center;padding:10px 12px">🟠 דורש screenshot לOG</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
