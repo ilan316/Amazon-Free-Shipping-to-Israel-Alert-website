@@ -1,4 +1,4 @@
-# AmzFreeIL — Amazon Israel Free Shipping Alert
+# AmzFreeIL — AMZ Free Ship Alert
 
 > שירות חינמי לישראלים לניטור מוצרי אמזון ושליחת התראה במייל כשמוצר מציע משלוח חינם לישראל.
 > Free email alert service for Israeli Amazon shoppers. Monitors products 24/7 and notifies when FREE Shipping to Israel becomes available.
