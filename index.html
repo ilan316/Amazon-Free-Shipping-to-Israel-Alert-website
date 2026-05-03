@@ -387,6 +387,36 @@
       <div class="trust-item"><span class="trust-icon">🌐</span><span>זמין ל-Windows ומקוון</span></div>
     </div>
 
+    <!-- LIVE DEALS BANNER -->
+    <a href="free-products.html" class="deals-banner" id="deals-banner" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:20px;padding:16px 22px;background:rgba(255,153,0,.08);border:1.5px solid rgba(255,153,0,.35);border-radius:14px;text-decoration:none;transition:border-color 160ms ease,box-shadow 160ms ease;">
+      <span style="width:10px;height:10px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:blink-dot 1.8s ease-in-out infinite;"></span>
+      <span style="font-size:1.5rem;flex-shrink:0;">🚚</span>
+      <div style="flex:1;">
+        <strong style="display:block;font-family:'Rubik',sans-serif;font-size:.97rem;color:var(--ink);margin-bottom:2px;">מוצרים עם משלוח חינם לישראל עכשיו</strong>
+        <span id="deals-banner-sub" style="font-size:.82rem;color:var(--ink-muted);">בודק מוצרים זמינים...</span>
+      </div>
+      <span style="background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:var(--ink);font-weight:700;font-size:.88rem;border-radius:10px;padding:9px 20px;white-space:nowrap;box-shadow:0 6px 18px rgba(255,153,0,.28);flex-shrink:0;">ראה את המוצרים →</span>
+    </a>
+    <script>
+      fetch('https://app.amzfreeil.com/api/public/free-products')
+        .then(r => r.ok ? r.json() : Promise.reject())
+        .then(data => {
+          const el = document.getElementById('deals-banner-sub');
+          if (el) el.textContent = data.length > 0
+            ? data.length + ' מוצרים זמינים כרגע לרכישה ישירה באמזון'
+            : 'בדוק מוצרים עם משלוח חינם לישראל';
+        })
+        .catch(() => {
+          const el = document.getElementById('deals-banner-sub');
+          if (el) el.textContent = 'בדוק מוצרים עם משלוח חינם לישראל';
+        });
+      var b = document.getElementById('deals-banner');
+      if (b) {
+        b.addEventListener('mouseenter', function(){ this.style.borderColor='var(--brand)'; this.style.boxShadow='0 6px 24px rgba(255,153,0,.18)'; });
+        b.addEventListener('mouseleave', function(){ this.style.borderColor='rgba(255,153,0,.35)'; this.style.boxShadow=''; });
+      }
+    </script>
+
     <!-- PAIN SECTION -->
     <section class="section pain-section">
       <h2>משלוח חינם קיים - אבל לא תמיד, ולא על כל מוצר</h2>
