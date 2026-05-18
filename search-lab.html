@@ -424,9 +424,13 @@
       const minPrice = document.getElementById('minPrice').value;
       const maxPrice = document.getElementById('maxPrice').value;
 
-      let url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${AFFILIATE_TAG}&p_76=2661625011`;
-      if (minPrice) url += `&low-price=${minPrice}`;
-      if (maxPrice) url += `&high-price=${maxPrice}`;
+      let rh = 'p_n_is_free_shipping:10236242011';
+      if (minPrice || maxPrice) {
+        const min = minPrice ? parseInt(minPrice) * 100 : '';
+        const max = maxPrice ? parseInt(maxPrice) * 100 : '';
+        rh += `,p_36:${min}-${max}`;
+      }
+      let url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}&rh=${encodeURIComponent(rh)}&tag=${AFFILIATE_TAG}`;
 
       return url;
     }
