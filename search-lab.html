@@ -303,22 +303,13 @@
       margin: 0 0 10px;
     }
 
-    .result-preview-img {
-      width: calc(100% + 80px);
-      margin-right: -40px;
-      margin-left: -40px;
-      border-radius: 10px;
-      border: 1px solid var(--line);
-      box-shadow: 0 2px 12px rgba(23,32,51,.08);
+    .result-preview-img-full {
       display: block;
-    }
-
-    @media (max-width: 520px) {
-      .result-preview-img {
-        width: calc(100% + 40px);
-        margin-right: -20px;
-        margin-left: -20px;
-      }
+      width: 100%;
+      margin-top: 16px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      box-shadow: 0 4px 20px rgba(23,32,51,.1);
     }
 
     @media (max-width: 520px) {
@@ -419,7 +410,7 @@
         </button>
       </form>
 
-      <div class="result-preview">
+      <div class="result-preview-text">
         <p class="result-preview-subtitle">דגשים והסברים למשלוח חינם</p>
         <ul class="result-preview-list">
           <li>משלוח חינם בקניה ב־49$ ומעלה</li>
@@ -427,13 +418,14 @@
           <li>יש לגלוש מדפדפן כרום.</li>
         </ul>
         <p class="result-preview-instruction">לאחר החיפוש, יש לסמן ✔ ליד <strong>Eligible for Free Shipping</strong> ככה זה נראה:</p>
-        <picture>
-          <source srcset="amazon-search-example.webp" type="image/webp">
-          <img src="amazon-search-example.png" alt="דוגמה לתוצאות חיפוש באמזון עם משלוח חינם לישראל" class="result-preview-img" />
-        </picture>
       </div>
 
     </div>
+
+    <picture>
+      <source srcset="amazon-search-example.webp" type="image/webp">
+      <img src="amazon-search-example.png" alt="דוגמה לתוצאות חיפוש באמזון עם משלוח חינם לישראל" class="result-preview-img-full" />
+    </picture>
 
   </main>
 
