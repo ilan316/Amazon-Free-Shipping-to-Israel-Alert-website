@@ -303,6 +303,12 @@
       <p>טוען מוצרים...</p>
     </div>
 
+    <div id="empty-state" class="loading-state" style="display:none;">
+      <p style="font-size:2.5rem;margin-bottom:12px;">🔍</p>
+      <p style="font-size:1.1rem;font-weight:600;margin-bottom:8px;">אין כרגע מוצרים עם משלוח חינם לישראל</p>
+      <p style="font-size:0.95rem;">הרשימה מתעדכנת יומית — כדאי לחזור מחר</p>
+    </div>
+
     <div class="products-grid reveal" id="products-grid" style="display:none;"></div>
 
     <!-- How it works mini -->
@@ -363,17 +369,6 @@
 <script>
   const AFFILIATE_TAG = 'amzfreeil-20';
 
-  const SAMPLE_PRODUCTS = [
-    { asin:"B09G9HD6PD", name:"Fire TV Stick 4K Max | Streaming with Wi-Fi 6, Supports 4K UHD streaming", last_price:"$39.99", found_in_aod:false },
-    { asin:"B07PXGQC1Q", name:"Anker Portable Charger, PowerCore Slim 10000 mAh, Dual USB Ports", last_price:"$22.99", found_in_aod:false },
-    { asin:"B091G4YP57", name:"Echo Dot (4th Gen) | Smart Speaker with Alexa | Charcoal", last_price:"$49.99", found_in_aod:false },
-    { asin:"B08MQZXN1X", name:"Basics Neoprene Classic Workout Dumbbell Hand Weight — 10 lb Pair", last_price:"$27.85", found_in_aod:false },
-    { asin:"B07CRG94G3", name:"Basics Multi-Directional Adjustable Laptop Stand with Non-Slip Legs", last_price:"$31.19", found_in_aod:true },
-    { asin:"B07S5G4QQW", name:"Basics USB Type-C to USB-A Male Adapter Cable — 3.1 Gen2", last_price:"$12.99", found_in_aod:false },
-    { asin:"B086Y3KB3T", name:"Basics Wireless Mouse — 2.4 GHz with USB Nano Receiver, Ergonomic Design", last_price:"$14.99", found_in_aod:false },
-    { asin:"B07J5DX4HM", name:"Basics High-Density Round Foam Roller — Exercise, Massage, Muscle Recovery", last_price:"$17.99", found_in_aod:false },
-    { asin:"B09B9STYF4", name:"Basics USB-C 65W One-Port GaN Wall Charger for Laptops and Phones", last_price:"$19.99", found_in_aod:false },
-  ];
 
   function productUrl(asin) {
     return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_TAG}`;
@@ -382,7 +377,13 @@
     return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SL200_.jpg`;
   }
 
+  function showEmpty() {
+    document.getElementById('loading-state').style.display = 'none';
+    document.getElementById('empty-state').style.display = 'block';
+  }
+
   function renderProducts(products) {
+    if (!products || products.length === 0) { showEmpty(); return; }
     document.getElementById('loading-state').style.display = 'none';
     const grid = document.getElementById('products-grid');
     grid.style.display = 'grid';
@@ -422,8 +423,8 @@
 
   fetch('https://app.amzfreeil.com/api/public/free-products')
     .then(r => r.ok ? r.json() : Promise.reject())
-    .then(data => renderProducts(data.length > 0 ? data : SAMPLE_PRODUCTS))
-    .catch(() => renderProducts(SAMPLE_PRODUCTS));
+    .then(data => renderProducts(data))
+    .catch(() => showEmpty());
 
   // Hamburger
   const hamburger = document.getElementById('hamburger-btn');
