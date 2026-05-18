@@ -365,28 +365,6 @@
       </div>
     </div>
 
-    <div class="how-it-works">
-      <h3>🛠 לוגיקת ה-URL שנבנה</h3>
-      <div class="how-steps">
-        <div class="how-step">
-          <div class="how-step-num">1</div>
-          <span>שאילתת חיפוש: <code>?k={מילות_חיפוש}</code></span>
-        </div>
-        <div class="how-step">
-          <div class="how-step-num">2</div>
-          <span>Affiliate tag: <code>&amp;tag=amzfreeil-20</code></span>
-        </div>
-        <div class="how-step">
-          <div class="how-step-num">3</div>
-          <span>אמזון כמוכר בלבד (אם נבחר): <code>&amp;me=A2XZ7JICGUQ1CX</code></span>
-        </div>
-        <div class="how-step">
-          <div class="how-step-num">4</div>
-          <span>טווח מחיר (אם הוגדר): <code>&amp;low-price=X&amp;high-price=Y</code></span>
-        </div>
-      </div>
-      <div id="urlPreview" style="margin-top:14px; padding:10px 14px; background:#f5f5f5; border-radius:8px; font-size:.75rem; color:#555; word-break:break-all; display:none;"></div>
-    </div>
   </main>
 
   <footer>
@@ -447,21 +425,6 @@
       document.getElementById('searchQuery').focus();
     }
 
-    function updatePreview() {
-      const url = buildURL();
-      const preview = document.getElementById('urlPreview');
-      if (url) {
-        preview.style.display = 'block';
-        preview.textContent = url;
-      } else {
-        preview.style.display = 'none';
-      }
-    }
-
-    ['searchQuery', 'minPrice', 'maxPrice'].forEach(id => {
-      document.getElementById(id).addEventListener('input', updatePreview);
-      document.getElementById(id).addEventListener('change', updatePreview);
-    });
   </script>
   <script defer src="script.js"></script>
 </body>
