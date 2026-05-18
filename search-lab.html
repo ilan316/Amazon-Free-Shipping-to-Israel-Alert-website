@@ -262,6 +262,26 @@
       color: var(--brand-deep);
     }
 
+    .result-preview {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .result-preview-label {
+      font-size: .82rem;
+      color: var(--ink-muted);
+      margin: 0 0 10px;
+      font-weight: 600;
+    }
+
+    .result-preview-img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      box-shadow: 0 2px 12px rgba(23,32,51,.08);
+    }
+
     @media (max-width: 520px) {
       .search-card { padding: 24px 20px; }
       .search-filters { grid-template-columns: 1fr; }
@@ -359,6 +379,11 @@
           🚚 חפש מוצרים באמזון
         </button>
       </form>
+
+      <div class="result-preview">
+        <p class="result-preview-label">כך ייראו התוצאות באמזון — כל המוצרים כוללים משלוח חינם לישראל:</p>
+        <img src="amazon-search-example.png" alt="דוגמה לתוצאות חיפוש באמזון עם משלוח חינם לישראל" class="result-preview-img" />
+      </div>
 
     </div>
 
