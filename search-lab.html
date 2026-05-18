@@ -304,10 +304,21 @@
     }
 
     .result-preview-img {
-      width: 100%;
+      width: calc(100% + 80px);
+      margin-right: -40px;
+      margin-left: -40px;
       border-radius: 10px;
       border: 1px solid var(--line);
       box-shadow: 0 2px 12px rgba(23,32,51,.08);
+      display: block;
+    }
+
+    @media (max-width: 520px) {
+      .result-preview-img {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+      }
     }
 
     @media (max-width: 520px) {
