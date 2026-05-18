@@ -239,30 +239,7 @@
       margin-top: 1px;
     }
 
-    .popular-searches {
-      margin-top: 14px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .popular-tag {
-      padding: 5px 12px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      font-size: .8rem;
-      color: var(--ink-muted);
-      background: rgba(255, 255, 255, 0.8);
-      cursor: pointer;
-      transition: border-color .15s, color .15s;
-    }
-
-    .popular-tag:hover {
-      border-color: var(--brand);
-      color: var(--brand-deep);
-    }
-
-    .result-preview {
+.result-preview {
       margin-top: 20px;
       padding-top: 20px;
       border-top: 1px solid var(--line);
@@ -394,21 +371,12 @@
             id="searchQuery"
             placeholder="שם מוצר בעברית או באנגלית — למשל: headphones, מצלמה, LEGO"
             autocomplete="off"
-            dir="auto"
+            dir="rtl"
             required
           />
         </div>
 
-        <div class="popular-searches" id="popularSearches">
-          <span class="popular-tag" onclick="setQuery('headphones')">🎧 headphones</span>
-          <span class="popular-tag" onclick="setQuery('laptop stand')">💻 laptop stand</span>
-          <span class="popular-tag" onclick="setQuery('LEGO')">🧱 LEGO</span>
-          <span class="popular-tag" onclick="setQuery('air fryer')">🍳 air fryer</span>
-          <span class="popular-tag" onclick="setQuery('phone case')">📱 phone case</span>
-          <span class="popular-tag" onclick="setQuery('kindle')">📚 kindle</span>
-        </div>
-
-        <div class="search-filters">
+<div class="search-filters">
           <div class="filter-group">
             <label for="minPrice">מחיר מינימום ($)</label>
             <input type="number" id="minPrice" placeholder="49" value="49" min="0" max="9999" step="1" />
@@ -500,13 +468,7 @@
       if (url) window.open(url, '_blank', 'noopener');
     }
 
-    function setQuery(text) {
-      document.getElementById('searchQuery').value = text;
-      updatePreview();
-      document.getElementById('searchQuery').focus();
-    }
-
-  </script>
+</script>
   <script defer src="script.js"></script>
 </body>
 </html>
