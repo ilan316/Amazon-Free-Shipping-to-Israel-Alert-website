@@ -305,13 +305,22 @@
 
     .result-preview-img-full {
       display: block;
-      width: 74vw;
+      width: calc(100% + 80px);
+      margin-right: -40px;
+      margin-left: -40px;
+      margin-bottom: -36px;
       margin-top: 16px;
-      margin-right: calc(-1 * (74vw - 100%) / 2);
-      margin-left: calc(-1 * (74vw - 100%) / 2);
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      box-shadow: 0 4px 20px rgba(23,32,51,.1);
+      border-radius: 0 0 20px 20px;
+    }
+
+    @media (max-width: 520px) {
+      .result-preview-img-full {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        margin-bottom: -24px;
+        border-radius: 0 0 20px 20px;
+      }
     }
 
     @media (max-width: 520px) {
@@ -422,12 +431,12 @@
         <p class="result-preview-instruction">לאחר החיפוש, אם <strong>Eligible for Free Shipping</strong> לא מסומן, יש לסמן ✔ ליד — ככה זה נראה:</p>
       </div>
 
-    </div>
+      <picture>
+        <source srcset="amazon-search-example.webp" type="image/webp">
+        <img src="amazon-search-example.png" alt="דוגמה לתוצאות חיפוש באמזון עם משלוח חינם לישראל" class="result-preview-img-full" />
+      </picture>
 
-    <picture>
-      <source srcset="amazon-search-example.webp" type="image/webp">
-      <img src="amazon-search-example.png" alt="דוגמה לתוצאות חיפוש באמזון עם משלוח חינם לישראל" class="result-preview-img-full" />
-    </picture>
+    </div>
 
   </main>
 
