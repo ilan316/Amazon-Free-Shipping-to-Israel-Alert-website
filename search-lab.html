@@ -354,13 +354,6 @@
           </div>
         </div>
 
-        <label class="checkbox-row">
-          <input type="checkbox" id="amazonOnly" />
-          <div>
-            <span>רק אמזון כמוכר</span>
-            <small>מסנן מוכרי צד שלישי — סיכוי גבוה יותר למשלוח חינם לישראל</small>
-          </div>
-        </label>
 
         <button type="submit" class="search-btn">
           🚚 חפש מוצרים באמזון
@@ -423,7 +416,6 @@
 
   <script>
     const AFFILIATE_TAG = 'amzfreeil-20';
-    const AMAZON_SELLER_ID = 'A2XZ7JICGUQ1CX';
 
     function buildURL() {
       const query = document.getElementById('searchQuery').value.trim();
@@ -433,12 +425,7 @@
       const minPrice = document.getElementById('minPrice').value;
       const maxPrice = document.getElementById('maxPrice').value;
 
-      let url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${AFFILIATE_TAG}`;
-      if (amazonOnly) {
-        url += `&me=${AMAZON_SELLER_ID}`;
-      } else {
-        url += `&p_76=2661625011`;
-      }
+      let url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${AFFILIATE_TAG}&p_76=2661625011`;
       if (minPrice) url += `&low-price=${minPrice}`;
       if (maxPrice) url += `&high-price=${maxPrice}`;
 
@@ -468,7 +455,7 @@
       }
     }
 
-    ['searchQuery', 'minPrice', 'maxPrice', 'amazonOnly'].forEach(id => {
+    ['searchQuery', 'minPrice', 'maxPrice'].forEach(id => {
       document.getElementById(id).addEventListener('input', updatePreview);
       document.getElementById(id).addEventListener('change', updatePreview);
     });
