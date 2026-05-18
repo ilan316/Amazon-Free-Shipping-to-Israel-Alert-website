@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מנוע חיפוש — Lab | AMZ Free Ship Alert</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="logo-new.png" />
+  <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="styles.css" /></noscript>
+  <style>
+    .search-wrap {
+      width: min(720px, 92vw);
+      margin: 130px auto 72px;
+    }
+
+    .lab-badge {
+      display: inline-block;
+      background: rgba(255, 153, 0, 0.12);
+      border: 1.5px dashed var(--brand);
+      color: var(--brand-deep);
+      border-radius: 999px;
+      padding: 5px 16px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      margin-bottom: 20px;
+    }
+
+    .search-card {
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 36px 40px;
+      box-shadow: 0 8px 32px rgba(23, 32, 51, 0.08);
+    }
+
+    .search-card h1 {
+      font-family: Rubik, sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+
+    .search-card h1 span { color: var(--brand-deep); }
+
+    .search-lead {
+      color: var(--ink-muted);
+      font-size: .9rem;
+      margin: 0 0 28px;
+      line-height: 1.6;
+    }
+
+    .search-form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .search-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input-wrap input[type="text"] {
+      width: 100%;
+      border: 1.5px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px 14px 52px;
+      font: 1rem/1.4 Heebo, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .search-input-wrap input[type="text"]:focus {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.15);
+    }
+
+    .search-input-icon {
+      position: absolute;
+      left: 16px;
+      font-size: 1.3rem;
+      pointer-events: none;
+      color: var(--ink-muted);
+    }
+
+    .search-filters {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .filter-group label {
+      font-size: .82rem;
+      font-weight: 700;
+      color: var(--ink-muted);
+    }
+
+    .filter-group input[type="number"] {
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      padding: 9px 12px;
+      font: .9rem/1 Heebo, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      width: 100%;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .filter-group input[type="number"]:focus {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.15);
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      background: rgba(255, 153, 0, 0.05);
+      border: 1px solid rgba(255, 153, 0, 0.2);
+      border-radius: 12px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .checkbox-row input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--brand);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .checkbox-row span {
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .checkbox-row small {
+      font-size: .78rem;
+      color: var(--ink-muted);
+      font-weight: 400;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .search-btn {
+      width: 100%;
+      padding: 16px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      border-radius: 14px;
+      border: none;
+      background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+      color: #fff;
+      cursor: pointer;
+      font-family: Heebo, sans-serif;
+      box-shadow: 0 8px 24px rgba(255, 153, 0, 0.35);
+      transition: transform .16s ease, box-shadow .16s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .search-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(255, 153, 0, 0.45);
+    }
+
+    .search-note {
+      margin: 20px 0 0;
+      padding: 12px 16px;
+      background: rgba(22, 125, 70, 0.06);
+      border: 1px solid rgba(22, 125, 70, 0.2);
+      border-radius: 10px;
+      font-size: .82rem;
+      color: var(--ink-muted);
+      line-height: 1.6;
+    }
+
+    .search-note strong { color: var(--ink); }
+
+    .how-it-works {
+      margin-top: 28px;
+      padding: 20px 24px;
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .how-it-works h3 {
+      font-family: Rubik, sans-serif;
+      font-size: .95rem;
+      margin: 0 0 12px;
+      color: var(--ink-muted);
+      font-weight: 600;
+    }
+
+    .how-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .how-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: .85rem;
+      color: var(--ink-muted);
+      line-height: 1.5;
+    }
+
+    .how-step-num {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .popular-searches {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .popular-tag {
+      padding: 5px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: .8rem;
+      color: var(--ink-muted);
+      background: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      transition: border-color .15s, color .15s;
+    }
+
+    .popular-tag:hover {
+      border-color: var(--brand);
+      color: var(--brand-deep);
+    }
+
+    @media (max-width: 520px) {
+      .search-card { padding: 24px 20px; }
+      .search-filters { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow bg-glow-a"></div>
+  <div class="bg-glow bg-glow-b"></div>
+  <a href="#main-content" class="skip-nav">דלג לתוכן הראשי</a>
+
+  <div id="fixed-header">
+    <div class="urgency-bar">
+      <span class="urgency-dot"></span>
+      דף פנימי — לא מקושר מהאתר
+    </div>
+    <div class="topbar-outer">
+      <header class="topbar" id="topbar">
+        <div class="brand">
+          <picture>
+            <source srcset="logo-new.webp" type="image/webp">
+            <img src="logo-new.png" alt="לוגו AMZ Free Ship Alert" class="brand-logo-img" width="36" height="36" />
+          </picture>
+          <span>AMZ Free Ship Alert</span>
+        </div>
+        <nav id="main-nav">
+          <a href="index.html#features">יכולות</a>
+          <a href="index.html#how">איך זה עובד</a>
+          <a href="guide.html">מדריכים</a>
+          <a href="index.html#faq">שאלות נפוצות</a>
+          <a href="free-products.html">🚚 מוצרים חינם</a>
+          <span class="nav-break"></span>
+          <a href="about.html">אודות</a>
+          <a href="blog/">בלוג</a>
+          <a href="index.html#contact">צרו קשר</a>
+        </nav>
+        <div class="nav-cta-group">
+          <a class="btn btn-primary btn-sm" href="https://app.amzfreeil.com" target="_blank">🌐 גרסה מקוונת</a>
+          <a class="btn btn-outline btn-sm" href="index.html#download">🪟 גרסת Windows</a>
+        </div>
+        <button class="hamburger" id="hamburger-btn" aria-label="פתח תפריט" aria-expanded="false" aria-controls="main-nav">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="4" width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="10" width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="16" width="22" height="2" rx="1" fill="currentColor"/>
+          </svg>
+        </button>
+      </header>
+    </div>
+  </div>
+
+  <main class="search-wrap" id="main-content">
+    <div class="lab-badge">🔬 Lab — דף ניסיוני פנימי</div>
+
+    <div class="search-card">
+      <h1>חפש מוצרים עם <span>משלוח חינם</span> לישראל</h1>
+      <p class="search-lead">חיפוש ישיר באמזון ארה"ב עם פילטר משלוח חינם. התוצאות נפתחות ישירות באמזון.</p>
+
+      <form class="search-form" id="searchForm" onsubmit="doSearch(event)">
+
+        <div class="search-input-wrap">
+          <span class="search-input-icon">🔍</span>
+          <input
+            type="text"
+            id="searchQuery"
+            placeholder="שם מוצר בעברית או באנגלית — למשל: headphones, מצלמה, LEGO"
+            autocomplete="off"
+            dir="auto"
+            required
+          />
+        </div>
+
+        <div class="popular-searches" id="popularSearches">
+          <span class="popular-tag" onclick="setQuery('headphones')">🎧 headphones</span>
+          <span class="popular-tag" onclick="setQuery('laptop stand')">💻 laptop stand</span>
+          <span class="popular-tag" onclick="setQuery('LEGO')">🧱 LEGO</span>
+          <span class="popular-tag" onclick="setQuery('air fryer')">🍳 air fryer</span>
+          <span class="popular-tag" onclick="setQuery('phone case')">📱 phone case</span>
+          <span class="popular-tag" onclick="setQuery('kindle')">📚 kindle</span>
+        </div>
+
+        <div class="search-filters">
+          <div class="filter-group">
+            <label for="minPrice">מחיר מינימום ($)</label>
+            <input type="number" id="minPrice" placeholder="0" min="0" max="9999" step="1" />
+          </div>
+          <div class="filter-group">
+            <label for="maxPrice">מחיר מקסימום ($)</label>
+            <input type="number" id="maxPrice" placeholder="ללא הגבלה" min="0" max="9999" step="1" />
+          </div>
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="amazonOnly" checked />
+          <div>
+            <span>רק אמזון כמוכר</span>
+            <small>מסנן מוכרי צד שלישי — סיכוי גבוה יותר למשלוח חינם לישראל</small>
+          </div>
+        </label>
+
+        <button type="submit" class="search-btn">
+          🚚 חפש מוצרים באמזון
+        </button>
+      </form>
+
+      <div class="search-note">
+        <strong>איך זה עובד:</strong> הלחיצה פותחת את אמזון עם תוצאות מסוננות + קישור affiliate שלנו (<code>amzfreeil-20</code>). אם המשתמש קונה — אנחנו מקבלים עמלה.
+      </div>
+    </div>
+
+    <div class="how-it-works">
+      <h3>🛠 לוגיקת ה-URL שנבנה</h3>
+      <div class="how-steps">
+        <div class="how-step">
+          <div class="how-step-num">1</div>
+          <span>שאילתת חיפוש: <code>?k={מילות_חיפוש}</code></span>
+        </div>
+        <div class="how-step">
+          <div class="how-step-num">2</div>
+          <span>Affiliate tag: <code>&amp;tag=amzfreeil-20</code></span>
+        </div>
+        <div class="how-step">
+          <div class="how-step-num">3</div>
+          <span>אמזון כמוכר בלבד (אם נבחר): <code>&amp;me=A2XZ7JICGUQ1CX</code></span>
+        </div>
+        <div class="how-step">
+          <div class="how-step-num">4</div>
+          <span>טווח מחיר (אם הוגדר): <code>&amp;low-price=X&amp;high-price=Y</code></span>
+        </div>
+      </div>
+      <div id="urlPreview" style="margin-top:14px; padding:10px 14px; background:#f5f5f5; border-radius:8px; font-size:.75rem; color:#555; word-break:break-all; display:none;"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-topbar">
+      <div class="brand">
+        <picture>
+          <source srcset="logo-new.webp" type="image/webp">
+          <img src="logo-new.png" alt="logo" class="brand-logo-img" />
+        </picture>
+        <span>AMZ Free Ship Alert</span>
+      </div>
+      <div class="footer-links-wrap">
+        <div class="footer-links">
+          <a href="privacy.html">מדיניות פרטיות</a>
+          <a href="terms.html">תנאי שימוש</a>
+          <a href="about.html">אודות</a>
+          <a href="index.html#disclosure">גילוי נאות</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61588452429138" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/amzfreeil/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 AMZ Free Ship Alert · אין לאתר זה כל זיקה, שותפות או שיוך ל-Amazon Inc</p>
+  </footer>
+
+  <script>
+    const AFFILIATE_TAG = 'amzfreeil-20';
+    const AMAZON_SELLER_ID = 'A2XZ7JICGUQ1CX';
+
+    function buildURL() {
+      const query = document.getElementById('searchQuery').value.trim();
+      if (!query) return null;
+
+      const amazonOnly = document.getElementById('amazonOnly').checked;
+      const minPrice = document.getElementById('minPrice').value;
+      const maxPrice = document.getElementById('maxPrice').value;
+
+      let url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${AFFILIATE_TAG}`;
+      if (amazonOnly) url += `&me=${AMAZON_SELLER_ID}`;
+      if (minPrice) url += `&low-price=${minPrice}`;
+      if (maxPrice) url += `&high-price=${maxPrice}`;
+
+      return url;
+    }
+
+    function doSearch(e) {
+      e.preventDefault();
+      const url = buildURL();
+      if (url) window.open(url, '_blank', 'noopener');
+    }
+
+    function setQuery(text) {
+      document.getElementById('searchQuery').value = text;
+      updatePreview();
+      document.getElementById('searchQuery').focus();
+    }
+
+    function updatePreview() {
+      const url = buildURL();
+      const preview = document.getElementById('urlPreview');
+      if (url) {
+        preview.style.display = 'block';
+        preview.textContent = url;
+      } else {
+        preview.style.display = 'none';
+      }
+    }
+
+    ['searchQuery', 'minPrice', 'maxPrice', 'amazonOnly'].forEach(id => {
+      document.getElementById(id).addEventListener('input', updatePreview);
+      document.getElementById(id).addEventListener('change', updatePreview);
+    });
+  </script>
+  <script defer src="script.js"></script>
+</body>
+</html>
