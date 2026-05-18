@@ -268,11 +268,39 @@
       border-top: 1px solid var(--line);
     }
 
-    .result-preview-label {
-      font-size: .82rem;
+    .result-preview-title {
+      font-family: Rubik, sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+      margin: 0 0 4px;
+    }
+
+    .result-preview-subtitle {
+      font-size: .85rem;
+      font-weight: 700;
+      color: var(--brand-deep);
+      margin: 0 0 12px;
+    }
+
+    .result-preview-list {
+      margin: 0 0 16px;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .result-preview-list li {
+      font-size: .88rem;
       color: var(--ink-muted);
+      line-height: 1.5;
+    }
+
+    .result-preview-instruction {
+      font-size: .88rem;
+      color: var(--ink);
       margin: 0 0 10px;
-      font-weight: 600;
     }
 
     .result-preview-img {
@@ -381,7 +409,17 @@
       </form>
 
       <div class="result-preview">
-        <p class="result-preview-label">כך ייראו התוצאות באמזון — כל המוצרים כוללים משלוח חינם לישראל:</p>
+        <p class="result-preview-title">משלוח חינם מאמזון ארה"ב, ריכוז מבצעים שווים</p>
+        <p class="result-preview-subtitle">דגשים והסבר למשלוח חינם</p>
+        <ul class="result-preview-list">
+          <li>משלוח חינם בקניה ב־49$ ומעלה</li>
+          <li>ניתן לשלב כמה מוצרים יחד בסל</li>
+          <li>ניתן לסנן תוצאות חיפוש עם פילטר למשלוח חינם – עובד מצוין!!!</li>
+          <li>בלעדי לאתר – מנוע חיפוש באמזון</li>
+          <li>המנוע ימצא לכם: רק מוצרים עם משלוח חינם + רק מוצרים שאמזון הוא המוכר</li>
+          <li>יש לגלוש מדפדפן כרום.</li>
+        </ul>
+        <p class="result-preview-instruction">לאחר החיפוש, יש לסמן ✔ ליד <strong>Eligible for Free Shipping</strong> ככה זה נראה:</p>
         <img src="amazon-search-example.png" alt="דוגמה לתוצאות חיפוש באמזון עם משלוח חינם לישראל" class="result-preview-img" />
       </div>
 
