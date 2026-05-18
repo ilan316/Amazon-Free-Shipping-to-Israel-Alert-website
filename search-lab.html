@@ -434,7 +434,11 @@
       const maxPrice = document.getElementById('maxPrice').value;
 
       let url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${AFFILIATE_TAG}`;
-      if (amazonOnly) url += `&me=${AMAZON_SELLER_ID}`;
+      if (amazonOnly) {
+        url += `&me=${AMAZON_SELLER_ID}`;
+      } else {
+        url += `&p_76=2661625011`;
+      }
       if (minPrice) url += `&low-price=${minPrice}`;
       if (maxPrice) url += `&high-price=${maxPrice}`;
 
