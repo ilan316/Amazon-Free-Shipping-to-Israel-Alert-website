@@ -401,7 +401,7 @@
                  onerror="this.style.display='none'" loading="lazy" />
           </a>
           <div class="card-body">
-            <a href="${url}" class="card-name" target="_blank" rel="noopener sponsored">${p.name}</a>
+            <a href="${url}" class="card-name" target="_blank" rel="noopener sponsored">${p.name_he || p.name}</a>
             <div class="card-asin">ASIN: ${p.asin}</div>
             ${p.last_price ? `<div class="card-price">${p.last_price}</div>` : ''}
             <div class="card-badge">✅ משלוח חינם לישראל · מעל $49</div>
