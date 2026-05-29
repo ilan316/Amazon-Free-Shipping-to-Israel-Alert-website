@@ -117,16 +117,16 @@ const onScroll = () => {
 window.addEventListener("scroll", onScroll, { passive: true });
 
 /* ===========================
-   DOWNLOAD CLICK TRACKING
+   CTA CLICK TRACKING
    =========================== */
 
-["hero-download-btn", "main-download-btn", "nav-download-btn", "floating-download-btn"].forEach(
+["hero-web-btn", "nav-web-btn"].forEach(
   (id) => {
     const el = document.getElementById(id);
     if (!el) return;
     el.addEventListener("click", () => {
       if (window.va) {
-        window.va("event", { name: "download_click", source: id });
+        window.va("event", { name: "cta_click", source: id });
       }
     });
   }
