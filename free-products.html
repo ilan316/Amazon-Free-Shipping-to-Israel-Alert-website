@@ -517,7 +517,7 @@
 
   function buildFilters(products) {
     const counts = {};
-    products.forEach(p => { counts[p._category] = (counts[p._category] || 0) + 1; });
+    products.forEach(p => { if (p._category) counts[p._category] = (counts[p._category] || 0) + 1; });
     const cats = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
 
     const wrap = document.getElementById('category-filters');
@@ -548,7 +548,7 @@
 
     allProducts = products.map(p => ({
       ...p,
-      _category: CATEGORY_MAP[p.amazon_category] || p.amazon_category || ''
+      _category: p.amazon_category ? (CATEGORY_MAP[p.amazon_category] || p.amazon_category) : ''
     }));
 
     document.getElementById('product-count').textContent = allProducts.length;
