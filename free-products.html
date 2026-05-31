@@ -250,6 +250,24 @@
     .cta-section p { color: rgba(255,255,255,.65); font-size: 1rem; margin: 0 0 28px; line-height: 1.6; }
     .cta-section .btn-primary { font-size: 1.05rem; padding: 14px 36px; border-radius: 14px; }
 
+    /* Category filters */
+    .category-filters {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin: 0 0 20px;
+    }
+    .cat-btn {
+      padding: 7px 16px; border-radius: 999px;
+      border: 1.5px solid var(--line); background: rgba(255,255,255,.85);
+      font-family: "Heebo", sans-serif; font-size: .85rem; font-weight: 600;
+      color: var(--ink-muted); cursor: pointer;
+      transition: border-color 160ms ease, color 160ms ease, background 160ms ease;
+    }
+    .cat-btn:hover { border-color: var(--brand); color: var(--brand-deep); }
+    .cat-btn.active {
+      background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+      border-color: transparent; color: var(--ink);
+    }
+
     /* Loading state */
     .loading-state { text-align: center; padding: 60px 20px; color: var(--ink-muted); }
     .loading-spinner {
@@ -346,6 +364,8 @@
       <div class="count-note">הרשימה מתעדכנת יומית · <a href="https://app.amzfreeil.com" style="color:var(--brand-deep);text-decoration:none;font-weight:600;">הירשם לקבל התראות על המוצרים שלך ←</a></div>
     </div>
 
+    <div class="category-filters" id="category-filters" style="display:none;"></div>
+
     <div id="loading-state" class="loading-state">
       <div class="loading-spinner"></div>
       <p>טוען מוצרים...</p>
@@ -427,6 +447,30 @@
 <script>
   const AFFILIATE_TAG = 'amzfreeil-20';
 
+  const CATEGORY_MAP = {
+    'Kitchen & Dining': 'Home & Kitchen',
+    'Shoe, Jewelry & Watch Accessories': 'Clothing, Shoes & Jewelry',
+    'Video Games': 'Electronics',
+    'Industrial & Scientific': 'Tools & Home Improvement'
+  };
+
+  const CATEGORY_LABELS = {
+    'Automotive': 'רכב',
+    'Beauty & Personal Care': 'יופי וטיפוח',
+    'Cell Phones & Accessories': 'סלולר ואביזרים',
+    'Clothing, Shoes & Jewelry': 'אופנה ותכשיטים',
+    'Electronics': 'אלקטרוניקה',
+    'Health & Household': 'בריאות ובית',
+    'Home & Kitchen': 'בית ומטבח',
+    'Office Products': 'משרד',
+    'Patio, Lawn & Garden': 'גינה וחוץ',
+    'Sports & Outdoors': 'ספורט ואאוטדור',
+    'Tools & Home Improvement': 'כלים ושיפוצים',
+    'Toys & Games': 'צעצועים ומשחקים'
+  };
+
+  let allProducts = [];
+  let activeCategory = null;
 
   function productUrl(asin) {
     return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_TAG}`;
@@ -440,34 +484,76 @@
     document.getElementById('empty-state').style.display = 'block';
   }
 
+  function cardHTML(p) {
+    const url = p.url || productUrl(p.asin);
+    const img = p.image || productImg(p.asin);
+    return `
+      <div class="product-card">
+        <a href="${url}" class="card-img-wrap" target="_blank" rel="noopener sponsored">
+          <img src="${img}" alt="${p.name}" width="140" height="140"
+               onerror="this.style.display='none'" loading="lazy" />
+        </a>
+        <div class="card-body">
+          <a href="${url}" class="card-name" target="_blank" rel="noopener sponsored">${p.name_he || p.name}</a>
+          <div class="card-asin">ASIN: ${p.asin}</div>
+          ${p.last_price ? `<div class="card-price">${p.last_price}</div>` : ''}
+          <div class="card-badge">✅ משלוח חינם לישראל · מעל $49</div>
+          ${p.found_in_aod ? `<div class="card-aod">⚠️ נמצא תחת "כל אפשרויות הקנייה" — לחץ ובחר את ההצעה עם משלוח חינם</div>` : ''}
+          <a href="${url}" class="btn-buy" target="_blank" rel="noopener sponsored">קנה עכשיו באמזון →</a>
+        </div>
+      </div>`;
+  }
+
+  function applyFilter(cat) {
+    activeCategory = cat;
+    const filtered = cat ? allProducts.filter(p => p._category === cat) : allProducts;
+    const grid = document.getElementById('products-grid');
+    grid.innerHTML = filtered.map(cardHTML).join('');
+    document.getElementById('product-count').textContent = filtered.length;
+    document.querySelectorAll('.cat-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.cat === (cat || ''));
+    });
+  }
+
+  function buildFilters(products) {
+    const counts = {};
+    products.forEach(p => { counts[p._category] = (counts[p._category] || 0) + 1; });
+    const cats = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+
+    const wrap = document.getElementById('category-filters');
+    wrap.style.display = 'flex';
+
+    const allBtn = document.createElement('button');
+    allBtn.className = 'cat-btn active';
+    allBtn.dataset.cat = '';
+    allBtn.textContent = `הכל (${products.length})`;
+    allBtn.addEventListener('click', () => applyFilter(null));
+    wrap.appendChild(allBtn);
+
+    cats.forEach(cat => {
+      const btn = document.createElement('button');
+      btn.className = 'cat-btn';
+      btn.dataset.cat = cat;
+      btn.textContent = `${CATEGORY_LABELS[cat] || cat} (${counts[cat]})`;
+      btn.addEventListener('click', () => applyFilter(cat));
+      wrap.appendChild(btn);
+    });
+  }
+
   function renderProducts(products) {
     if (!products || products.length === 0) { showEmpty(); return; }
     document.getElementById('loading-state').style.display = 'none';
     const grid = document.getElementById('products-grid');
     grid.style.display = 'grid';
-    document.getElementById('product-count').textContent = products.length;
 
-    grid.innerHTML = products.map(p => {
-      const url = p.url || productUrl(p.asin);
-      const img = p.image || productImg(p.asin);
-      return `
-        <div class="product-card">
-          <a href="${url}" class="card-img-wrap" target="_blank" rel="noopener sponsored">
-            <img src="${img}" alt="${p.name}" width="140" height="140"
-                 onerror="this.style.display='none'" loading="lazy" />
-          </a>
-          <div class="card-body">
-            <a href="${url}" class="card-name" target="_blank" rel="noopener sponsored">${p.name_he || p.name}</a>
-            <div class="card-asin">ASIN: ${p.asin}</div>
-            ${p.last_price ? `<div class="card-price">${p.last_price}</div>` : ''}
-            <div class="card-badge">✅ משלוח חינם לישראל · מעל $49</div>
-            ${p.found_in_aod ? `<div class="card-aod">⚠️ נמצא תחת "כל אפשרויות הקנייה" — לחץ ובחר את ההצעה עם משלוח חינם</div>` : ''}
-            <a href="${url}" class="btn-buy" target="_blank" rel="noopener sponsored">קנה עכשיו באמזון →</a>
-          </div>
-        </div>`;
-    }).join('');
+    allProducts = products.map(p => ({
+      ...p,
+      _category: CATEGORY_MAP[p.amazon_category] || p.amazon_category || ''
+    }));
 
-    // Animate in
+    document.getElementById('product-count').textContent = allProducts.length;
+    grid.innerHTML = allProducts.map(cardHTML).join('');
+    buildFilters(allProducts);
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
   }
 
