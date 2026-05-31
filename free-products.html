@@ -559,8 +559,7 @@
 
   function formatTime() {
     const now = new Date();
-    return now.toLocaleDateString('he-IL',{day:'2-digit',month:'2-digit',year:'numeric'})
-           + ' · 08:00';
+    return now.toLocaleDateString('he-IL',{day:'2-digit',month:'2-digit',year:'numeric'});
   }
 
   document.getElementById('update-time').textContent = formatTime();
