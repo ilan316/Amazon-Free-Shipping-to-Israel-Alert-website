@@ -498,7 +498,7 @@
         <div class="card-body">
           <a href="${url}" class="card-name" target="_blank" rel="noopener sponsored">${p.name_he || p.name}</a>
           <div class="card-asin">ASIN: ${p.asin}</div>
-          ${p.last_price ? `<div class="card-price">${p.last_price}</div>` : ''}
+          ${p.last_price ? `<div class="card-price">${p.last_price.replace(/^ILS\s*/, '')} ש"ח</div>` : ''}
           <div class="card-badge">✅ משלוח חינם לישראל · מעל $49</div>
           ${p.found_in_aod ? `<div class="card-aod">⚠️ נמצא תחת "כל אפשרויות הקנייה" — לחץ ובחר את ההצעה עם משלוח חינם</div>` : ''}
           <a href="${url}" class="btn-buy" target="_blank" rel="noopener sponsored">קנה עכשיו באמזון →</a>
