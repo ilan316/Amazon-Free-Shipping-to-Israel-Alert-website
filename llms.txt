@@ -8,6 +8,7 @@
 - Homepage: https://www.amzfreeil.com/
 - Web App (signup/login): https://app.amzfreeil.com/
 - About the creator: https://www.amzfreeil.com/about.html
+- Telegram channel: https://t.me/amzfreeil
 
 ## Guides
 

@@ -233,4 +233,4 @@ html,body{max-width:100%;overflow-x:hidden}
 .author-bio__desc{margin:0;font-size:.9rem;color:var(--ink-muted);line-height:1.6}
 .author-bio__desc a{color:var(--brand-deep);text-decoration:none;font-weight:500}
 .author-bio__desc a:hover{text-decoration:underline}
-.blog-hero-img{display:block;width:min(740px,92vw);height:auto;border-radius:16px;margin:0 auto 0;box-shadow:0 4px 20px rgba(0,0,0,.1);object-fit:cover;aspect-ratio:800/420}
+.blog-hero-img{display:block;width:min(740px,92vw);height:auto;border-radius:16px;margin:0 auto 0;box-shadow:0 4px 20px rgba(0,0,0,.1);object-fit:cover;aspect-ratio:800/420}.blog-quote{margin:24px 0;padding:16px 20px 16px 20px;border-right:4px solid var(--brand);background:rgba(255,153,0,.06);border-radius:0 8px 8px 0;font-style:italic;color:var(--ink)}.blog-quote p{margin:0 0 8px;line-height:1.65;direction:ltr;text-align:left}.blog-quote cite{font-size:.82rem;font-style:normal;color:var(--ink-muted)}.blog-quote cite a{color:var(--ink-muted);text-decoration:underline}.blog-source{font-size:.82rem;color:var(--ink-muted);margin-top:4px}.blog-source a{color:var(--ink-muted);text-decoration:underline}

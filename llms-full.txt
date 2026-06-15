@@ -1,6 +1,6 @@
 ﻿# amzfreeil.com — AMZ Free Ship Alert
 # Full Content Index for AI Citation
-# Updated: 2026-04-26
+# Updated: 2026-06-15
 
 > amzfreeil היא כלי חינמי לישראלים שרוצים לחסוך על משלוח מאמזון.
 > המערכת עוקבת אחרי מוצרי אמזון ושולחת התראה במייל ברגע שמוצר מציע משלוח חינם לישראל.
