@@ -51,12 +51,12 @@
         {
           "@type": "Question",
           "name": "כיצד לזהות ביקורות מזויפות באמזון?",
-          "acceptedAnswer": { "@type": "Answer", "text": "סימני אזהרה לביקורות מזויפות: כל הביקורות מ-5 כוכבים ללא ביקורת, תאריכים מרוכזים (עשרות ביקורות באותו שבוע), שפה גנרית ('מוצר מדהים! מומלץ!'), ביקורות ללא תמונות, ומחזיקי חשבון חדשים עם ביקורת אחת בלבד. השתמשו בכלים כמו Fakespot או ReviewMeta לניתוח אוטומטי." }
+          "acceptedAnswer": { "@type": "Answer", "text": "סימני אזהרה לביקורות מזויפות: כל הביקורות מ-5 כוכבים ללא ביקורת, תאריכים מרוכזים (עשרות ביקורות באותו שבוע), שפה גנרית ('מוצר מדהים! מומלץ!'), ביקורות ללא תמונות, ומחזיקי חשבון חדשים עם ביקורת אחת בלבד. בדקו גרף ביקורות ב-Keepa.com — זינוק חד = דגל אדום." }
         },
         {
           "@type": "Question",
-          "name": "האם Fakespot חינמי?",
-          "acceptedAnswer": { "@type": "Answer", "text": "כן. fakespot.com מציע בדיקה חינמית של כל מוצר אמזון — פשוט הדביקו את ה-URL של המוצר וקבלו ציון A–F. גם תוסף ה-Chrome שלהם חינמי ומציג את הציון ישירות בדף המוצר." }
+          "name": "האם יש כלי חינמי לבדיקת ביקורות מזויפות באמזון?",
+          "acceptedAnswer": { "@type": "Answer", "text": "כן. Keepa.com מציג גרף של מספר הביקורות לאורך זמן — זינוק חד בטווח של שבוע מעיד על ביקורות מזויפות. בנוסף, Amazon עצמה מציעה סינון לפי 'Verified Purchase' ומיון לפי 'Most Critical' שחושפים תמונה מדויקת יותר." }
         },
         {
           "@type": "Question",
@@ -154,14 +154,14 @@
     <article class="blog-body">
 
       <section>
-        <p>4.5 כוכבים, 3,200 ביקורות — נשמע מרשים. אבל מחקר של חברת <bdi>Fakespot</bdi> מ-2024 העריך שכ-30–40% מהביקורות באמזון אינן אמינות. ביקורות שנקנו, ביקורות שנכתבו בעסקה עם המוכר, וביקורות שנוצרו אוטומטית.</p>
+        <p>4.5 כוכבים, 3,200 ביקורות — נשמע מרשים. אבל לפי ניתוחי <bdi>ReviewMeta</bdi> ומחקרים עצמאיים, כ-30–40% מהביקורות באמזון אינן אמינות. ביקורות שנקנו, ביקורות שנכתבו בעסקה עם המוכר, וביקורות שנוצרו אוטומטית.</p>
         <p>הבשורה הטובה: יש שיטות פשוטות לזהות ביקורות מפוקפקות — ולקנות בביטחון.</p>
       </section>
 
       <div class="blog-takeaway">
         <p class="blog-takeaway__title">✅ בקצרה — מה חשוב לדעת</p>
         <ul>
-          <li>השתמשו ב-Fakespot.com — מדרג כל מוצר A–F על אמינות הביקורות, בחינם</li>
+          <li>בדקו את גרף הביקורות ב-Keepa.com — זינוק חד במספר הביקורות בשבוע אחד = דגל אדום</li>
           <li>ביקורות עם תמונות ממשתמשים מאומתים (Verified Purchase) אמינות פי 3</li>
           <li>אל תסמכו על ממוצע כוכבים — קראו ביקורות 3 כוכבים: הן הכי כנות</li>
           <li>ריכוז ביקורות בשבוע אחד = דגל אדום ברור</li>
@@ -190,7 +190,7 @@
         <h3>6. שם משתמש "Anonymous" או בלי תמונה</h3>
         <p>ביקורות מ-Verified Purchase עם פרופיל ריק וגנרי פחות אמינות מביקורות שנכתבו על ידי קונה שאפשר לראות את היסטוריית הקנייה שלו.</p>
 
-        <p class="blog-source">מקור: <a href="https://fakespot.com/about" target="_blank" rel="noopener">Fakespot — About Fake Review Detection</a>.</p>
+        <p class="blog-source">מקור: <a href="https://www.ftc.gov/business-guidance/blog/2023/10/ftc-rule-bans-fake-reviews-testimonials" target="_blank" rel="noopener">FTC — Fake Reviews Rule 2023</a>.</p>
       </section>
 
       <!-- Section 2 — Tools -->
@@ -208,30 +208,30 @@
             </thead>
             <tbody>
               <tr>
-                <td><strong>Fakespot.com</strong></td>
-                <td>מדרג ביקורות A–F, מנתח דפוסים חשודים</td>
-                <td>חינם (יש גרסה Pro)</td>
-              </tr>
-              <tr>
-                <td><strong>ReviewMeta.com</strong></td>
-                <td>מסנן ביקורות לא אמינות, מציג ממוצע מתוקן</td>
-                <td>חינם</td>
-              </tr>
-              <tr>
                 <td><strong>Keepa.com</strong></td>
-                <td>גרף היסטורי של דירוג הביקורות לאורך זמן</td>
+                <td>גרף היסטורי של מספר הביקורות — זינוק פתאומי = דגל אדום</td>
                 <td>חינם (בסיסי)</td>
               </tr>
               <tr>
-                <td><strong>Amazon תוסף Chrome של Fakespot</strong></td>
-                <td>מציג ציון F/A ישירות בדף המוצר</td>
-                <td>חינם</td>
+                <td><strong>פילטר Verified Purchase</strong></td>
+                <td>מציג רק ביקורות של קונים שרכשו בפועל</td>
+                <td>חינם (מובנה באמזון)</td>
+              </tr>
+              <tr>
+                <td><strong>מיון "Most Critical"</strong></td>
+                <td>חושף את הביקורות הנמוכות ביותר — מאוזן ואמין</td>
+                <td>חינם (מובנה באמזון)</td>
+              </tr>
+              <tr>
+                <td><strong>פילטר "Images"</strong></td>
+                <td>מציג רק ביקורות עם תמונות — הקשה ביותר לזייף</td>
+                <td>חינם (מובנה באמזון)</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <p class="blog-tip">💡 שיטת העבודה המהירה: פתחו דף מוצר באמזון → הדביקו URL ב-<bdi>fakespot.com</bdi> → אם ציון C ומטה, המשיכו הלאה.</p>
+        <p class="blog-tip">💡 שיטת העבודה המהירה: פתחו דף מוצר באמזון → בדקו גרף ביקורות ב-<bdi>Keepa.com</bdi> → סמנו פילטר Verified Purchase + מיינו לפי Most Critical.</p>
       </section>
 
       <!-- Section 3 — How to read reviews -->
@@ -256,7 +256,7 @@
         <h2>מה אמזון עושה נגד ביקורות מזויפות?</h2>
         <p>אמזון השקיעה מאות מיליוני דולרים במלחמה בביקורות מזויפות. בשנת 2023 הסירה אמזון למעלה מ-200 מיליון ביקורות חשודות ותבעה עשרות מוכרים. עם זאת, הבעיה לא נפתרה כי הרווח למוכרים מביקורות מזויפות גדול מהסיכון.</p>
         <p>הסימן הכי אמין לביקורת לגיטימית: תווית <strong>"Amazon Verified Purchase"</strong> + תמונות + ביקורת שמזכירה פרטים ספציפיים על השימוש.</p>
-        <p class="blog-source">מקור: <a href="https://www.aboutamazon.com/news/policy-news-views/amazon-fights-fake-reviews" target="_blank" rel="noopener">Amazon — Fighting Fake Reviews</a>.</p>
+        <p class="blog-source">מקור: <a href="https://www.aboutamazon.com/news/policy-news-views/amazons-latest-actions-against-fake-review-brokers" target="_blank" rel="noopener">Amazon — Latest Actions Against Fake Review Brokers</a>.</p>
       </section>
 
       <!-- FAQ -->
@@ -265,12 +265,12 @@
 
         <div class="blog-faq-item">
           <p class="blog-faq-q">כיצד לזהות ביקורות מזויפות באמזון?</p>
-          <p class="blog-faq-a">השתמשו ב-Fakespot.com או ReviewMeta.com. בנוסף, בדקו: האם יש ריכוז ביקורות בתאריך אחד? האם כל הביקורות 5 כוכבים? האם הביקורות גנריות ללא פרטים? אם כן לאחת מאלה — הזהרו.</p>
+          <p class="blog-faq-a">בדקו גרף ביקורות ב-Keepa.com — זינוק חד = דגל אדום. בנוסף, בדקו ישירות באמזון: האם יש ריכוז ביקורות בתאריך אחד? האם כל הביקורות 5 כוכבים? האם הביקורות גנריות ללא פרטים? אם כן לאחת מאלה — הזהרו.</p>
         </div>
 
         <div class="blog-faq-item">
-          <p class="blog-faq-q">האם Fakespot חינמי?</p>
-          <p class="blog-faq-a">כן. fakespot.com חינמי לשימוש בסיסי. גם תוסף ה-Chrome שלהם חינמי ומציג ציון ישירות על דף המוצר. יש גרסת Pro בתשלום עם תכונות נוספות.</p>
+          <p class="blog-faq-q">האם יש כלי חינמי לבדיקת ביקורות מזויפות באמזון?</p>
+          <p class="blog-faq-a">כן. Keepa.com מציג גרף חינמי של מספר הביקורות לאורך זמן — זינוק חד בשבוע אחד הוא סימן קלאסי לרכישת ביקורות. בנוסף, כל הכלים הדרושים מובנים ישירות באמזון: פילטר Verified Purchase, מיון לפי Most Critical, ופילטר תמונות.</p>
         </div>
 
         <div class="blog-faq-item">
@@ -288,7 +288,7 @@
         <h2>סיכום</h2>
         <p>ביקורות באמזון הן כלי חשוב אבל לא מושלם. עם 3 שלבים פשוטים תהיו הרבה יותר מוגנים:</p>
         <ol>
-          <li>הריצו את URL המוצר ב-<strong>Fakespot.com</strong> — קבלו ציון ראשוני</li>
+          <li>בדקו את גרף הביקורות ב-<strong>Keepa.com</strong> — חפשו זינוקים פתאומיים</li>
           <li>קראו ביקורות <strong>3 כוכבים עם תמונות</strong> — הכי אמינות</li>
           <li>בדקו שהביקורות מ-<strong>Verified Purchase</strong> ומפוזרות בתאריכים שונים</li>
         </ol>
