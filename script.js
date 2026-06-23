@@ -142,6 +142,7 @@ if (contactForm) {
   const nameInput = document.querySelector("#contact-name");
   const emailInput = document.querySelector("#contact-email");
   const messageInput = document.querySelector("#contact-message");
+  const privacyInput = document.querySelector("#contact-privacy");
   const statusEl = document.querySelector("#contact-status");
   const submitBtn = contactForm.querySelector("button[type='submit']");
 
@@ -159,6 +160,9 @@ if (contactForm) {
     if (!input) return;
     input.addEventListener("input", () => input.setCustomValidity(""));
   });
+  if (privacyInput) {
+    privacyInput.addEventListener("change", () => privacyInput.setCustomValidity(""));
+  }
 
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -166,6 +170,11 @@ if (contactForm) {
     const isNameValid = setRequiredValidity(nameInput, "יש למלא שם");
     const isEmailValid = setRequiredValidity(emailInput, "יש למלא אימייל");
     const isMessageValid = setRequiredValidity(messageInput, "יש למלא תוכן פנייה");
+    if (privacyInput && !privacyInput.checked) {
+      privacyInput.setCustomValidity("יש לאשר את מדיניות הפרטיות");
+    } else if (privacyInput) {
+      privacyInput.setCustomValidity("");
+    }
 
     if (!isNameValid || !isEmailValid || !isMessageValid || !contactForm.checkValidity()) {
       contactForm.reportValidity();
