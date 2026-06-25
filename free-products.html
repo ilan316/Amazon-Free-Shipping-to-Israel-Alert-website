@@ -536,11 +536,15 @@
     allBtn.addEventListener('click', () => applyFilter(null));
     wrap.appendChild(allBtn);
 
+    // Build label map from products (uses _category_label from API translation)
+    const catLabels = {};
+    products.forEach(p => { if (p._category) catLabels[p._category] = p._category_label || p._category; });
+
     cats.forEach(cat => {
       const btn = document.createElement('button');
       btn.className = 'cat-btn';
       btn.dataset.cat = cat;
-      btn.textContent = `${CATEGORY_LABELS[cat] || cat} (${counts[cat]})`;
+      btn.textContent = `${catLabels[cat] || CATEGORY_LABELS[cat] || cat} (${counts[cat]})`;
       btn.addEventListener('click', () => applyFilter(cat));
       wrap.appendChild(btn);
     });
@@ -552,10 +556,13 @@
     const grid = document.getElementById('products-grid');
     grid.style.display = 'grid';
 
-    allProducts = products.map(p => ({
-      ...p,
-      _category: p.amazon_category ? (CATEGORY_MAP[p.amazon_category] || p.amazon_category) : ''
-    }));
+    allProducts = products.map(p => {
+      const rawCat = p.amazon_category || '';
+      const mappedCat = rawCat ? (CATEGORY_MAP[rawCat] || rawCat) : '';
+      // category_he comes from the API (auto-translated); fall back to CATEGORY_LABELS then raw English
+      const mappedCatHe = p.category_he || CATEGORY_LABELS[mappedCat] || CATEGORY_LABELS[rawCat] || mappedCat;
+      return { ...p, _category: mappedCat, _category_label: mappedCatHe };
+    });
 
     document.getElementById('product-count').textContent = allProducts.length;
     grid.innerHTML = allProducts.map(cardHTML).join('');
