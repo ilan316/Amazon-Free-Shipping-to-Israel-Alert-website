@@ -55,7 +55,7 @@ def get_product(asin: str) -> dict:
     resp.raise_for_status()
     data = resp.json()
 
-    item = data["itemsResult"]["Items"][0]
+    item = data["itemsResult"]["items"][0]
 
     title     = item.get("itemInfo", {}).get("title", {}).get("displayValue", "")
     features  = item.get("itemInfo", {}).get("features", {}).get("displayValues", [])
