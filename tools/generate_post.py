@@ -168,7 +168,7 @@ def build_html(product, content, israel_price, amazon_price):
             "url": blog_url,
             "datePublished": today_iso,
             "dateModified": today_iso,
-            "inLanguage": "he",
+            "inLanguage": "he-IL",
             "image": image,
             "author": {"@type": "Person", "name": "אילן", "url": "https://www.amzfreeil.com/about.html"},
             "publisher": {
@@ -210,11 +210,11 @@ def build_html(product, content, israel_price, amazon_price):
     ], ensure_ascii=False, indent=2)
 
     return f"""<!doctype html>
-<html lang="he" dir="rtl">
+<html lang="he-IL" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{content['title_he']} | amzfreeil</title>
+  <title>{content['title_he']} | AMZ Free Ship Alert</title>
   <meta name="description" content="{content['description_he']}" />
 
   <meta property="og:title" content="{content['title_he']}" />
@@ -236,6 +236,8 @@ def build_html(product, content, israel_price, amazon_price):
   <link rel="icon" type="image/png" href="../logo-new.png" />
   <meta name="robots" content="noindex,nofollow" />
   <link rel="canonical" href="{blog_url}" />
+  <link rel="alternate" hreflang="he-IL" href="{blog_url}" />
+  <link rel="alternate" hreflang="x-default" href="{blog_url}" />
   <link rel="stylesheet" href="../styles.css" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="../styles.css" /></noscript>
 
