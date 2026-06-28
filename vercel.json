@@ -1,4 +1,5 @@
 {
+  "buildCommand": "node generate-sitemap.js",
   "redirects": [
     {
       "source": "/(.*)",
