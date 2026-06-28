@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
 
 const BASE_URL = 'https://www.amzfreeil.com';
 const ROOT = __dirname;
@@ -27,11 +26,10 @@ function hasNoIndex(filePath) {
   return false;
 }
 
-function getLastMod(relPath) {
+function getLastMod(filePath) {
   try {
-    const date = execSync(`git log -1 --format="%ai" -- "${relPath}"`, { cwd: ROOT }).toString().trim();
-    if (!date) return new Date().toISOString().split('T')[0];
-    return date.split(' ')[0];
+    const mtime = fs.statSync(filePath).mtime;
+    return mtime.toISOString().split('T')[0];
   } catch {
     return new Date().toISOString().split('T')[0];
   }
@@ -45,7 +43,7 @@ for (const file of fs.readdirSync(ROOT).filter(f => f.endsWith('.html'))) {
   const filePath = path.join(ROOT, file);
   if (hasNoIndex(filePath)) continue;
   const url = file === 'index.html' ? `${BASE_URL}/` : `${BASE_URL}/${file}`;
-  urls.push({ url, lastmod: getLastMod(file) });
+  urls.push({ url, lastmod: getLastMod(filePath) });
 }
 
 // Blog directory
@@ -56,7 +54,7 @@ if (fs.existsSync(blogDir)) {
     const filePath = path.join(blogDir, file);
     if (hasNoIndex(filePath)) continue;
     const url = file === 'index.html' ? `${BASE_URL}/blog/` : `${BASE_URL}/blog/${file}`;
-    urls.push({ url, lastmod: getLastMod(`blog/${file}`) });
+    urls.push({ url, lastmod: getLastMod(filePath) });
   }
 }
 
