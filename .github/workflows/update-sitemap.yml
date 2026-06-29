@@ -1,0 +1,27 @@
+name: Update Sitemap
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'blog/**.html'
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate sitemap
+        run: node generate-sitemap.js
+
+      - name: Commit updated sitemap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git diff --cached --quiet || git commit -m "chore: auto-update sitemap"
+          git push
