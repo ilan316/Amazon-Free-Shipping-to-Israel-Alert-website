@@ -6,6 +6,7 @@ on:
     paths:
       - '**.html'
       - 'blog/**.html'
+  workflow_dispatch:
 
 concurrency:
   group: sitemap-update
