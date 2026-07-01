@@ -7,7 +7,7 @@ import sys
 import json
 import os
 import re
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 import anthropic
 import requests
@@ -94,8 +94,7 @@ ASIN: {product['asin']}
   "summary_p2": "<p>פסקת סיכום שנייה עם אזכור המשלוח (HTML)</p>",
   "cta_h3": "רוצה לדעת ברגע שיש משלוח חינם על המוצר הזה?",
   "cta_p": "הוסף את המוצר לניטור — ואנחנו נשלח לך מייל ברגע שהמשלוח חינם. ללא עלות, ללא כרטיס אשראי.",
-  "breadcrumb_label": "שם מוצר קצר — ביקורת",
-  "product_schema_description": "תיאור קצר של המוצר בעברית לסכמה"
+  "breadcrumb_label": "שם מוצר קצר — ביקורת"
 }}
 
 כללים:
@@ -176,45 +175,6 @@ def build_html(product, content, israel_price, amazon_price):
                 "name": "AMZ Free Ship Alert",
                 "url": "https://www.amzfreeil.com",
                 "logo": {"@type": "ImageObject", "url": "https://www.amzfreeil.com/logo-new.png"},
-            },
-        },
-        {
-            "@context": "https://schema.org",
-            "@type": "Product",
-            "name": product["title"],
-            "description": content["product_schema_description"],
-            "image": image,
-            "brand": {"@type": "Brand", "name": product["title"].split()[0]},
-            "sku": asin,
-            "offers": {
-                "@type": "Offer",
-                "url": aff_url,
-                "price": amazon_price,
-                "priceCurrency": "ILS",
-                "priceValidUntil": (today + timedelta(days=14)).isoformat(),
-                "availability": "https://schema.org/InStock",
-                "seller": {"@type": "Organization", "name": "Amazon"},
-                "shippingDetails": {
-                    "@type": "OfferShippingDetails",
-                    "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "ILS"},
-                    "shippingDestination": {
-                        "@type": "DefinedRegion",
-                        "addressCountry": "IL",
-                    },
-                    "deliveryTime": {
-                        "@type": "ShippingDeliveryTime",
-                        "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 2, "unitCode": "DAY"},
-                        "transitTime": {"@type": "QuantitativeValue", "minValue": 7, "maxValue": 21, "unitCode": "DAY"},
-                    },
-                },
-                "hasMerchantReturnPolicy": {
-                    "@type": "MerchantReturnPolicy",
-                    "applicableCountry": "IL",
-                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-                    "merchantReturnDays": 30,
-                    "returnMethod": "https://schema.org/ReturnByMail",
-                    "returnFees": "https://schema.org/FreeReturn",
-                },
             },
         },
         {
