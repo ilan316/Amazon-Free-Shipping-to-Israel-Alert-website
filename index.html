@@ -234,6 +234,13 @@
     /* inline search card */
     .hero-search-card{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:16px;padding:16px 22px;background:rgba(255,153,0,.06);border:1.5px solid rgba(255,153,0,.35);border-radius:14px;text-decoration:none;transition:border-color 160ms ease,box-shadow 160ms ease}
     .hero-search-card:hover{border-color:var(--brand);box-shadow:0 6px 24px rgba(255,153,0,.18)}
+    .cta-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:16px}
+    .cta-row .hero-search-card,.cta-row .deals-banner{margin-top:0;flex-direction:column;align-items:flex-start;gap:6px;padding:14px 16px}
+    .cta-row .hero-search-card .ic,.cta-row .deals-banner .ic{font-size:1.2rem}
+    .cta-row .hero-search-card strong,.cta-row .deals-banner strong{font-size:.85rem;line-height:1.3}
+    .cta-row .desc-sub{display:none}
+    .cta-row .foot{font-size:.74rem;color:var(--brand-deep);font-weight:700}
+    @media (max-width:720px){.cta-row{grid-template-columns:1fr}}
   </style>
   <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'" />
 <noscript><link rel="stylesheet" href="styles.css" /></noscript>
@@ -379,48 +386,49 @@
       <div class="trust-item"><span class="trust-icon">🌐</span><span>זמין מכל מכשיר</span></div>
     </div>
 
-    <!-- PRICE COMPARISON BANNER -->
-    <a href="prices.html" class="hero-search-card" id="prices-banner">
-      <span style="font-size:1.5rem;flex-shrink:0;">💰</span>
-      <div style="flex:1;">
-        <strong style="display:block;font-family:'Rubik',sans-serif;font-size:.97rem;color:var(--ink);margin-bottom:2px;">השוואת מחירים: אמזון מול ישראל — איפה שווה לקנות?</strong>
-        <span style="font-size:.82rem;color:var(--ink-muted);">בדוק מחיר מוצר באמזון לעומת חנויות מקומיות — כולל עלויות משלוח ומיסים</span>
-      </div>
-      <span style="background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:var(--ink);font-weight:700;font-size:.88rem;border-radius:10px;padding:9px 20px;white-space:nowrap;box-shadow:0 6px 18px rgba(255,153,0,.28);flex-shrink:0;">השווה מחירים →</span>
-    </a>
+    <!-- CTA ROW: price comparison / search / live deals — 3-col -->
+    <div class="cta-row">
+      <a href="prices.html" class="hero-search-card" id="prices-banner">
+        <span class="ic" style="flex-shrink:0;">💰</span>
+        <div style="min-width:0;">
+          <strong style="display:block;font-family:'Rubik',sans-serif;color:var(--ink);">השוואת מחירים</strong>
+          <span class="desc-sub" style="font-size:.82rem;color:var(--ink-muted);">בדוק מחיר מוצר באמזון לעומת חנויות מקומיות — כולל עלויות משלוח ומיסים</span>
+        </div>
+        <span class="foot">השווה מחירים ←</span>
+      </a>
 
-    <!-- HERO SEARCH CARD -->
-    <a href="search.html" class="hero-search-card" id="search-banner" style="margin-top:20px;">
-      <span style="font-size:1.5rem;flex-shrink:0;">🔍</span>
-      <div style="flex:1;">
-        <strong style="display:block;font-family:'Rubik',sans-serif;font-size:.97rem;color:var(--ink);margin-bottom:2px;">חיפוש מוצרים עם משלוח חינם לישראל</strong>
-        <span style="font-size:.82rem;color:var(--ink-muted);">מנוע חיפוש ישיר באמזון — מסנן רק מוצרים עם משלוח חינם</span>
-      </div>
-      <span style="background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:var(--ink);font-weight:700;font-size:.88rem;border-radius:10px;padding:9px 20px;white-space:nowrap;box-shadow:0 6px 18px rgba(255,153,0,.28);flex-shrink:0;">חפש עכשיו →</span>
-    </a>
+      <a href="search.html" class="hero-search-card" id="search-banner">
+        <span class="ic" style="flex-shrink:0;">🔍</span>
+        <div style="min-width:0;">
+          <strong style="display:block;font-family:'Rubik',sans-serif;color:var(--ink);">חיפוש מוצרים חינם</strong>
+          <span class="desc-sub" style="font-size:.82rem;color:var(--ink-muted);">מנוע חיפוש ישיר באמזון — מסנן רק מוצרים עם משלוח חינם</span>
+        </div>
+        <span class="foot">חפש עכשיו ←</span>
+      </a>
 
-    <!-- LIVE DEALS BANNER -->
-    <a href="free-products.html" class="deals-banner" id="deals-banner" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:20px;padding:16px 22px;background:rgba(255,153,0,.08);border:1.5px solid rgba(255,153,0,.35);border-radius:14px;text-decoration:none;transition:border-color 160ms ease,box-shadow 160ms ease;">
-      <span style="width:10px;height:10px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:blink-dot 1.8s ease-in-out infinite;"></span>
-      <span style="font-size:1.5rem;flex-shrink:0;">🚚</span>
-      <div style="flex:1;">
-        <strong style="display:block;font-family:'Rubik',sans-serif;font-size:.97rem;color:var(--ink);margin-bottom:2px;">מוצרים עם משלוח חינם לישראל עכשיו</strong>
-        <span id="deals-banner-sub" style="font-size:.82rem;color:var(--ink-muted);">בודק מוצרים זמינים...</span>
-      </div>
-      <span style="background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:var(--ink);font-weight:700;font-size:.88rem;border-radius:10px;padding:9px 20px;white-space:nowrap;box-shadow:0 6px 18px rgba(255,153,0,.28);flex-shrink:0;">ראה את המוצרים →</span>
-    </a>
+      <a href="free-products.html" class="deals-banner" id="deals-banner" style="text-decoration:none;background:rgba(255,153,0,.08);border:1.5px solid rgba(255,153,0,.35);border-radius:14px;transition:border-color 160ms ease,box-shadow 160ms ease;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:blink-dot 1.8s ease-in-out infinite;"></span>
+          <span class="ic" style="flex-shrink:0;">🚚</span>
+        </div>
+        <div style="min-width:0;">
+          <strong style="display:block;font-family:'Rubik',sans-serif;color:var(--ink);">מוצרים זמינים עכשיו</strong>
+        </div>
+        <span class="foot" id="deals-banner-sub">בודק מוצרים...</span>
+      </a>
+    </div>
     <script>
       fetch('https://app.amzfreeil.com/api/public/free-products')
         .then(r => r.ok ? r.json() : Promise.reject())
         .then(data => {
           const el = document.getElementById('deals-banner-sub');
           if (el) el.textContent = data.length > 0
-            ? data.length + ' מוצרים זמינים כרגע לרכישה ישירה באמזון'
-            : 'בדוק מוצרים עם משלוח חינם לישראל';
+            ? data.length + ' זמינים ←'
+            : 'ראה מוצרים ←';
         })
         .catch(() => {
           const el = document.getElementById('deals-banner-sub');
-          if (el) el.textContent = 'בדוק מוצרים עם משלוח חינם לישראל';
+          if (el) el.textContent = 'ראה מוצרים ←';
         });
       var b = document.getElementById('deals-banner');
       if (b) {
