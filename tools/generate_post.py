@@ -542,7 +542,7 @@ def add_price_card(asin, product, israel_price, amazon_price, slug):
       <!-- {title[:60]} -->
       <div class="price-card">
         <div class="price-card-img">
-          <a href="{aff_url}" target="_blank" rel="noopener sponsored">
+          <a href="blog/{slug}.html">
             <img src="{image_thumb}"
                  alt="{title}" width="100" height="100" loading="lazy" />
           </a>
