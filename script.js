@@ -216,6 +216,48 @@ if (contactForm) {
   });
 }
 
+/* ===========================
+   PRODUCT VIEW TRACKING (prices.html)
+   =========================== */
+
+const priceCards = document.querySelectorAll(".price-card");
+
+if ("IntersectionObserver" in window && priceCards.length > 0) {
+  const seenAsins = JSON.parse(sessionStorage.getItem("viewedProductAsins") || "[]");
+
+  const productViewObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const card = entry.target;
+        productViewObserver.unobserve(card);
+
+        const amazonLink = card.querySelector(".btn-amazon");
+        const asinMatch = amazonLink && amazonLink.href.match(/\/dp\/([A-Z0-9]{10})/);
+        if (!asinMatch) return;
+
+        const asin = asinMatch[1];
+        if (seenAsins.includes(asin)) return;
+        seenAsins.push(asin);
+        sessionStorage.setItem("viewedProductAsins", JSON.stringify(seenAsins));
+
+        const titleEl = card.querySelector(".price-card-title");
+        if (window.va) {
+          window.va("event", {
+            name: "product_view",
+            asin,
+            product: titleEl ? titleEl.textContent.trim() : asin,
+          });
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  priceCards.forEach((card) => productViewObserver.observe(card));
+}
+
 // Alert modal
 const alertModal = document.getElementById('alert-modal');
 const alertClose = document.getElementById('alert-modal-close');
