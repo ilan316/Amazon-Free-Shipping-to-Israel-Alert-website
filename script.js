@@ -243,12 +243,17 @@ if ("IntersectionObserver" in window && priceCards.length > 0) {
         sessionStorage.setItem("viewedProductAsins", JSON.stringify(seenAsins));
 
         const titleEl = card.querySelector(".price-card-title");
+        const name = titleEl ? titleEl.textContent.trim() : asin;
+
         if (window.va) {
-          window.va("event", {
-            name: "product_view",
-            asin,
-            product: titleEl ? titleEl.textContent.trim() : asin,
-          });
+          window.va("event", { name: "product_view", asin, product: name });
+        }
+
+        const payload = JSON.stringify({ asin, name });
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("/api/product-view", new Blob([payload], { type: "application/json" }));
+        } else {
+          fetch("/api/product-view", { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true });
         }
       });
     },
