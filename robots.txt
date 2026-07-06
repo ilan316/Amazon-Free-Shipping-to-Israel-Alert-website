@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 
+# Search engine crawlers
+User-agent: Bingbot
+Allow: /
+
 # AI search crawlers — explicitly allowed for indexing and citations
 User-agent: GPTBot
 Allow: /
