@@ -115,7 +115,23 @@ ASIN: {product['asin']}
     raw = message.content[0].text.strip()
     raw = re.sub(r"^```(?:json)?\s*", "", raw)
     raw = re.sub(r"\s*```$", "", raw)
-    return json.loads(raw)
+    return _sanitize_quotes(json.loads(raw))
+
+
+# Straight double-quotes inside Hebrew abbreviations (מע"מ, מ"מ, סל"ד, ש"ח)
+# break HTML attributes when inserted raw into <meta content="...">. Convert
+# any quote sitting between two Hebrew letters to the correct gershayim (״).
+_HEB_QUOTE = re.compile(r"(?<=[֐-׿])\"(?=[֐-׿])")
+
+
+def _sanitize_quotes(obj):
+    if isinstance(obj, str):
+        return _HEB_QUOTE.sub("״", obj)
+    if isinstance(obj, list):
+        return [_sanitize_quotes(x) for x in obj]
+    if isinstance(obj, dict):
+        return {k: _sanitize_quotes(v) for k, v in obj.items()}
+    return obj
 
 
 def build_html(product, content, israel_price, amazon_price):
@@ -642,6 +658,8 @@ When satisfied:
       git add blog/{slug}.html prices.html tools/published_asins.json
       git commit -m "blog: publish {content['title_short']} review + prices card"
       git push
+   3. Ping IndexNow so Bing crawls it within minutes:
+      python tools/indexnow.py https://www.amzfreeil.com/blog/{slug}.html
 """)
 
 
