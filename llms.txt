@@ -13,8 +13,7 @@
 
 ## Guides
 
-- [מדריך גרסת Windows](https://www.amzfreeil.com/guide.html) — הגדרת אפליקציית Windows ב-5 שלבים
-- [מדריך גרסה מקוונת](https://www.amzfreeil.com/web-guide.html) — שימוש ב-app.amzfreeil.com ללא התקנה
+- [מדריך שימוש](https://www.amzfreeil.com/web-guide.html) — שימוש ב-app.amzfreeil.com ללא התקנה, מכל מכשיר
 
 ## Blog Articles
 
@@ -22,7 +21,7 @@
 - [איך לדעת אם מוצר מגיע חינם לישראל](https://www.amzfreeil.com/blog/eich-ladaat-mishloach-hinam-amazon-israel.html) — זיהוי FREE Shipping to Israel לפני רכישה
 - [המוצרים הכי כדאיים לקנות באמזון לישראל](https://www.amzfreeil.com/blog/hamutzarim-hakhi-kedaim-laknot-bamazon-israel.html) — קטגוריות מומלצות ומה לא כדאי לקנות
 - [אמזון מול eBay לישראל — מה עדיף?](https://www.amzfreeil.com/blog/amazon-vs-ebay-israel.html) — השוואת פלטפורמות: אמינות, מחיר, משלוח, החזרות
-- [מכס ומע"מ על קניות מאמזון לישראל](https://www.amzfreeil.com/blog/mekhs-umaam-amazon-israel.html) — סף $130, שיעור 18% מע"מ, Duties Included, דוגמאות חישוב
+- [מכס ומע"מ על קניות מאמזון לישראל](https://www.amzfreeil.com/blog/mekhs-umaam-amazon-israel.html) — סף פטור $75, מעל הסף מכס+מע"מ שאמזון גובה מראש (Duties Included), דוגמאות חישוב
 - [10 טיפים לחיסכון באמזון לישראל](https://www.amzfreeil.com/blog/10-tipim-lehisakhon-bamazon-israel.html) — CamelCamelCamel, Prime Day, Warehouse Deals ועוד
 - [Amazon Prime ומשלוח לישראל — מה ישראלים מקבלים](https://www.amzfreeil.com/blog/amazon-prime-mishloach-israel.html) — מה Prime כולל לישראלים ומה לא
 - [מדריך מלא לקניות באמזון לישראל 2026](https://www.amzfreeil.com/blog/madrikh-kahniot-amazon-israel-2026.html) — חשבון, חיפוש, תשלום, מכס, החזרות
@@ -55,10 +54,10 @@
 - התראות שנשלחו: 1,500+
 - חיסכון ממוצע: ₪150+ לרכישה
 - תנאי משלוח חינם: מוצרים FBA, סכום מעל $49, מסומנים "FREE Shipping to Israel"
-- סף פטור ממכס בישראל: $130 (מע"מ 18% מעל הסף)
+- סף פטור ממס בישראל: $75 — עד $75 פטור מלא (ללא מכס וללא מע"מ); מעל $75 חלים מכס + מע"מ, שאמזון גובה מראש (אין הפתעות)
 - הכלי חינמי לחלוטין — ממומן בעמלות Affiliate בלבד
 - אין צורך בחשבון אמזון
-- גרסת Windows: נתונים שמורים לוקלית בלבד (פרטיות מלאה)
+- שירות מקוון (web) — ללא התקנה, עובד מכל דפדפן ומכל מכשיר
 - ניטור: 24/7 אוטומטי, מייל סיכום יומי אחד
 
 ## Licensing

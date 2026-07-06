@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/guide.html",
+      "destination": "/web-guide.html",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "amzfreeil.com" }],
       "destination": "https://www.amzfreeil.com/$1",
