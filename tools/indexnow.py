@@ -46,13 +46,13 @@ def submit(urls):
         headers={"Content-Type": "application/json; charset=utf-8"},
         timeout=30,
     )
-    print(f"Submitted {len(urls)} URL(s) → HTTP {resp.status_code}")
+    print(f"Submitted {len(urls)} URL(s) -> HTTP {resp.status_code}")
     # 200 = accepted, 202 = accepted (validation pending). Both are success.
     if resp.status_code not in (200, 202):
         print(resp.text[:500])
         return 1
     for u in urls:
-        print("  •", u)
+        print("  -", u)
     return 0
 
 
