@@ -1,7 +1,7 @@
 ﻿# AMZ Free Ship Alert — Website
 
 ## תיאור
-אתר שיווקי לאפליקציית Windows שמנטרת מוצרי Amazon ושולחת התראה בדוא"ל כשמוזהה משלוח חינם לישראל.
+אתר שיווקי לשירות מקוון (web) שמנטר מוצרי Amazon ושולח התראה בדוא"ל כשמוזהה משלוח חינם לישראל. השירות מקוון בלבד — אין אפליקציית Windows (הוסרה). המדריך היחיד באתר הוא web-guide.html.
 
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript (static site)
