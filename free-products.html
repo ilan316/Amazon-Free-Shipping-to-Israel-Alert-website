@@ -60,6 +60,44 @@
           "item": "https://www.amzfreeil.com/free-products.html"
         }
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "אילו מוצרים מופיעים ברשימה?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "מוצרים שבבדיקה היומית האחרונה זוהו כזכאים למשלוח חינם לישראל מאמזון ארה\"ב. הרשימה אוטומטית לחלוטין ומשקפת את מצב ההצעות בזמן הסריקה האחרונה."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "יש סכום מינימום למשלוח חינם?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ברוב המקרים אמזון מעניקה משלוח חינם לישראל בהזמנות מעל $49 ממוצרים זכאים. הסף וההשתתפות עשויים להשתנות בין מוצרים — תמיד מוצג בעמוד המוצר באמזון לפני התשלום."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "אשלם מכס ומע\"מ על ההזמנה?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "קניות בשווי עד $75 פטורות ממכס וממע\"מ. מעל הסף אמזון מחשבת וגובה את המסים מראש בעמוד התשלום, כך שאין הפתעות."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "כל כמה זמן מתעדכנת הרשימה?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "הרשימה נסרקת ומתעדכנת מדי יום. אם אין כרגע מוצרים זכאים — כדאי לחזור למחרת, או להירשם ולקבל התראה במייל ברגע שמוצר שמעניין אתכם מציע משלוח חינם."
+          }
+        }
+      ]
     }
   ]
   </script>
@@ -98,6 +136,15 @@
     main{width:min(1140px,92vw);margin:24px auto 56px}
     .section{margin-top:48px}
     .section h2{margin:0 0 20px;font-family:"Rubik",sans-serif;font-size:clamp(1.5rem, 2.4vw, 2.1rem)}
+    .fp-link{color:var(--brand-deep);font-weight:600;text-decoration:none}
+    .fp-link:hover{text-decoration:underline}
+    .fp-faq-item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+    .fp-faq-item summary{cursor:pointer;font-weight:700;font-family:"Rubik",sans-serif;list-style:none;color:var(--ink)}
+    .fp-faq-item summary::-webkit-details-marker{display:none}
+    .fp-faq-item summary::after{content:"+";float:left;color:var(--brand-deep);font-weight:800;margin-inline-start:8px}
+    .fp-faq-item[open] summary::after{content:"–"}
+    .fp-faq-body{color:var(--ink-muted);line-height:1.8;margin-top:10px}
+    .fp-faq-body p{margin:0}
     footer{width:min(1140px,92vw);margin:0 auto 24px;padding-top:10px}
     .footer-topbar{margin:0;position:static;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:12px 20px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.92);backdrop-filter:blur(12px)}
     .footer-topbar .brand{grid-column:1;justify-self:start}
@@ -407,6 +454,36 @@
         <p>לוחץ על הקישור, קונה, וחוסך בדמי משלוח — ללא מאמץ מצידך</p>
       </div>
     </div>
+
+    <!-- Evergreen explainer + FAQ -->
+    <section class="section fp-about reveal" style="margin-top:56px;">
+      <h2>איך עובדת רשימת המוצרים עם משלוח חינם לישראל</h2>
+      <p style="color:var(--ink-muted);line-height:1.8;max-width:760px;">
+        אמזון ארה"ב מציעה משלוח חינם לישראל על חלק מהמוצרים בהזמנות מעל <bdi>$49</bdi> — אבל ההצעה משתנה ממוצר למוצר ומיום ליום.
+        המערכת שלנו סורקת מוצרים מדי יום, מזהה אילו מהם זכאים כרגע למשלוח חינם לישראל, ומרכזת אותם ברשימה שבראש העמוד.
+        הרשימה מתעדכנת אוטומטית, ולכן מוצר שמופיע היום עשוי לא להופיע מחר — כדאי לפעול כשההצעה פעילה.
+        לרקע מלא ראו את <a href="/blog/mishloach-hinam-amazon-israel.html" class="fp-link">המדריך המלא למשלוח חינם מאמזון לישראל</a>.
+      </p>
+
+      <div class="fp-faq" style="max-width:760px;margin-top:20px;">
+        <details class="fp-faq-item">
+          <summary>אילו מוצרים מופיעים ברשימה?</summary>
+          <div class="fp-faq-body"><p>מוצרים שבבדיקה היומית האחרונה זוהו כזכאים למשלוח חינם לישראל מאמזון ארה"ב. הרשימה אוטומטית לחלוטין ומשקפת את מצב ההצעות בזמן הסריקה האחרונה.</p></div>
+        </details>
+        <details class="fp-faq-item">
+          <summary>יש סכום מינימום למשלוח חינם?</summary>
+          <div class="fp-faq-body"><p>ברוב המקרים אמזון מעניקה משלוח חינם לישראל בהזמנות מעל <bdi>$49</bdi> ממוצרים זכאים. הסף וההשתתפות עשויים להשתנות בין מוצרים — תמיד מוצג בעמוד המוצר באמזון לפני התשלום.</p></div>
+        </details>
+        <details class="fp-faq-item">
+          <summary>אשלם מכס ומע"מ על ההזמנה?</summary>
+          <div class="fp-faq-body"><p>קניות בשווי עד <bdi>$75</bdi> פטורות ממכס וממע"מ. מעל הסף אמזון מחשבת וגובה את המסים מראש בעמוד התשלום, כך שאין הפתעות. פירוט מלא ב<a href="/blog/mekhs-umaam-amazon-israel.html" class="fp-link">מדריך המכס והמע"מ</a>.</p></div>
+        </details>
+        <details class="fp-faq-item">
+          <summary>כל כמה זמן מתעדכנת הרשימה?</summary>
+          <div class="fp-faq-body"><p>הרשימה נסרקת ומתעדכנת מדי יום. אם אין כרגע מוצרים זכאים — כדאי לחזור למחרת, או להירשם ולקבל התראה במייל ברגע שמוצר שמעניין אתכם מציע משלוח חינם.</p></div>
+        </details>
+      </div>
+    </section>
 
     <!-- CTA -->
     <div class="cta-section reveal">
