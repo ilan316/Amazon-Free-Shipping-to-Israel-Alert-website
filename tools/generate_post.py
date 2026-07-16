@@ -116,7 +116,21 @@ ASIN: {product['asin']}
     raw = message.content[0].text.strip()
     raw = re.sub(r"^```(?:json)?\s*", "", raw)
     raw = re.sub(r"\s*```$", "", raw)
-    return _sanitize_quotes(json.loads(raw))
+    content = _sanitize_quotes(json.loads(raw))
+    _validate_title_short(content)
+    return content
+
+
+# Guard: title_short חייב להתחיל במילת קטגוריה בעברית (א-ת), אחרת כרטיס המחיר
+# ב-prices.html ייכתב באנגלית בלבד. אם המודל התעלם מההוראה — עוצרים את הפרסום
+# עם שגיאה ברורה במקום להשחית את הדף בשקט.
+def _validate_title_short(content):
+    title = (content.get("title_short") or "").strip()
+    if not title or not re.match(r"^[א-ת]", title):
+        raise ValueError(
+            f"title_short חייב להתחיל במילת קטגוריה בעברית, אבל התקבל: {title!r}\n"
+            "הפרסום נעצר. הרץ שוב את הגנרטור (המודל לא עקב אחרי פורמט הכותרת)."
+        )
 
 
 # Straight double-quotes inside Hebrew abbreviations (מע"מ, מ"מ, סל"ד, ש"ח)
