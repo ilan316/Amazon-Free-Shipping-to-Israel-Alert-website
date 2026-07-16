@@ -69,7 +69,7 @@ ASIN: {product['asin']}
 {{
   "slug": "שם-קובץ-קצר-באנגלית-amazon-israel",
   "title_he": "כותרת מלאה בעברית לפוסט — כדאי לקנות מאמזון לישראל? (2026)",
-  "title_short": "שם קצר של המוצר (עברית+אנגלית)",
+  "title_short": "מילת קטגוריה בעברית + מותג/דגם באנגלית — למשל 'מיני מחשב GMKtec M8', 'כונן SSD פנימי Samsung 990 PRO 2TB', 'מברשת שיניים חשמלית Philips Sonicare 6700'",
   "description_he": "תיאור SEO בעברית, עד 155 תווים",
   "eyebrow": "אייקון + קטגוריה (למשל: 💻 ביקורת מוצר)",
   "reading_time": "כ-5 דקות",
@@ -104,7 +104,8 @@ ASIN: {product['asin']}
 - אל תמציא מפרטים — רק מה שמופיע ב"מאפיינים"
 - slug: קצר, אנגלית, מקפים, מסתיים ב-amazon-israel
 - FAQs: בדיוק 4 שאלות
-- specs_rows: חלץ מהמאפיינים (4-8 שורות)"""
+- specs_rows: חלץ מהמאפיינים (4-8 שורות)
+- title_short: חובה להתחיל במילת קטגוריה בעברית (מיני מחשב / אוזניות / כונן SSD / מברשת שיניים חשמלית / כרטיס מסך וכו'), ואז המותג והדגם באנגלית. אסור כותרת באנגלית בלבד, ואסור שהעברית תבוא אחרי האנגלית. שם המותג והדגם נשארים באנגלית — לא לתרגם. בלי תגי HTML."""
 
     message = client.messages.create(
         model="claude-opus-4-8",
@@ -547,12 +548,13 @@ def build_html(product, content, israel_price, amazon_price):
 </html>"""
 
 
-def add_price_card(asin, product, israel_price, amazon_price, slug):
+def add_price_card(asin, product, israel_price, amazon_price, slug, content):
     today_display = date.today().strftime("%d/%m/%Y")
     savings = round(float(israel_price) - float(amazon_price))
     image_thumb = product.get("image", "")
     aff_url = f"https://www.amazon.com/dp/{asin}?tag={PARTNER_TAG}"
-    title = product["title"]
+    # Hebrew-category-first title (עברית+אנגלית), NOT the raw English Amazon title.
+    title = content["title_short"]
 
     card_html = f"""
       <!-- {title[:60]} -->
@@ -564,7 +566,7 @@ def add_price_card(asin, product, israel_price, amazon_price, slug):
           </a>
         </div>
         <div class="price-card-body">
-          <h2><bdi>{title}</bdi></h2>
+          <h2 class="price-card-title">{title}</h2>
           <table class="price-table">
             <thead>
               <tr><th>מקור</th><th>מחיר</th></tr>
@@ -640,7 +642,7 @@ def main():
     print(f"  → Written: blog/{slug}.html")
 
     print("[4/5] Adding price card to prices.html...")
-    add_price_card(asin, product, israel_price, amazon_price, slug)
+    add_price_card(asin, product, israel_price, amazon_price, slug, content)
     print("  → prices.html updated")
 
     print("[5/5] Saving ASIN to published_asins.json...")
