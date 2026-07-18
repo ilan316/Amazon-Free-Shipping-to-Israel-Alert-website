@@ -20,29 +20,30 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Generate sitemap
-        run: node generate-sitemap.js
-
       - name: Commit updated sitemap
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sitemap.xml
-          if git diff --cached --quiet; then
-            echo "No sitemap changes to commit."
-            exit 0
-          fi
-          git commit -m "chore: auto-update sitemap"
-          # Push can lose a race if main moves between rebase and push
-          # (concurrent human pushes aren't in this workflow's concurrency group).
-          # Retry: re-fetch, rebase, push again.
+          # sitemap.xml is a fully generated artifact — never rebase/merge it
+          # (concurrent runs regenerate the whole file, so a rebase always
+          # conflicts). Instead, on each attempt reset to the freshest
+          # origin/main, regenerate on top of it, and push. Deterministic
+          # from the file tree, so this can never conflict.
           for i in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            node generate-sitemap.js
+            git add sitemap.xml
+            if git diff --cached --quiet; then
+              echo "No sitemap changes to commit."
+              exit 0
+            fi
+            git commit -m "chore: auto-update sitemap"
             if git push; then
               echo "Pushed on attempt $i."
               exit 0
             fi
-            echo "Push failed on attempt $i, re-syncing with origin/main..."
-            git pull --rebase origin main
+            echo "Push failed on attempt $i, retrying against fresh origin/main..."
           done
           echo "::error::Failed to push sitemap after 5 attempts."
           exit 1
