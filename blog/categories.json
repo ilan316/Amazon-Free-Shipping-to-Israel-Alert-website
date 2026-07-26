@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 153,
+    "reviews": 154,
     "indexable": 149,
-    "noindex": 4,
+    "noindex": 5,
     "cardsInHub": 149
   },
   "buckets": [
@@ -217,6 +217,7 @@
       "posts": [
         "alpine-muffy-kids-hearing-protection-amazon-israel",
         "elemental-kids-water-bottle-amazon-israel",
+        "mininoo-kids-water-bottle-amazon-israel",
         "oisiz-kids-water-bottle-14oz-amazon-israel",
         "similove-kids-water-bottle-18oz-amazon-israel"
       ]
@@ -237,12 +238,14 @@
     "elecrow-10-1-portable-monitor-amazon-israel",
     "gold-bjj-fight-shorts-black-large-amazon-israel",
     "hydracy-water-bottle-time-marker-amazon-israel",
+    "mininoo-kids-water-bottle-amazon-israel",
     "tommy-hilfiger-10pk-dress-socks-amazon-israel"
   ],
   "missingFromHub": [
     "elecrow-10-1-portable-monitor-amazon-israel",
     "gold-bjj-fight-shorts-black-large-amazon-israel",
     "hydracy-water-bottle-time-marker-amazon-israel",
+    "mininoo-kids-water-bottle-amazon-israel",
     "tommy-hilfiger-10pk-dress-socks-amazon-israel"
   ],
   "warnings": [
