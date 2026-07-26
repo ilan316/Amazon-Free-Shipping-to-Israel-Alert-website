@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 151,
+    "reviews": 153,
     "indexable": 149,
-    "noindex": 2,
+    "noindex": 4,
     "cardsInHub": 149
   },
   "buckets": [
@@ -17,6 +17,7 @@
         "asrock-radeon-rx-9070-xt-challenger-amazon-israel",
         "asus-rog-strix-b850-g-gaming-wifi-amazon-israel",
         "blackview-scm6-screen-extender-amazon-israel",
+        "elecrow-10-1-portable-monitor-amazon-israel",
         "gigabyte-rx-9070-xt-gaming-oc-amazon-israel",
         "gmktec-m6-ultra-ryzen-7640hs-mini-pc-amazon-israel",
         "gmktec-mini-pc-m8-amazon-israel",
@@ -227,19 +228,25 @@
         "240-acrylic-paint-markers-set-amazon-israel",
         "acrylic-paint-markers-168-colors-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
-        "gold-bjj-fight-shorts-black-large-amazon-israel"
+        "gold-bjj-fight-shorts-black-large-amazon-israel",
+        "hydracy-water-bottle-time-marker-amazon-israel"
       ]
     }
   ],
   "noindexDrafts": [
+    "elecrow-10-1-portable-monitor-amazon-israel",
     "gold-bjj-fight-shorts-black-large-amazon-israel",
+    "hydracy-water-bottle-time-marker-amazon-israel",
     "tommy-hilfiger-10pk-dress-socks-amazon-israel"
   ],
   "missingFromHub": [
+    "elecrow-10-1-portable-monitor-amazon-israel",
     "gold-bjj-fight-shorts-black-large-amazon-israel",
+    "hydracy-water-bottle-time-marker-amazon-israel",
     "tommy-hilfiger-10pk-dress-socks-amazon-israel"
   ],
   "warnings": [
-    "אימוג'י לא ממופה \"🥋\" (leaf: \"6609e2df-21bc-475b-90b2-735f42ef982c_3801\") — gold-bjj-fight-shorts-black-large-amazon-israel שויך ל-misc"
+    "אימוג'י לא ממופה \"🥋\" (leaf: \"6609e2df-21bc-475b-90b2-735f42ef982c_3801\") — gold-bjj-fight-shorts-black-large-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"💧\" (leaf: \"Sports Water Bottles\") — hydracy-water-bottle-time-marker-amazon-israel שויך ל-misc"
   ]
 }
