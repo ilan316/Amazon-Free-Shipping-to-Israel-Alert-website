@@ -24,6 +24,11 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v5
+        with:
+          # generate-sitemap.js גוזר lastmod מתאריך ה-commit האחרון של כל קובץ.
+          # checkout רדוד (ברירת המחדל, depth=1) היה מחזיר commit אחד בלבד וכל
+          # הקבצים היו מקבלים את תאריך הריצה — בדיוק הבאג שתוקן.
+          fetch-depth: 0
 
       - name: Rebuild internal links and sitemap
         run: |

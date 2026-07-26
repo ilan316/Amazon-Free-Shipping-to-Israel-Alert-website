@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const BASE_URL = 'https://www.amzfreeil.com';
 const ROOT = __dirname;
@@ -26,13 +27,78 @@ function hasNoIndex(filePath) {
   return false;
 }
 
-function getLastMod(filePath) {
+const TODAY = new Date().toISOString().split('T')[0];
+
+function git(args) {
+  return execSync(`git ${args}`, {
+    cwd: ROOT,
+    encoding: 'utf-8',
+    stdio: ['ignore', 'pipe', 'ignore'],
+    maxBuffer: 64 * 1024 * 1024,
+  });
+}
+
+// lastmod נגזר מתאריך ה-commit האחרון של הקובץ, לא מ-mtime. mtime שונה בין
+// המחשב המקומי (זמן אמת מהדיסק) ל-CI (checkout טרי = הכל מקבל את זמן הריצה),
+// ולכן כל 18 השורות התהפכו הלוך ושוב בין ה-hook המקומי לבין ה-Action. תאריך
+// ה-commit זהה בשני המקומות, כך שהפלט אידמפוטנטי.
+// קריאת git אחת לכל ההיסטוריה — לא קריאה לכל קובץ.
+function buildGitDates() {
+  const map = new Map();
+  let out;
   try {
-    const mtime = fs.statSync(filePath).mtime;
-    return mtime.toISOString().split('T')[0];
+    out = git('-c core.quotePath=false log --format=%x00%cI --name-only');
   } catch {
-    return new Date().toISOString().split('T')[0];
+    return null; // אין git / אין היסטוריה — ראה fallback ב-getLastMod
   }
+  let commitDate = null;
+  for (const line of out.split('\n')) {
+    if (line.startsWith('\0')) {
+      commitDate = line.slice(1).trim().split('T')[0];
+    } else if (line.trim() && commitDate && !map.has(line.trim())) {
+      map.set(line.trim(), commitDate); // הפגיעה הראשונה = ה-commit העדכני ביותר
+    }
+  }
+  return map;
+}
+
+// קובץ ששונה ועדיין לא נכנס ל-commit צריך את תאריך היום: ה-hook רץ לפני
+// שה-commit נוצר, אז git log עדיין מחזיר עבורו את התאריך *הישן*.
+function buildDirtySet() {
+  const set = new Set();
+  try {
+    for (const line of git('-c core.quotePath=false status --porcelain').split('\n')) {
+      const p = line.slice(3).trim();
+      if (!p) continue;
+      const arrow = p.indexOf(' -> '); // שינוי שם
+      set.add(arrow === -1 ? p : p.slice(arrow + 4));
+    }
+  } catch { /* אין git — הסט נשאר ריק */ }
+  return set;
+}
+
+// מוצא אחרון אם git לא זמין בכלל: משמרים את מה שכבר קיים ב-sitemap.xml
+// במקום להחתים את כל האתר בתאריך היום.
+function readExistingLastmods() {
+  const map = new Map();
+  try {
+    const xml = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf-8');
+    const re = /<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g;
+    let m;
+    while ((m = re.exec(xml)) !== null) map.set(m[1], m[2]);
+  } catch { /* אין sitemap קודם */ }
+  return map;
+}
+
+const gitDates = buildGitDates();
+const dirty = buildDirtySet();
+const previous = gitDates ? null : readExistingLastmods();
+
+function getLastMod(filePath, url) {
+  if (!gitDates) return previous.get(url) || TODAY;
+  const rel = path.relative(ROOT, filePath).split(path.sep).join('/');
+  if (dirty.has(rel)) return TODAY;
+  return gitDates.get(rel) || TODAY; // קובץ חדש שטרם נכנס ל-commit
 }
 
 const urls = [];
