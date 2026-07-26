@@ -110,6 +110,7 @@
         "encool-insulated-water-bottle-straw-amazon-israel",
         "everlasting-comfort-memory-foam-seat-cushion-amazon-israel",
         "geedel-rotary-cheese-grater-amazon-israel",
+        "hydracy-water-bottle-time-marker-amazon-israel",
         "kikcoin-ceramic-frying-pans-set-amazon-israel",
         "kingrinder-k6-manual-coffee-grinder-amazon-israel",
         "made-in-cookware-12-inch-stainless-frying-pan-amazon-israel",
@@ -166,6 +167,7 @@
         "calvin-klein-no-show-socks-12pack-amazon-israel",
         "calvin-klein-socks-12pack-amazon-israel",
         "etenwolf-vacuum-storage-bags-amazon-israel",
+        "gold-bjj-fight-shorts-black-large-amazon-israel",
         "jmierr-corduroy-shorts-amazon-israel",
         "lovevook-40l-travel-backpack-amazon-israel",
         "molten-bg4500-basketball-amazon-israel",
@@ -173,6 +175,7 @@
         "omid-polarized-swim-goggles-amazon-israel",
         "puma-contender-duffel-bag-amazon-israel",
         "rdx-mma-shorts-t15b-amazon-israel",
+        "rdx-rash-guard-bjj-amazon-israel",
         "reef-oasis-adapt-sandal-amazon-israel",
         "resistance-bands-pull-up-set-amazon-israel",
         "rorhxia-10l-dry-bag-amazon-israel",
@@ -228,18 +231,11 @@
       "posts": [
         "240-acrylic-paint-markers-set-amazon-israel",
         "acrylic-paint-markers-168-colors-amazon-israel",
-        "cliganic-mosquito-repellent-bracelets-amazon-israel",
-        "gold-bjj-fight-shorts-black-large-amazon-israel",
-        "hydracy-water-bottle-time-marker-amazon-israel",
-        "rdx-rash-guard-bjj-amazon-israel"
+        "cliganic-mosquito-repellent-bracelets-amazon-israel"
       ]
     }
   ],
   "noindexDrafts": [],
   "missingFromHub": [],
-  "warnings": [
-    "אימוג'י לא ממופה \"🥋\" (leaf: \"6609e2df-21bc-475b-90b2-735f42ef982c_3801\") — gold-bjj-fight-shorts-black-large-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"💧\" (leaf: \"Sports Water Bottles\") — hydracy-water-bottle-time-marker-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🥋\" (leaf: \"Clothing, Shoes & Jewelry\") — rdx-rash-guard-bjj-amazon-israel שויך ל-misc"
-  ]
+  "warnings": []
 }
