@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 153,
+    "reviews": 148,
     "indexable": 148,
-    "noindex": 5,
+    "noindex": 0,
     "cardsInHub": 149
   },
   "buckets": [
@@ -138,9 +138,7 @@
       "id": "grooming",
       "label": "טיפוח ובריאות",
       "posts": [
-        "braun-series-7-aio-7535-amazon-israel",
         "braun-series-7-shaver-7127cs-amazon-israel",
-        "braun-series-9-pro-aio-9570-amazon-israel",
         "braun-series7-aio-7535-amazon-israel",
         "braun-series9-pro-aio9570-amazon-israel",
         "dr-squatch-deodorant-2pack-amazon-israel",
@@ -151,7 +149,6 @@
         "medicube-booster-pro-age-r-amazon-israel",
         "paulas-choice-bha-liquid-exfoliant-amazon-israel",
         "philips-norelco-oneblade-360-blades-amazon-israel",
-        "philips-norelco-oneblade-qp440-80-amazon-israel",
         "philips-sonicare-6700-electric-toothbrush-amazon-israel",
         "philips-sonicare-diamondclean-smart-9750-amazon-israel",
         "remington-vacuum-beard-trimmer-mb6850a-amazon-israel",
@@ -180,9 +177,7 @@
         "rorhxia-10l-dry-bag-amazon-israel",
         "speedo-biofuse-2-swim-goggles-amazon-israel",
         "tommy-hilfiger-12pk-crew-socks-amazon-israel",
-        "tommy-hilfiger-dress-socks-10pack-amazon-israel",
         "tommy-hilfiger-mens-crew-socks-12pk-amazon-israel",
-        "tommy-hilfiger-mens-dress-socks-10pk-amazon-israel",
         "tommy-hilfiger-mens-socks-10pack-amazon-israel",
         "tommy-hilfiger-polo-white-amazon-israel",
         "under-armour-charged-assert-11-amazon-israel",
@@ -233,19 +228,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "braun-series-7-aio-7535-amazon-israel",
-    "braun-series-9-pro-aio-9570-amazon-israel",
-    "philips-norelco-oneblade-qp440-80-amazon-israel",
-    "tommy-hilfiger-dress-socks-10pack-amazon-israel",
-    "tommy-hilfiger-mens-dress-socks-10pk-amazon-israel"
-  ],
-  "missingFromHub": [
-    "braun-series-7-aio-7535-amazon-israel",
-    "braun-series-9-pro-aio-9570-amazon-israel",
-    "philips-norelco-oneblade-qp440-80-amazon-israel",
-    "tommy-hilfiger-dress-socks-10pack-amazon-israel",
-    "tommy-hilfiger-mens-dress-socks-10pk-amazon-israel"
-  ],
+  "noindexDrafts": [],
+  "missingFromHub": [],
   "warnings": []
 }
