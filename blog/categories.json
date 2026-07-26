@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 154,
-    "indexable": 154,
+    "reviews": 155,
+    "indexable": 155,
     "noindex": 0,
-    "cardsInHub": 154
+    "cardsInHub": 155
   },
   "buckets": [
     {
@@ -230,7 +230,8 @@
         "acrylic-paint-markers-168-colors-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
         "gold-bjj-fight-shorts-black-large-amazon-israel",
-        "hydracy-water-bottle-time-marker-amazon-israel"
+        "hydracy-water-bottle-time-marker-amazon-israel",
+        "rdx-rash-guard-bjj-amazon-israel"
       ]
     }
   ],
@@ -238,6 +239,7 @@
   "missingFromHub": [],
   "warnings": [
     "אימוג'י לא ממופה \"🥋\" (leaf: \"6609e2df-21bc-475b-90b2-735f42ef982c_3801\") — gold-bjj-fight-shorts-black-large-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"💧\" (leaf: \"Sports Water Bottles\") — hydracy-water-bottle-time-marker-amazon-israel שויך ל-misc"
+    "אימוג'י לא ממופה \"💧\" (leaf: \"Sports Water Bottles\") — hydracy-water-bottle-time-marker-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🥋\" (leaf: \"Clothing, Shoes & Jewelry\") — rdx-rash-guard-bjj-amazon-israel שויך ל-misc"
   ]
 }
