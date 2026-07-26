@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 154,
-    "indexable": 151,
-    "noindex": 3,
-    "cardsInHub": 151
+    "indexable": 154,
+    "noindex": 0,
+    "cardsInHub": 154
   },
   "buckets": [
     {
@@ -234,16 +234,8 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "elecrow-10-1-portable-monitor-amazon-israel",
-    "gold-bjj-fight-shorts-black-large-amazon-israel",
-    "tommy-hilfiger-10pk-dress-socks-amazon-israel"
-  ],
-  "missingFromHub": [
-    "elecrow-10-1-portable-monitor-amazon-israel",
-    "gold-bjj-fight-shorts-black-large-amazon-israel",
-    "tommy-hilfiger-10pk-dress-socks-amazon-israel"
-  ],
+  "noindexDrafts": [],
+  "missingFromHub": [],
   "warnings": [
     "אימוג'י לא ממופה \"🥋\" (leaf: \"6609e2df-21bc-475b-90b2-735f42ef982c_3801\") — gold-bjj-fight-shorts-black-large-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"💧\" (leaf: \"Sports Water Bottles\") — hydracy-water-bottle-time-marker-amazon-israel שויך ל-misc"
