@@ -63,7 +63,9 @@ jobs:
       - name: Alert on unclassified reviews
         env:
           INTERNAL_SYNC_SECRET: ${{ secrets.INTERNAL_SYNC_SECRET }}
-          API_BASE_URL: ${{ secrets.API_BASE_URL }}
+          # variable, לא secret — ה-URL אינו סודי. אם לא הוגדר, ה-shell נופל
+          # לברירת המחדל https://app.amzfreeil.com
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           node -e '
