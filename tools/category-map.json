@@ -1,0 +1,83 @@
+{
+  "_readme": [
+    "מקור האמת לקטגוריות של סקירות המוצרים. נצרך ע\"י tools/build-internal-links.js.",
+    "סדר ההכרעה: overrides (לפי slug) → leaves (Product.category ב-JSON-LD) → emoji (מתוך <p class=\"eyebrow\">) → 'misc'.",
+    "האימוג'י הוא האות הטוב ביותר: הוא נבחר פר-מוצר בזמן הכתיבה, בעוד Product.category הוא leaf גולמי מ-PA-API שמכיל גם זבל (GUIDs, 'AA', צמתים שיווקיים).",
+    "leaves מכיל רק את המקרים שבהם ה-leaf מדויק יותר מהאימוג'י — לא צריך למפות כל leaf.",
+    "כשמתפרסם פוסט עם אימוג'י חדש, הסקריפט מזהיר ומשייך ל-misc. להוסיף אותו כאן."
+  ],
+
+  "buckets": [
+    { "id": "computing", "label": "מחשבים ורכיבים",       "emoji": "💻" },
+    { "id": "audio",     "label": "אודיו ואוזניות",        "emoji": "🎧" },
+    { "id": "photo",     "label": "צילום, וידאו ואבטחה",   "emoji": "📷" },
+    { "id": "gadgets",   "label": "גאדג'טים, טעינה וחשמל", "emoji": "🔌" },
+    { "id": "lighting",  "label": "תאורה חכמה",            "emoji": "💡" },
+    { "id": "kitchen",   "label": "בית ומטבח",             "emoji": "🍳" },
+    { "id": "sleep",     "label": "שינה ומזרנים",          "emoji": "🛏️" },
+    { "id": "grooming",  "label": "טיפוח ובריאות",         "emoji": "🪒" },
+    { "id": "fashion",   "label": "אופנה, ספורט וטיולים",  "emoji": "👕" },
+    { "id": "auto",      "label": "רכב וכלי עבודה",        "emoji": "🚗" },
+    { "id": "kids",      "label": "ילדים ותינוקות",        "emoji": "🍼" },
+    { "id": "misc",      "label": "שונות",                 "emoji": "📦" }
+  ],
+
+  "emoji": {
+    "💻": "computing", "🖥️": "computing", "🖱️": "computing", "⌨️": "computing",
+    "💾": "computing", "🎮": "computing",
+
+    "🎧": "audio", "🔊": "audio",
+
+    "📷": "photo", "📸": "photo", "📹": "photo", "🎥": "photo", "🎬": "photo",
+
+    "🔌": "gadgets", "🔋": "gadgets", "📱": "gadgets", "🌀": "gadgets", "🛰️": "gadgets",
+
+    "💡": "lighting", "🌌": "lighting", "🌟": "lighting",
+
+    "🍳": "kitchen", "🧂": "kitchen", "🧀": "kitchen", "🍽️": "kitchen", "🍿": "kitchen",
+    "☕": "kitchen", "🥤": "kitchen", "🕯️": "kitchen", "🪑": "kitchen", "🚿": "kitchen",
+    "🌡️": "kitchen",
+
+    "🛏️": "sleep",
+
+    "🪒": "grooming", "🧔": "grooming", "🧴": "grooming", "🦷": "grooming",
+    "🪥": "grooming", "😁": "grooming", "💆": "grooming",
+
+    "🧦": "fashion", "👕": "fashion", "👖": "fashion", "👟": "fashion", "👡": "fashion",
+    "🎒": "fashion", "🧳": "fashion", "🏊": "fashion", "🥊": "fashion", "🏀": "fashion",
+    "🏋️": "fashion", "🏖️": "fashion",
+
+    "🚗": "auto", "🔧": "auto", "🚲": "auto", "🚴": "auto",
+
+    "🍼": "kids", "🧃": "kids",
+
+    "🎨": "misc", "🦟": "misc"
+  },
+
+  "leaves": {
+    "Webcams": "photo",
+    "Handheld Gimbals & Stabilizers": "photo",
+    "Battery Chargers": "auto"
+  },
+
+  "overrides": {
+    "alpine-muffy-kids-hearing-protection-amazon-israel": "kids"
+  },
+
+  "editorial": [
+    "index",
+    "10-tipim-lehisakhon-bamazon-israel",
+    "amazon-prime-mishloach-israel",
+    "amazon-vs-aliexpress-israel",
+    "amazon-vs-ebay-israel",
+    "bikorot-mezuyafot-amazon",
+    "black-friday-prime-day-israel",
+    "eich-ladaat-mishloach-hinam-amazon-israel",
+    "hacharot-amazon-israel",
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel",
+    "madrikh-kahniot-amazon-israel-2026",
+    "mekhs-umaam-amazon-israel",
+    "mishloach-hinam-amazon-israel",
+    "mutzarim-asurim-yevu-israel"
+  ]
+}

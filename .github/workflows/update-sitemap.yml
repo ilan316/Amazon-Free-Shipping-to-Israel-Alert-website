@@ -6,6 +6,8 @@ on:
     paths:
       - '**.html'
       - 'blog/**.html'
+      - 'tools/category-map.json'
+      - 'tools/build-internal-links.js'
   workflow_dispatch:
 
 concurrency:
@@ -15,35 +17,39 @@ concurrency:
 jobs:
   sitemap:
     runs-on: ubuntu-latest
+    # This job now commits .html files too, which would normally re-trigger the
+    # workflow — but pushes made with GITHUB_TOKEN never trigger workflow runs,
+    # so there is no loop. (The rebuild is idempotent regardless.)
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v5
 
-      - name: Commit updated sitemap
+      - name: Rebuild internal links and sitemap
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # sitemap.xml is a fully generated artifact — never rebase/merge it
-          # (concurrent runs regenerate the whole file, so a rebase always
+          # Both scripts are fully generated artifacts — never rebase/merge them
+          # (concurrent runs regenerate the whole output, so a rebase always
           # conflicts). Instead, on each attempt reset to the freshest
           # origin/main, regenerate on top of it, and push. Deterministic
           # from the file tree, so this can never conflict.
           for i in 1 2 3 4 5; do
             git fetch origin main
             git reset --hard origin/main
+            node tools/build-internal-links.js
             node generate-sitemap.js
-            git add sitemap.xml
+            git add -A
             if git diff --cached --quiet; then
-              echo "No sitemap changes to commit."
+              echo "No changes to commit."
               exit 0
             fi
-            git commit -m "chore: auto-update sitemap"
+            git commit -m "chore: auto-update internal links + sitemap"
             if git push; then
               echo "Pushed on attempt $i."
               exit 0
             fi
             echo "Push failed on attempt $i, retrying against fresh origin/main..."
           done
-          echo "::error::Failed to push sitemap after 5 attempts."
+          echo "::error::Failed to push after 5 attempts."
           exit 1

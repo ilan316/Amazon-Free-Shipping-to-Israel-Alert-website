@@ -1,0 +1,251 @@
+{
+  "generatedBy": "tools/build-internal-links.js",
+  "totals": {
+    "reviews": 153,
+    "indexable": 148,
+    "noindex": 5,
+    "cardsInHub": 149
+  },
+  "buckets": [
+    {
+      "id": "computing",
+      "label": "מחשבים ורכיבים",
+      "posts": [
+        "acer-predator-gm7000-2tb-nvme-ssd-amazon-israel",
+        "acer-predator-pallas-ii-ddr5-32gb-6000mhz-amazon-israel",
+        "amd-ryzen-7-9800x3d-amazon-israel",
+        "asrock-radeon-rx-9070-xt-challenger-amazon-israel",
+        "asus-rog-strix-b850-g-gaming-wifi-amazon-israel",
+        "blackview-scm6-screen-extender-amazon-israel",
+        "gigabyte-rx-9070-xt-gaming-oc-amazon-israel",
+        "gmktec-m6-ultra-ryzen-7640hs-mini-pc-amazon-israel",
+        "gmktec-mini-pc-m8-amazon-israel",
+        "innoview-portable-monitor-15-6-amazon-israel",
+        "kovess-wireless-bluetooth-mouse-amazon-israel",
+        "laptop-docking-station-12in1-usbc-amazon-israel",
+        "minix-sf10t-touchscreen-monitor-amazon-israel",
+        "mokin-13in1-usb-c-docking-station-amazon-israel",
+        "nb-smoovex-monitor-mount-a5-amazon-israel",
+        "powercolor-reaper-rx-9070-xt-16gb-amazon-israel",
+        "samsung-990-pro-ssd-1tb-amazon-israel",
+        "samsung-990-pro-ssd-2tb-amazon-israel",
+        "samsung-t9-portable-ssd-1tb-amazon-israel",
+        "seagate-ironwolf-pro-12tb-amazon-israel",
+        "wavlink-umd309-docking-station-amazon-israel"
+      ]
+    },
+    {
+      "id": "audio",
+      "label": "אודיו ואוזניות",
+      "posts": [
+        "acer-ohw344-gaming-headset-amazon-israel",
+        "maono-mh601-headphones-amazon-israel",
+        "polk-audio-atrium-4-outdoor-speakers-amazon-israel",
+        "sennheiser-hd-599-se-amazon-israel",
+        "sennheiser-hd-600-amazon-israel",
+        "sony-mdr-mv1-headphones-amazon-israel",
+        "wiim-vibelink-amp-amazon-israel"
+      ]
+    },
+    {
+      "id": "photo",
+      "label": "צילום, וידאו ואבטחה",
+      "posts": [
+        "acer-4k-webcam-wbc-0e01-amazon-israel",
+        "aochuan-smart-xe-gimbal-amazon-israel",
+        "dji-osmo-mobile-8-advanced-tracking-combo-amazon-israel",
+        "emeet-c960-webcam-amazon-israel",
+        "fujifilm-instax-mini-film-50-shoots-amazon-israel",
+        "fujifilm-instax-mini-film-bundle-amazon-israel",
+        "gainvane-120-projector-screen-amazon-israel",
+        "insta360-flow-2-pro-gimbal-amazon-israel",
+        "insta360-link-2-pro-webcam-amazon-israel",
+        "insta360-snap-selfie-screen-amazon-israel",
+        "insta360-x5-360-camera-amazon-israel",
+        "masterbee-kids-camera-h30-amazon-israel",
+        "reolink-duo-3-poe-amazon-israel",
+        "reolink-rlc-810a-4k-camera-amazon-israel",
+        "reolink-rln8-410-nvr-amazon-israel"
+      ]
+    },
+    {
+      "id": "gadgets",
+      "label": "גאדג'טים, טעינה וחשמל",
+      "posts": [
+        "acer-3in1-magsafe-charger-amazon-israel",
+        "bestek-220v-110v-converter-usb-c-amazon-israel",
+        "garmin-inreach-mini-2-amazon-israel",
+        "minix-neo-p3-100w-gan-charger-amazon-israel",
+        "momax-ua8a-travel-adapter-amazon-israel",
+        "tenergy-60-pack-batteries-amazon-israel",
+        "whatook-handheld-fan-amazon-israel"
+      ]
+    },
+    {
+      "id": "lighting",
+      "label": "תאורה חכמה",
+      "posts": [
+        "flylily-galaxy-projector-amazon-israel",
+        "govee-100ft-rgbic-led-strip-amazon-israel",
+        "govee-cob-led-strip-pro-amazon-israel",
+        "govee-envisual-tv-backlight-t2-amazon-israel",
+        "govee-floor-lamp-3-luminblend-amazon-israel",
+        "govee-rgbic-floor-lamp-h6076a-amazon-israel",
+        "govee-rgbic-smart-table-lamp-2-h6022-amazon-israel",
+        "govee-rgbwwic-strip-light-2-pro-matter-amazon-israel",
+        "govee-star-projector-h6095-amazon-israel",
+        "govee-tv-backlight-3-lite-h6099-amazon-israel"
+      ]
+    },
+    {
+      "id": "kitchen",
+      "label": "בית ומטבח",
+      "posts": [
+        "aoovoo-fall-candles-set-amazon-israel",
+        "aquacare-shower-head-2669m-amazon-israel",
+        "circle-joy-salt-pepper-grinder-amazon-israel",
+        "contigo-dualsip-24oz-water-bottle-amazon-israel",
+        "cooker-king-8-inch-pan-amazon-israel",
+        "encool-insulated-water-bottle-straw-amazon-israel",
+        "everlasting-comfort-memory-foam-seat-cushion-amazon-israel",
+        "geedel-rotary-cheese-grater-amazon-israel",
+        "kikcoin-ceramic-frying-pans-set-amazon-israel",
+        "kingrinder-k6-manual-coffee-grinder-amazon-israel",
+        "made-in-cookware-12-inch-stainless-frying-pan-amazon-israel",
+        "plapitate-olive-oil-sprayer-amazon-israel",
+        "royal-craft-wood-cutting-board-set-amazon-israel",
+        "salbree-microwave-popcorn-popper-amazon-israel",
+        "sendestar-insulated-water-bottle-24oz-amazon-israel",
+        "super-sparrow-water-bottle-750-amazon-israel",
+        "temppro-tempspike-wireless-meat-thermometer-amazon-israel",
+        "wacaco-minipresso-ns-amazon-israel"
+      ]
+    },
+    {
+      "id": "sleep",
+      "label": "שינה ומזרנים",
+      "posts": [
+        "bamboo-mattress-topper-queen-amazon-israel",
+        "bedsure-cooling-blanket-queen-amazon-israel",
+        "bedsure-cooling-waffle-blanket-queen-amazon-israel",
+        "cosytree-memory-foam-pillow-queen-amazon-israel",
+        "cozy-bliss-cooling-blanket-amazon-israel",
+        "derila-ergo-neck-pillow-amazon-israel",
+        "sidney-sleep-adjustable-pillow-amazon-israel"
+      ]
+    },
+    {
+      "id": "grooming",
+      "label": "טיפוח ובריאות",
+      "posts": [
+        "braun-series-7-aio-7535-amazon-israel",
+        "braun-series-7-shaver-7127cs-amazon-israel",
+        "braun-series-9-pro-aio-9570-amazon-israel",
+        "braun-series7-aio-7535-amazon-israel",
+        "braun-series9-pro-aio9570-amazon-israel",
+        "dr-squatch-deodorant-2pack-amazon-israel",
+        "dr-squatch-invisible-glide-deodorant-amazon-israel",
+        "gurunanda-whitening-trays-amazon-israel",
+        "head-shoulders-clinical-strength-shampoo-amazon-israel",
+        "manscaped-beard-hedger-trimmer-amazon-israel",
+        "medicube-booster-pro-age-r-amazon-israel",
+        "paulas-choice-bha-liquid-exfoliant-amazon-israel",
+        "philips-norelco-oneblade-360-blades-amazon-israel",
+        "philips-norelco-oneblade-qp440-80-amazon-israel",
+        "philips-sonicare-6700-electric-toothbrush-amazon-israel",
+        "philips-sonicare-diamondclean-smart-9750-amazon-israel",
+        "remington-vacuum-beard-trimmer-mb6850a-amazon-israel",
+        "waterpik-promax-wf-23-water-flosser-amazon-israel"
+      ]
+    },
+    {
+      "id": "fashion",
+      "label": "אופנה, ספורט וטיולים",
+      "posts": [
+        "arssm-oversized-tshirts-3pack-amazon-israel",
+        "calvin-klein-12pack-no-show-socks-amazon-israel",
+        "calvin-klein-mens-quarter-socks-12pk-amazon-israel",
+        "calvin-klein-no-show-socks-12pack-amazon-israel",
+        "calvin-klein-socks-12pack-amazon-israel",
+        "etenwolf-vacuum-storage-bags-amazon-israel",
+        "jmierr-corduroy-shorts-amazon-israel",
+        "lovevook-40l-travel-backpack-amazon-israel",
+        "molten-bg4500-basketball-amazon-israel",
+        "nssiw-swim-goggles-3-pack-amazon-israel",
+        "omid-polarized-swim-goggles-amazon-israel",
+        "puma-contender-duffel-bag-amazon-israel",
+        "rdx-mma-shorts-t15b-amazon-israel",
+        "reef-oasis-adapt-sandal-amazon-israel",
+        "resistance-bands-pull-up-set-amazon-israel",
+        "rorhxia-10l-dry-bag-amazon-israel",
+        "speedo-biofuse-2-swim-goggles-amazon-israel",
+        "tommy-hilfiger-12pk-crew-socks-amazon-israel",
+        "tommy-hilfiger-dress-socks-10pack-amazon-israel",
+        "tommy-hilfiger-mens-crew-socks-12pk-amazon-israel",
+        "tommy-hilfiger-mens-dress-socks-10pk-amazon-israel",
+        "tommy-hilfiger-mens-socks-10pack-amazon-israel",
+        "tommy-hilfiger-polo-white-amazon-israel",
+        "under-armour-charged-assert-11-amazon-israel",
+        "zionor-g1-polarized-swim-goggles-amazon-israel",
+        "zionor-g1-se-swim-goggles-amazon-israel"
+      ]
+    },
+    {
+      "id": "auto",
+      "label": "רכב וכלי עבודה",
+      "posts": [
+        "avalonking-armor-shield-ix-ceramic-coating-amazon-israel",
+        "bosch-gsr12v-300fcb22-flexiclick-drill-amazon-israel",
+        "etenwolf-vortex-s6-tire-inflator-amazon-israel",
+        "fanttik-e2-ultra-screwdriver-amazon-israel",
+        "fanttik-f2-pro-rotary-tool-amazon-israel",
+        "fanttik-slim-v10-apex-vacuum-amazon-israel",
+        "fanttik-x9-ace-bike-pump-amazon-israel",
+        "fanttik-x9-pro-tire-inflator-amazon-israel",
+        "ifixit-pro-tech-toolkit-amazon-israel",
+        "kinder-fluff-windshield-sun-shade-amazon-israel",
+        "lamicall-tire-inflator-vhep02-amazon-israel",
+        "lexivon-lx191-bike-torque-wrench-amazon-israel",
+        "magic-shield-graphene-spray-amazon-israel",
+        "noco-genius5-charger-amazon-israel",
+        "pliers-wrench-set-10pc-amazon-israel",
+        "torras-car-phone-holder-ctvk39-amazon-israel",
+        "wireless-carplay-adapter-z18s1-amazon-israel"
+      ]
+    },
+    {
+      "id": "kids",
+      "label": "ילדים ותינוקות",
+      "posts": [
+        "alpine-muffy-kids-hearing-protection-amazon-israel",
+        "elemental-kids-water-bottle-amazon-israel",
+        "oisiz-kids-water-bottle-14oz-amazon-israel",
+        "similove-kids-water-bottle-18oz-amazon-israel"
+      ]
+    },
+    {
+      "id": "misc",
+      "label": "שונות",
+      "posts": [
+        "240-acrylic-paint-markers-set-amazon-israel",
+        "acrylic-paint-markers-168-colors-amazon-israel",
+        "cliganic-mosquito-repellent-bracelets-amazon-israel"
+      ]
+    }
+  ],
+  "noindexDrafts": [
+    "braun-series-7-aio-7535-amazon-israel",
+    "braun-series-9-pro-aio-9570-amazon-israel",
+    "philips-norelco-oneblade-qp440-80-amazon-israel",
+    "tommy-hilfiger-dress-socks-10pack-amazon-israel",
+    "tommy-hilfiger-mens-dress-socks-10pk-amazon-israel"
+  ],
+  "missingFromHub": [
+    "braun-series-7-aio-7535-amazon-israel",
+    "braun-series-9-pro-aio-9570-amazon-israel",
+    "philips-norelco-oneblade-qp440-80-amazon-israel",
+    "tommy-hilfiger-dress-socks-10pack-amazon-israel",
+    "tommy-hilfiger-mens-dress-socks-10pk-amazon-israel"
+  ],
+  "warnings": []
+}
