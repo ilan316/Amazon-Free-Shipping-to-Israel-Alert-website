@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 149,
+    "reviews": 151,
     "indexable": 149,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 149
   },
   "buckets": [
@@ -176,6 +176,7 @@
         "resistance-bands-pull-up-set-amazon-israel",
         "rorhxia-10l-dry-bag-amazon-israel",
         "speedo-biofuse-2-swim-goggles-amazon-israel",
+        "tommy-hilfiger-10pk-dress-socks-amazon-israel",
         "tommy-hilfiger-12pk-crew-socks-amazon-israel",
         "tommy-hilfiger-mens-crew-socks-12pk-amazon-israel",
         "tommy-hilfiger-mens-socks-10pack-amazon-israel",
@@ -225,11 +226,20 @@
       "posts": [
         "240-acrylic-paint-markers-set-amazon-israel",
         "acrylic-paint-markers-168-colors-amazon-israel",
-        "cliganic-mosquito-repellent-bracelets-amazon-israel"
+        "cliganic-mosquito-repellent-bracelets-amazon-israel",
+        "gold-bjj-fight-shorts-black-large-amazon-israel"
       ]
     }
   ],
-  "noindexDrafts": [],
-  "missingFromHub": [],
-  "warnings": []
+  "noindexDrafts": [
+    "gold-bjj-fight-shorts-black-large-amazon-israel",
+    "tommy-hilfiger-10pk-dress-socks-amazon-israel"
+  ],
+  "missingFromHub": [
+    "gold-bjj-fight-shorts-black-large-amazon-israel",
+    "tommy-hilfiger-10pk-dress-socks-amazon-israel"
+  ],
+  "warnings": [
+    "אימוג'י לא ממופה \"🥋\" (leaf: \"6609e2df-21bc-475b-90b2-735f42ef982c_3801\") — gold-bjj-fight-shorts-black-large-amazon-israel שויך ל-misc"
+  ]
 }
