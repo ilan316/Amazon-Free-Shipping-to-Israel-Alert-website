@@ -37,6 +37,9 @@ jobs:
           for i in 1 2 3 4 5; do
             git fetch origin main
             git reset --hard origin/main
+            # מצלמים את המצב הקודם לפני הבנייה — משמש בשלב ההתראה כדי לשלוח
+            # רק אזהרות *חדשות* ולא לספם על אותו פוסט בכל ריצה.
+            cp blog/categories.json "$RUNNER_TEMP/prev-categories.json" 2>/dev/null || echo '{}' > "$RUNNER_TEMP/prev-categories.json"
             node tools/build-internal-links.js
             node generate-sitemap.js
             git add -A
@@ -53,3 +56,31 @@ jobs:
           done
           echo "::error::Failed to push after 5 attempts."
           exit 1
+
+      # סקירה שלא נכנסה לשום קטגוריה נשארת ב"שונות" עם קישורי "מוצרים דומים"
+      # לא רלוונטיים. שולחים על כך מייל לאדמינים דרך הבאקאנד — רק על אזהרות
+      # חדשות, כדי שהריצה הבאה לא תשלח שוב את אותו דבר.
+      - name: Alert on unclassified reviews
+        env:
+          INTERNAL_SYNC_SECRET: ${{ secrets.INTERNAL_SYNC_SECRET }}
+          API_BASE_URL: ${{ secrets.API_BASE_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const read = (p) => { try { return JSON.parse(fs.readFileSync(p, "utf8")).warnings || []; } catch { return []; } };
+            const prev = new Set(read(process.env.RUNNER_TEMP + "/prev-categories.json"));
+            const fresh = read("blog/categories.json").filter((w) => !prev.has(w));
+            fs.writeFileSync(process.env.RUNNER_TEMP + "/payload.json", JSON.stringify({ warnings: fresh, run_url: process.env.RUN_URL }));
+            console.log(`אזהרות חדשות: ${fresh.length}`);
+            fresh.forEach((w) => console.log("::warning::" + w));
+          '
+          if [ "$(node -pe 'JSON.parse(require("fs").readFileSync(process.env.RUNNER_TEMP+"/payload.json","utf8")).warnings.length')" = "0" ]; then
+            echo "אין אזהרות חדשות — לא נשלח מייל."
+            exit 0
+          fi
+          curl -sS -f -X POST "${API_BASE_URL:-https://app.amzfreeil.com}/internal/hub-warnings" \
+            -H "Content-Type: application/json" \
+            -H "X-Sync-Secret: $INTERNAL_SYNC_SECRET" \
+            --data-binary "@$RUNNER_TEMP/payload.json" \
+            || echo "::warning::שליחת ההתראה נכשלה (הבאקאנד לא זמין?)"

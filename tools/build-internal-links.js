@@ -94,14 +94,46 @@ const EMOJI_MAP = new Map(
 const LEAF_MAP = new Map(Object.entries(cmap.leaves));
 const OVERRIDES = new Map(Object.entries(cmap.overrides));
 const EDITORIAL = new Set(cmap.editorial);
+const KEYWORDS = (cmap.keywords || []).map((r) => ({
+  bucket: r.bucket,
+  match: r.match.map((s) => s.toLowerCase()),
+}));
 
 const warnings = [];
+const keywordFallbacks = [];
+
+/**
+ * רשת ביטחון לאימוג'י לא ממופה. ה-eyebrow נכתב ע"י LLM בהנחיה פתוחה
+ * (blog_utils.py), ולכן כל נישה חדשה עלולה ליפול ל-misc. מחפשים רמז בשם
+ * המוצר (עברית) וב-slug (אנגלית) יחד. הכלל הראשון שמתאים מנצח — הסדר
+ * ב-category-map.json הוא שמכריע בין חופפים (מצלמת ילדים ≠ בקבוק לילדים).
+ */
+function classifyByKeyword(post) {
+  const hay = `${post.name} ${post.slug}`.toLowerCase();
+  for (const rule of KEYWORDS) {
+    const hit = rule.match.find((kw) => hay.includes(kw));
+    if (hit) return { bucket: rule.bucket, hit };
+  }
+  return null;
+}
 
 function classify(post) {
   if (OVERRIDES.has(post.slug)) return OVERRIDES.get(post.slug);
   if (post.leaf && LEAF_MAP.has(post.leaf)) return LEAF_MAP.get(post.leaf);
   const e = normEmoji(post.emoji);
   if (e && EMOJI_MAP.has(e)) return EMOJI_MAP.get(e);
+
+  const kw = classifyByKeyword(post);
+  if (kw) {
+    keywordFallbacks.push({
+      slug: post.slug,
+      emoji: post.emoji,
+      keyword: kw.hit,
+      bucket: kw.bucket,
+    });
+    return kw.bucket;
+  }
+
   warnings.push(
     `אימוג'י לא ממופה "${post.emoji}" (leaf: "${post.leaf}") — ${post.slug} שויך ל-misc`
   );
@@ -622,6 +654,7 @@ function main() {
     missingFromHub: posts
       .filter((p) => !cards.some((c) => c.slug === p.slug))
       .map((p) => p.slug),
+    keywordFallbacks,
     warnings,
   };
   writeIfChanged(AUDIT_FILE, JSON.stringify(audit, null, 2) + '\n', changed);
@@ -633,6 +666,11 @@ function main() {
     console.log(`\nכרטיסים ב-prices.html בלי קובץ סקירה: ${hub.orphanCards.join(', ')}`);
   if (audit.missingFromHub.length)
     console.log(`סקירות שחסרות מ-prices.html: ${audit.missingFromHub.join(', ')}`);
+  if (keywordFallbacks.length) {
+    console.log('\nסווגו לפי מילת מפתח (אימוג\'י לא ממופה):');
+    for (const f of keywordFallbacks)
+      console.log(`  ~ ${f.slug}: "${f.emoji}" → ${f.bucket} (מילה: "${f.keyword}")`);
+  }
   if (warnings.length) {
     console.log('\nאזהרות:');
     for (const w of warnings) console.log('  ! ' + w);

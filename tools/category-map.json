@@ -1,10 +1,12 @@
 {
   "_readme": [
     "מקור האמת לקטגוריות של סקירות המוצרים. נצרך ע\"י tools/build-internal-links.js.",
-    "סדר ההכרעה: overrides (לפי slug) → leaves (Product.category ב-JSON-LD) → emoji (מתוך <p class=\"eyebrow\">) → 'misc'.",
+    "סדר ההכרעה: overrides (לפי slug) → leaves (Product.category ב-JSON-LD) → emoji (מתוך <p class=\"eyebrow\">) → keywords → 'misc'.",
     "האימוג'י הוא האות הטוב ביותר: הוא נבחר פר-מוצר בזמן הכתיבה, בעוד Product.category הוא leaf גולמי מ-PA-API שמכיל גם זבל (GUIDs, 'AA', צמתים שיווקיים).",
     "leaves מכיל רק את המקרים שבהם ה-leaf מדויק יותר מהאימוג'י — לא צריך למפות כל leaf.",
-    "כשמתפרסם פוסט עם אימוג'י חדש, הסקריפט מזהיר ומשייך ל-misc. להוסיף אותו כאן."
+    "keywords היא רשת ביטחון: ה-eyebrow נכתב ע\"י LLM בהנחיה פתוחה, ולכן כל נישה חדשה עלולה להביא אימוג'י לא ממופה. היא רצה רק אחרי שהאימוג'י החטיא, ולכן לא יכולה לשבור סיווג קיים.",
+    "keywords הוא מערך *מסודר* — הכלל הראשון שמתאים מנצח. ההתאמה: substring case-insensitive מול שם המוצר (עברית) + ה-slug (אנגלית) יחד. הכללים הספציפיים חייבים להישאר לפני הגנריים (מצלמת ילדים לפני 'ילדים', בקבוק לילדים לפני 'בקבוק').",
+    "פוסט שנופל ל-misc נרשם ב-warnings, וה-Action שולח על כך מייל. אימוג'י חדש שחוזר על עצמו — להוסיף ל-emoji, לא ל-keywords."
   ],
 
   "buckets": [
@@ -53,6 +55,31 @@
 
     "🎨": "misc", "🦟": "misc"
   },
+
+  "keywords": [
+    { "bucket": "lighting", "match": ["מקרן גלקסי", "galaxy-projector", "star-projector", "רצועת led", "led-strip", "strip-light", "backlight", "מנורת", "floor-lamp", "table-lamp", "תאורה"] },
+
+    { "bucket": "photo",    "match": ["מצלמ", "camera", "webcam", "ג'ימבל", "gimbal", "instax", "פילם", "-nvr-", "projector-screen", "פרוג'קטור", "insta360", "reolink", "osmo", "selfie", "-poe-", "עדשה", "lens", "חצובה", "tripod"] },
+
+    { "bucket": "kids",     "match": ["לילדים", "לתינוק", "לתינוקות", "-kids-", "kids-", "toddler", "-baby-"] },
+
+    { "bucket": "audio",    "match": ["אוזני", "headphone", "headset", "earbud", "רמקול", "speaker", "מגבר", "-amp-", "sennheiser", "soundbar", "מיקרופון", "microphone"] },
+
+    { "bucket": "kitchen",  "match": ["כרית ישיבה", "seat-cushion"] },
+    { "bucket": "sleep",    "match": ["מזרן", "mattress", "שמיכ", "blanket", "כרית", "כריות", "pillow", "מצע", "duvet"] },
+
+    { "bucket": "grooming", "match": ["גילוח", "shaver", "מכונת תספורת", "trimmer", "זקן", "beard", "דיאודורנט", "deodorant", "שיניים", "toothbrush", "sonicare", "flosser", "שמפו", "shampoo", "קרם", "serum", "exfoliant", "braun-series", "oneblade", "norelco", "medicube", "skincare", "טיפוח"] },
+
+    { "bucket": "fashion",  "match": ["מכנס", "shorts", "חולצ", "tshirt", "t-shirt", "polo", "גרב", "socks", "נעל", "sneaker", "סנדל", "sandal", "תרמיל", "backpack", "תיק ספורט", "duffel", "מזווד", "luggage", "משקפי שחיי", "goggles", "bjj", "mma", "rash-guard", "כדור סל", "basketball", "רצועות התנגדות", "resistance-band", "שקיות ואקום", "vacuum-storage", "שק אטים", "dry-bag"] },
+
+    { "bucket": "auto",     "match": ["לרכב", "car-", "-car-", "צמיג", "tire", "inflator", "משאבת", "pump", "מברג", "screwdriver", "מקדח", "drill", "מפתח מומנט", "wrench", "ceramic-coating", "graphene", "ערכת כלים", "toolkit", "אופניים", "-bike-", "carplay", "סוככת שמש", "sun-shade", "מטען סוללות", "battery-charger", "rotary-tool", "שואב אבק", "vacuum", "ערכת ברגים", "nut-driver", "כלי עבודה", "pliers"] },
+
+    { "bucket": "computing", "match": ["מסך", "monitor", "-ssd-", "nvme", "ddr5", "ddr4", "-ram-", "-gpu-", "ryzen", "radeon", "geforce", "motherboard", "לוח אם", "עכבר", "mouse", "מקלדת", "keyboard", "docking", "עגינה", "mini-pc", "-hdd-", "ironwolf", "-rx-", "rtx", "rog-strix", "כרטיס מסך", "מארז מחשב", "-nas-"] },
+
+    { "bucket": "kitchen",  "match": ["מחבת", "frying-pan", "-pan-", "סיר", "בקבוק", "water-bottle", "תרמי", "insulated", "קפה", "coffee", "grinder", "קרש", "cutting-board", "פופקורן", "popcorn", "גבינה", "grater", "נרות", "candle", "מקלחת", "shower", "מד חום", "thermometer", "ספל", "mug", "שמן זית", "olive-oil", "מלח ופלפל", "espresso", "minipresso", "מיקרוגל", "microwave", "בלנדר", "blender", "טוסטר", "toaster"] },
+
+    { "bucket": "gadgets",  "match": ["מטען", "charger", "טעינה", "powerbank", "סוללות", "batteries", "מתאם", "adapter", "ממיר מתח", "converter", "מאוורר", "-fan-", "gps", "satellite", "inreach", "smartwatch", "שעון חכם"] }
+  ],
 
   "leaves": {
     "Webcams": "photo",
