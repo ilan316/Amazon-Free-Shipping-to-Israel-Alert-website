@@ -12,10 +12,6 @@
       "permanent": true
     }
   ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/404.html", "status": 404 }
-  ],
   "headers": [
     {
       "source": "/:path+.(png|jpg|jpeg|webp|avif|gif|svg|ico)",
@@ -32,7 +28,7 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://*.vercel-insights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.facebook.com; connect-src 'self' https://*.vercel-insights.com https://www.facebook.com; frame-ancestors 'none'" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://*.vercel-insights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://m.media-amazon.com https://images-na.ssl-images-amazon.com https://www.facebook.com; connect-src 'self' https://app.amzfreeil.com https://*.vercel-insights.com https://www.facebook.com; frame-ancestors 'none'" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "DENY" },
         { "key": "X-XSS-Protection", "value": "1; mode=block" },
