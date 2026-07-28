@@ -93,6 +93,11 @@ def load_config():
                 continue
             k, v = line.split("=", 1)
             cfg[k.strip()] = v.strip()
+    # An environment variable wins over the file, so a key can be supplied for a
+    # one-off run without editing (and leaving) a secret on disk.
+    for k in ("RESEND_API_KEY", "ALERT_EMAIL", "FROM_EMAIL", "GSC_KEY_JSON"):
+        if os.environ.get(k):
+            cfg[k] = os.environ[k]
     if not cfg.get("GSC_KEY_JSON"):
         found = sorted(KEY_DIR.glob("*.json")) if KEY_DIR.is_dir() else []
         if not found:
