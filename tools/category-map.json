@@ -96,7 +96,7 @@
     "catalog": [
       { "slug": "mishloach-hinam-amazon-israel",              "cat": "📦 מדריך",            "read": "~4 דקות", "title": "משלוח חינם מאמזון לישראל: המדריך המלא" },
       { "slug": "mekhs-umaam-amazon-israel",                  "cat": "💰 מסים ומכס",        "read": "~5 דקות", "title": "מכס ומע\"מ על קניות מאמזון לישראל" },
-      { "slug": "hamutzarim-hakhi-kedaim-laknot-bamazon-israel", "cat": "🛒 מדריך קנייה",   "read": "~5 דקות", "title": "המוצרים הכי כדאיים לקנות באמזון לישראל" },
+      { "slug": "hamutzarim-hakhi-kedaim-laknot-bamazon-israel", "cat": "🛒 המלצות",   "read": "~5 דקות", "title": "המלצות אמזון לישראל — המוצרים הכי כדאיים" },
       { "slug": "hacharot-amazon-israel",                     "cat": "↩️ החזרות",           "read": "~5 דקות", "title": "החזרות מאמזון לישראל — איך מחזירים ומה מגיע לכם" },
       { "slug": "eich-ladaat-mishloach-hinam-amazon-israel",  "cat": "🔍 מדריך קנייה",      "read": "~5 דקות", "title": "איך לדעת אם מוצר באמזון מגיע בחינם לישראל" },
       { "slug": "amazon-prime-mishloach-israel",              "cat": "⭐ מנוי Prime",        "read": "~5 דקות", "title": "מה זה <bdi>Amazon Prime</bdi> ואיך זה משפיע על משלוח לישראל" },
