@@ -109,7 +109,7 @@ for (const file of fs.readdirSync(ROOT).filter(f => f.endsWith('.html'))) {
   const filePath = path.join(ROOT, file);
   if (hasNoIndex(filePath)) continue;
   const url = file === 'index.html' ? `${BASE_URL}/` : `${BASE_URL}/${file}`;
-  urls.push({ url, lastmod: getLastMod(filePath) });
+  urls.push({ url, lastmod: getLastMod(filePath, url) });
 }
 
 // Blog directory
@@ -120,7 +120,7 @@ if (fs.existsSync(blogDir)) {
     const filePath = path.join(blogDir, file);
     if (hasNoIndex(filePath)) continue;
     const url = file === 'index.html' ? `${BASE_URL}/blog/` : `${BASE_URL}/blog/${file}`;
-    urls.push({ url, lastmod: getLastMod(filePath) });
+    urls.push({ url, lastmod: getLastMod(filePath, url) });
   }
 }
 
