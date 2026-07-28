@@ -285,8 +285,15 @@ def send_alert(cfg, subject, body_md, enabled):
     if not key:
         print("!! RESEND_API_KEY not set — skipping email alert")
         return False
-    html = "<pre style='font-family:ui-monospace,monospace;font-size:13px'>" \
-           + body_md.replace("&", "&amp;").replace("<", "&lt;") + "</pre>"
+    # The report mixes Hebrew prose with LTR URLs. One <pre> for the whole thing
+    # picks a single direction and mangles half of it, so emit a line per <div>
+    # with dir=auto and let each line take the direction of its own first letter.
+    lines = []
+    for raw in body_md.splitlines():
+        esc = raw.replace("&", "&amp;").replace("<", "&lt;")
+        lines.append(f'<div dir="auto" style="white-space:pre-wrap">{esc or "&nbsp;"}</div>')
+    html = ("<div style=\"font-family:ui-monospace,SFMono-Regular,Consolas,monospace;"
+            "font-size:13px;line-height:1.6\">" + "".join(lines) + "</div>")
     resp = requests.post("https://api.resend.com/emails",
                          headers={"Authorization": f"Bearer {key}"},
                          json={"from": cfg["FROM_EMAIL"], "to": [cfg["ALERT_EMAIL"]],
