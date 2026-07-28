@@ -106,7 +106,8 @@
       { "slug": "mutzarim-asurim-yevu-israel",                "cat": "🚫 מכס וייבוא",       "read": "~5 דקות", "title": "מוצרים אסורים לייבוא לישראל מאמזון" },
       { "slug": "10-tipim-lehisakhon-bamazon-israel",         "cat": "💡 טיפים לחיסכון",    "read": "~5 דקות", "title": "10 טיפים לחיסכון באמזון לישראל" },
       { "slug": "amazon-vs-ebay-israel",                      "cat": "⚖️ השוואה",           "read": "~5 דקות", "title": "אמזון מול <bdi>eBay</bdi> לישראל — מה עדיף לקנייה?" },
-      { "slug": "amazon-vs-aliexpress-israel",                "cat": "⚖️ השוואת פלטפורמות", "read": "~5 דקות", "title": "אמזון מול <bdi>AliExpress</bdi> לישראל — מה עדיף לקנייה?" }
+      { "slug": "amazon-vs-aliexpress-israel",                "cat": "⚖️ השוואת פלטפורמות", "read": "~5 דקות", "title": "אמזון מול <bdi>AliExpress</bdi> לישראל — מה עדיף לקנייה?" },
+      { "slug": "maakav-mishlochim-amazon-israel",            "cat": "📦 מעקב משלוחים",     "read": "~5 דקות", "title": "מעקב משלוחים מאמזון לישראל — איפה החבילה שלי?" }
     ],
 
     "byBucket": {
@@ -136,6 +137,7 @@
     "eich-ladaat-mishloach-hinam-amazon-israel",
     "hacharot-amazon-israel",
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel",
+    "maakav-mishlochim-amazon-israel",
     "madrikh-kahniot-amazon-israel-2026",
     "mekhs-umaam-amazon-israel",
     "mishloach-hinam-amazon-israel",
