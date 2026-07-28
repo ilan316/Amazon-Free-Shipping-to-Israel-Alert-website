@@ -19,3 +19,6 @@ Thumbs.db
 *.code-workspace
 
 .vercel
+
+__pycache__/
+*.pyc
