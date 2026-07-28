@@ -299,7 +299,7 @@ function breadcrumbHtml(post) {
   const b = BUCKET_BY_ID.get(post.bucket);
   return [
     `        <nav class="blog-breadcrumb" aria-label="פירורי לחם">`,
-    `          <a href="../index.html">דף הבית</a>`,
+    `          <a href="/">דף הבית</a>`,
     `          <span aria-hidden="true">›</span>`,
     `          <a href="../prices.html">סקירות מוצרים</a>`,
     `          <span aria-hidden="true">›</span>`,
