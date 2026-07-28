@@ -6,7 +6,8 @@
     "leaves מכיל רק את המקרים שבהם ה-leaf מדויק יותר מהאימוג'י — לא צריך למפות כל leaf.",
     "keywords היא רשת ביטחון: ה-eyebrow נכתב ע\"י LLM בהנחיה פתוחה, ולכן כל נישה חדשה עלולה להביא אימוג'י לא ממופה. היא רצה רק אחרי שהאימוג'י החטיא, ולכן לא יכולה לשבור סיווג קיים.",
     "keywords הוא מערך *מסודר* — הכלל הראשון שמתאים מנצח. ההתאמה: substring case-insensitive מול שם המוצר (עברית) + ה-slug (אנגלית) יחד. הכללים הספציפיים חייבים להישאר לפני הגנריים (מצלמת ילדים לפני 'ילדים', בקבוק לילדים לפני 'בקבוק').",
-    "פוסט שנופל ל-misc נרשם ב-warnings, וה-Action שולח על כך מייל. אימוג'י חדש שחוזר על עצמו — להוסיף ל-emoji, לא ל-keywords."
+    "פוסט שנופל ל-misc נרשם ב-warnings, וה-Action שולח על כך מייל. אימוג'י חדש שחוזר על עצמו — להוסיף ל-emoji, לא ל-keywords.",
+    "guides: מקור האמת לבלוק \"מאמרים קשורים\" בסקירות. guides.byBucket קובע מדריך תמטי אחד לכל דלי; שני המקומות הנותרים מתמלאים ע\"י המדריך עם הכי מעט קישורים נכנסים עד כה — כך אף מדריך לא נצבר מעבר לממוצע. guides.catalog[].title נפלט כ-HTML גולמי (כדי לאפשר <bdi> סביב אנגלית) — לכתוב אותו HTML-safe."
   ],
 
   "buckets": [
@@ -89,6 +90,39 @@
 
   "overrides": {
     "alpine-muffy-kids-hearing-protection-amazon-israel": "kids"
+  },
+
+  "guides": {
+    "catalog": [
+      { "slug": "mishloach-hinam-amazon-israel",              "cat": "📦 מדריך",            "read": "~4 דקות", "title": "משלוח חינם מאמזון לישראל: המדריך המלא" },
+      { "slug": "mekhs-umaam-amazon-israel",                  "cat": "💰 מסים ומכס",        "read": "~5 דקות", "title": "מכס ומע\"מ על קניות מאמזון לישראל" },
+      { "slug": "hamutzarim-hakhi-kedaim-laknot-bamazon-israel", "cat": "🛒 מדריך קנייה",   "read": "~5 דקות", "title": "המוצרים הכי כדאיים לקנות באמזון לישראל" },
+      { "slug": "hacharot-amazon-israel",                     "cat": "↩️ החזרות",           "read": "~5 דקות", "title": "החזרות מאמזון לישראל — איך מחזירים ומה מגיע לכם" },
+      { "slug": "eich-ladaat-mishloach-hinam-amazon-israel",  "cat": "🔍 מדריך קנייה",      "read": "~5 דקות", "title": "איך לדעת אם מוצר באמזון מגיע בחינם לישראל" },
+      { "slug": "amazon-prime-mishloach-israel",              "cat": "⭐ מנוי Prime",        "read": "~5 דקות", "title": "מה זה <bdi>Amazon Prime</bdi> ואיך זה משפיע על משלוח לישראל" },
+      { "slug": "madrikh-kahniot-amazon-israel-2026",         "cat": "📖 המדריך המלא",      "read": "~5 דקות", "title": "מדריך מלא לקניות באמזון לישראל" },
+      { "slug": "black-friday-prime-day-israel",              "cat": "💰 מבצעים ועונות",    "read": "~5 דקות", "title": "<bdi>Black Friday</bdi> ו<bdi>Prime Day</bdi> לישראלים — איך לקנות נכון" },
+      { "slug": "bikorot-mezuyafot-amazon",                   "cat": "⭐ ביקורות וסינון",    "read": "~5 דקות", "title": "ביקורות מזויפות באמזון — איך לזהות ולהימנע" },
+      { "slug": "mutzarim-asurim-yevu-israel",                "cat": "🚫 מכס וייבוא",       "read": "~5 דקות", "title": "מוצרים אסורים לייבוא לישראל מאמזון" },
+      { "slug": "10-tipim-lehisakhon-bamazon-israel",         "cat": "💡 טיפים לחיסכון",    "read": "~5 דקות", "title": "10 טיפים לחיסכון באמזון לישראל" },
+      { "slug": "amazon-vs-ebay-israel",                      "cat": "⚖️ השוואה",           "read": "~5 דקות", "title": "אמזון מול <bdi>eBay</bdi> לישראל — מה עדיף לקנייה?" },
+      { "slug": "amazon-vs-aliexpress-israel",                "cat": "⚖️ השוואת פלטפורמות", "read": "~5 דקות", "title": "אמזון מול <bdi>AliExpress</bdi> לישראל — מה עדיף לקנייה?" }
+    ],
+
+    "byBucket": {
+      "computing": "mekhs-umaam-amazon-israel",
+      "photo":     "mekhs-umaam-amazon-israel",
+      "audio":     "bikorot-mezuyafot-amazon",
+      "grooming":  "bikorot-mezuyafot-amazon",
+      "gadgets":   "mutzarim-asurim-yevu-israel",
+      "lighting":  "mishloach-hinam-amazon-israel",
+      "kitchen":   "mishloach-hinam-amazon-israel",
+      "sleep":     "eich-ladaat-mishloach-hinam-amazon-israel",
+      "auto":      "eich-ladaat-mishloach-hinam-amazon-israel",
+      "fashion":   "hacharot-amazon-israel",
+      "kids":      "hacharot-amazon-israel",
+      "misc":      "hamutzarim-hakhi-kedaim-laknot-bamazon-israel"
+    }
   },
 
   "editorial": [

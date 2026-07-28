@@ -236,6 +236,21 @@
     }
   ],
   "noindexDrafts": [],
+  "guideInbound": {
+    "hacharot-amazon-israel": 42,
+    "mekhs-umaam-amazon-israel": 37,
+    "10-tipim-lehisakhon-bamazon-israel": 36,
+    "mishloach-hinam-amazon-israel": 35,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 35,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 35,
+    "amazon-prime-mishloach-israel": 35,
+    "madrikh-kahniot-amazon-israel-2026": 35,
+    "black-friday-prime-day-israel": 35,
+    "bikorot-mezuyafot-amazon": 35,
+    "mutzarim-asurim-yevu-israel": 35,
+    "amazon-vs-ebay-israel": 35,
+    "amazon-vs-aliexpress-israel": 35
+  },
   "missingFromHub": [],
   "keywordFallbacks": [],
   "warnings": []

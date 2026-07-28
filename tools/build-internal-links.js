@@ -94,6 +94,9 @@ const EMOJI_MAP = new Map(
 const LEAF_MAP = new Map(Object.entries(cmap.leaves));
 const OVERRIDES = new Map(Object.entries(cmap.overrides));
 const EDITORIAL = new Set(cmap.editorial);
+const GUIDES = cmap.guides.catalog;
+const GUIDE_BY_SLUG = new Map(GUIDES.map((g) => [g.slug, g]));
+const GUIDE_BY_BUCKET = cmap.guides.byBucket;
 const KEYWORDS = (cmap.keywords || []).map((r) => ({
   bucket: r.bucket,
   match: r.match.map((s) => s.toLowerCase()),
@@ -293,6 +296,74 @@ function planTargets(posts, byBucket, indexable) {
   return plan;
 }
 
+// -------------------------------------------------------- guides-block build
+
+const GUIDES_COUNT = 3;
+
+/**
+ * מתכנן את בלוק "מאמרים קשורים" — 3 מדריכים לכל סקירה:
+ *   1. מדריך תמטי אחד לפי הדלי (guides.byBucket).
+ *   2. שני מקומות שמתמלאים מהמדריך עם הכי מעט קישורים נכנסים עד כה.
+ * מכיוון שהמונה מצטבר תוך כדי, ההשלמה מתרחקת מעצמה מהמדריכים שקיבלו הרבה
+ * קישורים תמטיים. זה מחליף את שלושת הקישורים הקשיחים שהיו בכל 155 הסקירות
+ * ורוככזו על mishloach-hinam / mekhs-umaam / hamutzarim.
+ * posts ממוין לפי slug ⇒ דטרמיניסטי ⇒ אידמפוטנטי.
+ */
+function planGuides(posts) {
+  const inbound = new Map(GUIDES.map((g) => [g.slug, 0]));
+  const plan = new Map();
+
+  for (const post of posts) {
+    const out = [];
+    const theme = GUIDE_BY_BUCKET[post.bucket];
+    if (theme && GUIDE_BY_SLUG.has(theme)) {
+      out.push(theme);
+      inbound.set(theme, inbound.get(theme) + 1);
+    } else if (theme) {
+      warnings.push(`guides.byBucket מפנה ל-slug לא קיים: "${theme}" (דלי ${post.bucket})`);
+    }
+
+    while (out.length < GUIDES_COUNT) {
+      const cand = GUIDES.filter((g) => !out.includes(g.slug)).sort(
+        (a, b) => inbound.get(a.slug) - inbound.get(b.slug) || (a.slug < b.slug ? -1 : 1)
+      )[0];
+      if (!cand) break;
+      out.push(cand.slug);
+      inbound.set(cand.slug, inbound.get(cand.slug) + 1);
+    }
+
+    plan.set(post.slug, out);
+  }
+
+  return { plan, inbound };
+}
+
+function guideCard(slug) {
+  const g = GUIDE_BY_SLUG.get(slug);
+  return [
+    `        <a class="blog-index-card" href="${g.slug}.html">`,
+    `          <div class="blog-card-body" style="padding:20px;">`,
+    `            <div class="blog-index-card__cat">${g.cat}</div>`,
+    `            <h3 class="blog-index-card__title">${g.title}</h3>`,
+    `            <div class="blog-index-card__footer"><span class="blog-index-card__read">קריאה: ${g.read} ←</span></div>`,
+    `          </div>`,
+    `        </a>`,
+  ].join('\n');
+}
+
+function guidesBlock(slugs) {
+  return [
+    `    <!-- GUIDES:START -->`,
+    `    <section class="section" style="max-width:860px;margin:0 auto 64px;">`,
+    `      <h2 style="font-family:Rubik,sans-serif;font-size:1.25rem;margin-bottom:24px;">מאמרים קשורים</h2>`,
+    `      <div class="blog-index-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));">`,
+    slugs.map(guideCard).join('\n'),
+    `      </div>`,
+    `    </section>`,
+    `    <!-- GUIDES:END -->`,
+  ].join('\n');
+}
+
 // -------------------------------------------------------------- breadcrumbs
 
 function breadcrumbHtml(post) {
@@ -352,7 +423,7 @@ function rewriteBreadcrumbJsonLd(html, post) {
 const OLD_RELATED_RE =
   /\n[ \t]*<section class="section" style="max-width:860px;margin:0 auto 64px;">\s*\n[ \t]*<h2[^>]*>מאמרים קשורים<\/h2>[\s\S]*?\n[ \t]*<\/section>/;
 
-function rewritePost(post, targets) {
+function rewritePost(post, targets, guideSlugs) {
   let html = post.html;
 
   // 1. breadcrumb גלוי
@@ -382,6 +453,17 @@ function rewritePost(post, targets) {
     html = html.replace(OLD_RELATED_RE, (m) => '\n' + block + m);
   } else {
     html = html.replace(/\n[ \t]*<\/main>/, '\n' + block + '\n  </main>');
+  }
+
+  // 5. בלוק "מאמרים קשורים" (מדריכים). בפוסטים ישנים הוא קיים בלי מרקרים —
+  //    הריצה הראשונה מחליפה אותו בגרסה עטופה, ומכאן הוא מנוהל כמו RELATED.
+  const gblock = guidesBlock(guideSlugs);
+  if (/<!-- GUIDES:START -->/.test(html)) {
+    html = html.replace(/[ \t]*<!-- GUIDES:START -->[\s\S]*?<!-- GUIDES:END -->/, () => gblock);
+  } else if (OLD_RELATED_RE.test(html)) {
+    html = html.replace(OLD_RELATED_RE, () => '\n' + gblock);
+  } else {
+    html = html.replace(/\n[ \t]*<\/main>/, () => '\n' + gblock + '\n  </main>');
   }
 
   return html;
@@ -622,13 +704,14 @@ function main() {
   for (const p of posts) byBucket.get(p.bucket).push(p);
 
   const plan = planTargets(posts, byBucket, indexable);
+  const { plan: guidePlan, inbound: guideInbound } = planGuides(posts);
 
   const changed = [];
 
   // --- סקירות
   for (const post of posts) {
     const targets = plan.get(post.slug);
-    const next = rewritePost(post, targets);
+    const next = rewritePost(post, targets, guidePlan.get(post.slug));
     writeIfChanged(post.file, next, changed);
   }
 
@@ -651,6 +734,9 @@ function main() {
       posts: byBucket.get(b.id).map((p) => p.slug),
     })).filter((b) => b.posts.length),
     noindexDrafts: posts.filter((p) => p.noindex).map((p) => p.slug),
+    guideInbound: Object.fromEntries(
+      [...guideInbound.entries()].sort((a, b) => b[1] - a[1])
+    ),
     missingFromHub: posts
       .filter((p) => !cards.some((c) => c.slug === p.slug))
       .map((p) => p.slug),
@@ -662,6 +748,8 @@ function main() {
   // --- דוח
   console.log(`סקירות: ${posts.length} (מהן ${audit.totals.noindex} noindex)`);
   for (const b of audit.buckets) console.log(`  ${b.label}: ${b.posts.length}`);
+  console.log('\nקישורים נכנסים למדריכים (בלוק "מאמרים קשורים"):');
+  for (const [slug, n] of Object.entries(audit.guideInbound)) console.log(`  ${n}\t${slug}`);
   if (hub.orphanCards.length)
     console.log(`\nכרטיסים ב-prices.html בלי קובץ סקירה: ${hub.orphanCards.join(', ')}`);
   if (audit.missingFromHub.length)

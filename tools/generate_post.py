@@ -490,6 +490,7 @@ def build_html(product, content, israel_price, amazon_price):
       </div>
     </article>
 
+    <!-- GUIDES:START -->
     <section class="section" style="max-width:860px;margin:0 auto 64px;">
       <h2 style="font-family:Rubik,sans-serif;font-size:1.25rem;margin-bottom:24px;">מאמרים קשורים</h2>
       <div class="blog-index-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));">
@@ -516,6 +517,7 @@ def build_html(product, content, israel_price, amazon_price):
         </a>
       </div>
     </section>
+    <!-- GUIDES:END -->
   </main>
 
   <footer>
