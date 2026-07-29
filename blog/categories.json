@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 158,
-    "indexable": 158,
+    "reviews": 159,
+    "indexable": 159,
     "noindex": 0,
-    "cardsInHub": 158
+    "cardsInHub": 159
   },
   "buckets": [
     {
@@ -171,6 +171,7 @@
         "gold-bjj-fight-shorts-black-large-amazon-israel",
         "jmierr-corduroy-shorts-amazon-israel",
         "lovevook-40l-travel-backpack-amazon-israel",
+        "lovevook-college-laptop-backpack-amazon-israel",
         "molten-bg4500-basketball-amazon-israel",
         "nssiw-swim-goggles-3-pack-amazon-israel",
         "omid-polarized-swim-goggles-amazon-israel",
@@ -240,17 +241,17 @@
   ],
   "noindexDrafts": [],
   "guideInbound": {
-    "hacharot-amazon-israel": 41,
+    "hacharot-amazon-israel": 42,
     "mekhs-umaam-amazon-israel": 37,
+    "bikorot-mezuyafot-amazon": 34,
+    "10-tipim-lehisakhon-bamazon-israel": 34,
     "mishloach-hinam-amazon-israel": 33,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 33,
     "eich-ladaat-mishloach-hinam-amazon-israel": 33,
     "amazon-prime-mishloach-israel": 33,
     "madrikh-kahniot-amazon-israel-2026": 33,
     "black-friday-prime-day-israel": 33,
-    "bikorot-mezuyafot-amazon": 33,
     "mutzarim-asurim-yevu-israel": 33,
-    "10-tipim-lehisakhon-bamazon-israel": 33,
     "amazon-vs-ebay-israel": 33,
     "amazon-vs-aliexpress-israel": 33,
     "maakav-mishlochim-amazon-israel": 33
