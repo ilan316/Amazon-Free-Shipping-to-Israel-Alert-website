@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 158,
-    "indexable": 157,
-    "noindex": 1,
-    "cardsInHub": 157
+    "indexable": 158,
+    "noindex": 0,
+    "cardsInHub": 158
   },
   "buckets": [
     {
@@ -238,9 +238,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "cheerair-gt02-fan-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 41,
     "mekhs-umaam-amazon-israel": 37,
@@ -257,9 +255,7 @@
     "amazon-vs-aliexpress-israel": 33,
     "maakav-mishlochim-amazon-israel": 33
   },
-  "missingFromHub": [
-    "cheerair-gt02-fan-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
