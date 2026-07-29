@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 157,
+    "reviews": 158,
     "indexable": 157,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 157
   },
   "buckets": [
@@ -75,6 +75,7 @@
       "posts": [
         "acer-3in1-magsafe-charger-amazon-israel",
         "bestek-220v-110v-converter-usb-c-amazon-israel",
+        "cheerair-gt02-fan-amazon-israel",
         "garmin-inreach-mini-2-amazon-israel",
         "minix-neo-p3-100w-gan-charger-amazon-israel",
         "momax-ua8a-travel-adapter-amazon-israel",
@@ -237,24 +238,35 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "cheerair-gt02-fan-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 41,
     "mekhs-umaam-amazon-israel": 37,
+    "mishloach-hinam-amazon-israel": 33,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 33,
     "eich-ladaat-mishloach-hinam-amazon-israel": 33,
     "amazon-prime-mishloach-israel": 33,
+    "madrikh-kahniot-amazon-israel-2026": 33,
     "black-friday-prime-day-israel": 33,
     "bikorot-mezuyafot-amazon": 33,
+    "mutzarim-asurim-yevu-israel": 33,
     "10-tipim-lehisakhon-bamazon-israel": 33,
     "amazon-vs-ebay-israel": 33,
     "amazon-vs-aliexpress-israel": 33,
-    "maakav-mishlochim-amazon-israel": 33,
-    "mishloach-hinam-amazon-israel": 32,
-    "madrikh-kahniot-amazon-israel-2026": 32,
-    "mutzarim-asurim-yevu-israel": 32
+    "maakav-mishlochim-amazon-israel": 33
   },
-  "missingFromHub": [],
-  "keywordFallbacks": [],
+  "missingFromHub": [
+    "cheerair-gt02-fan-amazon-israel"
+  ],
+  "keywordFallbacks": [
+    {
+      "slug": "cheerair-gt02-fan-amazon-israel",
+      "emoji": "🌬️",
+      "keyword": "מאוורר",
+      "bucket": "gadgets"
+    }
+  ],
   "warnings": []
 }
