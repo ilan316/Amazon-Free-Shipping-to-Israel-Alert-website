@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 155,
-    "indexable": 155,
+    "reviews": 157,
+    "indexable": 157,
     "noindex": 0,
-    "cardsInHub": 155
+    "cardsInHub": 157
   },
   "buckets": [
     {
@@ -180,6 +180,7 @@
         "resistance-bands-pull-up-set-amazon-israel",
         "rorhxia-10l-dry-bag-amazon-israel",
         "speedo-biofuse-2-swim-goggles-amazon-israel",
+        "speedo-vanquisher-2-goggles-amazon-israel",
         "tommy-hilfiger-10pk-dress-socks-amazon-israel",
         "tommy-hilfiger-12pk-crew-socks-amazon-israel",
         "tommy-hilfiger-mens-crew-socks-12pk-amazon-israel",
@@ -207,6 +208,7 @@
         "lamicall-tire-inflator-vhep02-amazon-israel",
         "lexivon-lx191-bike-torque-wrench-amazon-israel",
         "magic-shield-graphene-spray-amazon-israel",
+        "miracase-magsafe-car-holder-amazon-israel",
         "noco-genius5-charger-amazon-israel",
         "pliers-wrench-set-10pc-amazon-israel",
         "saker-80pc-nut-driver-set-amazon-israel",
@@ -237,20 +239,20 @@
   ],
   "noindexDrafts": [],
   "guideInbound": {
-    "hacharot-amazon-israel": 40,
+    "hacharot-amazon-israel": 41,
     "mekhs-umaam-amazon-israel": 37,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 33,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 33,
     "amazon-prime-mishloach-israel": 33,
+    "black-friday-prime-day-israel": 33,
     "bikorot-mezuyafot-amazon": 33,
     "10-tipim-lehisakhon-bamazon-israel": 33,
+    "amazon-vs-ebay-israel": 33,
     "amazon-vs-aliexpress-israel": 33,
+    "maakav-mishlochim-amazon-israel": 33,
     "mishloach-hinam-amazon-israel": 32,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 32,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 32,
     "madrikh-kahniot-amazon-israel-2026": 32,
-    "black-friday-prime-day-israel": 32,
-    "mutzarim-asurim-yevu-israel": 32,
-    "amazon-vs-ebay-israel": 32,
-    "maakav-mishlochim-amazon-israel": 32
+    "mutzarim-asurim-yevu-israel": 32
   },
   "missingFromHub": [],
   "keywordFallbacks": [],
