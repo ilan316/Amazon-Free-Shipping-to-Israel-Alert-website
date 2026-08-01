@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 165,
+    "reviews": 166,
     "indexable": 165,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 165
   },
   "buckets": [
@@ -79,6 +79,7 @@
         "cheerair-gt02-fan-amazon-israel",
         "garmin-inreach-mini-2-amazon-israel",
         "minix-neo-p3-100w-gan-charger-amazon-israel",
+        "minix-p1-66w-gan-charger-amazon-israel",
         "momax-ua8a-travel-adapter-amazon-israel",
         "tenergy-60-pack-batteries-amazon-israel",
         "whatook-handheld-fan-amazon-israel"
@@ -245,24 +246,28 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "minix-p1-66w-gan-charger-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 44,
     "mekhs-umaam-amazon-israel": 37,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 35,
     "eich-ladaat-mishloach-hinam-amazon-israel": 35,
     "amazon-prime-mishloach-israel": 35,
+    "black-friday-prime-day-israel": 35,
     "bikorot-mezuyafot-amazon": 35,
     "10-tipim-lehisakhon-bamazon-israel": 35,
     "amazon-vs-ebay-israel": 35,
     "amazon-vs-aliexpress-israel": 35,
+    "maakav-mishlochim-amazon-israel": 35,
     "mishloach-hinam-amazon-israel": 34,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 34,
     "madrikh-kahniot-amazon-israel-2026": 34,
-    "black-friday-prime-day-israel": 34,
-    "mutzarim-asurim-yevu-israel": 34,
-    "maakav-mishlochim-amazon-israel": 34
+    "mutzarim-asurim-yevu-israel": 34
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "minix-p1-66w-gan-charger-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
