@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 167,
+    "reviews": 168,
     "indexable": 167,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 167
   },
   "buckets": [
@@ -241,30 +241,35 @@
       "label": "שונות",
       "posts": [
         "240-acrylic-paint-markers-set-amazon-israel",
+        "acrylic-paint-markers-108-colors-amazon-israel",
         "acrylic-paint-markers-168-colors-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
         "lacoste-l6008s-sunglasses-amazon-israel"
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "acrylic-paint-markers-108-colors-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 45,
     "mekhs-umaam-amazon-israel": 38,
+    "bikorot-mezuyafot-amazon": 36,
+    "mishloach-hinam-amazon-israel": 35,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 35,
     "eich-ladaat-mishloach-hinam-amazon-israel": 35,
     "amazon-prime-mishloach-israel": 35,
     "madrikh-kahniot-amazon-israel-2026": 35,
     "black-friday-prime-day-israel": 35,
-    "bikorot-mezuyafot-amazon": 35,
+    "mutzarim-asurim-yevu-israel": 35,
     "10-tipim-lehisakhon-bamazon-israel": 35,
     "amazon-vs-ebay-israel": 35,
     "amazon-vs-aliexpress-israel": 35,
-    "maakav-mishlochim-amazon-israel": 35,
-    "mishloach-hinam-amazon-israel": 34,
-    "mutzarim-asurim-yevu-israel": 34
+    "maakav-mishlochim-amazon-israel": 35
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "acrylic-paint-markers-108-colors-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
