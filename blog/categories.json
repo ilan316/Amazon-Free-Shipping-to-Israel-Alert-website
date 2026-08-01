@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 167,
-    "indexable": 165,
-    "noindex": 2,
-    "cardsInHub": 165
+    "indexable": 167,
+    "noindex": 0,
+    "cardsInHub": 167
   },
   "buckets": [
     {
@@ -247,10 +247,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "aajk-120in-outdoor-projector-screen-amazon-israel",
-    "minix-p1-66w-gan-charger-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 45,
     "mekhs-umaam-amazon-israel": 38,
@@ -267,10 +264,7 @@
     "mishloach-hinam-amazon-israel": 34,
     "mutzarim-asurim-yevu-israel": 34
   },
-  "missingFromHub": [
-    "aajk-120in-outdoor-projector-screen-amazon-israel",
-    "minix-p1-66w-gan-charger-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
