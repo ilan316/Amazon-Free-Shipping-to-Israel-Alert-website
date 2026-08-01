@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 170,
-    "indexable": 170,
-    "noindex": 0,
-    "cardsInHub": 170
+    "reviews": 172,
+    "indexable": 171,
+    "noindex": 1,
+    "cardsInHub": 171
   },
   "buckets": [
     {
@@ -154,6 +154,7 @@
         "manscaped-beard-hedger-trimmer-amazon-israel",
         "medicube-booster-pro-age-r-amazon-israel",
         "medicube-booster-pro-amazon-israel",
+        "old-spice-gentleman-deodorant-amazon-israel",
         "paulas-choice-bha-liquid-exfoliant-amazon-israel",
         "philips-norelco-oneblade-360-blades-amazon-israel",
         "philips-sonicare-6700-electric-toothbrush-amazon-israel",
@@ -170,6 +171,7 @@
         "calvin-klein-12pack-no-show-socks-amazon-israel",
         "calvin-klein-mens-quarter-socks-12pk-amazon-israel",
         "calvin-klein-no-show-socks-12pack-amazon-israel",
+        "calvin-klein-quarter-socks-6pack-amazon-israel",
         "calvin-klein-socks-12pack-amazon-israel",
         "calvin-klein-womens-quarter-socks-12pack-amazon-israel",
         "etenwolf-vacuum-storage-bags-amazon-israel",
@@ -250,24 +252,28 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "old-spice-gentleman-deodorant-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 46,
     "mekhs-umaam-amazon-israel": 38,
+    "bikorot-mezuyafot-amazon": 37,
+    "mishloach-hinam-amazon-israel": 36,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 36,
     "eich-ladaat-mishloach-hinam-amazon-israel": 36,
     "amazon-prime-mishloach-israel": 36,
-    "bikorot-mezuyafot-amazon": 36,
+    "madrikh-kahniot-amazon-israel-2026": 36,
+    "black-friday-prime-day-israel": 36,
     "10-tipim-lehisakhon-bamazon-israel": 36,
     "amazon-vs-ebay-israel": 36,
     "amazon-vs-aliexpress-israel": 36,
-    "mishloach-hinam-amazon-israel": 35,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 35,
-    "madrikh-kahniot-amazon-israel-2026": 35,
-    "black-friday-prime-day-israel": 35,
-    "mutzarim-asurim-yevu-israel": 35,
-    "maakav-mishlochim-amazon-israel": 35
+    "maakav-mishlochim-amazon-israel": 36,
+    "mutzarim-asurim-yevu-israel": 35
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "old-spice-gentleman-deodorant-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
