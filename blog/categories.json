@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 174,
-    "indexable": 173,
-    "noindex": 1,
-    "cardsInHub": 173
+    "indexable": 174,
+    "noindex": 0,
+    "cardsInHub": 174
   },
   "buckets": [
     {
@@ -254,9 +254,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "ocoopa-beach-blanket-xxl-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 48,
     "mekhs-umaam-amazon-israel": 38,
@@ -273,9 +271,7 @@
     "amazon-vs-aliexpress-israel": 36,
     "maakav-mishlochim-amazon-israel": 36
   },
-  "missingFromHub": [
-    "ocoopa-beach-blanket-xxl-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
