@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 170,
-    "indexable": 168,
-    "noindex": 2,
-    "cardsInHub": 168
+    "indexable": 170,
+    "noindex": 0,
+    "cardsInHub": 170
   },
   "buckets": [
     {
@@ -250,10 +250,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "horus-x-blue-light-glasses-amazon-israel",
-    "pink-miracle-shoe-cleaner-kit-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 46,
     "mekhs-umaam-amazon-israel": 38,
@@ -270,10 +267,7 @@
     "mutzarim-asurim-yevu-israel": 35,
     "maakav-mishlochim-amazon-israel": 35
   },
-  "missingFromHub": [
-    "horus-x-blue-light-glasses-amazon-israel",
-    "pink-miracle-shoe-cleaner-kit-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
