@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 162,
-    "indexable": 161,
-    "noindex": 1,
-    "cardsInHub": 161
+    "indexable": 162,
+    "noindex": 0,
+    "cardsInHub": 162
   },
   "buckets": [
     {
@@ -242,9 +242,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "lacoste-l6008s-sunglasses-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 42,
     "mekhs-umaam-amazon-israel": 37,
@@ -261,9 +259,7 @@
     "mishloach-hinam-amazon-israel": 33,
     "mutzarim-asurim-yevu-israel": 33
   },
-  "missingFromHub": [
-    "lacoste-l6008s-sunglasses-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
