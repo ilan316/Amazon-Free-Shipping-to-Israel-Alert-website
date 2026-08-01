@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 165,
-    "indexable": 162,
-    "noindex": 3,
-    "cardsInHub": 162
+    "indexable": 165,
+    "noindex": 0,
+    "cardsInHub": 165
   },
   "buckets": [
     {
@@ -245,11 +245,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "calvin-klein-womens-quarter-socks-12pack-amazon-israel",
-    "tommy-hilfiger-10pk-crew-socks-amazon-israel",
-    "tommy-hilfiger-12pack-no-show-socks-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 44,
     "mekhs-umaam-amazon-israel": 37,
@@ -266,11 +262,7 @@
     "mutzarim-asurim-yevu-israel": 34,
     "maakav-mishlochim-amazon-israel": 34
   },
-  "missingFromHub": [
-    "calvin-klein-womens-quarter-socks-12pack-amazon-israel",
-    "tommy-hilfiger-10pk-crew-socks-amazon-israel",
-    "tommy-hilfiger-12pack-no-show-socks-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
