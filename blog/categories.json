@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 172,
-    "indexable": 171,
+    "reviews": 173,
+    "indexable": 172,
     "noindex": 1,
-    "cardsInHub": 171
+    "cardsInHub": 172
   },
   "buckets": [
     {
@@ -246,6 +246,7 @@
         "240-acrylic-paint-markers-set-amazon-israel",
         "acrylic-paint-markers-108-colors-amazon-israel",
         "acrylic-paint-markers-168-colors-amazon-israel",
+        "bottleboom-stem-13in1-solar-robot-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
         "horus-x-blue-light-glasses-amazon-israel",
         "lacoste-l6008s-sunglasses-amazon-israel"
@@ -253,26 +254,26 @@
     }
   ],
   "noindexDrafts": [
-    "old-spice-gentleman-deodorant-amazon-israel"
+    "bottleboom-stem-13in1-solar-robot-amazon-israel"
   ],
   "guideInbound": {
-    "hacharot-amazon-israel": 46,
+    "hacharot-amazon-israel": 47,
     "mekhs-umaam-amazon-israel": 38,
     "bikorot-mezuyafot-amazon": 37,
+    "10-tipim-lehisakhon-bamazon-israel": 37,
     "mishloach-hinam-amazon-israel": 36,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 36,
     "eich-ladaat-mishloach-hinam-amazon-israel": 36,
     "amazon-prime-mishloach-israel": 36,
     "madrikh-kahniot-amazon-israel-2026": 36,
     "black-friday-prime-day-israel": 36,
-    "10-tipim-lehisakhon-bamazon-israel": 36,
+    "mutzarim-asurim-yevu-israel": 36,
     "amazon-vs-ebay-israel": 36,
     "amazon-vs-aliexpress-israel": 36,
-    "maakav-mishlochim-amazon-israel": 36,
-    "mutzarim-asurim-yevu-israel": 35
+    "maakav-mishlochim-amazon-israel": 36
   },
   "missingFromHub": [
-    "old-spice-gentleman-deodorant-amazon-israel"
+    "bottleboom-stem-13in1-solar-robot-amazon-israel"
   ],
   "keywordFallbacks": [
     {
@@ -295,6 +296,7 @@
     }
   ],
   "warnings": [
+    "אימוג'י לא ממופה \"🔬\" (leaf: \"Solar Power Kits\") — bottleboom-stem-13in1-solar-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"👓\" (leaf: \"Blue Light Blocking Glasses\") — horus-x-blue-light-glasses-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🕶️\" (leaf: \"Sunglasses\") — lacoste-l6008s-sunglasses-amazon-israel שויך ל-misc"
   ]
