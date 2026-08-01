@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 169,
+    "reviews": 170,
     "indexable": 168,
-    "noindex": 1,
+    "noindex": 2,
     "cardsInHub": 168
   },
   "buckets": [
@@ -180,6 +180,7 @@
         "molten-bg4500-basketball-amazon-israel",
         "nssiw-swim-goggles-3-pack-amazon-israel",
         "omid-polarized-swim-goggles-amazon-israel",
+        "pink-miracle-shoe-cleaner-kit-amazon-israel",
         "puma-contender-duffel-bag-amazon-israel",
         "rdx-mma-shorts-t15b-amazon-israel",
         "rdx-rash-guard-bjj-amazon-israel",
@@ -250,26 +251,28 @@
     }
   ],
   "noindexDrafts": [
-    "horus-x-blue-light-glasses-amazon-israel"
+    "horus-x-blue-light-glasses-amazon-israel",
+    "pink-miracle-shoe-cleaner-kit-amazon-israel"
   ],
   "guideInbound": {
-    "hacharot-amazon-israel": 45,
+    "hacharot-amazon-israel": 46,
     "mekhs-umaam-amazon-israel": 38,
     "eich-ladaat-mishloach-hinam-amazon-israel": 36,
     "amazon-prime-mishloach-israel": 36,
     "bikorot-mezuyafot-amazon": 36,
     "10-tipim-lehisakhon-bamazon-israel": 36,
+    "amazon-vs-ebay-israel": 36,
+    "amazon-vs-aliexpress-israel": 36,
     "mishloach-hinam-amazon-israel": 35,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 35,
     "madrikh-kahniot-amazon-israel-2026": 35,
     "black-friday-prime-day-israel": 35,
     "mutzarim-asurim-yevu-israel": 35,
-    "amazon-vs-ebay-israel": 35,
-    "amazon-vs-aliexpress-israel": 35,
     "maakav-mishlochim-amazon-israel": 35
   },
   "missingFromHub": [
-    "horus-x-blue-light-glasses-amazon-israel"
+    "horus-x-blue-light-glasses-amazon-israel",
+    "pink-miracle-shoe-cleaner-kit-amazon-israel"
   ],
   "keywordFallbacks": [
     {
@@ -283,6 +286,12 @@
       "emoji": "✨",
       "keyword": "medicube",
       "bucket": "grooming"
+    },
+    {
+      "slug": "pink-miracle-shoe-cleaner-kit-amazon-israel",
+      "emoji": "🧼",
+      "keyword": "נעל",
+      "bucket": "fashion"
     }
   ],
   "warnings": [
