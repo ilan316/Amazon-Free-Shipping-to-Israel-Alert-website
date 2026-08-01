@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 162,
+    "reviews": 164,
     "indexable": 162,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 162
   },
   "buckets": [
@@ -185,7 +185,9 @@
         "rorhxia-10l-dry-bag-amazon-israel",
         "speedo-biofuse-2-swim-goggles-amazon-israel",
         "speedo-vanquisher-2-goggles-amazon-israel",
+        "tommy-hilfiger-10pk-crew-socks-amazon-israel",
         "tommy-hilfiger-10pk-dress-socks-amazon-israel",
+        "tommy-hilfiger-12pack-no-show-socks-amazon-israel",
         "tommy-hilfiger-12pk-crew-socks-amazon-israel",
         "tommy-hilfiger-mens-crew-socks-12pk-amazon-israel",
         "tommy-hilfiger-mens-socks-10pack-amazon-israel",
@@ -242,24 +244,30 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "tommy-hilfiger-10pk-crew-socks-amazon-israel",
+    "tommy-hilfiger-12pack-no-show-socks-amazon-israel"
+  ],
   "guideInbound": {
-    "hacharot-amazon-israel": 42,
+    "hacharot-amazon-israel": 44,
     "mekhs-umaam-amazon-israel": 37,
+    "amazon-prime-mishloach-israel": 35,
     "bikorot-mezuyafot-amazon": 35,
+    "10-tipim-lehisakhon-bamazon-israel": 35,
+    "mishloach-hinam-amazon-israel": 34,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 34,
     "eich-ladaat-mishloach-hinam-amazon-israel": 34,
-    "amazon-prime-mishloach-israel": 34,
     "madrikh-kahniot-amazon-israel-2026": 34,
     "black-friday-prime-day-israel": 34,
-    "10-tipim-lehisakhon-bamazon-israel": 34,
+    "mutzarim-asurim-yevu-israel": 34,
     "amazon-vs-ebay-israel": 34,
     "amazon-vs-aliexpress-israel": 34,
-    "maakav-mishlochim-amazon-israel": 34,
-    "mishloach-hinam-amazon-israel": 33,
-    "mutzarim-asurim-yevu-israel": 33
+    "maakav-mishlochim-amazon-israel": 34
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "tommy-hilfiger-10pk-crew-socks-amazon-israel",
+    "tommy-hilfiger-12pack-no-show-socks-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
