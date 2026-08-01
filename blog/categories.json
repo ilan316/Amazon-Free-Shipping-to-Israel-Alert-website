@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 159,
+    "reviews": 160,
     "indexable": 159,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 159
   },
   "buckets": [
@@ -150,6 +150,7 @@
         "head-shoulders-clinical-strength-shampoo-amazon-israel",
         "manscaped-beard-hedger-trimmer-amazon-israel",
         "medicube-booster-pro-age-r-amazon-israel",
+        "medicube-booster-pro-amazon-israel",
         "paulas-choice-bha-liquid-exfoliant-amazon-israel",
         "philips-norelco-oneblade-360-blades-amazon-israel",
         "philips-sonicare-6700-electric-toothbrush-amazon-israel",
@@ -239,30 +240,40 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "medicube-booster-pro-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 42,
     "mekhs-umaam-amazon-israel": 37,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 34,
+    "amazon-prime-mishloach-israel": 34,
     "bikorot-mezuyafot-amazon": 34,
     "10-tipim-lehisakhon-bamazon-israel": 34,
+    "amazon-vs-aliexpress-israel": 34,
     "mishloach-hinam-amazon-israel": 33,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 33,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 33,
-    "amazon-prime-mishloach-israel": 33,
     "madrikh-kahniot-amazon-israel-2026": 33,
     "black-friday-prime-day-israel": 33,
     "mutzarim-asurim-yevu-israel": 33,
     "amazon-vs-ebay-israel": 33,
-    "amazon-vs-aliexpress-israel": 33,
     "maakav-mishlochim-amazon-israel": 33
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "medicube-booster-pro-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
       "emoji": "🌬️",
       "keyword": "מאוורר",
       "bucket": "gadgets"
+    },
+    {
+      "slug": "medicube-booster-pro-amazon-israel",
+      "emoji": "✨",
+      "keyword": "medicube",
+      "bucket": "grooming"
     }
   ],
   "warnings": []
