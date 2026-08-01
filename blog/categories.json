@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 173,
-    "indexable": 172,
+    "reviews": 174,
+    "indexable": 173,
     "noindex": 1,
-    "cardsInHub": 172
+    "cardsInHub": 173
   },
   "buckets": [
     {
@@ -181,6 +181,7 @@
         "lovevook-college-laptop-backpack-amazon-israel",
         "molten-bg4500-basketball-amazon-israel",
         "nssiw-swim-goggles-3-pack-amazon-israel",
+        "ocoopa-beach-blanket-xxl-amazon-israel",
         "omid-polarized-swim-goggles-amazon-israel",
         "pink-miracle-shoe-cleaner-kit-amazon-israel",
         "puma-contender-duffel-bag-amazon-israel",
@@ -254,17 +255,17 @@
     }
   ],
   "noindexDrafts": [
-    "bottleboom-stem-13in1-solar-robot-amazon-israel"
+    "ocoopa-beach-blanket-xxl-amazon-israel"
   ],
   "guideInbound": {
-    "hacharot-amazon-israel": 47,
+    "hacharot-amazon-israel": 48,
     "mekhs-umaam-amazon-israel": 38,
-    "bikorot-mezuyafot-amazon": 37,
+    "bikorot-mezuyafot-amazon": 38,
+    "amazon-prime-mishloach-israel": 37,
     "10-tipim-lehisakhon-bamazon-israel": 37,
     "mishloach-hinam-amazon-israel": 36,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 36,
     "eich-ladaat-mishloach-hinam-amazon-israel": 36,
-    "amazon-prime-mishloach-israel": 36,
     "madrikh-kahniot-amazon-israel-2026": 36,
     "black-friday-prime-day-israel": 36,
     "mutzarim-asurim-yevu-israel": 36,
@@ -273,7 +274,7 @@
     "maakav-mishlochim-amazon-israel": 36
   },
   "missingFromHub": [
-    "bottleboom-stem-13in1-solar-robot-amazon-israel"
+    "ocoopa-beach-blanket-xxl-amazon-israel"
   ],
   "keywordFallbacks": [
     {
