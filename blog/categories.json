@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 161,
-    "indexable": 159,
-    "noindex": 2,
-    "cardsInHub": 159
+    "reviews": 162,
+    "indexable": 161,
+    "noindex": 1,
+    "cardsInHub": 161
   },
   "buckets": [
     {
@@ -41,6 +41,7 @@
       "posts": [
         "acer-ohw344-gaming-headset-amazon-israel",
         "maono-mh601-headphones-amazon-israel",
+        "pioneer-hdj-cue1-dj-headphones-amazon-israel",
         "polk-audio-atrium-4-outdoor-speakers-amazon-israel",
         "sennheiser-hd-599-se-amazon-israel",
         "sennheiser-hd-600-amazon-israel",
@@ -242,28 +243,26 @@
     }
   ],
   "noindexDrafts": [
-    "lacoste-l6008s-sunglasses-amazon-israel",
-    "medicube-booster-pro-amazon-israel"
+    "lacoste-l6008s-sunglasses-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 42,
     "mekhs-umaam-amazon-israel": 37,
+    "bikorot-mezuyafot-amazon": 35,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 34,
     "eich-ladaat-mishloach-hinam-amazon-israel": 34,
     "amazon-prime-mishloach-israel": 34,
+    "madrikh-kahniot-amazon-israel-2026": 34,
     "black-friday-prime-day-israel": 34,
-    "bikorot-mezuyafot-amazon": 34,
     "10-tipim-lehisakhon-bamazon-israel": 34,
     "amazon-vs-ebay-israel": 34,
     "amazon-vs-aliexpress-israel": 34,
+    "maakav-mishlochim-amazon-israel": 34,
     "mishloach-hinam-amazon-israel": 33,
-    "madrikh-kahniot-amazon-israel-2026": 33,
-    "mutzarim-asurim-yevu-israel": 33,
-    "maakav-mishlochim-amazon-israel": 33
+    "mutzarim-asurim-yevu-israel": 33
   },
   "missingFromHub": [
-    "lacoste-l6008s-sunglasses-amazon-israel",
-    "medicube-booster-pro-amazon-israel"
+    "lacoste-l6008s-sunglasses-amazon-israel"
   ],
   "keywordFallbacks": [
     {
