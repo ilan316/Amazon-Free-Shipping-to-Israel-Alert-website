@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 168,
-    "indexable": 167,
-    "noindex": 1,
-    "cardsInHub": 167
+    "indexable": 168,
+    "noindex": 0,
+    "cardsInHub": 168
   },
   "buckets": [
     {
@@ -248,9 +248,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "acrylic-paint-markers-108-colors-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 45,
     "mekhs-umaam-amazon-israel": 38,
@@ -267,9 +265,7 @@
     "amazon-vs-aliexpress-israel": 35,
     "maakav-mishlochim-amazon-israel": 35
   },
-  "missingFromHub": [
-    "acrylic-paint-markers-108-colors-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
