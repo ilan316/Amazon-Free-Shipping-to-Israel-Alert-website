@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 166,
+    "reviews": 167,
     "indexable": 165,
-    "noindex": 1,
+    "noindex": 2,
     "cardsInHub": 165
   },
   "buckets": [
@@ -53,6 +53,7 @@
       "id": "photo",
       "label": "צילום, וידאו ואבטחה",
       "posts": [
+        "aajk-120in-outdoor-projector-screen-amazon-israel",
         "acer-4k-webcam-wbc-0e01-amazon-israel",
         "aochuan-smart-xe-gimbal-amazon-israel",
         "dji-osmo-mobile-8-advanced-tracking-combo-amazon-israel",
@@ -247,14 +248,16 @@
     }
   ],
   "noindexDrafts": [
+    "aajk-120in-outdoor-projector-screen-amazon-israel",
     "minix-p1-66w-gan-charger-amazon-israel"
   ],
   "guideInbound": {
-    "hacharot-amazon-israel": 44,
-    "mekhs-umaam-amazon-israel": 37,
+    "hacharot-amazon-israel": 45,
+    "mekhs-umaam-amazon-israel": 38,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 35,
     "eich-ladaat-mishloach-hinam-amazon-israel": 35,
     "amazon-prime-mishloach-israel": 35,
+    "madrikh-kahniot-amazon-israel-2026": 35,
     "black-friday-prime-day-israel": 35,
     "bikorot-mezuyafot-amazon": 35,
     "10-tipim-lehisakhon-bamazon-israel": 35,
@@ -262,10 +265,10 @@
     "amazon-vs-aliexpress-israel": 35,
     "maakav-mishlochim-amazon-israel": 35,
     "mishloach-hinam-amazon-israel": 34,
-    "madrikh-kahniot-amazon-israel-2026": 34,
     "mutzarim-asurim-yevu-israel": 34
   },
   "missingFromHub": [
+    "aajk-120in-outdoor-projector-screen-amazon-israel",
     "minix-p1-66w-gan-charger-amazon-israel"
   ],
   "keywordFallbacks": [
