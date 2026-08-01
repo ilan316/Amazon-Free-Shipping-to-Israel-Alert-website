@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 164,
+    "reviews": 165,
     "indexable": 162,
-    "noindex": 2,
+    "noindex": 3,
     "cardsInHub": 162
   },
   "buckets": [
@@ -169,6 +169,7 @@
         "calvin-klein-mens-quarter-socks-12pk-amazon-israel",
         "calvin-klein-no-show-socks-12pack-amazon-israel",
         "calvin-klein-socks-12pack-amazon-israel",
+        "calvin-klein-womens-quarter-socks-12pack-amazon-israel",
         "etenwolf-vacuum-storage-bags-amazon-israel",
         "gold-bjj-fight-shorts-black-large-amazon-israel",
         "jmierr-corduroy-shorts-amazon-israel",
@@ -245,26 +246,28 @@
     }
   ],
   "noindexDrafts": [
+    "calvin-klein-womens-quarter-socks-12pack-amazon-israel",
     "tommy-hilfiger-10pk-crew-socks-amazon-israel",
     "tommy-hilfiger-12pack-no-show-socks-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 44,
     "mekhs-umaam-amazon-israel": 37,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 35,
     "amazon-prime-mishloach-israel": 35,
     "bikorot-mezuyafot-amazon": 35,
     "10-tipim-lehisakhon-bamazon-israel": 35,
+    "amazon-vs-ebay-israel": 35,
+    "amazon-vs-aliexpress-israel": 35,
     "mishloach-hinam-amazon-israel": 34,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 34,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 34,
     "madrikh-kahniot-amazon-israel-2026": 34,
     "black-friday-prime-day-israel": 34,
     "mutzarim-asurim-yevu-israel": 34,
-    "amazon-vs-ebay-israel": 34,
-    "amazon-vs-aliexpress-israel": 34,
     "maakav-mishlochim-amazon-israel": 34
   },
   "missingFromHub": [
+    "calvin-klein-womens-quarter-socks-12pack-amazon-israel",
     "tommy-hilfiger-10pk-crew-socks-amazon-israel",
     "tommy-hilfiger-12pack-no-show-socks-amazon-israel"
   ],
