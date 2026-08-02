@@ -31,14 +31,6 @@ CARDS = {
             <div class="blog-index-card__footer"><span class="blog-index-card__read">קריאה: ~5 דקות ←</span></div>
           </div>
         </a>''',
-    'mishloach-hinam': '''\n        <a class="blog-index-card" href="mishloach-hinam-amazon-israel.html">
-          <img src="images/mishloach-hinam.jpg" alt="משלוח חינם מאמזון לישראל: המדריך המלא" class="blog-index-card__thumb" width="280" height="160" loading="lazy" />
-          <div class="blog-card-body">
-            <div class="blog-index-card__cat">📦 משלוחים</div>
-            <h3 class="blog-index-card__title">משלוח חינם מאמזון לישראל: המדריך המלא</h3>
-            <div class="blog-index-card__footer"><span class="blog-index-card__read">קריאה: ~5 דקות ←</span></div>
-          </div>
-        </a>''',
     'amazon-prime': '''\n        <a class="blog-index-card" href="amazon-prime-mishloach-israel.html">
           <img src="images/amazon-prime.jpg" alt="מה זה Amazon Prime ואיך זה משפיע על משלוח לישראל" class="blog-index-card__thumb" width="280" height="160" loading="lazy" />
           <div class="blog-card-body">
@@ -118,7 +110,6 @@ SHORT_TITLE = {
     'eich-ladaat': ('eich-ladaat-mishloach-hinam-amazon-israel.html', 'איך לדעת אם מוצר מגיע חינם'),
     'mekhs-umaam': ('mekhs-umaam-amazon-israel.html', 'מכס ומע״מ על קניות מאמזון'),
     '10-tipim': ('10-tipim-lehisakhon-bamazon-israel.html', '10 טיפים לחיסכון באמזון'),
-    'mishloach-hinam': ('mishloach-hinam-amazon-israel.html', 'משלוח חינם מאמזון: המדריך'),
     'amazon-prime': ('amazon-prime-mishloach-israel.html', 'Amazon Prime ומשלוח לישראל'),
     'madrikh-kahniot': ('madrikh-kahniot-amazon-israel-2026.html', 'מדריך מלא לקניות באמזון 2026'),
     'bikorot-mezuyafot': ('bikorot-mezuyafot-amazon.html', 'ביקורות מזויפות באמזון'),
@@ -132,21 +123,17 @@ SHORT_TITLE = {
 
 # Per-file config: [new_card_1, new_card_2, read_also_link_1, read_also_link_2, read_also_link_3]
 FILES = {
-    'mishloach-hinam-amazon-israel.html': {
-        'new_cards': ['amazon-prime', 'madrikh-kahniot'],
-        'read_also': ['hacharot', 'bikorot-mezuyafot', 'amazon-vs-ebay'],
-    },
     'eich-ladaat-mishloach-hinam-amazon-israel.html': {
         'new_cards': ['mekhs-umaam', 'bikorot-mezuyafot'],
         'read_also': ['hamutzarim', 'amazon-vs-ebay', 'black-friday'],
     },
     'hamutzarim-hakhi-kedaim-laknot-bamazon-israel.html': {
         'new_cards': ['amazon-vs-ebay', 'black-friday'],
-        'read_also': ['mishloach-hinam', 'hacharot', 'madrikh-kahniot'],
+        'read_also': ['eich-ladaat', 'hacharot', 'madrikh-kahniot'],
     },
     'amazon-vs-ebay-israel.html': {
         'new_cards': ['bikorot-mezuyafot', 'madrikh-kahniot'],
-        'read_also': ['mishloach-hinam', 'mekhs-umaam', 'black-friday'],
+        'read_also': ['eich-ladaat', 'mekhs-umaam', 'black-friday'],
     },
     'mekhs-umaam-amazon-israel.html': {
         'new_cards': ['madrikh-kahniot', '10-tipim'],
@@ -166,23 +153,23 @@ FILES = {
     },
     'hacharot-amazon-israel.html': {
         'new_cards': ['mutzarim-asurim', 'bikorot-mezuyafot'],
-        'read_also': ['mekhs-umaam', '10-tipim', 'mishloach-hinam'],
+        'read_also': ['mekhs-umaam', '10-tipim', 'eich-ladaat'],
     },
     'amazon-vs-aliexpress-israel.html': {
         'new_cards': ['amazon-vs-ebay', 'bikorot-mezuyafot'],
-        'read_also': ['mishloach-hinam', '10-tipim', 'amazon-prime'],
+        'read_also': ['eich-ladaat', '10-tipim', 'amazon-prime'],
     },
     'bikorot-mezuyafot-amazon.html': {
         'new_cards': ['hacharot', 'amazon-vs-ebay'],
-        'read_also': ['mishloach-hinam', 'mekhs-umaam', 'mutzarim-asurim'],
+        'read_also': ['eich-ladaat', 'mekhs-umaam', 'mutzarim-asurim'],
     },
     'mutzarim-asurim-yevu-israel.html': {
-        'new_cards': ['bikorot-mezuyafot', 'mishloach-hinam'],
+        'new_cards': ['bikorot-mezuyafot', 'eich-ladaat'],
         'read_also': ['mekhs-umaam', 'eich-ladaat', 'amazon-vs-ebay'],
     },
     'black-friday-prime-day-israel.html': {
         'new_cards': ['amazon-vs-ebay', 'madrikh-kahniot'],
-        'read_also': ['hamutzarim', 'mekhs-umaam', 'mishloach-hinam'],
+        'read_also': ['hamutzarim', 'mekhs-umaam', 'eich-ladaat'],
     },
 }
 

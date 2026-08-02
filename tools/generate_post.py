@@ -501,10 +501,10 @@ def build_html(product, content, israel_price, amazon_price):
             <div class="blog-index-card__footer"><span class="blog-index-card__read">קריאה: ~5 דקות ←</span></div>
           </div>
         </a>
-        <a class="blog-index-card" href="mishloach-hinam-amazon-israel.html">
+        <a class="blog-index-card" href="eich-ladaat-mishloach-hinam-amazon-israel.html">
           <div class="blog-card-body" style="padding:20px;">
-            <div class="blog-index-card__cat">📦 מדריך</div>
-            <h3 class="blog-index-card__title">משלוח חינם מאמזון לישראל: המדריך המלא</h3>
+            <div class="blog-index-card__cat">🔍 מדריך קנייה</div>
+            <h3 class="blog-index-card__title">איך לדעת אם מוצר מגיע חינם לישראל</h3>
             <div class="blog-index-card__footer"><span class="blog-index-card__read">קריאה: ~4 דקות ←</span></div>
           </div>
         </a>

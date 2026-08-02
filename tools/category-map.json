@@ -94,7 +94,6 @@
 
   "guides": {
     "catalog": [
-      { "slug": "mishloach-hinam-amazon-israel",              "cat": "📦 מדריך",            "read": "~4 דקות", "title": "משלוח חינם מאמזון לישראל: המדריך המלא" },
       { "slug": "mekhs-umaam-amazon-israel",                  "cat": "💰 מסים ומכס",        "read": "~5 דקות", "title": "מכס ומע\"מ על קניות מאמזון לישראל" },
       { "slug": "hamutzarim-hakhi-kedaim-laknot-bamazon-israel", "cat": "🛒 המלצות",   "read": "~5 דקות", "title": "המלצות אמזון לישראל — המוצרים הכי כדאיים" },
       { "slug": "hacharot-amazon-israel",                     "cat": "↩️ החזרות",           "read": "~5 דקות", "title": "החזרות מאמזון לישראל — איך מחזירים ומה מגיע לכם" },
@@ -116,8 +115,8 @@
       "audio":     "bikorot-mezuyafot-amazon",
       "grooming":  "bikorot-mezuyafot-amazon",
       "gadgets":   "mutzarim-asurim-yevu-israel",
-      "lighting":  "mishloach-hinam-amazon-israel",
-      "kitchen":   "mishloach-hinam-amazon-israel",
+      "lighting":  "eich-ladaat-mishloach-hinam-amazon-israel",
+      "kitchen":   "eich-ladaat-mishloach-hinam-amazon-israel",
       "sleep":     "eich-ladaat-mishloach-hinam-amazon-israel",
       "auto":      "eich-ladaat-mishloach-hinam-amazon-israel",
       "fashion":   "hacharot-amazon-israel",
@@ -140,7 +139,6 @@
     "maakav-mishlochim-amazon-israel",
     "madrikh-kahniot-amazon-israel-2026",
     "mekhs-umaam-amazon-israel",
-    "mishloach-hinam-amazon-israel",
     "mutzarim-asurim-yevu-israel"
   ]
 }

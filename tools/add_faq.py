@@ -8,17 +8,6 @@ BLOG_DIR = os.path.join(os.path.dirname(__file__), '..', 'blog')
 
 # New questions per file: list of (question_he, answer_he)
 NEW_FAQS = {
-    'mishloach-hinam-amazon-israel.html': [
-        ('מה ההבדל בין FBA ל-FBM מבחינת משלוח לישראל?',
-         'FBA (Fulfilled by Amazon) — אמזון אורזת ושולחת בעצמה, כולל זכאות למשלוח חינם לישראל. FBM (Fulfilled by Merchant) — מוכר פרטי שולח בעצמו; לרוב אינו מציע משלוח חינם לישראל ולוקח יותר זמן.'),
-        ('האם יש עלות נוספת בקבלת החבילה מאמזון בישראל?',
-         'לא. אמזון מיישמת "Duties & Taxes Included" לישראל — המחיר שמשלמים בעת הרכישה הוא המחיר הסופי. אין תשלום נוסף בדואר ישראל ואין דמי שחרור מכס.'),
-        ('מה זה Amazon Global ואיך זה קשור למשלוח לישראל?',
-         'Amazon Global היא תוכנית המשלוח הבינלאומי של אמזון, המאפשרת שליחת מוצרים מאחסני FBA ליותר מ-100 מדינות, כולל ישראל. רק מוצרים המשתתפים ב-Amazon Global זכאים למשלוח חינם לישראל.'),
-        ('האם אמזון שולחת לכל כתובת בישראל?',
-         'כן. אמזון שולחת לכל כתובת בישראל, כולל יישובים בפריפריה. יש להזין את הכתובת באנגלית בחשבון האמזון.'),
-    ],
-
     'eich-ladaat-mishloach-hinam-amazon-israel.html': [
         ('מה ההבדל בין "Eligible for FREE Shipping" ל-"FREE Shipping to Israel"?',
          '"Eligible for FREE Shipping" מתייחסת למשלוח חינם בתוך ארה"ב בלבד עבור חברי Prime. "FREE Shipping to Israel" היא ההוראה הרלוונטית לישראלים — אם לא מופיעה המילה "Israel", המשלוח לישראל אינו חינם.'),

@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/blog/mishloach-hinam-amazon-israel.html",
+      "destination": "/blog/eich-ladaat-mishloach-hinam-amazon-israel.html",
+      "permanent": true
+    },
+    {
       "source": "/guide.html",
       "destination": "/web-guide.html",
       "permanent": true

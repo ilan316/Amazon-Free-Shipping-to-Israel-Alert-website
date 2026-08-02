@@ -17,8 +17,7 @@
 
 ## Blog Articles
 
-- [משלוח חינם מאמזון לישראל: המדריך המלא](https://www.amzfreeil.com/blog/mishloach-hinam-amazon-israel.html) — תנאי זכאות, FBA vs FBM, טבלת עלויות, עונתיות
-- [איך לדעת אם מוצר מגיע חינם לישראל](https://www.amzfreeil.com/blog/eich-ladaat-mishloach-hinam-amazon-israel.html) — זיהוי FREE Shipping to Israel לפני רכישה
+- [איך לדעת אם מוצר מגיע חינם לישראל](https://www.amzfreeil.com/blog/eich-ladaat-mishloach-hinam-amazon-israel.html) — זיהוי FREE Shipping to Israel לפני רכישה, תנאי זכאות, FBA vs FBM, טבלת עלויות, עונתיות
 - [המוצרים הכי כדאיים לקנות באמזון לישראל](https://www.amzfreeil.com/blog/hamutzarim-hakhi-kedaim-laknot-bamazon-israel.html) — קטגוריות מומלצות ומה לא כדאי לקנות
 - [אמזון מול eBay לישראל — מה עדיף?](https://www.amzfreeil.com/blog/amazon-vs-ebay-israel.html) — השוואת פלטפורמות: אמינות, מחיר, משלוח, החזרות
 - [מכס ומע"מ על קניות מאמזון לישראל](https://www.amzfreeil.com/blog/mekhs-umaam-amazon-israel.html) — סף פטור $75, מעל הסף מכס+מע"מ שאמזון גובה מראש (Duties Included), דוגמאות חישוב
