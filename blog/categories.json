@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 180,
+    "reviews": 181,
     "indexable": 180,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 180
   },
   "buckets": [
@@ -183,6 +183,7 @@
         "lovevook-40l-travel-backpack-amazon-israel",
         "lovevook-college-laptop-backpack-amazon-israel",
         "molten-bg4500-basketball-amazon-israel",
+        "nautica-boxer-briefs-4pack-amazon-israel",
         "nssiw-swim-goggles-3-pack-amazon-israel",
         "ocoopa-beach-blanket-xxl-amazon-israel",
         "omid-polarized-swim-goggles-amazon-israel",
@@ -260,23 +261,27 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "nautica-boxer-briefs-4pack-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 58,
-    "hacharot-amazon-israel": 51,
+    "hacharot-amazon-israel": 52,
     "mekhs-umaam-amazon-israel": 40,
+    "amazon-prime-mishloach-israel": 40,
     "10-tipim-lehisakhon-bamazon-israel": 40,
+    "amazon-vs-aliexpress-israel": 40,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 39,
-    "amazon-prime-mishloach-israel": 39,
     "madrikh-kahniot-amazon-israel-2026": 39,
     "black-friday-prime-day-israel": 39,
     "bikorot-mezuyafot-amazon": 39,
     "mutzarim-asurim-yevu-israel": 39,
     "amazon-vs-ebay-israel": 39,
-    "amazon-vs-aliexpress-israel": 39,
     "maakav-mishlochim-amazon-israel": 39
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "nautica-boxer-briefs-4pack-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
