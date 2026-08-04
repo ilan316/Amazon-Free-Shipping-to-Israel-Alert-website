@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 181,
-    "indexable": 180,
-    "noindex": 1,
-    "cardsInHub": 180
+    "reviews": 182,
+    "indexable": 182,
+    "noindex": 0,
+    "cardsInHub": 182
   },
   "buckets": [
     {
@@ -200,6 +200,7 @@
         "tommy-hilfiger-10pk-dress-socks-amazon-israel",
         "tommy-hilfiger-12pack-no-show-socks-amazon-israel",
         "tommy-hilfiger-12pk-crew-socks-amazon-israel",
+        "tommy-hilfiger-essential-tee-amazon-israel",
         "tommy-hilfiger-mens-crew-socks-12pk-amazon-israel",
         "tommy-hilfiger-mens-socks-10pack-amazon-israel",
         "tommy-hilfiger-polo-white-amazon-israel",
@@ -261,27 +262,23 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "nautica-boxer-briefs-4pack-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 58,
-    "hacharot-amazon-israel": 52,
+    "hacharot-amazon-israel": 53,
     "mekhs-umaam-amazon-israel": 40,
     "amazon-prime-mishloach-israel": 40,
+    "bikorot-mezuyafot-amazon": 40,
     "10-tipim-lehisakhon-bamazon-israel": 40,
+    "amazon-vs-ebay-israel": 40,
     "amazon-vs-aliexpress-israel": 40,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 39,
     "madrikh-kahniot-amazon-israel-2026": 39,
     "black-friday-prime-day-israel": 39,
-    "bikorot-mezuyafot-amazon": 39,
     "mutzarim-asurim-yevu-israel": 39,
-    "amazon-vs-ebay-israel": 39,
     "maakav-mishlochim-amazon-israel": 39
   },
-  "missingFromHub": [
-    "nautica-boxer-briefs-4pack-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
