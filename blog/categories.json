@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 180,
-    "indexable": 177,
-    "noindex": 3,
-    "cardsInHub": 177
+    "indexable": 180,
+    "noindex": 0,
+    "cardsInHub": 180
   },
   "buckets": [
     {
@@ -260,11 +260,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "corner-floor-lamp-oiyn-rgbicw-amazon-israel",
-    "philips-4k-webcam-spl6418-amazon-israel",
-    "tommy-hilfiger-womens-12pack-no-show-socks-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 58,
     "hacharot-amazon-israel": 51,
@@ -280,11 +276,7 @@
     "amazon-vs-aliexpress-israel": 39,
     "maakav-mishlochim-amazon-israel": 39
   },
-  "missingFromHub": [
-    "corner-floor-lamp-oiyn-rgbicw-amazon-israel",
-    "philips-4k-webcam-spl6418-amazon-israel",
-    "tommy-hilfiger-womens-12pack-no-show-socks-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
