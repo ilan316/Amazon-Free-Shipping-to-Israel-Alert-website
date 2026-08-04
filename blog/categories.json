@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 177,
+    "reviews": 180,
     "indexable": 177,
-    "noindex": 0,
+    "noindex": 3,
     "cardsInHub": 177
   },
   "buckets": [
@@ -66,6 +66,7 @@
         "insta360-snap-selfie-screen-amazon-israel",
         "insta360-x5-360-camera-amazon-israel",
         "masterbee-kids-camera-h30-amazon-israel",
+        "philips-4k-webcam-spl6418-amazon-israel",
         "reolink-duo-3-poe-amazon-israel",
         "reolink-rlc-810a-4k-camera-amazon-israel",
         "reolink-rln8-410-nvr-amazon-israel"
@@ -91,6 +92,7 @@
       "id": "lighting",
       "label": "תאורה חכמה",
       "posts": [
+        "corner-floor-lamp-oiyn-rgbicw-amazon-israel",
         "flylily-galaxy-projector-amazon-israel",
         "govee-100ft-rgbic-led-strip-amazon-israel",
         "govee-cob-led-strip-pro-amazon-israel",
@@ -200,6 +202,7 @@
         "tommy-hilfiger-mens-crew-socks-12pk-amazon-israel",
         "tommy-hilfiger-mens-socks-10pack-amazon-israel",
         "tommy-hilfiger-polo-white-amazon-israel",
+        "tommy-hilfiger-womens-12pack-no-show-socks-amazon-israel",
         "under-armour-charged-assert-11-amazon-israel",
         "zionor-g1-polarized-swim-goggles-amazon-israel",
         "zionor-g1-se-swim-goggles-amazon-israel",
@@ -257,23 +260,31 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "corner-floor-lamp-oiyn-rgbicw-amazon-israel",
+    "philips-4k-webcam-spl6418-amazon-israel",
+    "tommy-hilfiger-womens-12pack-no-show-socks-amazon-israel"
+  ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 57,
-    "hacharot-amazon-israel": 50,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 58,
+    "hacharot-amazon-israel": 51,
+    "mekhs-umaam-amazon-israel": 40,
+    "10-tipim-lehisakhon-bamazon-israel": 40,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 39,
     "amazon-prime-mishloach-israel": 39,
+    "madrikh-kahniot-amazon-israel-2026": 39,
     "black-friday-prime-day-israel": 39,
     "bikorot-mezuyafot-amazon": 39,
-    "10-tipim-lehisakhon-bamazon-israel": 39,
+    "mutzarim-asurim-yevu-israel": 39,
     "amazon-vs-ebay-israel": 39,
     "amazon-vs-aliexpress-israel": 39,
-    "mekhs-umaam-amazon-israel": 38,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 38,
-    "madrikh-kahniot-amazon-israel-2026": 38,
-    "mutzarim-asurim-yevu-israel": 38,
-    "maakav-mishlochim-amazon-israel": 38
+    "maakav-mishlochim-amazon-israel": 39
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "corner-floor-lamp-oiyn-rgbicw-amazon-israel",
+    "philips-4k-webcam-spl6418-amazon-israel",
+    "tommy-hilfiger-womens-12pack-no-show-socks-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
