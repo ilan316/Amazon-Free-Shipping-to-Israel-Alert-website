@@ -2,8 +2,8 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 180,
-    "indexable": 179,
-    "noindex": 1,
+    "indexable": 180,
+    "noindex": 0,
     "cardsInHub": 180
   },
   "buckets": [
@@ -260,9 +260,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "calvin-klein-quarter-socks-6pack-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 58,
     "hacharot-amazon-israel": 51,
