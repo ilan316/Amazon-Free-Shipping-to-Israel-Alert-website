@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 182,
+    "reviews": 184,
     "indexable": 182,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 182
   },
   "buckets": [
@@ -243,6 +243,7 @@
         "alpine-muffy-kids-hearing-protection-amazon-israel",
         "elemental-kids-water-bottle-amazon-israel",
         "fimibuke-kids-insulated-water-bottle-amazon-israel",
+        "fimibuke-toddler-water-bottle-amazon-israel",
         "mininoo-kids-water-bottle-amazon-israel",
         "oisiz-kids-water-bottle-14oz-amazon-israel",
         "similove-kids-water-bottle-18oz-amazon-israel"
@@ -255,6 +256,7 @@
         "240-acrylic-paint-markers-set-amazon-israel",
         "acrylic-paint-markers-108-colors-amazon-israel",
         "acrylic-paint-markers-168-colors-amazon-israel",
+        "artistro-100-acrylic-paint-markers-amazon-israel",
         "bottleboom-stem-13in1-solar-robot-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
         "horus-x-blue-light-glasses-amazon-israel",
@@ -262,23 +264,29 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "artistro-100-acrylic-paint-markers-amazon-israel",
+    "fimibuke-toddler-water-bottle-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 58,
     "hacharot-amazon-israel": 53,
+    "10-tipim-lehisakhon-bamazon-israel": 41,
     "mekhs-umaam-amazon-israel": 40,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 40,
     "amazon-prime-mishloach-israel": 40,
+    "madrikh-kahniot-amazon-israel-2026": 40,
+    "black-friday-prime-day-israel": 40,
     "bikorot-mezuyafot-amazon": 40,
-    "10-tipim-lehisakhon-bamazon-israel": 40,
+    "mutzarim-asurim-yevu-israel": 40,
     "amazon-vs-ebay-israel": 40,
     "amazon-vs-aliexpress-israel": 40,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 39,
-    "madrikh-kahniot-amazon-israel-2026": 39,
-    "black-friday-prime-day-israel": 39,
-    "mutzarim-asurim-yevu-israel": 39,
-    "maakav-mishlochim-amazon-israel": 39
+    "maakav-mishlochim-amazon-israel": 40
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "artistro-100-acrylic-paint-markers-amazon-israel",
+    "fimibuke-toddler-water-bottle-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
