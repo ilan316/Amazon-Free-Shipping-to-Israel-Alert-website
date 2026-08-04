@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 177,
-    "indexable": 174,
-    "noindex": 3,
-    "cardsInHub": 174
+    "indexable": 177,
+    "noindex": 0,
+    "cardsInHub": 177
   },
   "buckets": [
     {
@@ -257,11 +257,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "feeki-magsafe-charger-25w-amazon-israel",
-    "fimibuke-kids-insulated-water-bottle-amazon-israel",
-    "zionor-g1mini-kids-swim-goggles-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 57,
     "hacharot-amazon-israel": 50,
@@ -277,11 +273,7 @@
     "mutzarim-asurim-yevu-israel": 38,
     "maakav-mishlochim-amazon-israel": 38
   },
-  "missingFromHub": [
-    "feeki-magsafe-charger-25w-amazon-israel",
-    "fimibuke-kids-insulated-water-bottle-amazon-israel",
-    "zionor-g1mini-kids-swim-goggles-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
