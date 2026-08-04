@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 174,
+    "reviews": 177,
     "indexable": 174,
-    "noindex": 0,
+    "noindex": 3,
     "cardsInHub": 174
   },
   "buckets": [
@@ -78,6 +78,7 @@
         "acer-3in1-magsafe-charger-amazon-israel",
         "bestek-220v-110v-converter-usb-c-amazon-israel",
         "cheerair-gt02-fan-amazon-israel",
+        "feeki-magsafe-charger-25w-amazon-israel",
         "garmin-inreach-mini-2-amazon-israel",
         "minix-neo-p3-100w-gan-charger-amazon-israel",
         "minix-p1-66w-gan-charger-amazon-israel",
@@ -201,7 +202,8 @@
         "tommy-hilfiger-polo-white-amazon-israel",
         "under-armour-charged-assert-11-amazon-israel",
         "zionor-g1-polarized-swim-goggles-amazon-israel",
-        "zionor-g1-se-swim-goggles-amazon-israel"
+        "zionor-g1-se-swim-goggles-amazon-israel",
+        "zionor-g1mini-kids-swim-goggles-amazon-israel"
       ]
     },
     {
@@ -235,6 +237,7 @@
       "posts": [
         "alpine-muffy-kids-hearing-protection-amazon-israel",
         "elemental-kids-water-bottle-amazon-israel",
+        "fimibuke-kids-insulated-water-bottle-amazon-israel",
         "mininoo-kids-water-bottle-amazon-israel",
         "oisiz-kids-water-bottle-14oz-amazon-israel",
         "similove-kids-water-bottle-18oz-amazon-israel"
@@ -254,23 +257,31 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "feeki-magsafe-charger-25w-amazon-israel",
+    "fimibuke-kids-insulated-water-bottle-amazon-israel",
+    "zionor-g1mini-kids-swim-goggles-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 57,
-    "hacharot-amazon-israel": 48,
+    "hacharot-amazon-israel": 50,
+    "amazon-prime-mishloach-israel": 39,
+    "black-friday-prime-day-israel": 39,
+    "bikorot-mezuyafot-amazon": 39,
+    "10-tipim-lehisakhon-bamazon-israel": 39,
+    "amazon-vs-ebay-israel": 39,
+    "amazon-vs-aliexpress-israel": 39,
     "mekhs-umaam-amazon-israel": 38,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 38,
-    "amazon-prime-mishloach-israel": 38,
     "madrikh-kahniot-amazon-israel-2026": 38,
-    "black-friday-prime-day-israel": 38,
-    "bikorot-mezuyafot-amazon": 38,
-    "10-tipim-lehisakhon-bamazon-israel": 38,
-    "amazon-vs-ebay-israel": 38,
-    "amazon-vs-aliexpress-israel": 38,
-    "maakav-mishlochim-amazon-israel": 38,
-    "mutzarim-asurim-yevu-israel": 37
+    "mutzarim-asurim-yevu-israel": 38,
+    "maakav-mishlochim-amazon-israel": 38
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "feeki-magsafe-charger-25w-amazon-israel",
+    "fimibuke-kids-insulated-water-bottle-amazon-israel",
+    "zionor-g1mini-kids-swim-goggles-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
