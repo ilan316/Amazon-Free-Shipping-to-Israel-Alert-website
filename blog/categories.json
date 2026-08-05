@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 184,
+    "reviews": 185,
     "indexable": 184,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 184
   },
   "buckets": [
@@ -163,7 +163,8 @@
         "philips-sonicare-6700-electric-toothbrush-amazon-israel",
         "philips-sonicare-diamondclean-smart-9750-amazon-israel",
         "remington-vacuum-beard-trimmer-mb6850a-amazon-israel",
-        "waterpik-promax-wf-23-water-flosser-amazon-israel"
+        "waterpik-promax-wf-23-water-flosser-amazon-israel",
+        "weleda-natural-salt-toothpaste-amazon-israel"
       ]
     },
     {
@@ -264,23 +265,27 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "weleda-natural-salt-toothpaste-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 58,
     "hacharot-amazon-israel": 53,
+    "amazon-prime-mishloach-israel": 41,
+    "bikorot-mezuyafot-amazon": 41,
     "10-tipim-lehisakhon-bamazon-israel": 41,
+    "amazon-vs-aliexpress-israel": 41,
     "mekhs-umaam-amazon-israel": 40,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 40,
-    "amazon-prime-mishloach-israel": 40,
     "madrikh-kahniot-amazon-israel-2026": 40,
     "black-friday-prime-day-israel": 40,
-    "bikorot-mezuyafot-amazon": 40,
     "mutzarim-asurim-yevu-israel": 40,
     "amazon-vs-ebay-israel": 40,
-    "amazon-vs-aliexpress-israel": 40,
     "maakav-mishlochim-amazon-israel": 40
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "weleda-natural-salt-toothpaste-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
