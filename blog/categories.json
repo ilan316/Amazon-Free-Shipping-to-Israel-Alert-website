@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 185,
-    "indexable": 184,
-    "noindex": 1,
-    "cardsInHub": 184
+    "indexable": 185,
+    "noindex": 0,
+    "cardsInHub": 185
   },
   "buckets": [
     {
@@ -265,9 +265,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "weleda-natural-salt-toothpaste-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 58,
     "hacharot-amazon-israel": 53,
@@ -283,9 +281,7 @@
     "amazon-vs-ebay-israel": 40,
     "maakav-mishlochim-amazon-israel": 40
   },
-  "missingFromHub": [
-    "weleda-natural-salt-toothpaste-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
