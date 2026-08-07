@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 191,
-    "indexable": 185,
-    "noindex": 6,
-    "cardsInHub": 185
+    "indexable": 191,
+    "noindex": 0,
+    "cardsInHub": 191
   },
   "buckets": [
     {
@@ -271,14 +271,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "crocs-classic-crafted-canvas-clog-amazon-israel",
-    "dewalt-dxif1201-tire-inflator-amazon-israel",
-    "kodak-pixpro-fz55-amazon-israel",
-    "saker-camping-light-ld10-amazon-israel",
-    "under-armour-matchplay-polo-black-amazon-israel",
-    "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 59,
     "hacharot-amazon-israel": 55,
@@ -294,14 +287,7 @@
     "mutzarim-asurim-yevu-israel": 41,
     "maakav-mishlochim-amazon-israel": 41
   },
-  "missingFromHub": [
-    "crocs-classic-crafted-canvas-clog-amazon-israel",
-    "dewalt-dxif1201-tire-inflator-amazon-israel",
-    "kodak-pixpro-fz55-amazon-israel",
-    "saker-camping-light-ld10-amazon-israel",
-    "under-armour-matchplay-polo-black-amazon-israel",
-    "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
