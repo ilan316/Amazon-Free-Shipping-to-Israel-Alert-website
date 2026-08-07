@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 192,
-    "indexable": 191,
-    "noindex": 1,
-    "cardsInHub": 191
+    "indexable": 192,
+    "noindex": 0,
+    "cardsInHub": 192
   },
   "buckets": [
     {
@@ -272,9 +272,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "mizon-marine-collagen-lifting-cream-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 60,
     "hacharot-amazon-israel": 55,
@@ -290,9 +288,7 @@
     "madrikh-kahniot-amazon-israel-2026": 41,
     "mutzarim-asurim-yevu-israel": 41
   },
-  "missingFromHub": [
-    "mizon-marine-collagen-lifting-cream-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
