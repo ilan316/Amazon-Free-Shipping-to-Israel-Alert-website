@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 189,
+    "reviews": 191,
     "indexable": 185,
-    "noindex": 4,
+    "noindex": 6,
     "cardsInHub": 185
   },
   "buckets": [
@@ -180,6 +180,7 @@
         "calvin-klein-quarter-socks-6pack-amazon-israel",
         "calvin-klein-socks-12pack-amazon-israel",
         "calvin-klein-womens-quarter-socks-12pack-amazon-israel",
+        "crocs-classic-crafted-canvas-clog-amazon-israel",
         "etenwolf-vacuum-storage-bags-amazon-israel",
         "gold-bjj-fight-shorts-black-large-amazon-israel",
         "jmierr-corduroy-shorts-amazon-israel",
@@ -209,6 +210,7 @@
         "tommy-hilfiger-polo-white-amazon-israel",
         "tommy-hilfiger-womens-12pack-no-show-socks-amazon-israel",
         "under-armour-charged-assert-11-amazon-israel",
+        "under-armour-matchplay-polo-black-amazon-israel",
         "zionor-g1-polarized-swim-goggles-amazon-israel",
         "zionor-g1-se-swim-goggles-amazon-israel",
         "zionor-g1mini-kids-swim-goggles-amazon-israel"
@@ -270,30 +272,34 @@
     }
   ],
   "noindexDrafts": [
+    "crocs-classic-crafted-canvas-clog-amazon-israel",
     "dewalt-dxif1201-tire-inflator-amazon-israel",
     "kodak-pixpro-fz55-amazon-israel",
     "saker-camping-light-ld10-amazon-israel",
+    "under-armour-matchplay-polo-black-amazon-israel",
     "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
   ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 59,
-    "hacharot-amazon-israel": 54,
+    "hacharot-amazon-israel": 55,
     "mekhs-umaam-amazon-israel": 42,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 42,
+    "amazon-prime-mishloach-israel": 42,
+    "black-friday-prime-day-israel": 42,
     "bikorot-mezuyafot-amazon": 42,
     "10-tipim-lehisakhon-bamazon-israel": 42,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 41,
-    "amazon-prime-mishloach-israel": 41,
+    "amazon-vs-ebay-israel": 42,
+    "amazon-vs-aliexpress-israel": 42,
     "madrikh-kahniot-amazon-israel-2026": 41,
-    "black-friday-prime-day-israel": 41,
     "mutzarim-asurim-yevu-israel": 41,
-    "amazon-vs-ebay-israel": 41,
-    "amazon-vs-aliexpress-israel": 41,
     "maakav-mishlochim-amazon-israel": 41
   },
   "missingFromHub": [
+    "crocs-classic-crafted-canvas-clog-amazon-israel",
     "dewalt-dxif1201-tire-inflator-amazon-israel",
     "kodak-pixpro-fz55-amazon-israel",
     "saker-camping-light-ld10-amazon-israel",
+    "under-armour-matchplay-polo-black-amazon-israel",
     "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
   ],
   "keywordFallbacks": [
@@ -313,6 +319,12 @@
       "slug": "pink-miracle-shoe-cleaner-kit-amazon-israel",
       "emoji": "🧼",
       "keyword": "נעל",
+      "bucket": "fashion"
+    },
+    {
+      "slug": "under-armour-matchplay-polo-black-amazon-israel",
+      "emoji": "⛳",
+      "keyword": "חולצ",
       "bucket": "fashion"
     }
   ],
