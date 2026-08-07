@@ -2,8 +2,8 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 191,
-    "indexable": 191,
-    "noindex": 0,
+    "indexable": 190,
+    "noindex": 1,
     "cardsInHub": 191
   },
   "buckets": [
@@ -271,7 +271,9 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "tommy-hilfiger-essential-tee-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 59,
     "hacharot-amazon-israel": 55,
