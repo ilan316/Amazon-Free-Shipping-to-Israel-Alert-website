@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 193,
-    "indexable": 193,
+    "reviews": 194,
+    "indexable": 194,
     "noindex": 0,
-    "cardsInHub": 193
+    "cardsInHub": 194
   },
   "buckets": [
     {
@@ -81,6 +81,7 @@
         "acer-3in1-magsafe-charger-amazon-israel",
         "bestek-220v-110v-converter-usb-c-amazon-israel",
         "cheerair-gt02-fan-amazon-israel",
+        "esr-iphone-17-pro-max-case-stand-amazon-israel",
         "feeki-magsafe-charger-25w-amazon-israel",
         "garmin-inreach-mini-2-amazon-israel",
         "minix-neo-p3-100w-gan-charger-amazon-israel",
@@ -276,15 +277,15 @@
   "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 60,
-    "hacharot-amazon-israel": 55,
+    "hacharot-amazon-israel": 56,
     "mekhs-umaam-amazon-israel": 43,
+    "amazon-prime-mishloach-israel": 43,
     "bikorot-mezuyafot-amazon": 43,
+    "10-tipim-lehisakhon-bamazon-israel": 43,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 42,
-    "amazon-prime-mishloach-israel": 42,
     "madrikh-kahniot-amazon-israel-2026": 42,
     "black-friday-prime-day-israel": 42,
     "mutzarim-asurim-yevu-israel": 42,
-    "10-tipim-lehisakhon-bamazon-israel": 42,
     "amazon-vs-ebay-israel": 42,
     "amazon-vs-aliexpress-israel": 42,
     "maakav-mishlochim-amazon-israel": 42
