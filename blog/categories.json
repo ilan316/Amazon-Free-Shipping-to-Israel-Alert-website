@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 185,
+    "reviews": 188,
     "indexable": 185,
-    "noindex": 0,
+    "noindex": 3,
     "cardsInHub": 185
   },
   "buckets": [
@@ -32,7 +32,8 @@
         "samsung-990-pro-ssd-2tb-amazon-israel",
         "samsung-t9-portable-ssd-1tb-amazon-israel",
         "seagate-ironwolf-pro-12tb-amazon-israel",
-        "wavlink-umd309-docking-station-amazon-israel"
+        "wavlink-umd309-docking-station-amazon-israel",
+        "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
       ]
     },
     {
@@ -65,6 +66,7 @@
         "insta360-link-2-pro-webcam-amazon-israel",
         "insta360-snap-selfie-screen-amazon-israel",
         "insta360-x5-360-camera-amazon-israel",
+        "kodak-pixpro-fz55-amazon-israel",
         "masterbee-kids-camera-h30-amazon-israel",
         "philips-4k-webcam-spl6418-amazon-israel",
         "reolink-duo-3-poe-amazon-israel",
@@ -218,6 +220,7 @@
       "posts": [
         "avalonking-armor-shield-ix-ceramic-coating-amazon-israel",
         "bosch-gsr12v-300fcb22-flexiclick-drill-amazon-israel",
+        "dewalt-dxif1201-tire-inflator-amazon-israel",
         "etenwolf-vortex-s6-tire-inflator-amazon-israel",
         "fanttik-e2-ultra-screwdriver-amazon-israel",
         "fanttik-f2-pro-rotary-tool-amazon-israel",
@@ -265,23 +268,31 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "dewalt-dxif1201-tire-inflator-amazon-israel",
+    "kodak-pixpro-fz55-amazon-israel",
+    "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
+  ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 58,
-    "hacharot-amazon-israel": 53,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 59,
+    "hacharot-amazon-israel": 54,
+    "mekhs-umaam-amazon-israel": 42,
+    "bikorot-mezuyafot-amazon": 42,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 41,
     "amazon-prime-mishloach-israel": 41,
-    "bikorot-mezuyafot-amazon": 41,
+    "black-friday-prime-day-israel": 41,
     "10-tipim-lehisakhon-bamazon-israel": 41,
+    "amazon-vs-ebay-israel": 41,
     "amazon-vs-aliexpress-israel": 41,
-    "mekhs-umaam-amazon-israel": 40,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 40,
+    "maakav-mishlochim-amazon-israel": 41,
     "madrikh-kahniot-amazon-israel-2026": 40,
-    "black-friday-prime-day-israel": 40,
-    "mutzarim-asurim-yevu-israel": 40,
-    "amazon-vs-ebay-israel": 40,
-    "maakav-mishlochim-amazon-israel": 40
+    "mutzarim-asurim-yevu-israel": 40
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "dewalt-dxif1201-tire-inflator-amazon-israel",
+    "kodak-pixpro-fz55-amazon-israel",
+    "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
