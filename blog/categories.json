@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 188,
+    "reviews": 189,
     "indexable": 185,
-    "noindex": 3,
+    "noindex": 4,
     "cardsInHub": 185
   },
   "buckets": [
@@ -264,13 +264,15 @@
         "bottleboom-stem-13in1-solar-robot-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
         "horus-x-blue-light-glasses-amazon-israel",
-        "lacoste-l6008s-sunglasses-amazon-israel"
+        "lacoste-l6008s-sunglasses-amazon-israel",
+        "saker-camping-light-ld10-amazon-israel"
       ]
     }
   ],
   "noindexDrafts": [
     "dewalt-dxif1201-tire-inflator-amazon-israel",
     "kodak-pixpro-fz55-amazon-israel",
+    "saker-camping-light-ld10-amazon-israel",
     "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
   ],
   "guideInbound": {
@@ -278,19 +280,20 @@
     "hacharot-amazon-israel": 54,
     "mekhs-umaam-amazon-israel": 42,
     "bikorot-mezuyafot-amazon": 42,
+    "10-tipim-lehisakhon-bamazon-israel": 42,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 41,
     "amazon-prime-mishloach-israel": 41,
+    "madrikh-kahniot-amazon-israel-2026": 41,
     "black-friday-prime-day-israel": 41,
-    "10-tipim-lehisakhon-bamazon-israel": 41,
+    "mutzarim-asurim-yevu-israel": 41,
     "amazon-vs-ebay-israel": 41,
     "amazon-vs-aliexpress-israel": 41,
-    "maakav-mishlochim-amazon-israel": 41,
-    "madrikh-kahniot-amazon-israel-2026": 40,
-    "mutzarim-asurim-yevu-israel": 40
+    "maakav-mishlochim-amazon-israel": 41
   },
   "missingFromHub": [
     "dewalt-dxif1201-tire-inflator-amazon-israel",
     "kodak-pixpro-fz55-amazon-israel",
+    "saker-camping-light-ld10-amazon-israel",
     "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
   ],
   "keywordFallbacks": [
@@ -316,6 +319,7 @@
   "warnings": [
     "אימוג'י לא ממופה \"🔬\" (leaf: \"Solar Power Kits\") — bottleboom-stem-13in1-solar-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"👓\" (leaf: \"Blue Light Blocking Glasses\") — horus-x-blue-light-glasses-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🕶️\" (leaf: \"Sunglasses\") — lacoste-l6008s-sunglasses-amazon-israel שויך ל-misc"
+    "אימוג'י לא ממופה \"🕶️\" (leaf: \"Sunglasses\") — lacoste-l6008s-sunglasses-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🏕️\" (leaf: \"Electric Lanterns\") — saker-camping-light-ld10-amazon-israel שויך ל-misc"
   ]
 }
