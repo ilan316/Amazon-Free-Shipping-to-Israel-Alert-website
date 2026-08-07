@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 192,
+    "reviews": 193,
     "indexable": 192,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 192
   },
   "buckets": [
@@ -264,6 +264,7 @@
         "acrylic-paint-markers-108-colors-amazon-israel",
         "acrylic-paint-markers-168-colors-amazon-israel",
         "artistro-100-acrylic-paint-markers-amazon-israel",
+        "blockhutte-stainless-steel-lunch-box-amazon-israel",
         "bottleboom-stem-13in1-solar-robot-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
         "horus-x-blue-light-glasses-amazon-israel",
@@ -272,23 +273,27 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "blockhutte-stainless-steel-lunch-box-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 60,
     "hacharot-amazon-israel": 55,
+    "mekhs-umaam-amazon-israel": 43,
     "bikorot-mezuyafot-amazon": 43,
-    "mekhs-umaam-amazon-israel": 42,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 42,
     "amazon-prime-mishloach-israel": 42,
+    "madrikh-kahniot-amazon-israel-2026": 42,
     "black-friday-prime-day-israel": 42,
+    "mutzarim-asurim-yevu-israel": 42,
     "10-tipim-lehisakhon-bamazon-israel": 42,
     "amazon-vs-ebay-israel": 42,
     "amazon-vs-aliexpress-israel": 42,
-    "maakav-mishlochim-amazon-israel": 42,
-    "madrikh-kahniot-amazon-israel-2026": 41,
-    "mutzarim-asurim-yevu-israel": 41
+    "maakav-mishlochim-amazon-israel": 42
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "blockhutte-stainless-steel-lunch-box-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -316,6 +321,7 @@
     }
   ],
   "warnings": [
+    "אימוג'י לא ממופה \"🍱\" (leaf: \"Home & Kitchen\") — blockhutte-stainless-steel-lunch-box-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔬\" (leaf: \"Solar Power Kits\") — bottleboom-stem-13in1-solar-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"👓\" (leaf: \"Blue Light Blocking Glasses\") — horus-x-blue-light-glasses-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🕶️\" (leaf: \"Sunglasses\") — lacoste-l6008s-sunglasses-amazon-israel שויך ל-misc",
