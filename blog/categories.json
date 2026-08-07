@@ -1,8 +1,8 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 191,
-    "indexable": 190,
+    "reviews": 192,
+    "indexable": 191,
     "noindex": 1,
     "cardsInHub": 191
   },
@@ -123,6 +123,7 @@
         "kikcoin-ceramic-frying-pans-set-amazon-israel",
         "kingrinder-k6-manual-coffee-grinder-amazon-israel",
         "made-in-cookware-12-inch-stainless-frying-pan-amazon-israel",
+        "mizon-marine-collagen-lifting-cream-amazon-israel",
         "plapitate-olive-oil-sprayer-amazon-israel",
         "royal-craft-wood-cutting-board-set-amazon-israel",
         "salbree-microwave-popcorn-popper-amazon-israel",
@@ -272,24 +273,26 @@
     }
   ],
   "noindexDrafts": [
-    "tommy-hilfiger-essential-tee-amazon-israel"
+    "mizon-marine-collagen-lifting-cream-amazon-israel"
   ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 59,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 60,
     "hacharot-amazon-israel": 55,
+    "bikorot-mezuyafot-amazon": 43,
     "mekhs-umaam-amazon-israel": 42,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 42,
     "amazon-prime-mishloach-israel": 42,
     "black-friday-prime-day-israel": 42,
-    "bikorot-mezuyafot-amazon": 42,
     "10-tipim-lehisakhon-bamazon-israel": 42,
     "amazon-vs-ebay-israel": 42,
     "amazon-vs-aliexpress-israel": 42,
+    "maakav-mishlochim-amazon-israel": 42,
     "madrikh-kahniot-amazon-israel-2026": 41,
-    "mutzarim-asurim-yevu-israel": 41,
-    "maakav-mishlochim-amazon-israel": 41
+    "mutzarim-asurim-yevu-israel": 41
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "mizon-marine-collagen-lifting-cream-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
