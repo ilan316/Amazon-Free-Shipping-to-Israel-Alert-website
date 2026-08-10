@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 197,
+    "reviews": 198,
     "indexable": 197,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 197
   },
   "buckets": [
@@ -199,6 +199,7 @@
         "puma-contender-duffel-bag-amazon-israel",
         "rdx-mma-shorts-t15b-amazon-israel",
         "rdx-rash-guard-bjj-amazon-israel",
+        "reebok-shadoray-mens-shoes-amazon-israel",
         "reef-oasis-adapt-sandal-amazon-israel",
         "resistance-bands-pull-up-set-amazon-israel",
         "rorhxia-10l-dry-bag-amazon-israel",
@@ -277,23 +278,27 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "reebok-shadoray-mens-shoes-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 61,
-    "hacharot-amazon-israel": 57,
+    "hacharot-amazon-israel": 58,
     "mekhs-umaam-amazon-israel": 44,
     "bikorot-mezuyafot-amazon": 44,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 43,
     "amazon-prime-mishloach-israel": 43,
+    "madrikh-kahniot-amazon-israel-2026": 43,
     "black-friday-prime-day-israel": 43,
+    "mutzarim-asurim-yevu-israel": 43,
     "10-tipim-lehisakhon-bamazon-israel": 43,
     "amazon-vs-ebay-israel": 43,
     "amazon-vs-aliexpress-israel": 43,
-    "maakav-mishlochim-amazon-israel": 43,
-    "madrikh-kahniot-amazon-israel-2026": 42,
-    "mutzarim-asurim-yevu-israel": 42
+    "maakav-mishlochim-amazon-israel": 43
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "reebok-shadoray-mens-shoes-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
