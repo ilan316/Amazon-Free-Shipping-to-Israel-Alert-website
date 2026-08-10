@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 202,
-    "indexable": 197,
-    "noindex": 5,
-    "cardsInHub": 198
+    "indexable": 202,
+    "noindex": 0,
+    "cardsInHub": 202
   },
   "buckets": [
     {
@@ -282,13 +282,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "lovevook-laptop-backpack-amazon-israel",
-    "lovevook-laptop-backpack-tumbler-amazon-israel",
-    "nautica-boxer-briefs-4pack-amazon-israel",
-    "owala-freesip-32oz-water-bottle-amazon-israel",
-    "zionor-g1-air-swim-goggles-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 62,
     "hacharot-amazon-israel": 60,
@@ -304,12 +298,7 @@
     "amazon-vs-aliexpress-israel": 44,
     "maakav-mishlochim-amazon-israel": 44
   },
-  "missingFromHub": [
-    "lovevook-laptop-backpack-amazon-israel",
-    "lovevook-laptop-backpack-tumbler-amazon-israel",
-    "owala-freesip-32oz-water-bottle-amazon-israel",
-    "zionor-g1-air-swim-goggles-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
