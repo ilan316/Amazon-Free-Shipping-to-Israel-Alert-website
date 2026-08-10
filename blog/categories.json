@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 201,
+    "reviews": 202,
     "indexable": 197,
-    "noindex": 4,
+    "noindex": 5,
     "cardsInHub": 198
   },
   "buckets": [
@@ -219,6 +219,7 @@
         "tommy-hilfiger-womens-12pack-no-show-socks-amazon-israel",
         "under-armour-charged-assert-11-amazon-israel",
         "under-armour-matchplay-polo-black-amazon-israel",
+        "zionor-g1-air-swim-goggles-amazon-israel",
         "zionor-g1-polarized-swim-goggles-amazon-israel",
         "zionor-g1-se-swim-goggles-amazon-israel",
         "zionor-g1mini-kids-swim-goggles-amazon-israel"
@@ -285,27 +286,29 @@
     "lovevook-laptop-backpack-amazon-israel",
     "lovevook-laptop-backpack-tumbler-amazon-israel",
     "nautica-boxer-briefs-4pack-amazon-israel",
-    "owala-freesip-32oz-water-bottle-amazon-israel"
+    "owala-freesip-32oz-water-bottle-amazon-israel",
+    "zionor-g1-air-swim-goggles-amazon-israel"
   ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 62,
-    "hacharot-amazon-israel": 59,
+    "hacharot-amazon-israel": 60,
     "mekhs-umaam-amazon-israel": 44,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 44,
     "amazon-prime-mishloach-israel": 44,
+    "madrikh-kahniot-amazon-israel-2026": 44,
     "black-friday-prime-day-israel": 44,
     "bikorot-mezuyafot-amazon": 44,
+    "mutzarim-asurim-yevu-israel": 44,
     "10-tipim-lehisakhon-bamazon-israel": 44,
     "amazon-vs-ebay-israel": 44,
     "amazon-vs-aliexpress-israel": 44,
-    "maakav-mishlochim-amazon-israel": 44,
-    "madrikh-kahniot-amazon-israel-2026": 43,
-    "mutzarim-asurim-yevu-israel": 43
+    "maakav-mishlochim-amazon-israel": 44
   },
   "missingFromHub": [
     "lovevook-laptop-backpack-amazon-israel",
     "lovevook-laptop-backpack-tumbler-amazon-israel",
-    "owala-freesip-32oz-water-bottle-amazon-israel"
+    "owala-freesip-32oz-water-bottle-amazon-israel",
+    "zionor-g1-air-swim-goggles-amazon-israel"
   ],
   "keywordFallbacks": [
     {
@@ -336,6 +339,12 @@
       "slug": "under-armour-matchplay-polo-black-amazon-israel",
       "emoji": "⛳",
       "keyword": "חולצ",
+      "bucket": "fashion"
+    },
+    {
+      "slug": "zionor-g1-air-swim-goggles-amazon-israel",
+      "emoji": "🥽",
+      "keyword": "משקפי שחיי",
       "bucket": "fashion"
     }
   ],
