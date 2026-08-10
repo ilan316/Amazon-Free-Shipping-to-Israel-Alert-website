@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 195,
-    "indexable": 194,
-    "noindex": 1,
-    "cardsInHub": 194
+    "indexable": 195,
+    "noindex": 0,
+    "cardsInHub": 195
   },
   "buckets": [
     {
@@ -275,9 +275,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "new-balance-990v6-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 60,
     "hacharot-amazon-israel": 57,
@@ -293,9 +291,7 @@
     "mutzarim-asurim-yevu-israel": 42,
     "maakav-mishlochim-amazon-israel": 42
   },
-  "missingFromHub": [
-    "new-balance-990v6-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
