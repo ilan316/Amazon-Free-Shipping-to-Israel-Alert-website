@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 199,
+    "reviews": 200,
     "indexable": 197,
-    "noindex": 2,
+    "noindex": 3,
     "cardsInHub": 198
   },
   "buckets": [
@@ -190,6 +190,7 @@
         "jmierr-corduroy-shorts-amazon-israel",
         "lovevook-40l-travel-backpack-amazon-israel",
         "lovevook-college-laptop-backpack-amazon-israel",
+        "lovevook-laptop-backpack-amazon-israel",
         "molten-bg4500-basketball-amazon-israel",
         "nautica-boxer-briefs-4pack-amazon-israel",
         "new-balance-990v6-amazon-israel",
@@ -280,6 +281,7 @@
     }
   ],
   "noindexDrafts": [
+    "lovevook-laptop-backpack-amazon-israel",
     "nautica-boxer-briefs-4pack-amazon-israel",
     "owala-freesip-32oz-water-bottle-amazon-israel"
   ],
@@ -288,17 +290,18 @@
     "hacharot-amazon-israel": 58,
     "mekhs-umaam-amazon-israel": 44,
     "amazon-prime-mishloach-israel": 44,
+    "black-friday-prime-day-israel": 44,
     "bikorot-mezuyafot-amazon": 44,
     "10-tipim-lehisakhon-bamazon-israel": 44,
+    "amazon-vs-ebay-israel": 44,
+    "amazon-vs-aliexpress-israel": 44,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 43,
     "madrikh-kahniot-amazon-israel-2026": 43,
-    "black-friday-prime-day-israel": 43,
     "mutzarim-asurim-yevu-israel": 43,
-    "amazon-vs-ebay-israel": 43,
-    "amazon-vs-aliexpress-israel": 43,
     "maakav-mishlochim-amazon-israel": 43
   },
   "missingFromHub": [
+    "lovevook-laptop-backpack-amazon-israel",
     "owala-freesip-32oz-water-bottle-amazon-israel"
   ],
   "keywordFallbacks": [
