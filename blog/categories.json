@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 200,
+    "reviews": 201,
     "indexable": 197,
-    "noindex": 3,
+    "noindex": 4,
     "cardsInHub": 198
   },
   "buckets": [
@@ -191,6 +191,7 @@
         "lovevook-40l-travel-backpack-amazon-israel",
         "lovevook-college-laptop-backpack-amazon-israel",
         "lovevook-laptop-backpack-amazon-israel",
+        "lovevook-laptop-backpack-tumbler-amazon-israel",
         "molten-bg4500-basketball-amazon-israel",
         "nautica-boxer-briefs-4pack-amazon-israel",
         "new-balance-990v6-amazon-israel",
@@ -282,26 +283,28 @@
   ],
   "noindexDrafts": [
     "lovevook-laptop-backpack-amazon-israel",
+    "lovevook-laptop-backpack-tumbler-amazon-israel",
     "nautica-boxer-briefs-4pack-amazon-israel",
     "owala-freesip-32oz-water-bottle-amazon-israel"
   ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 62,
-    "hacharot-amazon-israel": 58,
+    "hacharot-amazon-israel": 59,
     "mekhs-umaam-amazon-israel": 44,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 44,
     "amazon-prime-mishloach-israel": 44,
     "black-friday-prime-day-israel": 44,
     "bikorot-mezuyafot-amazon": 44,
     "10-tipim-lehisakhon-bamazon-israel": 44,
     "amazon-vs-ebay-israel": 44,
     "amazon-vs-aliexpress-israel": 44,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 43,
+    "maakav-mishlochim-amazon-israel": 44,
     "madrikh-kahniot-amazon-israel-2026": 43,
-    "mutzarim-asurim-yevu-israel": 43,
-    "maakav-mishlochim-amazon-israel": 43
+    "mutzarim-asurim-yevu-israel": 43
   },
   "missingFromHub": [
     "lovevook-laptop-backpack-amazon-israel",
+    "lovevook-laptop-backpack-tumbler-amazon-israel",
     "owala-freesip-32oz-water-bottle-amazon-israel"
   ],
   "keywordFallbacks": [
