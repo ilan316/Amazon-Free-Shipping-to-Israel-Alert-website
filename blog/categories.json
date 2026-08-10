@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 198,
-    "indexable": 197,
-    "noindex": 1,
-    "cardsInHub": 197
+    "indexable": 198,
+    "noindex": 0,
+    "cardsInHub": 198
   },
   "buckets": [
     {
@@ -278,9 +278,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "reebok-shadoray-mens-shoes-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 61,
     "hacharot-amazon-israel": 58,
@@ -296,9 +294,7 @@
     "amazon-vs-aliexpress-israel": 43,
     "maakav-mishlochim-amazon-israel": 43
   },
-  "missingFromHub": [
-    "reebok-shadoray-mens-shoes-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
