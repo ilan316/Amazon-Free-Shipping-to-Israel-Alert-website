@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 197,
-    "indexable": 196,
-    "noindex": 1,
-    "cardsInHub": 196
+    "indexable": 197,
+    "noindex": 0,
+    "cardsInHub": 197
   },
   "buckets": [
     {
@@ -277,9 +277,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "fanttik-x9-apex-air-compressor-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 61,
     "hacharot-amazon-israel": 57,
@@ -295,9 +293,7 @@
     "madrikh-kahniot-amazon-israel-2026": 42,
     "mutzarim-asurim-yevu-israel": 42
   },
-  "missingFromHub": [
-    "fanttik-x9-apex-air-compressor-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
