@@ -2,8 +2,8 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 196,
-    "indexable": 195,
-    "noindex": 1,
+    "indexable": 194,
+    "noindex": 2,
     "cardsInHub": 195
   },
   "buckets": [
@@ -277,7 +277,8 @@
     }
   ],
   "noindexDrafts": [
-    "kodak-ultramax-400-35mm-film-6pack-amazon-israel"
+    "kodak-ultramax-400-35mm-film-6pack-amazon-israel",
+    "under-armour-charged-assert-11-amazon-israel"
   ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 60,
