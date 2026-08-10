@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 196,
+    "reviews": 197,
     "indexable": 196,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 196
   },
   "buckets": [
@@ -232,6 +232,7 @@
         "fanttik-f2-pro-rotary-tool-amazon-israel",
         "fanttik-slim-v10-apex-vacuum-amazon-israel",
         "fanttik-x9-ace-bike-pump-amazon-israel",
+        "fanttik-x9-apex-air-compressor-amazon-israel",
         "fanttik-x9-pro-tire-inflator-amazon-israel",
         "ifixit-pro-tech-toolkit-amazon-israel",
         "kinder-fluff-windshield-sun-shade-amazon-israel",
@@ -276,23 +277,27 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "fanttik-x9-apex-air-compressor-amazon-israel"
+  ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 60,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 61,
     "hacharot-amazon-israel": 57,
     "mekhs-umaam-amazon-israel": 44,
+    "bikorot-mezuyafot-amazon": 44,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 43,
     "amazon-prime-mishloach-israel": 43,
     "black-friday-prime-day-israel": 43,
-    "bikorot-mezuyafot-amazon": 43,
     "10-tipim-lehisakhon-bamazon-israel": 43,
     "amazon-vs-ebay-israel": 43,
     "amazon-vs-aliexpress-israel": 43,
+    "maakav-mishlochim-amazon-israel": 43,
     "madrikh-kahniot-amazon-israel-2026": 42,
-    "mutzarim-asurim-yevu-israel": 42,
-    "maakav-mishlochim-amazon-israel": 42
+    "mutzarim-asurim-yevu-israel": 42
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "fanttik-x9-apex-air-compressor-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
