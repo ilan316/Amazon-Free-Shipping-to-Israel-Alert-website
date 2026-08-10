@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 195,
+    "reviews": 196,
     "indexable": 195,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 195
   },
   "buckets": [
@@ -67,6 +67,7 @@
         "insta360-snap-selfie-screen-amazon-israel",
         "insta360-x5-360-camera-amazon-israel",
         "kodak-pixpro-fz55-amazon-israel",
+        "kodak-ultramax-400-35mm-film-6pack-amazon-israel",
         "masterbee-kids-camera-h30-amazon-israel",
         "philips-4k-webcam-spl6418-amazon-israel",
         "reolink-duo-3-poe-amazon-israel",
@@ -275,23 +276,27 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "kodak-ultramax-400-35mm-film-6pack-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 60,
     "hacharot-amazon-israel": 57,
-    "mekhs-umaam-amazon-israel": 43,
+    "mekhs-umaam-amazon-israel": 44,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 43,
     "amazon-prime-mishloach-israel": 43,
+    "black-friday-prime-day-israel": 43,
     "bikorot-mezuyafot-amazon": 43,
     "10-tipim-lehisakhon-bamazon-israel": 43,
     "amazon-vs-ebay-israel": 43,
     "amazon-vs-aliexpress-israel": 43,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 42,
     "madrikh-kahniot-amazon-israel-2026": 42,
-    "black-friday-prime-day-israel": 42,
     "mutzarim-asurim-yevu-israel": 42,
     "maakav-mishlochim-amazon-israel": 42
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "kodak-ultramax-400-35mm-film-6pack-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
