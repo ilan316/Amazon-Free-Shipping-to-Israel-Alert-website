@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 196,
-    "indexable": 194,
-    "noindex": 2,
-    "cardsInHub": 195
+    "indexable": 196,
+    "noindex": 0,
+    "cardsInHub": 196
   },
   "buckets": [
     {
@@ -276,10 +276,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "kodak-ultramax-400-35mm-film-6pack-amazon-israel",
-    "under-armour-charged-assert-11-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 60,
     "hacharot-amazon-israel": 57,
@@ -295,9 +292,7 @@
     "mutzarim-asurim-yevu-israel": 42,
     "maakav-mishlochim-amazon-israel": 42
   },
-  "missingFromHub": [
-    "kodak-ultramax-400-35mm-film-6pack-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
