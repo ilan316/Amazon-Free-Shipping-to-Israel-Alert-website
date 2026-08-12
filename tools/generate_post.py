@@ -231,6 +231,7 @@ def build_html(product, content, israel_price, amazon_price):
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{content['title_he']} | AMZ Free Ship Alert</title>
   <meta name="description" content="{content['description_he']}" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
   <meta property="og:title" content="{content['title_he']}" />
   <meta property="og:description" content="{content['description_he']}" />
