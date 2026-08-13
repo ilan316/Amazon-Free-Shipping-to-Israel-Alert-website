@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 205,
+    "reviews": 208,
     "indexable": 205,
-    "noindex": 0,
+    "noindex": 3,
     "cardsInHub": 205
   },
   "buckets": [
@@ -170,6 +170,7 @@
         "philips-sonicare-6700-electric-toothbrush-amazon-israel",
         "philips-sonicare-diamondclean-smart-9750-amazon-israel",
         "remington-vacuum-beard-trimmer-mb6850a-amazon-israel",
+        "waterpik-cordless-gem-5100-amazon-israel",
         "waterpik-promax-wf-23-water-flosser-amazon-israel",
         "weleda-natural-salt-toothpaste-amazon-israel"
       ]
@@ -194,6 +195,7 @@
         "lovevook-laptop-backpack-amazon-israel",
         "lovevook-laptop-backpack-tumbler-amazon-israel",
         "molten-bg4500-basketball-amazon-israel",
+        "music-boxing-machine-qbj22-amazon-israel",
         "nautica-boxer-briefs-4pack-amazon-israel",
         "new-balance-990v6-amazon-israel",
         "nssiw-swim-goggles-3-pack-amazon-israel",
@@ -230,6 +232,7 @@
       "id": "auto",
       "label": "רכב וכלי עבודה",
       "posts": [
+        "adams-essential-car-wash-kit-amazon-israel",
         "avalonking-armor-shield-ix-ceramic-coating-amazon-israel",
         "bosch-gsr12v-300fcb22-flexiclick-drill-amazon-israel",
         "dewalt-dxif1201-tire-inflator-amazon-israel",
@@ -285,23 +288,31 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "adams-essential-car-wash-kit-amazon-israel",
+    "music-boxing-machine-qbj22-amazon-israel",
+    "waterpik-cordless-gem-5100-amazon-israel"
+  ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 63,
-    "hacharot-amazon-israel": 61,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 64,
+    "hacharot-amazon-israel": 62,
+    "amazon-prime-mishloach-israel": 46,
+    "bikorot-mezuyafot-amazon": 46,
+    "10-tipim-lehisakhon-bamazon-israel": 46,
+    "mekhs-umaam-amazon-israel": 45,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 45,
-    "amazon-prime-mishloach-israel": 45,
+    "madrikh-kahniot-amazon-israel-2026": 45,
     "black-friday-prime-day-israel": 45,
-    "bikorot-mezuyafot-amazon": 45,
-    "10-tipim-lehisakhon-bamazon-israel": 45,
+    "mutzarim-asurim-yevu-israel": 45,
     "amazon-vs-ebay-israel": 45,
     "amazon-vs-aliexpress-israel": 45,
-    "mekhs-umaam-amazon-israel": 44,
-    "madrikh-kahniot-amazon-israel-2026": 44,
-    "mutzarim-asurim-yevu-israel": 44,
-    "maakav-mishlochim-amazon-israel": 44
+    "maakav-mishlochim-amazon-israel": 45
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "adams-essential-car-wash-kit-amazon-israel",
+    "music-boxing-machine-qbj22-amazon-israel",
+    "waterpik-cordless-gem-5100-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
