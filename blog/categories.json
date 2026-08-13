@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 202,
-    "indexable": 202,
+    "reviews": 203,
+    "indexable": 203,
     "noindex": 0,
-    "cardsInHub": 202
+    "cardsInHub": 203
   },
   "buckets": [
     {
@@ -276,6 +276,7 @@
         "blockhutte-stainless-steel-lunch-box-amazon-israel",
         "bottleboom-stem-13in1-solar-robot-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
+        "ecovacs-winbot-mini2-window-robot-amazon-israel",
         "horus-x-blue-light-glasses-amazon-israel",
         "lacoste-l6008s-sunglasses-amazon-israel",
         "saker-camping-light-ld10-amazon-israel"
@@ -285,15 +286,15 @@
   "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 62,
-    "hacharot-amazon-israel": 60,
+    "hacharot-amazon-israel": 61,
+    "bikorot-mezuyafot-amazon": 45,
+    "10-tipim-lehisakhon-bamazon-israel": 45,
     "mekhs-umaam-amazon-israel": 44,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 44,
     "amazon-prime-mishloach-israel": 44,
     "madrikh-kahniot-amazon-israel-2026": 44,
     "black-friday-prime-day-israel": 44,
-    "bikorot-mezuyafot-amazon": 44,
     "mutzarim-asurim-yevu-israel": 44,
-    "10-tipim-lehisakhon-bamazon-israel": 44,
     "amazon-vs-ebay-israel": 44,
     "amazon-vs-aliexpress-israel": 44,
     "maakav-mishlochim-amazon-israel": 44
@@ -340,6 +341,7 @@
   "warnings": [
     "אימוג'י לא ממופה \"🍱\" (leaf: \"Home & Kitchen\") — blockhutte-stainless-steel-lunch-box-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔬\" (leaf: \"Solar Power Kits\") — bottleboom-stem-13in1-solar-robot-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🏠\" (leaf: \"Home & Kitchen\") — ecovacs-winbot-mini2-window-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"👓\" (leaf: \"Blue Light Blocking Glasses\") — horus-x-blue-light-glasses-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🕶️\" (leaf: \"Sunglasses\") — lacoste-l6008s-sunglasses-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🏕️\" (leaf: \"Electric Lanterns\") — saker-camping-light-ld10-amazon-israel שויך ל-misc"
