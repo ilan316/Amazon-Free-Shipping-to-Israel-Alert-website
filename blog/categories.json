@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 203,
+    "reviews": 204,
     "indexable": 203,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 203
   },
   "buckets": [
@@ -105,6 +105,7 @@
         "govee-rgbic-floor-lamp-h6076a-amazon-israel",
         "govee-rgbic-smart-table-lamp-2-h6022-amazon-israel",
         "govee-rgbwwic-strip-light-2-pro-matter-amazon-israel",
+        "govee-skyline-rgbwwic-strip-light-amazon-israel",
         "govee-star-projector-h6095-amazon-israel",
         "govee-tv-backlight-3-lite-h6099-amazon-israel"
       ]
@@ -283,23 +284,27 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "govee-skyline-rgbwwic-strip-light-amazon-israel"
+  ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 62,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 63,
     "hacharot-amazon-israel": 61,
+    "amazon-prime-mishloach-israel": 45,
     "bikorot-mezuyafot-amazon": 45,
     "10-tipim-lehisakhon-bamazon-israel": 45,
+    "amazon-vs-aliexpress-israel": 45,
     "mekhs-umaam-amazon-israel": 44,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 44,
-    "amazon-prime-mishloach-israel": 44,
     "madrikh-kahniot-amazon-israel-2026": 44,
     "black-friday-prime-day-israel": 44,
     "mutzarim-asurim-yevu-israel": 44,
     "amazon-vs-ebay-israel": 44,
-    "amazon-vs-aliexpress-israel": 44,
     "maakav-mishlochim-amazon-israel": 44
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "govee-skyline-rgbwwic-strip-light-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
