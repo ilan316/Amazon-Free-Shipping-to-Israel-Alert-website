@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 211,
-    "indexable": 205,
-    "noindex": 6,
-    "cardsInHub": 205
+    "indexable": 211,
+    "noindex": 0,
+    "cardsInHub": 211
   },
   "buckets": [
     {
@@ -291,14 +291,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "adams-essential-car-wash-kit-amazon-israel",
-    "deesoo-20x52-binoculars-amazon-israel",
-    "kodak-ektar-h35-camera-amazon-israel",
-    "music-boxing-machine-qbj22-amazon-israel",
-    "ouai-detox-shampoo-amazon-israel",
-    "waterpik-cordless-gem-5100-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 64,
     "hacharot-amazon-israel": 62,
@@ -314,14 +307,7 @@
     "amazon-vs-aliexpress-israel": 46,
     "maakav-mishlochim-amazon-israel": 46
   },
-  "missingFromHub": [
-    "adams-essential-car-wash-kit-amazon-israel",
-    "deesoo-20x52-binoculars-amazon-israel",
-    "kodak-ektar-h35-camera-amazon-israel",
-    "music-boxing-machine-qbj22-amazon-israel",
-    "ouai-detox-shampoo-amazon-israel",
-    "waterpik-cordless-gem-5100-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
