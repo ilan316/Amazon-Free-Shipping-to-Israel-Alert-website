@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 204,
-    "indexable": 204,
+    "reviews": 205,
+    "indexable": 205,
     "noindex": 0,
-    "cardsInHub": 204
+    "cardsInHub": 205
   },
   "buckets": [
     {
@@ -280,7 +280,8 @@
         "ecovacs-winbot-mini2-window-robot-amazon-israel",
         "horus-x-blue-light-glasses-amazon-israel",
         "lacoste-l6008s-sunglasses-amazon-israel",
-        "saker-camping-light-ld10-amazon-israel"
+        "saker-camping-light-ld10-amazon-israel",
+        "yubikey-5-nano-c-amazon-israel"
       ]
     }
   ],
@@ -288,16 +289,16 @@
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 63,
     "hacharot-amazon-israel": 61,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 45,
     "amazon-prime-mishloach-israel": 45,
+    "black-friday-prime-day-israel": 45,
     "bikorot-mezuyafot-amazon": 45,
     "10-tipim-lehisakhon-bamazon-israel": 45,
+    "amazon-vs-ebay-israel": 45,
     "amazon-vs-aliexpress-israel": 45,
     "mekhs-umaam-amazon-israel": 44,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 44,
     "madrikh-kahniot-amazon-israel-2026": 44,
-    "black-friday-prime-day-israel": 44,
     "mutzarim-asurim-yevu-israel": 44,
-    "amazon-vs-ebay-israel": 44,
     "maakav-mishlochim-amazon-israel": 44
   },
   "missingFromHub": [],
@@ -345,6 +346,7 @@
     "אימוג'י לא ממופה \"🏠\" (leaf: \"Home & Kitchen\") — ecovacs-winbot-mini2-window-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"👓\" (leaf: \"Blue Light Blocking Glasses\") — horus-x-blue-light-glasses-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🕶️\" (leaf: \"Sunglasses\") — lacoste-l6008s-sunglasses-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🏕️\" (leaf: \"Electric Lanterns\") — saker-camping-light-ld10-amazon-israel שויך ל-misc"
+    "אימוג'י לא ממופה \"🏕️\" (leaf: \"Electric Lanterns\") — saker-camping-light-ld10-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🔐\" (leaf: \"USB Gadgets\") — yubikey-5-nano-c-amazon-israel שויך ל-misc"
   ]
 }
