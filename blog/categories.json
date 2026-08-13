@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 204,
-    "indexable": 203,
-    "noindex": 1,
-    "cardsInHub": 203
+    "indexable": 204,
+    "noindex": 0,
+    "cardsInHub": 204
   },
   "buckets": [
     {
@@ -284,9 +284,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "govee-skyline-rgbwwic-strip-light-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 63,
     "hacharot-amazon-israel": 61,
@@ -302,9 +300,7 @@
     "amazon-vs-ebay-israel": 44,
     "maakav-mishlochim-amazon-israel": 44
   },
-  "missingFromHub": [
-    "govee-skyline-rgbwwic-strip-light-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
