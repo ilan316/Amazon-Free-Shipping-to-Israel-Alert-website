@@ -58,6 +58,14 @@ jobs:
               exit 0
             fi
             echo "Push failed on attempt $i, retrying against fresh origin/main..."
+            # הפבלישר דוחף עשרות קומיטים ב-burst של ~20 שניות. בלי השהייה כל
+            # חמשת הניסיונות נדחסים ל-13 שניות, מפסידים את המרוץ ומדליקים X
+            # אדום מיותר. backoff לינארי פורש אותם על ~60 שניות ומוציא אותם
+            # מחלון ה-burst. (ריצה שנכשלת בכל זאת תמיד מתוקנת ע"י הריצה
+            # שנדלקת מהדחיפה האחרונה — הבנייה דטרמיניסטית.)
+            if [ "$i" -lt 5 ]; then
+              sleep $((i * 5))
+            fi
           done
           echo "::error::Failed to push after 5 attempts."
           exit 1
