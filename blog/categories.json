@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 220,
+    "reviews": 222,
     "indexable": 211,
-    "noindex": 9,
+    "noindex": 11,
     "cardsInHub": 211
   },
   "buckets": [
@@ -92,6 +92,7 @@
         "momax-ua8a-travel-adapter-amazon-israel",
         "tenergy-60-pack-batteries-amazon-israel",
         "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
+        "waterproof-phone-pouch-unbreakcable-amazon-israel",
         "whatook-handheld-fan-amazon-israel"
       ]
     },
@@ -110,7 +111,8 @@
         "govee-rgbwwic-strip-light-2-pro-matter-amazon-israel",
         "govee-skyline-rgbwwic-strip-light-amazon-israel",
         "govee-star-projector-h6095-amazon-israel",
-        "govee-tv-backlight-3-lite-h6099-amazon-israel"
+        "govee-tv-backlight-3-lite-h6099-amazon-israel",
+        "wowatt-ceiling-light-amazon-israel"
       ]
     },
     {
@@ -309,21 +311,23 @@
     "hanes-ultimate-undershirt-4pack-amazon-israel",
     "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
     "project-cloud-heritage-leather-sandals-amazon-israel",
-    "torras-unbreakable-s26-ultra-screen-protector-amazon-israel"
+    "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
+    "waterproof-phone-pouch-unbreakcable-amazon-israel",
+    "wowatt-ceiling-light-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 66,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 65,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 66,
+    "amazon-prime-mishloach-israel": 49,
+    "black-friday-prime-day-israel": 49,
     "bikorot-mezuyafot-amazon": 49,
+    "10-tipim-lehisakhon-bamazon-israel": 49,
+    "amazon-vs-ebay-israel": 49,
+    "amazon-vs-aliexpress-israel": 49,
     "mekhs-umaam-amazon-israel": 48,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 48,
-    "amazon-prime-mishloach-israel": 48,
     "madrikh-kahniot-amazon-israel-2026": 48,
-    "black-friday-prime-day-israel": 48,
     "mutzarim-asurim-yevu-israel": 48,
-    "10-tipim-lehisakhon-bamazon-israel": 48,
-    "amazon-vs-ebay-israel": 48,
-    "amazon-vs-aliexpress-israel": 48,
     "maakav-mishlochim-amazon-israel": 48
   },
   "missingFromHub": [
@@ -335,7 +339,9 @@
     "hanes-ultimate-undershirt-4pack-amazon-israel",
     "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
     "project-cloud-heritage-leather-sandals-amazon-israel",
-    "torras-unbreakable-s26-ultra-screen-protector-amazon-israel"
+    "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
+    "waterproof-phone-pouch-unbreakcable-amazon-israel",
+    "wowatt-ceiling-light-amazon-israel"
   ],
   "keywordFallbacks": [
     {
