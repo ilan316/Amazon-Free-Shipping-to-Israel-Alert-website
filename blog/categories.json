@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 224,
+    "reviews": 225,
     "indexable": 224,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 224
   },
   "buckets": [
@@ -127,6 +127,7 @@
         "cooker-king-8-inch-pan-amazon-israel",
         "encool-insulated-water-bottle-straw-amazon-israel",
         "everlasting-comfort-memory-foam-seat-cushion-amazon-israel",
+        "flairosol-olivia-oil-sprayer-amazon-israel",
         "geedel-rotary-cheese-grater-amazon-israel",
         "hydracy-water-bottle-time-marker-amazon-israel",
         "kikcoin-ceramic-frying-pans-set-amazon-israel",
@@ -304,23 +305,27 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "flairosol-olivia-oil-sprayer-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 67,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 66,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 67,
     "bikorot-mezuyafot-amazon": 50,
+    "10-tipim-lehisakhon-bamazon-israel": 50,
     "mekhs-umaam-amazon-israel": 49,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 49,
     "amazon-prime-mishloach-israel": 49,
     "madrikh-kahniot-amazon-israel-2026": 49,
     "black-friday-prime-day-israel": 49,
-    "10-tipim-lehisakhon-bamazon-israel": 49,
+    "mutzarim-asurim-yevu-israel": 49,
     "amazon-vs-ebay-israel": 49,
     "amazon-vs-aliexpress-israel": 49,
-    "maakav-mishlochim-amazon-israel": 49,
-    "mutzarim-asurim-yevu-israel": 48
+    "maakav-mishlochim-amazon-israel": 49
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "flairosol-olivia-oil-sprayer-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -332,6 +337,12 @@
       "slug": "contigo-snapseal-24oz-water-bottle-amazon-israel",
       "emoji": "🍶",
       "keyword": "בקבוק",
+      "bucket": "kitchen"
+    },
+    {
+      "slug": "flairosol-olivia-oil-sprayer-amazon-israel",
+      "emoji": "🫒",
+      "keyword": "שמן זית",
       "bucket": "kitchen"
     },
     {
