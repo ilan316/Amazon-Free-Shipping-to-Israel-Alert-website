@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 222,
+    "reviews": 223,
     "indexable": 211,
-    "noindex": 11,
+    "noindex": 12,
     "cardsInHub": 211
   },
   "buckets": [
@@ -212,6 +212,7 @@
         "nssiw-swim-goggles-3-pack-amazon-israel",
         "ocoopa-beach-blanket-xxl-amazon-israel",
         "omid-polarized-swim-goggles-amazon-israel",
+        "physix-compression-socks-amazon-israel",
         "pink-miracle-shoe-cleaner-kit-amazon-israel",
         "project-cloud-heritage-leather-sandals-amazon-israel",
         "puma-contender-duffel-bag-amazon-israel",
@@ -310,25 +311,26 @@
     "doace-100w-gan-travel-adapter-amazon-israel",
     "hanes-ultimate-undershirt-4pack-amazon-israel",
     "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
+    "physix-compression-socks-amazon-israel",
     "project-cloud-heritage-leather-sandals-amazon-israel",
     "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
     "waterproof-phone-pouch-unbreakcable-amazon-israel",
     "wowatt-ceiling-light-amazon-israel"
   ],
   "guideInbound": {
-    "hacharot-amazon-israel": 66,
+    "hacharot-amazon-israel": 67,
     "eich-ladaat-mishloach-hinam-amazon-israel": 66,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 49,
     "amazon-prime-mishloach-israel": 49,
     "black-friday-prime-day-israel": 49,
     "bikorot-mezuyafot-amazon": 49,
     "10-tipim-lehisakhon-bamazon-israel": 49,
     "amazon-vs-ebay-israel": 49,
     "amazon-vs-aliexpress-israel": 49,
+    "maakav-mishlochim-amazon-israel": 49,
     "mekhs-umaam-amazon-israel": 48,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 48,
     "madrikh-kahniot-amazon-israel-2026": 48,
-    "mutzarim-asurim-yevu-israel": 48,
-    "maakav-mishlochim-amazon-israel": 48
+    "mutzarim-asurim-yevu-israel": 48
   },
   "missingFromHub": [
     "calvin-klein-12pk-liner-socks-amazon-israel",
@@ -338,6 +340,7 @@
     "doace-100w-gan-travel-adapter-amazon-israel",
     "hanes-ultimate-undershirt-4pack-amazon-israel",
     "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
+    "physix-compression-socks-amazon-israel",
     "project-cloud-heritage-leather-sandals-amazon-israel",
     "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
     "waterproof-phone-pouch-unbreakcable-amazon-israel",
