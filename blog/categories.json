@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 211,
+    "reviews": 214,
     "indexable": 211,
-    "noindex": 0,
+    "noindex": 3,
     "cardsInHub": 211
   },
   "buckets": [
@@ -83,6 +83,7 @@
         "acer-3in1-magsafe-charger-amazon-israel",
         "bestek-220v-110v-converter-usb-c-amazon-israel",
         "cheerair-gt02-fan-amazon-israel",
+        "doace-100w-gan-travel-adapter-amazon-israel",
         "esr-iphone-17-pro-max-case-stand-amazon-israel",
         "feeki-magsafe-charger-25w-amazon-israel",
         "garmin-inreach-mini-2-amazon-israel",
@@ -90,6 +91,7 @@
         "minix-p1-66w-gan-charger-amazon-israel",
         "momax-ua8a-travel-adapter-amazon-israel",
         "tenergy-60-pack-batteries-amazon-israel",
+        "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
         "whatook-handheld-fan-amazon-israel"
       ]
     },
@@ -281,6 +283,7 @@
         "artistro-100-acrylic-paint-markers-amazon-israel",
         "blockhutte-stainless-steel-lunch-box-amazon-israel",
         "bottleboom-stem-13in1-solar-robot-amazon-israel",
+        "camel-crown-ski-jacket-mens-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
         "deesoo-20x52-binoculars-amazon-israel",
         "ecovacs-winbot-mini2-window-robot-amazon-israel",
@@ -291,23 +294,31 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "camel-crown-ski-jacket-mens-amazon-israel",
+    "doace-100w-gan-travel-adapter-amazon-israel",
+    "torras-unbreakable-s26-ultra-screen-protector-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 64,
-    "hacharot-amazon-israel": 62,
-    "bikorot-mezuyafot-amazon": 47,
+    "hacharot-amazon-israel": 63,
+    "bikorot-mezuyafot-amazon": 48,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 47,
+    "amazon-prime-mishloach-israel": 47,
+    "black-friday-prime-day-israel": 47,
+    "10-tipim-lehisakhon-bamazon-israel": 47,
+    "amazon-vs-ebay-israel": 47,
+    "amazon-vs-aliexpress-israel": 47,
+    "maakav-mishlochim-amazon-israel": 47,
     "mekhs-umaam-amazon-israel": 46,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 46,
-    "amazon-prime-mishloach-israel": 46,
     "madrikh-kahniot-amazon-israel-2026": 46,
-    "black-friday-prime-day-israel": 46,
-    "mutzarim-asurim-yevu-israel": 46,
-    "10-tipim-lehisakhon-bamazon-israel": 46,
-    "amazon-vs-ebay-israel": 46,
-    "amazon-vs-aliexpress-israel": 46,
-    "maakav-mishlochim-amazon-israel": 46
+    "mutzarim-asurim-yevu-israel": 46
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "camel-crown-ski-jacket-mens-amazon-israel",
+    "doace-100w-gan-travel-adapter-amazon-israel",
+    "torras-unbreakable-s26-ultra-screen-protector-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -349,6 +360,7 @@
   "warnings": [
     "אימוג'י לא ממופה \"🍱\" (leaf: \"Home & Kitchen\") — blockhutte-stainless-steel-lunch-box-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔬\" (leaf: \"Solar Power Kits\") — bottleboom-stem-13in1-solar-robot-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🧥\" (leaf: \"b21c23e8-ac46-41ab-bfed-a824ad1360c0_8501\") — camel-crown-ski-jacket-mens-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔭\" (leaf: \"Binoculars\") — deesoo-20x52-binoculars-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🏠\" (leaf: \"Home & Kitchen\") — ecovacs-winbot-mini2-window-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"👓\" (leaf: \"Blue Light Blocking Glasses\") — horus-x-blue-light-glasses-amazon-israel שויך ל-misc",
