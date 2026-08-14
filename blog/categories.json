@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 225,
-    "indexable": 224,
-    "noindex": 1,
-    "cardsInHub": 224
+    "indexable": 225,
+    "noindex": 0,
+    "cardsInHub": 225
   },
   "buckets": [
     {
@@ -305,9 +305,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "flairosol-olivia-oil-sprayer-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 67,
     "eich-ladaat-mishloach-hinam-amazon-israel": 67,
@@ -323,9 +321,7 @@
     "amazon-vs-aliexpress-israel": 49,
     "maakav-mishlochim-amazon-israel": 49
   },
-  "missingFromHub": [
-    "flairosol-olivia-oil-sprayer-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
