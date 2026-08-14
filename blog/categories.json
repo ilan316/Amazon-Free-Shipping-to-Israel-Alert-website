@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 214,
+    "reviews": 217,
     "indexable": 211,
-    "noindex": 3,
+    "noindex": 6,
     "cardsInHub": 211
   },
   "buckets": [
@@ -121,6 +121,7 @@
         "aquacare-shower-head-2669m-amazon-israel",
         "circle-joy-salt-pepper-grinder-amazon-israel",
         "contigo-dualsip-24oz-water-bottle-amazon-israel",
+        "contigo-snapseal-24oz-water-bottle-amazon-israel",
         "cooker-king-8-inch-pan-amazon-israel",
         "encool-insulated-water-bottle-straw-amazon-israel",
         "everlasting-comfort-memory-foam-seat-cushion-amazon-israel",
@@ -185,6 +186,7 @@
       "posts": [
         "arssm-oversized-tshirts-3pack-amazon-israel",
         "calvin-klein-12pack-no-show-socks-amazon-israel",
+        "calvin-klein-12pk-quarter-socks-amazon-israel",
         "calvin-klein-mens-quarter-socks-12pk-amazon-israel",
         "calvin-klein-no-show-socks-12pack-amazon-israel",
         "calvin-klein-quarter-socks-6pack-amazon-israel",
@@ -206,6 +208,7 @@
         "ocoopa-beach-blanket-xxl-amazon-israel",
         "omid-polarized-swim-goggles-amazon-israel",
         "pink-miracle-shoe-cleaner-kit-amazon-israel",
+        "project-cloud-heritage-leather-sandals-amazon-israel",
         "puma-contender-duffel-bag-amazon-israel",
         "rdx-mma-shorts-t15b-amazon-israel",
         "rdx-rash-guard-bjj-amazon-israel",
@@ -295,28 +298,34 @@
     }
   ],
   "noindexDrafts": [
+    "calvin-klein-12pk-quarter-socks-amazon-israel",
     "camel-crown-ski-jacket-mens-amazon-israel",
+    "contigo-snapseal-24oz-water-bottle-amazon-israel",
     "doace-100w-gan-travel-adapter-amazon-israel",
+    "project-cloud-heritage-leather-sandals-amazon-israel",
     "torras-unbreakable-s26-ultra-screen-protector-amazon-israel"
   ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 64,
-    "hacharot-amazon-israel": 63,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 65,
+    "hacharot-amazon-israel": 64,
+    "amazon-prime-mishloach-israel": 48,
     "bikorot-mezuyafot-amazon": 48,
+    "10-tipim-lehisakhon-bamazon-israel": 48,
+    "amazon-vs-ebay-israel": 48,
+    "amazon-vs-aliexpress-israel": 48,
+    "mekhs-umaam-amazon-israel": 47,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 47,
-    "amazon-prime-mishloach-israel": 47,
+    "madrikh-kahniot-amazon-israel-2026": 47,
     "black-friday-prime-day-israel": 47,
-    "10-tipim-lehisakhon-bamazon-israel": 47,
-    "amazon-vs-ebay-israel": 47,
-    "amazon-vs-aliexpress-israel": 47,
-    "maakav-mishlochim-amazon-israel": 47,
-    "mekhs-umaam-amazon-israel": 46,
-    "madrikh-kahniot-amazon-israel-2026": 46,
-    "mutzarim-asurim-yevu-israel": 46
+    "mutzarim-asurim-yevu-israel": 47,
+    "maakav-mishlochim-amazon-israel": 47
   },
   "missingFromHub": [
+    "calvin-klein-12pk-quarter-socks-amazon-israel",
     "camel-crown-ski-jacket-mens-amazon-israel",
+    "contigo-snapseal-24oz-water-bottle-amazon-israel",
     "doace-100w-gan-travel-adapter-amazon-israel",
+    "project-cloud-heritage-leather-sandals-amazon-israel",
     "torras-unbreakable-s26-ultra-screen-protector-amazon-israel"
   ],
   "keywordFallbacks": [
@@ -325,6 +334,12 @@
       "emoji": "🌬️",
       "keyword": "מאוורר",
       "bucket": "gadgets"
+    },
+    {
+      "slug": "contigo-snapseal-24oz-water-bottle-amazon-israel",
+      "emoji": "🍶",
+      "keyword": "בקבוק",
+      "bucket": "kitchen"
     },
     {
       "slug": "medicube-booster-pro-amazon-israel",
@@ -342,6 +357,12 @@
       "slug": "pink-miracle-shoe-cleaner-kit-amazon-israel",
       "emoji": "🧼",
       "keyword": "נעל",
+      "bucket": "fashion"
+    },
+    {
+      "slug": "project-cloud-heritage-leather-sandals-amazon-israel",
+      "emoji": "👞",
+      "keyword": "סנדל",
       "bucket": "fashion"
     },
     {
