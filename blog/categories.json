@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 217,
+    "reviews": 219,
     "indexable": 211,
-    "noindex": 6,
+    "noindex": 8,
     "cardsInHub": 211
   },
   "buckets": [
@@ -195,7 +195,9 @@
         "crocs-classic-crafted-canvas-clog-amazon-israel",
         "etenwolf-vacuum-storage-bags-amazon-israel",
         "gold-bjj-fight-shorts-black-large-amazon-israel",
+        "hanes-ultimate-undershirt-4pack-amazon-israel",
         "jmierr-corduroy-shorts-amazon-israel",
+        "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
         "lovevook-40l-travel-backpack-amazon-israel",
         "lovevook-college-laptop-backpack-amazon-israel",
         "lovevook-laptop-backpack-amazon-israel",
@@ -302,29 +304,33 @@
     "camel-crown-ski-jacket-mens-amazon-israel",
     "contigo-snapseal-24oz-water-bottle-amazon-israel",
     "doace-100w-gan-travel-adapter-amazon-israel",
+    "hanes-ultimate-undershirt-4pack-amazon-israel",
+    "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
     "project-cloud-heritage-leather-sandals-amazon-israel",
     "torras-unbreakable-s26-ultra-screen-protector-amazon-israel"
   ],
   "guideInbound": {
+    "hacharot-amazon-israel": 65,
     "eich-ladaat-mishloach-hinam-amazon-israel": 65,
-    "hacharot-amazon-israel": 64,
+    "bikorot-mezuyafot-amazon": 49,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 48,
     "amazon-prime-mishloach-israel": 48,
-    "bikorot-mezuyafot-amazon": 48,
+    "madrikh-kahniot-amazon-israel-2026": 48,
+    "black-friday-prime-day-israel": 48,
     "10-tipim-lehisakhon-bamazon-israel": 48,
     "amazon-vs-ebay-israel": 48,
     "amazon-vs-aliexpress-israel": 48,
+    "maakav-mishlochim-amazon-israel": 48,
     "mekhs-umaam-amazon-israel": 47,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 47,
-    "madrikh-kahniot-amazon-israel-2026": 47,
-    "black-friday-prime-day-israel": 47,
-    "mutzarim-asurim-yevu-israel": 47,
-    "maakav-mishlochim-amazon-israel": 47
+    "mutzarim-asurim-yevu-israel": 47
   },
   "missingFromHub": [
     "calvin-klein-12pk-quarter-socks-amazon-israel",
     "camel-crown-ski-jacket-mens-amazon-israel",
     "contigo-snapseal-24oz-water-bottle-amazon-israel",
     "doace-100w-gan-travel-adapter-amazon-israel",
+    "hanes-ultimate-undershirt-4pack-amazon-israel",
+    "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
     "project-cloud-heritage-leather-sandals-amazon-israel",
     "torras-unbreakable-s26-ultra-screen-protector-amazon-israel"
   ],
