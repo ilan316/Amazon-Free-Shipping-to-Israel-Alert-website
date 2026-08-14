@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 224,
-    "indexable": 211,
-    "noindex": 13,
-    "cardsInHub": 211
+    "indexable": 222,
+    "noindex": 2,
+    "cardsInHub": 222
   },
   "buckets": [
     {
@@ -305,19 +305,8 @@
     }
   ],
   "noindexDrafts": [
-    "calvin-klein-12pk-liner-socks-amazon-israel",
-    "calvin-klein-12pk-quarter-socks-amazon-israel",
-    "camel-crown-ski-jacket-mens-amazon-israel",
-    "contigo-snapseal-24oz-water-bottle-amazon-israel",
-    "doace-100w-gan-travel-adapter-amazon-israel",
-    "hanes-ultimate-undershirt-4pack-amazon-israel",
     "joynee-mens-crew-work-socks-amazon-israel",
-    "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
-    "physix-compression-socks-amazon-israel",
-    "project-cloud-heritage-leather-sandals-amazon-israel",
-    "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
-    "waterproof-phone-pouch-unbreakcable-amazon-israel",
-    "wowatt-ceiling-light-amazon-israel"
+    "physix-compression-socks-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 67,
@@ -335,19 +324,8 @@
     "mutzarim-asurim-yevu-israel": 48
   },
   "missingFromHub": [
-    "calvin-klein-12pk-liner-socks-amazon-israel",
-    "calvin-klein-12pk-quarter-socks-amazon-israel",
-    "camel-crown-ski-jacket-mens-amazon-israel",
-    "contigo-snapseal-24oz-water-bottle-amazon-israel",
-    "doace-100w-gan-travel-adapter-amazon-israel",
-    "hanes-ultimate-undershirt-4pack-amazon-israel",
     "joynee-mens-crew-work-socks-amazon-israel",
-    "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
-    "physix-compression-socks-amazon-israel",
-    "project-cloud-heritage-leather-sandals-amazon-israel",
-    "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
-    "waterproof-phone-pouch-unbreakcable-amazon-israel",
-    "wowatt-ceiling-light-amazon-israel"
+    "physix-compression-socks-amazon-israel"
   ],
   "keywordFallbacks": [
     {
