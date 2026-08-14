@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 223,
+    "reviews": 224,
     "indexable": 211,
-    "noindex": 12,
+    "noindex": 13,
     "cardsInHub": 211
   },
   "buckets": [
@@ -200,6 +200,7 @@
         "gold-bjj-fight-shorts-black-large-amazon-israel",
         "hanes-ultimate-undershirt-4pack-amazon-israel",
         "jmierr-corduroy-shorts-amazon-israel",
+        "joynee-mens-crew-work-socks-amazon-israel",
         "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
         "lovevook-40l-travel-backpack-amazon-israel",
         "lovevook-college-laptop-backpack-amazon-israel",
@@ -310,6 +311,7 @@
     "contigo-snapseal-24oz-water-bottle-amazon-israel",
     "doace-100w-gan-travel-adapter-amazon-israel",
     "hanes-ultimate-undershirt-4pack-amazon-israel",
+    "joynee-mens-crew-work-socks-amazon-israel",
     "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
     "physix-compression-socks-amazon-israel",
     "project-cloud-heritage-leather-sandals-amazon-israel",
@@ -320,16 +322,16 @@
   "guideInbound": {
     "hacharot-amazon-israel": 67,
     "eich-ladaat-mishloach-hinam-amazon-israel": 66,
+    "bikorot-mezuyafot-amazon": 50,
+    "mekhs-umaam-amazon-israel": 49,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 49,
     "amazon-prime-mishloach-israel": 49,
+    "madrikh-kahniot-amazon-israel-2026": 49,
     "black-friday-prime-day-israel": 49,
-    "bikorot-mezuyafot-amazon": 49,
     "10-tipim-lehisakhon-bamazon-israel": 49,
     "amazon-vs-ebay-israel": 49,
     "amazon-vs-aliexpress-israel": 49,
     "maakav-mishlochim-amazon-israel": 49,
-    "mekhs-umaam-amazon-israel": 48,
-    "madrikh-kahniot-amazon-israel-2026": 48,
     "mutzarim-asurim-yevu-israel": 48
   },
   "missingFromHub": [
@@ -339,6 +341,7 @@
     "contigo-snapseal-24oz-water-bottle-amazon-israel",
     "doace-100w-gan-travel-adapter-amazon-israel",
     "hanes-ultimate-undershirt-4pack-amazon-israel",
+    "joynee-mens-crew-work-socks-amazon-israel",
     "lee-mens-underwear-7-pack-boxer-briefs-amazon-israel",
     "physix-compression-socks-amazon-israel",
     "project-cloud-heritage-leather-sandals-amazon-israel",
