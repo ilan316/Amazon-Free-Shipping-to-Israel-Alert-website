@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 219,
+    "reviews": 220,
     "indexable": 211,
-    "noindex": 8,
+    "noindex": 9,
     "cardsInHub": 211
   },
   "buckets": [
@@ -186,6 +186,7 @@
       "posts": [
         "arssm-oversized-tshirts-3pack-amazon-israel",
         "calvin-klein-12pack-no-show-socks-amazon-israel",
+        "calvin-klein-12pk-liner-socks-amazon-israel",
         "calvin-klein-12pk-quarter-socks-amazon-israel",
         "calvin-klein-mens-quarter-socks-12pk-amazon-israel",
         "calvin-klein-no-show-socks-12pack-amazon-israel",
@@ -300,6 +301,7 @@
     }
   ],
   "noindexDrafts": [
+    "calvin-klein-12pk-liner-socks-amazon-israel",
     "calvin-klein-12pk-quarter-socks-amazon-israel",
     "camel-crown-ski-jacket-mens-amazon-israel",
     "contigo-snapseal-24oz-water-bottle-amazon-israel",
@@ -310,21 +312,22 @@
     "torras-unbreakable-s26-ultra-screen-protector-amazon-israel"
   ],
   "guideInbound": {
-    "hacharot-amazon-israel": 65,
+    "hacharot-amazon-israel": 66,
     "eich-ladaat-mishloach-hinam-amazon-israel": 65,
     "bikorot-mezuyafot-amazon": 49,
+    "mekhs-umaam-amazon-israel": 48,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 48,
     "amazon-prime-mishloach-israel": 48,
     "madrikh-kahniot-amazon-israel-2026": 48,
     "black-friday-prime-day-israel": 48,
+    "mutzarim-asurim-yevu-israel": 48,
     "10-tipim-lehisakhon-bamazon-israel": 48,
     "amazon-vs-ebay-israel": 48,
     "amazon-vs-aliexpress-israel": 48,
-    "maakav-mishlochim-amazon-israel": 48,
-    "mekhs-umaam-amazon-israel": 47,
-    "mutzarim-asurim-yevu-israel": 47
+    "maakav-mishlochim-amazon-israel": 48
   },
   "missingFromHub": [
+    "calvin-klein-12pk-liner-socks-amazon-israel",
     "calvin-klein-12pk-quarter-socks-amazon-israel",
     "camel-crown-ski-jacket-mens-amazon-israel",
     "contigo-snapseal-24oz-water-bottle-amazon-israel",
