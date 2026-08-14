@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 224,
-    "indexable": 222,
-    "noindex": 2,
-    "cardsInHub": 222
+    "indexable": 224,
+    "noindex": 0,
+    "cardsInHub": 224
   },
   "buckets": [
     {
@@ -304,10 +304,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "joynee-mens-crew-work-socks-amazon-israel",
-    "physix-compression-socks-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 67,
     "eich-ladaat-mishloach-hinam-amazon-israel": 66,
@@ -323,10 +320,7 @@
     "maakav-mishlochim-amazon-israel": 49,
     "mutzarim-asurim-yevu-israel": 48
   },
-  "missingFromHub": [
-    "joynee-mens-crew-work-socks-amazon-israel",
-    "physix-compression-socks-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
