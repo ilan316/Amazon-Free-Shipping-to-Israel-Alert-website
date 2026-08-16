@@ -200,21 +200,49 @@ def analytics(svc, dimensions, start, end, limit=500):
     return {tuple(r["keys"]): r for r in rows}
 
 
-def perf_windows(svc):
+def split_pages(rows, live):
+    """Split page-dimension rows into (live, legacy).
+
+    GSC keeps reporting a URL for weeks-to-months after it starts 301/308-ing,
+    while it consolidates the signals onto the new target. Those rows are real
+    traffic, but they belong to a page that no longer exists — counting them in
+    the totals makes a redirect look like the strongest page on the site, and
+    any "add an internal link to it" conclusion drawn from that points at a
+    redirect. The sitemap is the definition of what is live.
+
+    Sanity guard: if the sitemap failed to parse we would classify the entire
+    site as legacy. Below a plausible floor, skip the split entirely.
+    """
+    if len(live) < 50:
+        print(f"אזהרה: רק {len(live)} URLs ב-sitemap — סינון URLs מיושנים דולג")
+        return rows, {}
+    keep, legacy = {}, {}
+    for key, row in rows.items():
+        (legacy if key[0] not in live else keep)[key] = row
+    return keep, legacy
+
+
+def perf_windows(svc, live_urls):
     """Last 28 days vs the 28 days before that. GSC data lags ~3 days, so the
-    window ends 3 days back — otherwise the recent half looks artificially low."""
+    window ends 3 days back — otherwise the recent half looks artificially low.
+
+    "pages" holds live URLs only; redirected leftovers land in "legacyPages" so
+    totals() and every per-page comparison stay clean without losing the signal.
+    """
     end = date.today() - timedelta(days=3)
     cur_start = end - timedelta(days=27)
     prev_end = cur_start - timedelta(days=1)
     prev_start = prev_end - timedelta(days=27)
-    return {
-        "cur": {"start": cur_start, "end": end,
-                "pages": analytics(svc, ["page"], cur_start, end),
-                "queries": analytics(svc, ["query"], cur_start, end)},
-        "prev": {"start": prev_start, "end": prev_end,
-                 "pages": analytics(svc, ["page"], prev_start, prev_end),
-                 "queries": analytics(svc, ["query"], prev_start, prev_end)},
-    }
+    live = set(live_urls)
+
+    out = {}
+    for name, (start, stop) in {"cur": (cur_start, end),
+                                "prev": (prev_start, prev_end)}.items():
+        pages, legacy = split_pages(analytics(svc, ["page"], start, stop), live)
+        out[name] = {"start": start, "end": stop, "pages": pages,
+                     "legacyPages": legacy,
+                     "queries": analytics(svc, ["query"], start, stop)}
+    return out
 
 
 def totals(rows):
@@ -363,9 +391,52 @@ def build_report(cur, diff, perf, counts, first_run, indexnow_sent):
     section("לא ידועים לגוגל", [(u,) for u in diff["still_unknown"]], lambda r: f"`{short(r[0])}`")
     section("התגלו ולא אונדקסו", [(u,) for u in diff["still_discovered"]], lambda r: f"`{short(r[0])}`")
 
+    legacy = sorted(perf["cur"]["legacyPages"].items(),
+                    key=lambda kv: -kv[1]["impressions"])
+    if legacy:
+        l_clicks = sum(r["clicks"] for _, r in legacy)
+        l_imps = sum(r["impressions"] for _, r in legacy)
+        L += [f"## URLs מיושנים / באיחוד אותות ({len(legacy)})", "",
+              "URLs שמדווחים ב-GSC אך אינם ב-sitemap — כמעט תמיד שריד של הפניה "
+              "301/308 שגוגל עדיין מאחד את האותות שלה. **אינם נספרים בביצועים "
+              "למעלה ואין לקשר אליהם קישור פנימי.** הם נעלמים מעצמם.", "",
+              f"סה\"כ {l_clicks} קליקים / {l_imps} חשיפות שהוצאו מהחישוב.", ""]
+        for key, row in legacy[:40]:
+            L.append(f"- `{short(key[0])}` — {row['clicks']} קליקים / "
+                     f"{row['impressions']} חשיפות")
+        if len(legacy) > 40:
+            L.append(f"- …ועוד {len(legacy) - 40}")
+        L.append("")
+
     L += ["## פעולות ידניות שנותרו", "",
           "אי אפשר לבקש אינדוקס או להריץ validation דרך ה-API — רק בממשק GSC.", ""]
     return "\n".join(L), d_imps
+
+
+def write_index_status(states):
+    """Publish the not-indexed blog slugs into the repo for the link builder.
+
+    tools/build-internal-links.js reads this to decide which reviews most need
+    inbound links from the ranking guides. It is written, never committed —
+    the file rides along in the next manual commit. If it is missing or stale
+    the builder degrades to its inbound-count ordering, so the GitHub Action
+    never depends on this machine having run.
+    """
+    slugs = sorted(
+        m.group(1)
+        for url, state in states.items()
+        if state not in INDEXED_STATES
+        for m in [re.search(r"/blog/([^/]+)\.html$", url)] if m
+    )
+    path = PROJECT_DIR / "tools" / "index-status.json"
+    path.write_text(json.dumps({
+        "_readme": "נכתב ע\"י tools/gsc_monitor.py. נצרך ע\"י tools/build-internal-links.js "
+                   "לתעדוף סקירות שגוגל טרם אינדקס. אין לערוך ידנית.",
+        "generatedAt": date.today().isoformat(),
+        "notIndexed": slugs,
+    }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"index-status.json: {len(slugs)} סקירות לא מאונדקסות")
+    return path
 
 
 def write_obsidian_loop(report_md, reasons):
@@ -410,7 +481,9 @@ def main():
     counts = Counter(i["state"] for i in cur.values())
     diff = classify(prev_states, cur)
 
-    perf = perf_windows(svc)
+    # Always the full sitemap, even on a --urls subset run: the live/legacy
+    # split is about what exists on the site, not about what we inspected.
+    perf = perf_windows(svc, sitemap_urls())
 
     indexnow_log = state.get("indexnow", {})
     sent = run_indexnow(diff["still_unknown"], indexnow_log,
@@ -459,6 +532,9 @@ def main():
             "states": new_states,
             "indexnow": indexnow_log,
         }, ensure_ascii=False, indent=1), encoding="utf-8")
+
+        if not args.urls:
+            write_index_status(new_states)
 
     print()
     for st, n in counts.most_common():

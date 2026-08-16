@@ -15,7 +15,11 @@
  *   4. מתקן קישור שבור: ../mekhs-umaam-amazon-israel.html → mekhs-umaam-amazon-israel.html
  *   5. בונה מחדש את prices.html בין <!-- HUB:START --> ל-<!-- HUB:END --> —
  *      תפריט עוגנים + סקשן לכל דלי. הכרטיסים מועברים verbatim, המחירים נשמרים.
- *   6. כותב blog/categories.json (ארטיפקט אודיט).
+ *   6. מזריק בלוק "סקירות מוצרים שכדאי לראות" בין <!-- PICKS:START --> ל-
+ *      <!-- PICKS:END --> בכל מדריך עריכתי — 6 סקירות, בעדיפות לאלה שגוגל
+ *      טרם אינדקס (tools/index-status.json). זו הקשת ההפוכה: סמכות זורמת
+ *      מהמדריכים המדורגים אל הסקירות התקועות. גוף הטקסט של המדריך לא נוגע.
+ *   7. כותב blog/categories.json (ארטיפקט אודיט).
  *
  * ללא תלויות. Node 18+.
  */
@@ -30,8 +34,10 @@ const BLOG_DIR = path.join(ROOT, 'blog');
 const PRICES = path.join(ROOT, 'prices.html');
 const MAP_FILE = path.join(__dirname, 'category-map.json');
 const AUDIT_FILE = path.join(BLOG_DIR, 'categories.json');
+const INDEX_STATUS = path.join(__dirname, 'index-status.json');
 
 const RELATED_COUNT = 4;
+const PICKS_COUNT = 6;
 
 // ---------------------------------------------------------------- utilities
 
@@ -94,6 +100,8 @@ const EMOJI_MAP = new Map(
 const LEAF_MAP = new Map(Object.entries(cmap.leaves));
 const OVERRIDES = new Map(Object.entries(cmap.overrides));
 const EDITORIAL = new Set(cmap.editorial);
+// index.html הוא עמוד רשימה, לא מדריך — אין לו גוף מאמר לתלות בו בלוק.
+const EDITORIAL_GUIDES = cmap.editorial.filter((s) => s !== 'index');
 const GUIDES = cmap.guides.catalog;
 const GUIDE_BY_SLUG = new Map(GUIDES.map((g) => [g.slug, g]));
 const GUIDE_BY_BUCKET = cmap.guides.byBucket;
@@ -104,6 +112,9 @@ const KEYWORDS = (cmap.keywords || []).map((r) => ({
 
 const warnings = [];
 const keywordFallbacks = [];
+
+// מוגדר אחרי warnings — loadNotIndexed דוחף לשם.
+const NOT_INDEXED = loadNotIndexed();
 
 /**
  * רשת ביטחון לאימוג'י לא ממופה. ה-eyebrow נכתב ע"י LLM בהנחיה פתוחה
@@ -362,6 +373,104 @@ function guidesBlock(slugs) {
     `    </section>`,
     `    <!-- GUIDES:END -->`,
   ].join('\n');
+}
+
+// --------------------------------------------------------- picks-block build
+
+/**
+ * הסקירות שגוגל טרם אינדקס, לפי הארטיפקט ש-tools/gsc_monitor.py כותב.
+ * הקובץ אופציונלי בכוונה: ה-GitHub Action רץ גם בלעדיו, ואז התעדוף נופל
+ * לספירת קישורים נכנסים בלבד. לעולם לא לזרוק כאן — בנייה חייבת לעבור.
+ */
+function loadNotIndexed() {
+  if (!fs.existsSync(INDEX_STATUS)) {
+    warnings.push('tools/index-status.json חסר — תעדוף PICKS לפי קישורים נכנסים בלבד');
+    return new Set();
+  }
+  try {
+    const d = JSON.parse(readFile(INDEX_STATUS));
+    return new Set(d.notIndexed || []);
+  } catch (e) {
+    warnings.push(`tools/index-status.json לא נקרא (${e.message}) — תעדוף לפי קישורים נכנסים`);
+    return new Set();
+  }
+}
+
+/** היפוך guides.byBucket: מדריך → הדליים שמפנים אליו. */
+function bucketsByGuide() {
+  const out = new Map();
+  for (const [bucket, slug] of Object.entries(GUIDE_BY_BUCKET)) {
+    if (!out.has(slug)) out.set(slug, []);
+    out.get(slug).push(bucket);
+  }
+  return out;
+}
+
+/**
+ * מתכנן לכל מדריך 6 סקירות. סדר המועמדים:
+ *   1. סקירות שגוגל טרם אינדקס — הן הסיבה שהבלוק קיים.
+ *   2. פחות קישורים נכנסים מבלוקי PICKS עד כה — round-robin אמיתי, כך שאף
+ *      סקירה לא מקבלת שני מדריכים לפני שכולן קיבלו אחד.
+ *   3. slug (שובר שוויון קבוע ⇒ אידמפוטנטי).
+ * מדריך שמשויך לדליים מקבל קודם מהדליים שלו — הרלוונטיות התמטית קודמת —
+ * ורק אם אין די סקירות שם, מושלם מהמאגר הגלובלי.
+ */
+function planPicks(guideSlugs, byBucket, indexable) {
+  const owned = bucketsByGuide();
+  const inbound = new Map(indexable.map((p) => [p.slug, 0]));
+  const plan = new Map();
+
+  const rank = (a, b) =>
+    (NOT_INDEXED.has(a.slug) ? 0 : 1) - (NOT_INDEXED.has(b.slug) ? 0 : 1) ||
+    inbound.get(a.slug) - inbound.get(b.slug) ||
+    (a.slug < b.slug ? -1 : 1);
+
+  for (const slug of [...guideSlugs].sort()) {
+    const themed = (owned.get(slug) || [])
+      .flatMap((b) => byBucket.get(b) || [])
+      .filter((p) => !p.noindex);
+    const out = [];
+    const seen = new Set();
+    for (const pool of [themed, indexable]) {
+      for (const cand of [...pool].sort(rank)) {
+        if (out.length >= PICKS_COUNT) break;
+        if (seen.has(cand.slug)) continue;
+        seen.add(cand.slug);
+        out.push(cand);
+        inbound.set(cand.slug, inbound.get(cand.slug) + 1);
+      }
+    }
+    plan.set(slug, out);
+  }
+  return { plan, inbound };
+}
+
+function picksBlock(targets) {
+  return [
+    `    <!-- PICKS:START -->`,
+    `    <section class="section" style="max-width:860px;margin:0 auto 48px;">`,
+    `      <h2 style="font-family:Rubik,sans-serif;font-size:1.25rem;margin-bottom:8px;">סקירות מוצרים שכדאי לראות</h2>`,
+    `      <p style="color:#4d5a70;font-size:.9rem;margin:0 0 24px;">מחיר באמזון מול ישראל, מכס ומשלוח — <a href="../prices.html" style="color:var(--brand-deep, #ff6a00);">כל הסקירות ←</a></p>`,
+    `      <div class="blog-index-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));">`,
+    targets.map(relatedCard).join('\n'),
+    `      </div>`,
+    `    </section>`,
+    `    <!-- PICKS:END -->`,
+  ].join('\n');
+}
+
+/** מזריק/מחליף את בלוק ה-PICKS במדריך. אינו נוגע בגוף הטקסט. */
+function rewriteGuide(html, targets) {
+  const block = picksBlock(targets);
+  if (/<!-- PICKS:START -->/.test(html)) {
+    return html.replace(/[ \t]*<!-- PICKS:START -->[\s\S]*?<!-- PICKS:END -->/, () => block);
+  }
+  // הזרקה ראשונה: אחרי </article>, לפני סקשן "מאמרים קשורים" של המדריך
+  if (/\n[ \t]*<!-- Related Articles -->/.test(html)) {
+    return html.replace(/\n([ \t]*<!-- Related Articles -->)/, (_, tail) =>
+      '\n' + block + '\n\n' + tail);
+  }
+  return html.replace(/\n[ \t]*<\/main>/, () => '\n' + block + '\n  </main>');
 }
 
 // -------------------------------------------------------------- breadcrumbs
@@ -715,6 +824,19 @@ function main() {
     writeIfChanged(post.file, next, changed);
   }
 
+  // --- מדריכים עריכתיים: בלוק PICKS בלבד
+  const guideFiles = EDITORIAL_GUIDES.filter((slug) => {
+    const abs = path.join(BLOG_DIR, `${slug}.html`);
+    if (fs.existsSync(abs)) return true;
+    warnings.push(`מדריך ב-editorial בלי קובץ: ${slug}`);
+    return false;
+  });
+  const { plan: picksPlan, inbound: picksInbound } = planPicks(guideFiles, byBucket, indexable);
+  for (const slug of guideFiles) {
+    const abs = path.join(BLOG_DIR, `${slug}.html`);
+    writeIfChanged(abs, rewriteGuide(readFile(abs), picksPlan.get(slug)), changed);
+  }
+
   // --- prices.html
   const { html: pricesHtml, hub, cards } = rewritePrices(posts);
   writeIfChanged(PRICES, pricesHtml, changed);
@@ -737,6 +859,18 @@ function main() {
     guideInbound: Object.fromEntries(
       [...guideInbound.entries()].sort((a, b) => b[1] - a[1])
     ),
+    picks: {
+      guides: guideFiles.length,
+      perGuide: PICKS_COUNT,
+      notIndexedKnown: NOT_INDEXED.size,
+      // כמה מהקישורים הלכו לסקירות שגוגל טרם אינדקס — זו מטרת הבלוק
+      toNotIndexed: [...picksInbound.entries()]
+        .filter(([slug, n]) => n > 0 && NOT_INDEXED.has(slug)).length,
+      covered: [...picksInbound.entries()].filter(([, n]) => n > 0).length,
+      byPost: Object.fromEntries(
+        [...picksInbound.entries()].filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1))
+      ),
+    },
     missingFromHub: posts
       .filter((p) => !cards.some((c) => c.slug === p.slug))
       .map((p) => p.slug),
@@ -750,6 +884,11 @@ function main() {
   for (const b of audit.buckets) console.log(`  ${b.label}: ${b.posts.length}`);
   console.log('\nקישורים נכנסים למדריכים (בלוק "מאמרים קשורים"):');
   for (const [slug, n] of Object.entries(audit.guideInbound)) console.log(`  ${n}\t${slug}`);
+  console.log(
+    `\nבלוק PICKS: ${guideFiles.length} מדריכים × ${PICKS_COUNT} = ` +
+      `${audit.picks.covered} סקירות קיבלו קישור, מהן ${audit.picks.toNotIndexed} לא מאונדקסות ` +
+      `(מתוך ${NOT_INDEXED.size} ידועות)`
+  );
   if (hub.orphanCards.length)
     console.log(`\nכרטיסים ב-prices.html בלי קובץ סקירה: ${hub.orphanCards.join(', ')}`);
   if (audit.missingFromHub.length)
