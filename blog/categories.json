@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 227,
+    "reviews": 228,
     "indexable": 227,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 227
   },
   "buckets": [
@@ -303,25 +303,28 @@
         "horus-x-blue-light-glasses-amazon-israel",
         "lacoste-l6008s-sunglasses-amazon-israel",
         "saker-camping-light-ld10-amazon-israel",
-        "yubikey-5-nano-c-amazon-israel"
+        "yubikey-5-nano-c-amazon-israel",
+        "yubikey-5c-nfc-fips-amazon-israel"
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "yubikey-5c-nfc-fips-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 68,
     "hacharot-amazon-israel": 67,
+    "mekhs-umaam-amazon-israel": 50,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 50,
     "amazon-prime-mishloach-israel": 50,
+    "madrikh-kahniot-amazon-israel-2026": 50,
     "black-friday-prime-day-israel": 50,
     "bikorot-mezuyafot-amazon": 50,
     "10-tipim-lehisakhon-bamazon-israel": 50,
     "amazon-vs-ebay-israel": 50,
     "amazon-vs-aliexpress-israel": 50,
-    "mekhs-umaam-amazon-israel": 49,
-    "madrikh-kahniot-amazon-israel-2026": 49,
-    "mutzarim-asurim-yevu-israel": 49,
-    "maakav-mishlochim-amazon-israel": 49
+    "maakav-mishlochim-amazon-israel": 50,
+    "mutzarim-asurim-yevu-israel": 49
   },
   "picks": {
     "guides": 13,
@@ -409,7 +412,9 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "yubikey-5c-nfc-fips-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -475,6 +480,7 @@
     "אימוג'י לא ממופה \"👓\" (leaf: \"Blue Light Blocking Glasses\") — horus-x-blue-light-glasses-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🕶️\" (leaf: \"Sunglasses\") — lacoste-l6008s-sunglasses-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🏕️\" (leaf: \"Electric Lanterns\") — saker-camping-light-ld10-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🔐\" (leaf: \"USB Gadgets\") — yubikey-5-nano-c-amazon-israel שויך ל-misc"
+    "אימוג'י לא ממופה \"🔐\" (leaf: \"USB Gadgets\") — yubikey-5-nano-c-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🔐\" (leaf: \"RFID Supplies\") — yubikey-5c-nfc-fips-amazon-israel שויך ל-misc"
   ]
 }
