@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 226,
-    "indexable": 225,
-    "noindex": 1,
-    "cardsInHub": 225
+    "reviews": 227,
+    "indexable": 227,
+    "noindex": 0,
+    "cardsInHub": 227
   },
   "buckets": [
     {
@@ -264,6 +264,7 @@
         "lamicall-tire-inflator-vhep02-amazon-israel",
         "lexivon-lx191-bike-torque-wrench-amazon-israel",
         "magic-shield-graphene-spray-amazon-israel",
+        "milwaukee-48-22-9482-socket-set-amazon-israel",
         "miracase-magsafe-car-holder-amazon-israel",
         "noco-genius5-charger-amazon-israel",
         "pliers-wrench-set-10pc-amazon-israel",
@@ -306,21 +307,19 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "cole-haan-zerogrand-stitchlite-oxford-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
+    "eich-ladaat-mishloach-hinam-amazon-israel": 68,
     "hacharot-amazon-israel": 67,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 67,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 50,
     "amazon-prime-mishloach-israel": 50,
+    "black-friday-prime-day-israel": 50,
     "bikorot-mezuyafot-amazon": 50,
     "10-tipim-lehisakhon-bamazon-israel": 50,
     "amazon-vs-ebay-israel": 50,
     "amazon-vs-aliexpress-israel": 50,
     "mekhs-umaam-amazon-israel": 49,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 49,
     "madrikh-kahniot-amazon-israel-2026": 49,
-    "black-friday-prime-day-israel": 49,
     "mutzarim-asurim-yevu-israel": 49,
     "maakav-mishlochim-amazon-israel": 49
   },
@@ -410,9 +409,7 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "cole-haan-zerogrand-stitchlite-oxford-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
