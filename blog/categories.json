@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 225,
+    "reviews": 226,
     "indexable": 225,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 225
   },
   "buckets": [
@@ -196,6 +196,7 @@
         "calvin-klein-quarter-socks-6pack-amazon-israel",
         "calvin-klein-socks-12pack-amazon-israel",
         "calvin-klein-womens-quarter-socks-12pack-amazon-israel",
+        "cole-haan-zerogrand-stitchlite-oxford-amazon-israel",
         "crocs-classic-crafted-canvas-clog-amazon-israel",
         "etenwolf-vacuum-storage-bags-amazon-israel",
         "gold-bjj-fight-shorts-black-large-amazon-israel",
@@ -305,20 +306,22 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "cole-haan-zerogrand-stitchlite-oxford-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 67,
     "eich-ladaat-mishloach-hinam-amazon-israel": 67,
+    "amazon-prime-mishloach-israel": 50,
     "bikorot-mezuyafot-amazon": 50,
     "10-tipim-lehisakhon-bamazon-israel": 50,
+    "amazon-vs-ebay-israel": 50,
+    "amazon-vs-aliexpress-israel": 50,
     "mekhs-umaam-amazon-israel": 49,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 49,
-    "amazon-prime-mishloach-israel": 49,
     "madrikh-kahniot-amazon-israel-2026": 49,
     "black-friday-prime-day-israel": 49,
     "mutzarim-asurim-yevu-israel": 49,
-    "amazon-vs-ebay-israel": 49,
-    "amazon-vs-aliexpress-israel": 49,
     "maakav-mishlochim-amazon-israel": 49
   },
   "picks": {
@@ -407,7 +410,9 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "cole-haan-zerogrand-stitchlite-oxford-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
