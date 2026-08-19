@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 240,
-    "indexable": 237,
-    "noindex": 3,
-    "cardsInHub": 237
+    "indexable": 240,
+    "noindex": 0,
+    "cardsInHub": 240
   },
   "buckets": [
     {
@@ -320,11 +320,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "fantik-grill-brush-my117-amazon-israel",
-    "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
-    "tonor-td510-mic-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 69,
     "eich-ladaat-mishloach-hinam-amazon-israel": 69,
@@ -426,11 +422,7 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "fantik-grill-brush-my117-amazon-israel",
-    "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
-    "tonor-td510-mic-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
