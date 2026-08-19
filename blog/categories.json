@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 235,
+    "reviews": 237,
     "indexable": 233,
-    "noindex": 2,
+    "noindex": 4,
     "cardsInHub": 233
   },
   "buckets": [
@@ -17,6 +17,7 @@
         "asrock-radeon-rx-9070-xt-challenger-amazon-israel",
         "asus-rog-strix-b850-g-gaming-wifi-amazon-israel",
         "blackview-scm6-screen-extender-amazon-israel",
+        "dopesplay-15-6-portable-monitor-amazon-israel",
         "elecrow-10-1-portable-monitor-amazon-israel",
         "gigabyte-rx-9070-xt-gaming-oc-amazon-israel",
         "gmktec-m6-ultra-ryzen-7640hs-mini-pc-amazon-israel",
@@ -302,6 +303,7 @@
         "bottleboom-stem-13in1-solar-robot-amazon-israel",
         "camel-crown-ski-jacket-mens-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
+        "cryptnox-fido2-security-key-amazon-israel",
         "deesoo-20x52-binoculars-amazon-israel",
         "ecovacs-winbot-mini2-window-robot-amazon-israel",
         "horus-x-blue-light-glasses-amazon-israel",
@@ -317,22 +319,24 @@
   ],
   "noindexDrafts": [
     "car-trunk-organizer-suv-amazon-israel",
+    "cryptnox-fido2-security-key-amazon-israel",
+    "dopesplay-15-6-portable-monitor-amazon-israel",
     "mr-green-manicure-set-8888i-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 69,
     "eich-ladaat-mishloach-hinam-amazon-israel": 69,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 52,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 53,
+    "mekhs-umaam-amazon-israel": 52,
     "amazon-prime-mishloach-israel": 52,
+    "madrikh-kahniot-amazon-israel-2026": 52,
+    "black-friday-prime-day-israel": 52,
     "bikorot-mezuyafot-amazon": 52,
+    "mutzarim-asurim-yevu-israel": 52,
     "10-tipim-lehisakhon-bamazon-israel": 52,
     "amazon-vs-ebay-israel": 52,
     "amazon-vs-aliexpress-israel": 52,
-    "mekhs-umaam-amazon-israel": 51,
-    "madrikh-kahniot-amazon-israel-2026": 51,
-    "black-friday-prime-day-israel": 51,
-    "mutzarim-asurim-yevu-israel": 51,
-    "maakav-mishlochim-amazon-israel": 51
+    "maakav-mishlochim-amazon-israel": 52
   },
   "picks": {
     "guides": 13,
@@ -422,6 +426,8 @@
   },
   "missingFromHub": [
     "car-trunk-organizer-suv-amazon-israel",
+    "cryptnox-fido2-security-key-amazon-israel",
+    "dopesplay-15-6-portable-monitor-amazon-israel",
     "mr-green-manicure-set-8888i-amazon-israel"
   ],
   "keywordFallbacks": [
@@ -484,6 +490,7 @@
     "אימוג'י לא ממופה \"🍱\" (leaf: \"Home & Kitchen\") — blockhutte-stainless-steel-lunch-box-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔬\" (leaf: \"Solar Power Kits\") — bottleboom-stem-13in1-solar-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🧥\" (leaf: \"b21c23e8-ac46-41ab-bfed-a824ad1360c0_8501\") — camel-crown-ski-jacket-mens-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🔐\" (leaf: \"Cards\") — cryptnox-fido2-security-key-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔭\" (leaf: \"Binoculars\") — deesoo-20x52-binoculars-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🏠\" (leaf: \"Home & Kitchen\") — ecovacs-winbot-mini2-window-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"👓\" (leaf: \"Blue Light Blocking Glasses\") — horus-x-blue-light-glasses-amazon-israel שויך ל-misc",
