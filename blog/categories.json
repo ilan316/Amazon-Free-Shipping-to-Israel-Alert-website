@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 239,
+    "reviews": 240,
     "indexable": 237,
-    "noindex": 2,
+    "noindex": 3,
     "cardsInHub": 237
   },
   "buckets": [
@@ -308,6 +308,7 @@
         "cryptnox-fido2-security-key-amazon-israel",
         "deesoo-20x52-binoculars-amazon-israel",
         "ecovacs-winbot-mini2-window-robot-amazon-israel",
+        "fantik-grill-brush-my117-amazon-israel",
         "horus-x-blue-light-glasses-amazon-israel",
         "lacoste-l6008s-sunglasses-amazon-israel",
         "mr-green-manicure-set-8888i-amazon-israel",
@@ -320,23 +321,24 @@
     }
   ],
   "noindexDrafts": [
+    "fantik-grill-brush-my117-amazon-israel",
     "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
     "tonor-td510-mic-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 69,
     "eich-ladaat-mishloach-hinam-amazon-israel": 69,
+    "mekhs-umaam-amazon-israel": 53,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 53,
     "amazon-prime-mishloach-israel": 53,
+    "madrikh-kahniot-amazon-israel-2026": 53,
     "black-friday-prime-day-israel": 53,
     "bikorot-mezuyafot-amazon": 53,
     "10-tipim-lehisakhon-bamazon-israel": 53,
     "amazon-vs-ebay-israel": 53,
     "amazon-vs-aliexpress-israel": 53,
-    "mekhs-umaam-amazon-israel": 52,
-    "madrikh-kahniot-amazon-israel-2026": 52,
-    "mutzarim-asurim-yevu-israel": 52,
-    "maakav-mishlochim-amazon-israel": 52
+    "maakav-mishlochim-amazon-israel": 53,
+    "mutzarim-asurim-yevu-israel": 52
   },
   "picks": {
     "guides": 13,
@@ -425,6 +427,7 @@
     }
   },
   "missingFromHub": [
+    "fantik-grill-brush-my117-amazon-israel",
     "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
     "tonor-td510-mic-amazon-israel"
   ],
@@ -497,6 +500,7 @@
     "אימוג'י לא ממופה \"🔐\" (leaf: \"Cards\") — cryptnox-fido2-security-key-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔭\" (leaf: \"Binoculars\") — deesoo-20x52-binoculars-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🏠\" (leaf: \"Home & Kitchen\") — ecovacs-winbot-mini2-window-robot-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🔥\" (leaf: \"Grilling & Barbecue Utensils\") — fantik-grill-brush-my117-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"👓\" (leaf: \"Blue Light Blocking Glasses\") — horus-x-blue-light-glasses-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🕶️\" (leaf: \"Sunglasses\") — lacoste-l6008s-sunglasses-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"💅\" (leaf: \"Sets & Kits\") — mr-green-manicure-set-8888i-amazon-israel שויך ל-misc",
