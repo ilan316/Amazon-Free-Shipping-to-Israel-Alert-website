@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 240,
+    "reviews": 242,
     "indexable": 240,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 240
   },
   "buckets": [
@@ -200,6 +200,7 @@
         "calvin-klein-no-show-socks-12pack-amazon-israel",
         "calvin-klein-quarter-socks-6pack-amazon-israel",
         "calvin-klein-socks-12pack-amazon-israel",
+        "calvin-klein-womens-12pack-socks-amazon-israel",
         "calvin-klein-womens-quarter-socks-12pack-amazon-israel",
         "cole-haan-zerogrand-stitchlite-oxford-amazon-israel",
         "crocs-classic-crafted-canvas-clog-amazon-israel",
@@ -220,6 +221,7 @@
         "nssiw-swim-goggles-3-pack-amazon-israel",
         "ocoopa-beach-blanket-xxl-amazon-israel",
         "omid-polarized-swim-goggles-amazon-israel",
+        "oncai-sandals-plantar-fasciitis-amazon-israel",
         "physix-compression-socks-amazon-israel",
         "pink-miracle-shoe-cleaner-kit-amazon-israel",
         "project-cloud-heritage-leather-sandals-amazon-israel",
@@ -320,21 +322,24 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "calvin-klein-womens-12pack-socks-amazon-israel",
+    "oncai-sandals-plantar-fasciitis-amazon-israel"
+  ],
   "guideInbound": {
-    "hacharot-amazon-israel": 69,
+    "hacharot-amazon-israel": 71,
     "eich-ladaat-mishloach-hinam-amazon-israel": 69,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 54,
+    "bikorot-mezuyafot-amazon": 54,
+    "10-tipim-lehisakhon-bamazon-israel": 54,
     "mekhs-umaam-amazon-israel": 53,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 53,
     "amazon-prime-mishloach-israel": 53,
     "madrikh-kahniot-amazon-israel-2026": 53,
     "black-friday-prime-day-israel": 53,
-    "bikorot-mezuyafot-amazon": 53,
-    "10-tipim-lehisakhon-bamazon-israel": 53,
+    "mutzarim-asurim-yevu-israel": 53,
     "amazon-vs-ebay-israel": 53,
     "amazon-vs-aliexpress-israel": 53,
-    "maakav-mishlochim-amazon-israel": 53,
-    "mutzarim-asurim-yevu-israel": 52
+    "maakav-mishlochim-amazon-israel": 53
   },
   "picks": {
     "guides": 13,
@@ -422,7 +427,10 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "calvin-klein-womens-12pack-socks-amazon-israel",
+    "oncai-sandals-plantar-fasciitis-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -447,6 +455,12 @@
       "emoji": "✨",
       "keyword": "medicube",
       "bucket": "grooming"
+    },
+    {
+      "slug": "oncai-sandals-plantar-fasciitis-amazon-israel",
+      "emoji": "🩴",
+      "keyword": "sandal",
+      "bucket": "fashion"
     },
     {
       "slug": "owala-freesip-32oz-water-bottle-amazon-israel",
