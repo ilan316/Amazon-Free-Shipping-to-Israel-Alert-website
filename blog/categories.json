@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 237,
+    "reviews": 239,
     "indexable": 237,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 237
   },
   "buckets": [
@@ -48,6 +48,7 @@
         "sennheiser-hd-599-se-amazon-israel",
         "sennheiser-hd-600-amazon-israel",
         "sony-mdr-mv1-headphones-amazon-israel",
+        "tonor-td510-mic-amazon-israel",
         "wiim-vibelink-amp-amazon-israel"
       ]
     },
@@ -93,6 +94,7 @@
         "minix-neo-p3-100w-gan-charger-amazon-israel",
         "minix-p1-66w-gan-charger-amazon-israel",
         "momax-ua8a-travel-adapter-amazon-israel",
+        "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
         "tenergy-60-pack-batteries-amazon-israel",
         "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
         "waterproof-phone-pouch-unbreakcable-amazon-israel",
@@ -317,20 +319,23 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
+    "tonor-td510-mic-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 69,
     "eich-ladaat-mishloach-hinam-amazon-israel": 69,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 53,
+    "amazon-prime-mishloach-israel": 53,
+    "black-friday-prime-day-israel": 53,
+    "bikorot-mezuyafot-amazon": 53,
+    "10-tipim-lehisakhon-bamazon-israel": 53,
+    "amazon-vs-ebay-israel": 53,
+    "amazon-vs-aliexpress-israel": 53,
     "mekhs-umaam-amazon-israel": 52,
-    "amazon-prime-mishloach-israel": 52,
     "madrikh-kahniot-amazon-israel-2026": 52,
-    "black-friday-prime-day-israel": 52,
-    "bikorot-mezuyafot-amazon": 52,
     "mutzarim-asurim-yevu-israel": 52,
-    "10-tipim-lehisakhon-bamazon-israel": 52,
-    "amazon-vs-ebay-israel": 52,
-    "amazon-vs-aliexpress-israel": 52,
     "maakav-mishlochim-amazon-israel": 52
   },
   "picks": {
@@ -419,7 +424,10 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
+    "tonor-td510-mic-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -462,6 +470,12 @@
       "emoji": "👞",
       "keyword": "סנדל",
       "bucket": "fashion"
+    },
+    {
+      "slug": "tonor-td510-mic-amazon-israel",
+      "emoji": "🎙️",
+      "keyword": "מיקרופון",
+      "bucket": "audio"
     },
     {
       "slug": "under-armour-matchplay-polo-black-amazon-israel",
