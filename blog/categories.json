@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 230,
+    "reviews": 231,
     "indexable": 230,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 230
   },
   "buckets": [
@@ -304,27 +304,30 @@
         "horus-x-blue-light-glasses-amazon-israel",
         "lacoste-l6008s-sunglasses-amazon-israel",
         "ozlo-sleepbuds-2-amazon-israel",
+        "posca-paint-markers-29-set-amazon-israel",
         "saker-camping-light-ld10-amazon-israel",
         "yubikey-5-nano-c-amazon-israel",
         "yubikey-5c-nfc-fips-amazon-israel"
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "posca-paint-markers-29-set-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 68,
     "hacharot-amazon-israel": 67,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 51,
     "amazon-prime-mishloach-israel": 51,
+    "black-friday-prime-day-israel": 51,
     "bikorot-mezuyafot-amazon": 51,
     "10-tipim-lehisakhon-bamazon-israel": 51,
+    "amazon-vs-ebay-israel": 51,
     "amazon-vs-aliexpress-israel": 51,
+    "maakav-mishlochim-amazon-israel": 51,
     "mekhs-umaam-amazon-israel": 50,
     "madrikh-kahniot-amazon-israel-2026": 50,
-    "black-friday-prime-day-israel": 50,
-    "mutzarim-asurim-yevu-israel": 50,
-    "amazon-vs-ebay-israel": 50,
-    "maakav-mishlochim-amazon-israel": 50
+    "mutzarim-asurim-yevu-israel": 50
   },
   "picks": {
     "guides": 13,
@@ -412,7 +415,9 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "posca-paint-markers-29-set-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
