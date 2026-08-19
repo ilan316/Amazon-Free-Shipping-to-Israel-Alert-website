@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 232,
-    "indexable": 230,
-    "noindex": 2,
-    "cardsInHub": 230
+    "indexable": 232,
+    "noindex": 0,
+    "cardsInHub": 232
   },
   "buckets": [
     {
@@ -312,10 +312,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "kf-concept-tripod-a305a1-amazon-israel",
-    "posca-paint-markers-29-set-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 68,
     "eich-ladaat-mishloach-hinam-amazon-israel": 68,
@@ -417,10 +414,7 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "kf-concept-tripod-a305a1-amazon-israel",
-    "posca-paint-markers-29-set-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
