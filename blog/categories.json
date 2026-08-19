@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 231,
+    "reviews": 232,
     "indexable": 230,
-    "noindex": 1,
+    "noindex": 2,
     "cardsInHub": 230
   },
   "buckets": [
@@ -66,6 +66,7 @@
         "insta360-link-2-pro-webcam-amazon-israel",
         "insta360-snap-selfie-screen-amazon-israel",
         "insta360-x5-360-camera-amazon-israel",
+        "kf-concept-tripod-a305a1-amazon-israel",
         "kodak-ektar-h35-camera-amazon-israel",
         "kodak-pixpro-fz55-amazon-israel",
         "kodak-ultramax-400-35mm-film-6pack-amazon-israel",
@@ -312,21 +313,22 @@
     }
   ],
   "noindexDrafts": [
+    "kf-concept-tripod-a305a1-amazon-israel",
     "posca-paint-markers-29-set-amazon-israel"
   ],
   "guideInbound": {
+    "hacharot-amazon-israel": 68,
     "eich-ladaat-mishloach-hinam-amazon-israel": 68,
-    "hacharot-amazon-israel": 67,
+    "mekhs-umaam-amazon-israel": 51,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 51,
     "amazon-prime-mishloach-israel": 51,
+    "madrikh-kahniot-amazon-israel-2026": 51,
     "black-friday-prime-day-israel": 51,
     "bikorot-mezuyafot-amazon": 51,
     "10-tipim-lehisakhon-bamazon-israel": 51,
     "amazon-vs-ebay-israel": 51,
     "amazon-vs-aliexpress-israel": 51,
     "maakav-mishlochim-amazon-israel": 51,
-    "mekhs-umaam-amazon-israel": 50,
-    "madrikh-kahniot-amazon-israel-2026": 50,
     "mutzarim-asurim-yevu-israel": 50
   },
   "picks": {
@@ -416,6 +418,7 @@
     }
   },
   "missingFromHub": [
+    "kf-concept-tripod-a305a1-amazon-israel",
     "posca-paint-markers-29-set-amazon-israel"
   ],
   "keywordFallbacks": [
