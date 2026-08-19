@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 245,
-    "indexable": 245,
+    "reviews": 246,
+    "indexable": 246,
     "noindex": 0,
-    "cardsInHub": 245
+    "cardsInHub": 246
   },
   "buckets": [
     {
@@ -97,6 +97,7 @@
         "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
         "tenergy-60-pack-batteries-amazon-israel",
         "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
+        "vylee-travel-adapter-pd45w-gan-amazon-israel",
         "waterproof-phone-pouch-unbreakcable-amazon-israel",
         "whatook-handheld-fan-amazon-israel"
       ]
@@ -329,17 +330,17 @@
   "guideInbound": {
     "hacharot-amazon-israel": 73,
     "eich-ladaat-mishloach-hinam-amazon-israel": 70,
+    "10-tipim-lehisakhon-bamazon-israel": 55,
+    "mekhs-umaam-amazon-israel": 54,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 54,
     "amazon-prime-mishloach-israel": 54,
     "madrikh-kahniot-amazon-israel-2026": 54,
     "black-friday-prime-day-israel": 54,
     "bikorot-mezuyafot-amazon": 54,
-    "10-tipim-lehisakhon-bamazon-israel": 54,
+    "mutzarim-asurim-yevu-israel": 54,
     "amazon-vs-ebay-israel": 54,
     "amazon-vs-aliexpress-israel": 54,
-    "maakav-mishlochim-amazon-israel": 54,
-    "mekhs-umaam-amazon-israel": 53,
-    "mutzarim-asurim-yevu-israel": 53
+    "maakav-mishlochim-amazon-israel": 54
   },
   "picks": {
     "guides": 13,
