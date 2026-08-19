@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 234,
+    "reviews": 235,
     "indexable": 233,
-    "noindex": 1,
+    "noindex": 2,
     "cardsInHub": 233
   },
   "buckets": [
@@ -254,6 +254,7 @@
         "adams-essential-car-wash-kit-amazon-israel",
         "avalonking-armor-shield-ix-ceramic-coating-amazon-israel",
         "bosch-gsr12v-300fcb22-flexiclick-drill-amazon-israel",
+        "car-trunk-organizer-suv-amazon-israel",
         "dewalt-dxif1201-tire-inflator-amazon-israel",
         "etenwolf-vortex-s6-tire-inflator-amazon-israel",
         "fanttik-e2-ultra-screwdriver-amazon-israel",
@@ -315,21 +316,22 @@
     }
   ],
   "noindexDrafts": [
+    "car-trunk-organizer-suv-amazon-israel",
     "mr-green-manicure-set-8888i-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 69,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 68,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 69,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 52,
     "amazon-prime-mishloach-israel": 52,
     "bikorot-mezuyafot-amazon": 52,
     "10-tipim-lehisakhon-bamazon-israel": 52,
+    "amazon-vs-ebay-israel": 52,
+    "amazon-vs-aliexpress-israel": 52,
     "mekhs-umaam-amazon-israel": 51,
     "madrikh-kahniot-amazon-israel-2026": 51,
     "black-friday-prime-day-israel": 51,
     "mutzarim-asurim-yevu-israel": 51,
-    "amazon-vs-ebay-israel": 51,
-    "amazon-vs-aliexpress-israel": 51,
     "maakav-mishlochim-amazon-israel": 51
   },
   "picks": {
@@ -419,6 +421,7 @@
     }
   },
   "missingFromHub": [
+    "car-trunk-organizer-suv-amazon-israel",
     "mr-green-manicure-set-8888i-amazon-israel"
   ],
   "keywordFallbacks": [
