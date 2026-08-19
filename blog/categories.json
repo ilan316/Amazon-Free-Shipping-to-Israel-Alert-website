@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 233,
-    "indexable": 232,
-    "noindex": 1,
-    "cardsInHub": 232
+    "indexable": 233,
+    "noindex": 0,
+    "cardsInHub": 233
   },
   "buckets": [
     {
@@ -313,9 +313,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "rdx-shin-guards-muay-thai-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 69,
     "eich-ladaat-mishloach-hinam-amazon-israel": 68,
@@ -417,9 +415,7 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "rdx-shin-guards-muay-thai-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
