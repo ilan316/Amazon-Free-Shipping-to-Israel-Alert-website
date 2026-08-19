@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 244,
-    "indexable": 240,
-    "noindex": 4,
-    "cardsInHub": 240
+    "indexable": 244,
+    "noindex": 0,
+    "cardsInHub": 244
   },
   "buckets": [
     {
@@ -324,12 +324,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "calvin-klein-womens-12pack-socks-amazon-israel",
-    "memory-foam-seat-cushion-amazon-israel",
-    "oncai-sandals-plantar-fasciitis-amazon-israel",
-    "taili-vacuum-storage-bags-8pack-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 72,
     "eich-ladaat-mishloach-hinam-amazon-israel": 70,
@@ -431,12 +426,7 @@
       "yubikey-5-nano-c-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "calvin-klein-womens-12pack-socks-amazon-israel",
-    "memory-foam-seat-cushion-amazon-israel",
-    "oncai-sandals-plantar-fasciitis-amazon-israel",
-    "taili-vacuum-storage-bags-8pack-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
