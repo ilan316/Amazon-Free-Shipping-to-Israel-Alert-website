@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 244,
-    "indexable": 244,
+    "reviews": 245,
+    "indexable": 245,
     "noindex": 0,
-    "cardsInHub": 244
+    "cardsInHub": 245
   },
   "buckets": [
     {
@@ -251,7 +251,8 @@
         "zionor-g1-air-swim-goggles-amazon-israel",
         "zionor-g1-polarized-swim-goggles-amazon-israel",
         "zionor-g1-se-swim-goggles-amazon-israel",
-        "zionor-g1mini-kids-swim-goggles-amazon-israel"
+        "zionor-g1mini-kids-swim-goggles-amazon-israel",
+        "zity-flannel-hoodie-shirt-amazon-israel"
       ]
     },
     {
@@ -326,19 +327,19 @@
   ],
   "noindexDrafts": [],
   "guideInbound": {
-    "hacharot-amazon-israel": 72,
+    "hacharot-amazon-israel": 73,
     "eich-ladaat-mishloach-hinam-amazon-israel": 70,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 54,
     "amazon-prime-mishloach-israel": 54,
+    "madrikh-kahniot-amazon-israel-2026": 54,
     "black-friday-prime-day-israel": 54,
     "bikorot-mezuyafot-amazon": 54,
     "10-tipim-lehisakhon-bamazon-israel": 54,
     "amazon-vs-ebay-israel": 54,
     "amazon-vs-aliexpress-israel": 54,
+    "maakav-mishlochim-amazon-israel": 54,
     "mekhs-umaam-amazon-israel": 53,
-    "madrikh-kahniot-amazon-israel-2026": 53,
-    "mutzarim-asurim-yevu-israel": 53,
-    "maakav-mishlochim-amazon-israel": 53
+    "mutzarim-asurim-yevu-israel": 53
   },
   "picks": {
     "guides": 13,
