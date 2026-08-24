@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 256,
+    "reviews": 257,
     "indexable": 251,
-    "noindex": 5,
+    "noindex": 6,
     "cardsInHub": 251
   },
   "buckets": [
@@ -315,6 +315,7 @@
         "240-acrylic-paint-markers-set-amazon-israel",
         "acrylic-paint-markers-108-colors-amazon-israel",
         "acrylic-paint-markers-168-colors-amazon-israel",
+        "alata-kate-20pc-flatware-amazon-israel",
         "artistro-100-acrylic-paint-markers-amazon-israel",
         "blockhutte-stainless-steel-lunch-box-amazon-israel",
         "bottleboom-stem-13in1-solar-robot-amazon-israel",
@@ -337,6 +338,7 @@
     }
   ],
   "noindexDrafts": [
+    "alata-kate-20pc-flatware-amazon-israel",
     "jorest-19in1-multibit-screwdriver-amazon-israel",
     "mokpr-wireless-car-charger-amazon-israel",
     "mysmile-teeth-whitening-kit-led-amazon-israel",
@@ -344,19 +346,19 @@
     "smartphone-gimbal-stabilizer-amazon-israel"
   ],
   "guideInbound": {
-    "hacharot-amazon-israel": 74,
+    "hacharot-amazon-israel": 75,
     "eich-ladaat-mishloach-hinam-amazon-israel": 72,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 57,
     "amazon-prime-mishloach-israel": 57,
+    "black-friday-prime-day-israel": 57,
     "bikorot-mezuyafot-amazon": 57,
     "10-tipim-lehisakhon-bamazon-israel": 57,
     "amazon-vs-ebay-israel": 57,
     "amazon-vs-aliexpress-israel": 57,
+    "maakav-mishlochim-amazon-israel": 57,
     "mekhs-umaam-amazon-israel": 56,
     "madrikh-kahniot-amazon-israel-2026": 56,
-    "black-friday-prime-day-israel": 56,
-    "mutzarim-asurim-yevu-israel": 56,
-    "maakav-mishlochim-amazon-israel": 56
+    "mutzarim-asurim-yevu-israel": 56
   },
   "picks": {
     "guides": 13,
@@ -446,6 +448,7 @@
     }
   },
   "missingFromHub": [
+    "alata-kate-20pc-flatware-amazon-israel",
     "jorest-19in1-multibit-screwdriver-amazon-israel",
     "mokpr-wireless-car-charger-amazon-israel",
     "mysmile-teeth-whitening-kit-led-amazon-israel",
@@ -539,6 +542,7 @@
     }
   ],
   "warnings": [
+    "אימוג'י לא ממופה \"🍴\" (leaf: \"Flatware Sets\") — alata-kate-20pc-flatware-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🍱\" (leaf: \"Home & Kitchen\") — blockhutte-stainless-steel-lunch-box-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔬\" (leaf: \"Solar Power Kits\") — bottleboom-stem-13in1-solar-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🧥\" (leaf: \"b21c23e8-ac46-41ab-bfed-a824ad1360c0_8501\") — camel-crown-ski-jacket-mens-amazon-israel שויך ל-misc",
