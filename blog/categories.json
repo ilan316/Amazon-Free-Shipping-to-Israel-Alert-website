@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 249,
-    "indexable": 246,
-    "noindex": 3,
-    "cardsInHub": 246
+    "indexable": 249,
+    "noindex": 0,
+    "cardsInHub": 249
   },
   "buckets": [
     {
@@ -329,11 +329,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "fanttik-k2-ultra-drill-amazon-israel",
-    "insta360-flow-gimbal-amazon-israel",
-    "olight-arkpro-lite-flashlight-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 73,
     "eich-ladaat-mishloach-hinam-amazon-israel": 71,
@@ -436,11 +432,7 @@
       "waterproof-phone-pouch-unbreakcable-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "fanttik-k2-ultra-drill-amazon-israel",
-    "insta360-flow-gimbal-amazon-israel",
-    "olight-arkpro-lite-flashlight-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
