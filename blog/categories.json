@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 253,
+    "reviews": 256,
     "indexable": 251,
-    "noindex": 2,
+    "noindex": 5,
     "cardsInHub": 251
   },
   "buckets": [
@@ -78,7 +78,8 @@
         "philips-4k-webcam-spl6418-amazon-israel",
         "reolink-duo-3-poe-amazon-israel",
         "reolink-rlc-810a-4k-camera-amazon-israel",
-        "reolink-rln8-410-nvr-amazon-israel"
+        "reolink-rln8-410-nvr-amazon-israel",
+        "smartphone-gimbal-stabilizer-amazon-israel"
       ]
     },
     {
@@ -96,6 +97,7 @@
         "minix-100w-gan-charger-p5010-amazon-israel",
         "minix-neo-p3-100w-gan-charger-amazon-israel",
         "minix-p1-66w-gan-charger-amazon-israel",
+        "mokpr-wireless-car-charger-amazon-israel",
         "momax-ua8a-travel-adapter-amazon-israel",
         "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
         "tenergy-60-pack-batteries-amazon-israel",
@@ -231,6 +233,7 @@
         "physix-compression-socks-amazon-israel",
         "pink-miracle-shoe-cleaner-kit-amazon-israel",
         "project-cloud-heritage-leather-sandals-amazon-israel",
+        "project-cloud-venita-sandals-amazon-israel",
         "puma-contender-duffel-bag-amazon-israel",
         "rdx-mma-shorts-t15b-amazon-israel",
         "rdx-rash-guard-bjj-amazon-israel",
@@ -335,22 +338,25 @@
   ],
   "noindexDrafts": [
     "jorest-19in1-multibit-screwdriver-amazon-israel",
-    "mysmile-teeth-whitening-kit-led-amazon-israel"
+    "mokpr-wireless-car-charger-amazon-israel",
+    "mysmile-teeth-whitening-kit-led-amazon-israel",
+    "project-cloud-venita-sandals-amazon-israel",
+    "smartphone-gimbal-stabilizer-amazon-israel"
   ],
   "guideInbound": {
-    "hacharot-amazon-israel": 73,
+    "hacharot-amazon-israel": 74,
     "eich-ladaat-mishloach-hinam-amazon-israel": 72,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 56,
-    "amazon-prime-mishloach-israel": 56,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 57,
+    "amazon-prime-mishloach-israel": 57,
+    "bikorot-mezuyafot-amazon": 57,
+    "10-tipim-lehisakhon-bamazon-israel": 57,
+    "amazon-vs-ebay-israel": 57,
+    "amazon-vs-aliexpress-israel": 57,
+    "mekhs-umaam-amazon-israel": 56,
     "madrikh-kahniot-amazon-israel-2026": 56,
     "black-friday-prime-day-israel": 56,
-    "bikorot-mezuyafot-amazon": 56,
-    "10-tipim-lehisakhon-bamazon-israel": 56,
-    "amazon-vs-ebay-israel": 56,
-    "amazon-vs-aliexpress-israel": 56,
-    "maakav-mishlochim-amazon-israel": 56,
-    "mekhs-umaam-amazon-israel": 55,
-    "mutzarim-asurim-yevu-israel": 55
+    "mutzarim-asurim-yevu-israel": 56,
+    "maakav-mishlochim-amazon-israel": 56
   },
   "picks": {
     "guides": 13,
@@ -441,7 +447,10 @@
   },
   "missingFromHub": [
     "jorest-19in1-multibit-screwdriver-amazon-israel",
-    "mysmile-teeth-whitening-kit-led-amazon-israel"
+    "mokpr-wireless-car-charger-amazon-israel",
+    "mysmile-teeth-whitening-kit-led-amazon-israel",
+    "project-cloud-venita-sandals-amazon-israel",
+    "smartphone-gimbal-stabilizer-amazon-israel"
   ],
   "keywordFallbacks": [
     {
