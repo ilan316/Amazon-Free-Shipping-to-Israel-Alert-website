@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 249,
-    "indexable": 249,
+    "reviews": 251,
+    "indexable": 251,
     "noindex": 0,
-    "cardsInHub": 249
+    "cardsInHub": 251
   },
   "buckets": [
     {
@@ -86,12 +86,14 @@
       "label": "גאדג'טים, טעינה וחשמל",
       "posts": [
         "acer-3in1-magsafe-charger-amazon-israel",
+        "baseus-70w-travel-adapter-amazon-israel",
         "bestek-220v-110v-converter-usb-c-amazon-israel",
         "cheerair-gt02-fan-amazon-israel",
         "doace-100w-gan-travel-adapter-amazon-israel",
         "esr-iphone-17-pro-max-case-stand-amazon-israel",
         "feeki-magsafe-charger-25w-amazon-israel",
         "garmin-inreach-mini-2-amazon-israel",
+        "minix-100w-gan-charger-p5010-amazon-israel",
         "minix-neo-p3-100w-gan-charger-amazon-israel",
         "minix-p1-66w-gan-charger-amazon-israel",
         "momax-ua8a-travel-adapter-amazon-israel",
@@ -333,17 +335,17 @@
   "guideInbound": {
     "hacharot-amazon-israel": 73,
     "eich-ladaat-mishloach-hinam-amazon-israel": 71,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 55,
-    "amazon-prime-mishloach-israel": 55,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 56,
+    "amazon-prime-mishloach-israel": 56,
+    "10-tipim-lehisakhon-bamazon-israel": 56,
+    "amazon-vs-aliexpress-israel": 56,
+    "mekhs-umaam-amazon-israel": 55,
     "madrikh-kahniot-amazon-israel-2026": 55,
     "black-friday-prime-day-israel": 55,
     "bikorot-mezuyafot-amazon": 55,
-    "10-tipim-lehisakhon-bamazon-israel": 55,
+    "mutzarim-asurim-yevu-israel": 55,
     "amazon-vs-ebay-israel": 55,
-    "amazon-vs-aliexpress-israel": 55,
-    "maakav-mishlochim-amazon-israel": 55,
-    "mekhs-umaam-amazon-israel": 54,
-    "mutzarim-asurim-yevu-israel": 54
+    "maakav-mishlochim-amazon-israel": 55
   },
   "picks": {
     "guides": 13,
