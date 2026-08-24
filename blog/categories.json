@@ -2,8 +2,8 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 259,
-    "indexable": 257,
-    "noindex": 2,
+    "indexable": 256,
+    "noindex": 3,
     "cardsInHub": 257
   },
   "buckets": [
@@ -341,6 +341,7 @@
   ],
   "noindexDrafts": [
     "fabric-resistance-bands-3pack-amazon-israel",
+    "tommy-hilfiger-10pk-crew-socks-amazon-israel",
     "tub-works-bath-color-pops-120-amazon-israel"
   ],
   "guideInbound": {
