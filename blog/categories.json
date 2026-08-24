@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 246,
+    "reviews": 247,
     "indexable": 246,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 246
   },
   "buckets": [
@@ -268,6 +268,7 @@
         "etenwolf-vortex-s6-tire-inflator-amazon-israel",
         "fanttik-e2-ultra-screwdriver-amazon-israel",
         "fanttik-f2-pro-rotary-tool-amazon-israel",
+        "fanttik-k2-ultra-drill-amazon-israel",
         "fanttik-slim-v10-apex-vacuum-amazon-israel",
         "fanttik-x9-ace-bike-pump-amazon-israel",
         "fanttik-x9-apex-air-compressor-amazon-israel",
@@ -326,14 +327,16 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "fanttik-k2-ultra-drill-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 73,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 70,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 71,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 55,
+    "amazon-prime-mishloach-israel": 55,
     "10-tipim-lehisakhon-bamazon-israel": 55,
     "mekhs-umaam-amazon-israel": 54,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 54,
-    "amazon-prime-mishloach-israel": 54,
     "madrikh-kahniot-amazon-israel-2026": 54,
     "black-friday-prime-day-israel": 54,
     "bikorot-mezuyafot-amazon": 54,
@@ -429,7 +432,9 @@
       "waterproof-phone-pouch-unbreakcable-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "fanttik-k2-ultra-drill-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -442,6 +447,12 @@
       "emoji": "🍶",
       "keyword": "בקבוק",
       "bucket": "kitchen"
+    },
+    {
+      "slug": "fanttik-k2-ultra-drill-amazon-israel",
+      "emoji": "🛠️",
+      "keyword": "drill",
+      "bucket": "auto"
     },
     {
       "slug": "flairosol-olivia-oil-sprayer-amazon-israel",
