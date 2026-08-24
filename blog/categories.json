@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 247,
+    "reviews": 248,
     "indexable": 246,
-    "noindex": 1,
+    "noindex": 2,
     "cardsInHub": 246
   },
   "buckets": [
@@ -65,6 +65,7 @@
         "fujifilm-instax-mini-film-bundle-amazon-israel",
         "gainvane-120-projector-screen-amazon-israel",
         "insta360-flow-2-pro-gimbal-amazon-israel",
+        "insta360-flow-gimbal-amazon-israel",
         "insta360-link-2-pro-webcam-amazon-israel",
         "insta360-snap-selfie-screen-amazon-israel",
         "insta360-x5-360-camera-amazon-israel",
@@ -328,21 +329,22 @@
     }
   ],
   "noindexDrafts": [
-    "fanttik-k2-ultra-drill-amazon-israel"
+    "fanttik-k2-ultra-drill-amazon-israel",
+    "insta360-flow-gimbal-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 73,
     "eich-ladaat-mishloach-hinam-amazon-israel": 71,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 55,
     "amazon-prime-mishloach-israel": 55,
+    "bikorot-mezuyafot-amazon": 55,
     "10-tipim-lehisakhon-bamazon-israel": 55,
+    "amazon-vs-ebay-israel": 55,
+    "amazon-vs-aliexpress-israel": 55,
     "mekhs-umaam-amazon-israel": 54,
     "madrikh-kahniot-amazon-israel-2026": 54,
     "black-friday-prime-day-israel": 54,
-    "bikorot-mezuyafot-amazon": 54,
     "mutzarim-asurim-yevu-israel": 54,
-    "amazon-vs-ebay-israel": 54,
-    "amazon-vs-aliexpress-israel": 54,
     "maakav-mishlochim-amazon-israel": 54
   },
   "picks": {
@@ -433,7 +435,8 @@
     }
   },
   "missingFromHub": [
-    "fanttik-k2-ultra-drill-amazon-israel"
+    "fanttik-k2-ultra-drill-amazon-israel",
+    "insta360-flow-gimbal-amazon-israel"
   ],
   "keywordFallbacks": [
     {
