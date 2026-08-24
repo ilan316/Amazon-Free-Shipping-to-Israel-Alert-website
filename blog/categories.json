@@ -2,8 +2,8 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 260,
-    "indexable": 260,
-    "noindex": 0,
+    "indexable": 259,
+    "noindex": 1,
     "cardsInHub": 260
   },
   "buckets": [
@@ -340,7 +340,9 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "fimibuke-toddler-water-bottle-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 75,
     "eich-ladaat-mishloach-hinam-amazon-israel": 73,
@@ -415,7 +417,6 @@
       "fanttik-x9-apex-air-compressor-amazon-israel": 1,
       "fanttik-x9-pro-tire-inflator-amazon-israel": 1,
       "feeki-magsafe-charger-25w-amazon-israel": 1,
-      "fimibuke-toddler-water-bottle-amazon-israel": 1,
       "flairosol-olivia-oil-sprayer-amazon-israel": 1,
       "flylily-galaxy-projector-amazon-israel": 1,
       "fujifilm-instax-mini-film-50-shoots-amazon-israel": 1,
@@ -427,6 +428,7 @@
       "insta360-flow-2-pro-gimbal-amazon-israel": 1,
       "insta360-link-2-pro-webcam-amazon-israel": 1,
       "jmierr-corduroy-shorts-amazon-israel": 1,
+      "joynee-mens-crew-work-socks-amazon-israel": 1,
       "kf-concept-tripod-a305a1-amazon-israel": 1,
       "kodak-ektar-h35-camera-amazon-israel": 1,
       "kodak-pixpro-fz55-amazon-israel": 1,
