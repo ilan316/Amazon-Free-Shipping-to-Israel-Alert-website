@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 257,
-    "indexable": 251,
-    "noindex": 6,
-    "cardsInHub": 251
+    "indexable": 257,
+    "noindex": 0,
+    "cardsInHub": 257
   },
   "buckets": [
     {
@@ -337,14 +337,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "alata-kate-20pc-flatware-amazon-israel",
-    "jorest-19in1-multibit-screwdriver-amazon-israel",
-    "mokpr-wireless-car-charger-amazon-israel",
-    "mysmile-teeth-whitening-kit-led-amazon-israel",
-    "project-cloud-venita-sandals-amazon-israel",
-    "smartphone-gimbal-stabilizer-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 75,
     "eich-ladaat-mishloach-hinam-amazon-israel": 72,
@@ -447,14 +440,7 @@
       "waterproof-phone-pouch-unbreakcable-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "alata-kate-20pc-flatware-amazon-israel",
-    "jorest-19in1-multibit-screwdriver-amazon-israel",
-    "mokpr-wireless-car-charger-amazon-israel",
-    "mysmile-teeth-whitening-kit-led-amazon-israel",
-    "project-cloud-venita-sandals-amazon-israel",
-    "smartphone-gimbal-stabilizer-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
