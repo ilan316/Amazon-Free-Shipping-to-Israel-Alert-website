@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 259,
+    "reviews": 260,
     "indexable": 256,
-    "noindex": 3,
+    "noindex": 4,
     "cardsInHub": 257
   },
   "buckets": [
@@ -146,6 +146,7 @@
         "made-in-cookware-12-inch-stainless-frying-pan-amazon-israel",
         "memory-foam-seat-cushion-amazon-israel",
         "mizon-marine-collagen-lifting-cream-amazon-israel",
+        "opard-zip-water-bottle-32oz-amazon-israel",
         "owala-freesip-32oz-water-bottle-amazon-israel",
         "plapitate-olive-oil-sprayer-amazon-israel",
         "royal-craft-wood-cutting-board-set-amazon-israel",
@@ -341,22 +342,23 @@
   ],
   "noindexDrafts": [
     "fabric-resistance-bands-3pack-amazon-israel",
+    "opard-zip-water-bottle-32oz-amazon-israel",
     "tommy-hilfiger-10pk-crew-socks-amazon-israel",
     "tub-works-bath-color-pops-120-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 75,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 72,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 73,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 58,
     "amazon-prime-mishloach-israel": 58,
     "10-tipim-lehisakhon-bamazon-israel": 58,
+    "amazon-vs-ebay-israel": 58,
+    "amazon-vs-aliexpress-israel": 58,
     "mekhs-umaam-amazon-israel": 57,
     "madrikh-kahniot-amazon-israel-2026": 57,
     "black-friday-prime-day-israel": 57,
     "bikorot-mezuyafot-amazon": 57,
     "mutzarim-asurim-yevu-israel": 57,
-    "amazon-vs-ebay-israel": 57,
-    "amazon-vs-aliexpress-israel": 57,
     "maakav-mishlochim-amazon-israel": 57
   },
   "picks": {
@@ -448,6 +450,7 @@
   },
   "missingFromHub": [
     "fabric-resistance-bands-3pack-amazon-israel",
+    "opard-zip-water-bottle-32oz-amazon-israel",
     "tub-works-bath-color-pops-120-amazon-israel"
   ],
   "keywordFallbacks": [
