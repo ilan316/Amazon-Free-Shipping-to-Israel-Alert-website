@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 257,
+    "reviews": 259,
     "indexable": 257,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 257
   },
   "buckets": [
@@ -213,6 +213,7 @@
         "cole-haan-zerogrand-stitchlite-oxford-amazon-israel",
         "crocs-classic-crafted-canvas-clog-amazon-israel",
         "etenwolf-vacuum-storage-bags-amazon-israel",
+        "fabric-resistance-bands-3pack-amazon-israel",
         "gold-bjj-fight-shorts-black-large-amazon-israel",
         "hanes-ultimate-undershirt-4pack-amazon-israel",
         "jmierr-corduroy-shorts-amazon-israel",
@@ -332,26 +333,30 @@
         "ozlo-sleepbuds-2-amazon-israel",
         "posca-paint-markers-29-set-amazon-israel",
         "saker-camping-light-ld10-amazon-israel",
+        "tub-works-bath-color-pops-120-amazon-israel",
         "yubikey-5-nano-c-amazon-israel",
         "yubikey-5c-nfc-fips-amazon-israel"
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "fabric-resistance-bands-3pack-amazon-israel",
+    "tub-works-bath-color-pops-120-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 75,
     "eich-ladaat-mishloach-hinam-amazon-israel": 72,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 57,
-    "amazon-prime-mishloach-israel": 57,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 58,
+    "amazon-prime-mishloach-israel": 58,
+    "10-tipim-lehisakhon-bamazon-israel": 58,
+    "mekhs-umaam-amazon-israel": 57,
+    "madrikh-kahniot-amazon-israel-2026": 57,
     "black-friday-prime-day-israel": 57,
     "bikorot-mezuyafot-amazon": 57,
-    "10-tipim-lehisakhon-bamazon-israel": 57,
+    "mutzarim-asurim-yevu-israel": 57,
     "amazon-vs-ebay-israel": 57,
     "amazon-vs-aliexpress-israel": 57,
-    "maakav-mishlochim-amazon-israel": 57,
-    "mekhs-umaam-amazon-israel": 56,
-    "madrikh-kahniot-amazon-israel-2026": 56,
-    "mutzarim-asurim-yevu-israel": 56
+    "maakav-mishlochim-amazon-israel": 57
   },
   "picks": {
     "guides": 13,
@@ -440,7 +445,10 @@
       "waterproof-phone-pouch-unbreakcable-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "fabric-resistance-bands-3pack-amazon-israel",
+    "tub-works-bath-color-pops-120-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -542,6 +550,7 @@
     "אימוג'י לא ממופה \"🔦\" (leaf: \"Handheld Flashlights\") — olight-arkpro-lite-flashlight-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"😴\" (leaf: \"Sleep Earbuds\") — ozlo-sleepbuds-2-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🏕️\" (leaf: \"Electric Lanterns\") — saker-camping-light-ld10-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🛁\" (leaf: \"Mom's spa night\") — tub-works-bath-color-pops-120-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔐\" (leaf: \"USB Gadgets\") — yubikey-5-nano-c-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔐\" (leaf: \"RFID Supplies\") — yubikey-5c-nfc-fips-amazon-israel שויך ל-misc"
   ]
