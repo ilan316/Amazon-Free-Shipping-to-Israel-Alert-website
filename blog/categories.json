@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 260,
-    "indexable": 256,
-    "noindex": 4,
-    "cardsInHub": 257
+    "indexable": 260,
+    "noindex": 0,
+    "cardsInHub": 260
   },
   "buckets": [
     {
@@ -340,12 +340,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "fabric-resistance-bands-3pack-amazon-israel",
-    "opard-zip-water-bottle-32oz-amazon-israel",
-    "tommy-hilfiger-10pk-crew-socks-amazon-israel",
-    "tub-works-bath-color-pops-120-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 75,
     "eich-ladaat-mishloach-hinam-amazon-israel": 73,
@@ -448,11 +443,7 @@
       "waterproof-phone-pouch-unbreakcable-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "fabric-resistance-bands-3pack-amazon-israel",
-    "opard-zip-water-bottle-32oz-amazon-israel",
-    "tub-works-bath-color-pops-120-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
