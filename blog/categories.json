@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 251,
+    "reviews": 253,
     "indexable": 251,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 251
   },
   "buckets": [
@@ -181,6 +181,7 @@
         "manscaped-beard-hedger-trimmer-amazon-israel",
         "medicube-booster-pro-age-r-amazon-israel",
         "medicube-booster-pro-amazon-israel",
+        "mysmile-teeth-whitening-kit-led-amazon-israel",
         "old-spice-gentleman-deodorant-amazon-israel",
         "ouai-detox-shampoo-amazon-israel",
         "paulas-choice-bha-liquid-exfoliant-amazon-israel",
@@ -277,6 +278,7 @@
         "fanttik-x9-apex-air-compressor-amazon-israel",
         "fanttik-x9-pro-tire-inflator-amazon-israel",
         "ifixit-pro-tech-toolkit-amazon-israel",
+        "jorest-19in1-multibit-screwdriver-amazon-israel",
         "kinder-fluff-windshield-sun-shade-amazon-israel",
         "lamicall-tire-inflator-vhep02-amazon-israel",
         "lexivon-lx191-bike-torque-wrench-amazon-israel",
@@ -331,21 +333,24 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "jorest-19in1-multibit-screwdriver-amazon-israel",
+    "mysmile-teeth-whitening-kit-led-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 73,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 71,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 72,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 56,
     "amazon-prime-mishloach-israel": 56,
+    "madrikh-kahniot-amazon-israel-2026": 56,
+    "black-friday-prime-day-israel": 56,
+    "bikorot-mezuyafot-amazon": 56,
     "10-tipim-lehisakhon-bamazon-israel": 56,
+    "amazon-vs-ebay-israel": 56,
     "amazon-vs-aliexpress-israel": 56,
+    "maakav-mishlochim-amazon-israel": 56,
     "mekhs-umaam-amazon-israel": 55,
-    "madrikh-kahniot-amazon-israel-2026": 55,
-    "black-friday-prime-day-israel": 55,
-    "bikorot-mezuyafot-amazon": 55,
-    "mutzarim-asurim-yevu-israel": 55,
-    "amazon-vs-ebay-israel": 55,
-    "maakav-mishlochim-amazon-israel": 55
+    "mutzarim-asurim-yevu-israel": 55
   },
   "picks": {
     "guides": 13,
@@ -434,7 +439,10 @@
       "waterproof-phone-pouch-unbreakcable-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "jorest-19in1-multibit-screwdriver-amazon-israel",
+    "mysmile-teeth-whitening-kit-led-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -459,6 +467,12 @@
       "emoji": "🫒",
       "keyword": "שמן זית",
       "bucket": "kitchen"
+    },
+    {
+      "slug": "jorest-19in1-multibit-screwdriver-amazon-israel",
+      "emoji": "🛠️",
+      "keyword": "מברג",
+      "bucket": "auto"
     },
     {
       "slug": "medicube-booster-pro-amazon-israel",
