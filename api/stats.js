@@ -1,11 +1,11 @@
 module.exports = async function handler(req, res) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
-  const r = await fetch(`${url}/mget/download_count/last_download_at`, {
+  const r = await fetch(`${url}/mget/download_count/last_download_at/total_shares`, {
     headers: { Authorization: `Bearer ${token}` },
   });
   const data = await r.json();
-  const [count, lastAt] = data.result ?? [0, null];
+  const [count, lastAt, shares] = data.result ?? [0, null, 0];
 
   const lastStr = lastAt
     ? new Date(lastAt).toLocaleString('he-IL', { timeZone: 'Asia/Jerusalem' })
@@ -37,6 +37,10 @@ module.exports = async function handler(req, res) {
   <div class="stat">
     <div class="label">הורדה אחרונה</div>
     <div class="sub">${lastStr}</div>
+  </div>
+  <div class="stat">
+    <div class="label">סה"כ שיתופים</div>
+    <div class="value">${shares ?? 0}</div>
   </div>
 </div>
 </body>

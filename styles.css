@@ -231,6 +231,13 @@ html,body{max-width:100%;overflow-x:hidden}
 .author-bio__avatar{flex-shrink:0;width:52px;height:52px;border-radius:50%;background:var(--brand);color:#fff;font-family:Rubik,sans-serif;font-weight:700;font-size:1.4rem;display:flex;align-items:center;justify-content:center}
 .author-bio__name{margin:0 0 4px;font-family:Rubik,sans-serif;font-weight:700;font-size:1rem}
 .author-bio__desc{margin:0;font-size:.9rem;color:var(--ink-muted);line-height:1.6}
+
+/* ===== SHARE BUTTON ===== */
+.btn-share{background:transparent;border:1px solid var(--line);color:var(--ink-muted);font-weight:600;font-size:.82rem;border-radius:999px;padding:5px 14px;cursor:pointer;font-family:Heebo,sans-serif;transition:background 160ms ease,color 160ms ease}
+.btn-share:hover{background:rgba(0,0,0,.04);color:var(--ink)}
+.share-popover{position:absolute;z-index:10000;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 32px rgba(23,32,51,.18);padding:6px;display:flex;flex-direction:column;gap:2px;min-width:160px}
+.share-popover .share-option{display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:8px;border:none;background:transparent;color:var(--ink);font-size:.88rem;font-family:Heebo,sans-serif;text-decoration:none;cursor:pointer;text-align:right;width:100%}
+.share-popover .share-option:hover{background:rgba(255,153,0,.08)}
 .author-bio__desc a{color:var(--brand-deep);text-decoration:none;font-weight:500}
 .author-bio__desc a:hover{text-decoration:underline}
 .contact-privacy-label{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--ink-muted);cursor:pointer;user-select:none}

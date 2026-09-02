@@ -263,6 +263,118 @@ if ("IntersectionObserver" in window && priceCards.length > 0) {
   priceCards.forEach((card) => productViewObserver.observe(card));
 }
 
+/* ===========================
+   SHARE BUTTON + UTM TRACKING (blog posts)
+   =========================== */
+
+function buildShareUrl(base, { utm_source, utm_campaign, utm_content }) {
+  const u = new URL(base, window.location.origin);
+  u.searchParams.set('utm_source', utm_source);
+  u.searchParams.set('utm_medium', 'share');
+  u.searchParams.set('utm_campaign', utm_campaign);
+  u.searchParams.set('utm_content', utm_content);
+  return u.toString();
+}
+
+function trackShare({ type, id, name, channel }) {
+  if (window.va) {
+    window.va('event', { name: 'product_share', id, type, channel });
+  }
+  const payload = JSON.stringify({ type, id, name, channel });
+  if (navigator.sendBeacon) {
+    navigator.sendBeacon('/api/product-share', new Blob([payload], { type: 'application/json' }));
+  } else {
+    fetch('/api/product-share', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload, keepalive: true });
+  }
+}
+
+function shareUrlsForChannels(base, campaign, contentId) {
+  return {
+    whatsapp: buildShareUrl(base, { utm_source: 'whatsapp', utm_campaign: campaign, utm_content: contentId }),
+    telegram: buildShareUrl(base, { utm_source: 'telegram', utm_campaign: campaign, utm_content: contentId }),
+    copy: buildShareUrl(base, { utm_source: 'copy', utm_campaign: campaign, utm_content: contentId }),
+    native: buildShareUrl(base, { utm_source: 'native', utm_campaign: campaign, utm_content: contentId }),
+  };
+}
+
+function closeSharePopover() {
+  const existing = document.querySelector('.share-popover');
+  if (existing) existing.remove();
+}
+
+function openSharePopover(anchorBtn, title, urls, trackPayload) {
+  closeSharePopover();
+  const pop = document.createElement('div');
+  pop.className = 'share-popover';
+  pop.innerHTML = `
+    <a href="https://wa.me/?text=${encodeURIComponent(title + ' ' + urls.whatsapp)}" target="_blank" rel="noopener" class="share-option" data-channel="whatsapp">💬 וואטסאפ</a>
+    <a href="https://t.me/share/url?url=${encodeURIComponent(urls.telegram)}&text=${encodeURIComponent(title)}" target="_blank" rel="noopener" class="share-option" data-channel="telegram">✈️ טלגרם</a>
+    <button type="button" class="share-option" data-channel="copy">🔗 העתק קישור</button>
+  `;
+  document.body.appendChild(pop);
+  const rect = anchorBtn.getBoundingClientRect();
+  pop.style.position = 'absolute';
+  pop.style.top = `${window.scrollY + rect.bottom + 6}px`;
+  pop.style.left = `${window.scrollX + rect.left}px`;
+
+  pop.querySelectorAll('[data-channel]').forEach((el) => {
+    el.addEventListener('click', async (e) => {
+      const channel = el.getAttribute('data-channel');
+      if (channel === 'copy') {
+        e.preventDefault();
+        try {
+          await navigator.clipboard.writeText(urls.copy);
+          el.textContent = '✅ הועתק';
+          setTimeout(closeSharePopover, 800);
+        } catch (err) {
+          // clipboard unavailable, leave popover open
+        }
+      } else {
+        closeSharePopover();
+      }
+      trackShare({ ...trackPayload, channel });
+    });
+  });
+
+  setTimeout(() => {
+    document.addEventListener('click', function onDocClick(e) {
+      if (!pop.contains(e.target) && e.target !== anchorBtn) {
+        closeSharePopover();
+        document.removeEventListener('click', onDocClick);
+      }
+    });
+  }, 0);
+}
+
+async function handleShareClick(anchorBtn, { type, id, name, base, campaign }) {
+  const urls = shareUrlsForChannels(base, campaign, id);
+  const trackPayload = { type, id, name };
+
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: name, url: urls.native });
+      trackShare({ ...trackPayload, channel: 'native' });
+    } catch (err) {
+      // user cancelled the OS share sheet — no tracking fired
+    }
+    return;
+  }
+  openSharePopover(anchorBtn, name, urls, trackPayload);
+}
+
+const blogShareBtn = document.querySelector('.btn-share[data-slug]');
+if (blogShareBtn) {
+  blogShareBtn.addEventListener('click', () => {
+    handleShareClick(blogShareBtn, {
+      type: 'blog',
+      id: blogShareBtn.getAttribute('data-slug'),
+      name: blogShareBtn.getAttribute('data-title') || document.title,
+      base: window.location.pathname,
+      campaign: 'blog_share',
+    });
+  });
+}
+
 // Alert modal
 const alertModal = document.getElementById('alert-modal');
 const alertClose = document.getElementById('alert-modal-close');

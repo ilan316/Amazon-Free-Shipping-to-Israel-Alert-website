@@ -272,6 +272,25 @@
       transition: transform 160ms ease, box-shadow 160ms ease;
     }
     .btn-buy:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(255,153,0,.4); }
+    .btn-share {
+      display: block; margin-top: 8px;
+      background: transparent; color: var(--ink-muted); font-weight: 600; font-size: .82rem;
+      border-radius: 10px; padding: 8px; text-align: center; width: 100%;
+      border: 1px solid rgba(0,0,0,.12); cursor: pointer;
+      transition: background 160ms ease, color 160ms ease;
+    }
+    .btn-share:hover { background: rgba(0,0,0,.04); color: var(--ink); }
+    .share-popover {
+      position: absolute; z-index: 10000; background: #fff; border: 1px solid var(--line);
+      border-radius: 12px; box-shadow: 0 8px 32px rgba(23,32,51,.18); padding: 6px;
+      display: flex; flex-direction: column; gap: 2px; min-width: 160px;
+    }
+    .share-popover .share-option {
+      display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 8px;
+      border: none; background: transparent; color: var(--ink); font-size: .88rem;
+      font-family: Heebo, sans-serif; text-decoration: none; cursor: pointer; text-align: right; width: 100%;
+    }
+    .share-popover .share-option:hover { background: rgba(255,153,0,.08); }
 
     /* How-mini */
     .how-mini { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 48px; }
@@ -586,8 +605,109 @@
           <div class="card-badge">✅ משלוח חינם לישראל · מעל $49</div>
           ${p.found_in_aod ? `<div class="card-aod">⚠️ נמצא תחת "כל אפשרויות הקנייה" — לחץ ובחר את ההצעה עם משלוח חינם</div>` : ''}
           <a href="${url}" class="btn-buy" target="_blank" rel="noopener sponsored">קנה עכשיו באמזון →</a>
+          <button type="button" class="btn-share" data-asin="${p.asin}" data-name="${escapeAttr(p.name_he || p.name)}">🔗 שתף</button>
         </div>
       </div>`;
+  }
+
+  function escapeAttr(str) {
+    return String(str || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  }
+
+  /* ---- share tracking (inline copy — this page does not load script.js) ---- */
+  function buildShareUrl(base, { utm_source, utm_campaign, utm_content }) {
+    const u = new URL(base, window.location.origin);
+    u.searchParams.set('utm_source', utm_source);
+    u.searchParams.set('utm_medium', 'share');
+    u.searchParams.set('utm_campaign', utm_campaign);
+    u.searchParams.set('utm_content', utm_content);
+    return u.toString();
+  }
+
+  function trackShare({ type, id, name, channel }) {
+    if (window.va) {
+      window.va('event', { name: 'product_share', id, type, channel });
+    }
+    const payload = JSON.stringify({ type, id, name, channel });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon('/api/product-share', new Blob([payload], { type: 'application/json' }));
+    } else {
+      fetch('/api/product-share', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload, keepalive: true });
+    }
+  }
+
+  function shareUrlsForChannels(base, campaign, contentId) {
+    return {
+      whatsapp: buildShareUrl(base, { utm_source: 'whatsapp', utm_campaign: campaign, utm_content: contentId }),
+      telegram: buildShareUrl(base, { utm_source: 'telegram', utm_campaign: campaign, utm_content: contentId }),
+      copy: buildShareUrl(base, { utm_source: 'copy', utm_campaign: campaign, utm_content: contentId }),
+      native: buildShareUrl(base, { utm_source: 'native', utm_campaign: campaign, utm_content: contentId }),
+    };
+  }
+
+  function closeSharePopover() {
+    const existing = document.querySelector('.share-popover');
+    if (existing) existing.remove();
+  }
+
+  function openSharePopover(anchorBtn, title, urls, trackPayload) {
+    closeSharePopover();
+    const pop = document.createElement('div');
+    pop.className = 'share-popover';
+    pop.innerHTML = `
+      <a href="https://wa.me/?text=${encodeURIComponent(title + ' ' + urls.whatsapp)}" target="_blank" rel="noopener" class="share-option" data-channel="whatsapp">💬 וואטסאפ</a>
+      <a href="https://t.me/share/url?url=${encodeURIComponent(urls.telegram)}&text=${encodeURIComponent(title)}" target="_blank" rel="noopener" class="share-option" data-channel="telegram">✈️ טלגרם</a>
+      <button type="button" class="share-option" data-channel="copy">🔗 העתק קישור</button>
+    `;
+    document.body.appendChild(pop);
+    const rect = anchorBtn.getBoundingClientRect();
+    pop.style.position = 'absolute';
+    pop.style.top = `${window.scrollY + rect.bottom + 6}px`;
+    pop.style.left = `${window.scrollX + rect.left}px`;
+
+    pop.querySelectorAll('[data-channel]').forEach((el) => {
+      el.addEventListener('click', async (e) => {
+        const channel = el.getAttribute('data-channel');
+        if (channel === 'copy') {
+          e.preventDefault();
+          try {
+            await navigator.clipboard.writeText(urls.copy);
+            el.textContent = '✅ הועתק';
+            setTimeout(closeSharePopover, 800);
+          } catch (err) {
+            // clipboard unavailable, leave popover open
+          }
+        } else {
+          closeSharePopover();
+        }
+        trackShare({ ...trackPayload, channel });
+      });
+    });
+
+    setTimeout(() => {
+      document.addEventListener('click', function onDocClick(e) {
+        if (!pop.contains(e.target) && e.target !== anchorBtn) {
+          closeSharePopover();
+          document.removeEventListener('click', onDocClick);
+        }
+      });
+    }, 0);
+  }
+
+  async function handleShareClick(anchorBtn, { type, id, name, base, campaign }) {
+    const urls = shareUrlsForChannels(base, campaign, id);
+    const trackPayload = { type, id, name };
+
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: name, url: urls.native });
+        trackShare({ ...trackPayload, channel: 'native' });
+      } catch (err) {
+        // user cancelled the OS share sheet
+      }
+      return;
+    }
+    openSharePopover(anchorBtn, name, urls, trackPayload);
   }
 
   function applyFilter(cat) {
@@ -661,6 +781,19 @@
     .then(r => r.ok ? r.json() : Promise.reject())
     .then(data => renderProducts(data))
     .catch(() => showEmpty());
+
+  // Share button (delegated — cards are re-rendered on every filter change)
+  document.getElementById('products-grid').addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-share');
+    if (!btn) return;
+    handleShareClick(btn, {
+      type: 'product',
+      id: btn.getAttribute('data-asin'),
+      name: btn.getAttribute('data-name'),
+      base: '/free-products.html',
+      campaign: 'product_share',
+    });
+  });
 
   // Hamburger
   const hamburger = document.getElementById('hamburger-btn');

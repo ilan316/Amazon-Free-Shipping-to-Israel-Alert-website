@@ -324,6 +324,8 @@ def build_html(product, content, israel_price, amazon_price):
           <span>{today_he}</span>
           <span class="blog-meta-sep">·</span>
           <span>כתב: <a href="https://www.amzfreeil.com/about.html" style="color:inherit">אילן</a></span>
+          <span class="blog-meta-sep">·</span>
+          <button type="button" class="btn-share" data-slug="{slug}" data-title="{content['title_he']}">🔗 שתף</button>
         </div>
       </div>
     </section>
