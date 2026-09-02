@@ -31,6 +31,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const BLOG_DIR = path.join(ROOT, 'blog');
+const BLOG_INDEX = path.join(BLOG_DIR, 'index.html');
 const PRICES = path.join(ROOT, 'prices.html');
 const MAP_FILE = path.join(__dirname, 'category-map.json');
 const AUDIT_FILE = path.join(BLOG_DIR, 'categories.json');
@@ -803,6 +804,36 @@ function rewritePrices(posts) {
   return { html, hub, cards };
 }
 
+// ---------------------------------------------------------- blog/index.html
+
+const HEBREW_MONTHS = [
+  'ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני',
+  'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר',
+];
+
+/**
+ * מעדכן את ה-eyebrow ב-blog/index.html: "📖 N מדריכים מעשיים — עדכון <חודש> <שנה>".
+ * N נספר מ-guides.catalog (מקור האמת היחיד — לא מ-EDITORIAL, שכולל גם index).
+ * החודש/שנה נגזרים מתאריך ריצת הבנייה (ה-Action רץ ב-push ובעוד cron חודשי,
+ * כדי שהתאריך יתעדכן גם בלי פוסט חדש).
+ */
+function updateBlogBadge(changed) {
+  if (!fs.existsSync(BLOG_INDEX)) {
+    warnings.push('blog/index.html חסר — לא ניתן לעדכן את ה-eyebrow');
+    return;
+  }
+  const html = readFile(BLOG_INDEX);
+  const now = new Date();
+  const label = `📖 ${GUIDES.length} מדריכים מעשיים — עדכון ${HEBREW_MONTHS[now.getMonth()]} ${now.getFullYear()}`;
+  const re = /(<p class="eyebrow">)[^<]*(<\/p>)/;
+  if (!re.test(html)) {
+    warnings.push('blog/index.html: לא נמצא <p class="eyebrow"> — ה-badge לא עודכן');
+    return;
+  }
+  const next = html.replace(re, (_, open, close) => `${open}${esc(label)}${close}`);
+  writeIfChanged(BLOG_INDEX, next, changed);
+}
+
 // -------------------------------------------------------------------- main
 
 function main() {
@@ -840,6 +871,9 @@ function main() {
   // --- prices.html
   const { html: pricesHtml, hub, cards } = rewritePrices(posts);
   writeIfChanged(PRICES, pricesHtml, changed);
+
+  // --- blog/index.html: eyebrow badge (מספר מדריכים + חודש/שנה)
+  updateBlogBadge(changed);
 
   // --- ארטיפקט אודיט
   const audit = {

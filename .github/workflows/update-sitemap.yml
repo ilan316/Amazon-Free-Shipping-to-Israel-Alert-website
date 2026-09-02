@@ -8,6 +8,10 @@ on:
       - 'blog/**.html'
       - 'tools/category-map.json'
       - 'tools/build-internal-links.js'
+  # מריץ פעם בחודש (00:05 ב-1 לחודש, UTC) כדי שה-eyebrow ב-blog/index.html
+  # ("עדכון <חודש> <שנה>") יתעדכן גם בחודש בלי פוסט/פרסום חדש.
+  schedule:
+    - cron: '5 0 1 * *'
   workflow_dispatch:
 
 concurrency:
