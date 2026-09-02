@@ -352,7 +352,7 @@ async function handleShareClick(anchorBtn, { type, id, name, base, campaign }) {
 
   if (navigator.share) {
     try {
-      await navigator.share({ title: name, url: urls.native });
+      await navigator.share({ title: name, text: name, url: urls.native });
       trackShare({ ...trackPayload, channel: 'native' });
     } catch (err) {
       // user cancelled the OS share sheet — no tracking fired
