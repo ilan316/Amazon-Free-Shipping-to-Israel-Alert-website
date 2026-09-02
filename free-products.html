@@ -293,15 +293,22 @@
     .share-popover .share-option:hover { background: rgba(255,153,0,.08); }
     .product-card--highlight {
       position: relative; z-index: 5;
-      animation: shareHighlight 3.6s ease;
+      animation: shareHighlight 7s ease;
     }
     @keyframes shareHighlight {
       0%   { box-shadow: 0 0 0 0 rgba(255,153,0,0); background: var(--card); transform: scale(1); }
-      8%   { box-shadow: 0 0 0 6px rgba(255,153,0,.55), 0 14px 34px rgba(255,153,0,.4); background: rgba(255,153,0,.14); transform: scale(1.03); }
-      25%  { box-shadow: 0 0 0 3px rgba(255,153,0,.35), 0 10px 28px rgba(255,153,0,.28); background: rgba(255,153,0,.08); transform: scale(1); }
-      45%  { box-shadow: 0 0 0 6px rgba(255,153,0,.5), 0 14px 34px rgba(255,153,0,.38); background: rgba(255,153,0,.13); transform: scale(1.015); }
-      65%  { box-shadow: 0 0 0 3px rgba(255,153,0,.3), 0 10px 26px rgba(255,153,0,.24); background: rgba(255,153,0,.06); transform: scale(1); }
+      6%   { box-shadow: 0 0 0 6px rgba(255,153,0,.55), 0 14px 34px rgba(255,153,0,.4); background: rgba(255,153,0,.14); transform: scale(1.03); }
+      18%  { box-shadow: 0 0 0 3px rgba(255,153,0,.35), 0 10px 28px rgba(255,153,0,.28); background: rgba(255,153,0,.08); transform: scale(1); }
+      32%  { box-shadow: 0 0 0 6px rgba(255,153,0,.5), 0 14px 34px rgba(255,153,0,.38); background: rgba(255,153,0,.13); transform: scale(1.015); }
+      46%  { box-shadow: 0 0 0 3px rgba(255,153,0,.3), 0 10px 26px rgba(255,153,0,.24); background: rgba(255,153,0,.06); transform: scale(1); }
+      60%  { box-shadow: 0 0 0 6px rgba(255,153,0,.45), 0 14px 32px rgba(255,153,0,.34); background: rgba(255,153,0,.11); transform: scale(1.01); }
+      75%  { box-shadow: 0 0 0 3px rgba(255,153,0,.28); background: rgba(255,153,0,.05); transform: scale(1); }
       100% { box-shadow: 0 0 0 0 rgba(255,153,0,0); background: var(--card); transform: scale(1); }
+    }
+    /* Stays after the blink finishes, so the shared card is still identifiable */
+    .product-card--marked {
+      border: 2px solid var(--brand) !important;
+      box-shadow: 0 4px 18px rgba(255,153,0,.25);
     }
 
     /* How-mini */
@@ -792,7 +799,10 @@
     setTimeout(() => {
       card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       card.classList.add('product-card--highlight');
-      setTimeout(() => card.classList.remove('product-card--highlight'), 3600);
+      setTimeout(() => {
+        card.classList.remove('product-card--highlight');
+        card.classList.add('product-card--marked');
+      }, 7000);
     }, 50);
   }
 
