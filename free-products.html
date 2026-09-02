@@ -806,17 +806,24 @@
     }, 50);
   }
 
-  function formatTime() {
-    const now = new Date();
-    return now.toLocaleDateString('he-IL',{day:'2-digit',month:'2-digit',year:'numeric'});
+  function formatDate(date) {
+    return date.toLocaleDateString('he-IL',{day:'2-digit',month:'2-digit',year:'numeric'});
   }
-
-  document.getElementById('update-time').textContent = formatTime();
 
   fetch('https://app.amzfreeil.com/api/public/free-products')
     .then(r => r.ok ? r.json() : Promise.reject())
-    .then(data => renderProducts(data))
-    .catch(() => showEmpty());
+    .then(data => {
+      const latest = data.reduce((max, p) => {
+        const t = p.last_checked ? new Date(p.last_checked).getTime() : NaN;
+        return !isNaN(t) && t > max ? t : max;
+      }, 0);
+      document.getElementById('update-time').textContent = formatDate(latest ? new Date(latest) : new Date());
+      renderProducts(data);
+    })
+    .catch(() => {
+      document.getElementById('update-time').textContent = formatDate(new Date());
+      showEmpty();
+    });
 
   // Share button (delegated — cards are re-rendered on every filter change)
   document.getElementById('products-grid').addEventListener('click', (e) => {
