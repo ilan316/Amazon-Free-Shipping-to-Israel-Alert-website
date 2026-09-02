@@ -105,7 +105,7 @@
 
   <!-- Critical inline CSS (matches index.html exactly) -->
   <style>
-    :root{--bg:#fffaf1;--bg-soft:#ffe9bf;--ink:#172033;--ink-muted:#4d5a70;--brand:#ff9900;--brand-deep:#ff6a00;--card:rgba(255,255,255,0.78);--line:rgba(23,32,51,0.12);--success:#167d46}
+    :root{--bg:#fffaf1;--bg-soft:#ffe9bf;--ink:#172033;--ink-muted:#4d5a70;--brand:#ff9900;--brand-deep:#ff6a00;--brand-text:#c25100;--card:rgba(255,255,255,0.78);--line:rgba(23,32,51,0.12);--success:#167d46}
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;font-family:"Heebo","Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 10%,#fff2d9 0%,rgba(255,242,217,0) 36%),radial-gradient(circle at 90% 0%,#ffe6d5 0%,rgba(255,230,213,0) 34%),var(--bg);min-height:100%}
     .bg-glow{position:fixed;z-index:-1;width:440px;height:440px;border-radius:50%;filter:blur(60px);opacity:.35}
@@ -137,7 +137,7 @@
     main{width:min(1140px,92vw);margin:24px auto 56px}
     .section{margin-top:48px}
     .section h2{margin:0 0 20px;font-family:"Rubik",sans-serif;font-size:clamp(1.5rem, 2.4vw, 2.1rem)}
-    .fp-link{color:var(--brand-deep);font-weight:600;text-decoration:none}
+    .fp-link{color:var(--brand-text);font-weight:600;text-decoration:none}
     .fp-link:hover{text-decoration:underline}
     .fp-faq-item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
     .fp-faq-item summary{cursor:pointer;font-weight:700;font-family:"Rubik",sans-serif;list-style:none;color:var(--ink)}
@@ -211,7 +211,7 @@
       margin: 28px 0 16px; flex-wrap: wrap; gap: 8px;
     }
     .count-label { font-family: "Rubik", sans-serif; font-weight: 700; font-size: 1.05rem; }
-    .count-label span { color: var(--brand-deep); }
+    .count-label span { color: var(--brand-text); }
     .count-note { font-size: .82rem; color: var(--ink-muted); }
 
     /* Products grid */
@@ -449,7 +449,7 @@
     <!-- Count + Grid -->
     <div class="count-bar reveal">
       <div class="count-label">נמצאו <span id="product-count">—</span> מוצרים עם משלוח חינם</div>
-      <div class="count-note">הרשימה מתעדכנת יומית · <a href="https://app.amzfreeil.com" style="color:var(--brand-deep);text-decoration:none;font-weight:600;">הירשם לקבל התראות על המוצרים שלך ←</a></div>
+      <div class="count-note">הרשימה מתעדכנת יומית · <a href="https://app.amzfreeil.com" style="color:var(--brand-text,#c25100);text-decoration:none;font-weight:600;">הירשם לקבל התראות על המוצרים שלך ←</a></div>
     </div>
 
     <div class="category-filters" id="category-filters" style="display:none;"></div>
