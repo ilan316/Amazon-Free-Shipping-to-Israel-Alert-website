@@ -71,7 +71,7 @@
           "name": "אילו מוצרים מופיעים ברשימה?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "מוצרים שבבדיקה היומית האחרונה זוהו כזכאים למשלוח חינם לישראל מאמזון ארה\"ב. הרשימה אוטומטית לחלוטין ומשקפת את מצב ההצעות בזמן הסריקה האחרונה."
+            "text": "מוצרים שבבדיקה האחרונה זוהו כזכאים למשלוח חינם לישראל מאמזון ארה\"ב. הרשימה אוטומטית לחלוטין ומשקפת את מצב ההצעות בזמן הסריקה האחרונה."
           }
         },
         {
@@ -95,7 +95,7 @@
           "name": "כל כמה זמן מתעדכנת הרשימה?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "הרשימה נסרקת ומתעדכנת מדי יום. אם אין כרגע מוצרים זכאים — כדאי לחזור למחרת, או להירשם ולקבל התראה במייל ברגע שמוצר שמעניין אתכם מציע משלוח חינם."
+            "text": "הרשימה נסרקת ומתעדכנת מספר פעמים בשבוע, ותאריך הסריקה האחרונה מוצג בראש העמוד. אם אין כרגע מוצרים זכאים, אפשר להירשם ולקבל התראה במייל ברגע שמוצר שמעניין אתכם מציע משלוח חינם."
           }
         }
       ]
@@ -449,7 +449,7 @@
     <!-- Count + Grid -->
     <div class="count-bar reveal">
       <div class="count-label">נמצאו <span id="product-count">—</span> מוצרים עם משלוח חינם</div>
-      <div class="count-note">הרשימה מתעדכנת יומית · <a href="https://app.amzfreeil.com" style="color:var(--brand-text,#c25100);text-decoration:none;font-weight:600;">הירשם לקבל התראות על המוצרים שלך ←</a></div>
+      <div class="count-note">מתעדכן מספר פעמים בשבוע · <a href="https://app.amzfreeil.com" style="color:var(--brand-text,#c25100);text-decoration:none;font-weight:600;">הירשם לקבל התראות על המוצרים שלך ←</a></div>
     </div>
 
     <div class="category-filters" id="category-filters" style="display:none;"></div>
@@ -462,7 +462,7 @@
     <div id="empty-state" class="loading-state" style="display:none;">
       <p style="font-size:2.5rem;margin-bottom:12px;">🔍</p>
       <p style="font-size:1.1rem;font-weight:600;margin-bottom:8px;">אין כרגע מוצרים עם משלוח חינם לישראל</p>
-      <p style="font-size:0.95rem;">הרשימה מתעדכנת יומית — כדאי לחזור מחר</p>
+      <p style="font-size:0.95rem;"><a href="https://app.amzfreeil.com" target="_blank" rel="noopener" style="color:var(--brand-text,#c25100);text-decoration:none;font-weight:600;">הירשם ונעדכן אותך במייל ברגע שיהיו ←</a></p>
     </div>
 
     <div class="products-grid reveal" id="products-grid" style="display:none;"></div>
@@ -481,7 +481,7 @@
       <div class="how-step">
         <div class="step-icon">🔍</div>
         <h3>אנחנו בודקים אוטומטית</h3>
-        <p>המערכת סורקת מוצרים ומזהה הצעות משלוח חינם לישראל, כל יום</p>
+        <p>המערכת סורקת מוצרים ומזהה הצעות משלוח חינם לישראל, מספר פעמים בשבוע</p>
       </div>
       <div class="how-step">
         <div class="step-icon">📧</div>
@@ -500,7 +500,7 @@
       <h2>איך עובדת רשימת המוצרים עם משלוח חינם לישראל</h2>
       <p style="color:var(--ink-muted);line-height:1.8;max-width:760px;margin-inline:auto;text-align:right;">
         אמזון ארה"ב מציעה משלוח חינם לישראל על חלק מהמוצרים בהזמנות מעל <bdi>$49</bdi> — אבל ההצעה משתנה ממוצר למוצר ומיום ליום.
-        המערכת שלנו סורקת מוצרים מדי יום, מזהה אילו מהם זכאים כרגע למשלוח חינם לישראל, ומרכזת אותם ברשימה שבראש העמוד.
+        המערכת שלנו סורקת מוצרים מספר פעמים בשבוע, מזהה אילו מהם זכאים כרגע למשלוח חינם לישראל, ומרכזת אותם ברשימה שבראש העמוד.
         הרשימה מתעדכנת אוטומטית, ולכן מוצר שמופיע היום עשוי לא להופיע מחר — כדאי לפעול כשההצעה פעילה.
         לרקע מלא ראו את <a href="/blog/eich-ladaat-mishloach-hinam-amazon-israel.html" class="fp-link">המדריך המלא למשלוח חינם מאמזון לישראל</a>.
       </p>
@@ -508,7 +508,7 @@
       <div class="fp-faq" style="max-width:760px;margin:20px auto 0;text-align:right;">
         <details class="fp-faq-item">
           <summary>אילו מוצרים מופיעים ברשימה?</summary>
-          <div class="fp-faq-body"><p>מוצרים שבבדיקה היומית האחרונה זוהו כזכאים למשלוח חינם לישראל מאמזון ארה"ב. הרשימה אוטומטית לחלוטין ומשקפת את מצב ההצעות בזמן הסריקה האחרונה.</p></div>
+          <div class="fp-faq-body"><p>מוצרים שבבדיקה האחרונה זוהו כזכאים למשלוח חינם לישראל מאמזון ארה"ב. הרשימה אוטומטית לחלוטין ומשקפת את מצב ההצעות בזמן הסריקה האחרונה.</p></div>
         </details>
         <details class="fp-faq-item">
           <summary>יש סכום מינימום למשלוח חינם?</summary>
@@ -520,7 +520,7 @@
         </details>
         <details class="fp-faq-item">
           <summary>כל כמה זמן מתעדכנת הרשימה?</summary>
-          <div class="fp-faq-body"><p>הרשימה נסרקת ומתעדכנת מדי יום. אם אין כרגע מוצרים זכאים — כדאי לחזור למחרת, או להירשם ולקבל התראה במייל ברגע שמוצר שמעניין אתכם מציע משלוח חינם.</p></div>
+          <div class="fp-faq-body"><p>הרשימה נסרקת ומתעדכנת מספר פעמים בשבוע, ותאריך הסריקה האחרונה מוצג בראש העמוד. אם אין כרגע מוצרים זכאים, אפשר להירשם ולקבל התראה במייל ברגע שמוצר שמעניין אתכם מציע משלוח חינם.</p></div>
         </details>
       </div>
     </section>
