@@ -315,6 +315,8 @@
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <!-- Speed Insights — real-user Core Web Vitals (field data) -->
+  <script defer src="/_vercel/speed-insights/script.js"></script>
   <!-- Meta Pixel — loads only after cookie consent -->
   <script>
   function loadMetaPixel() {
@@ -442,7 +444,10 @@
             <img src="logo-new.png" alt="לוגו AMZ Free Ship Alert — כלי מעקב משלוח חינמי מאמזון לישראל" width="240" height="128" fetchpriority="high" />
           </picture>
         </div>
-        <img src="email-preview.png" alt="דוגמה למייל התראה על משלוח חינם מאמזון לישראל" class="email-preview-img" width="320" height="107" fetchpriority="high" />
+        <picture class="email-preview-img">
+          <source srcset="email-preview.webp" type="image/webp">
+          <img src="email-preview.png" alt="דוגמה למייל התראה על משלוח חינם מאמזון לישראל" class="email-preview-img" width="320" height="107" fetchpriority="high" />
+        </picture>
       </div>
     </section>
 
