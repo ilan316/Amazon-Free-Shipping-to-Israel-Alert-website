@@ -36,7 +36,7 @@
 ## Git ו-Deploy
 - **Remote:** https://github.com/ilan316/Amazon-Free-Shipping-to-Israel-Alert-website.git · branch `main`
 - `git push origin main` → Vercel פורסת אוטומטית
-- **זהו עותק העבודה הפעיל.** קיים עותק ישן ונטוש של אותו repo תחת `Amazon-Free-Shipping-to-Israel-Alert-website/` — לא לעבוד שם.
+- **זו תיקיית העבודה היחידה של האתר.** ב-07/09/2026 אוחדו שני עותקי עבודה: העותק שהיה תקוע ב-30/08 נמחק, והעותק החי (`amzfreeil-www/`) שונה לשם הזה. אין יותר תיקייה כפולה.
 
 ## ריצה מקומית
 ```bash
