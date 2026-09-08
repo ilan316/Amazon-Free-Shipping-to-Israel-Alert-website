@@ -384,6 +384,10 @@
   </style>
 
   <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'" />
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   <a href="#main-content" class="skip-nav">דלג לתוכן הראשי</a>
@@ -565,6 +569,8 @@
 
 <script>
   const AFFILIATE_TAG = 'amzfreeil-20';
+  // Tracking ID ייעודי לדף הזה — מאפשר לראות קליקים והזמנות ברמת הדף בדשבורד Associates
+  const PAGE_TAG = 'amzfreeil-fp-20';
 
   const CATEGORY_MAP = {
     'Kitchen & Dining': 'Home & Kitchen',
@@ -603,6 +609,17 @@
   function productImg(asin) {
     return `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SL200_.jpg`;
   }
+  function withPageTag(url) {
+    try {
+      const u = new URL(url);
+      u.searchParams.set('tag', PAGE_TAG);
+      return u.toString();
+    } catch (e) {
+      return url.includes('tag=')
+        ? url.replace(/tag=[^&]*/, 'tag=' + PAGE_TAG)
+        : url + (url.includes('?') ? '&' : '?') + 'tag=' + PAGE_TAG;
+    }
+  }
 
   function showEmpty() {
     document.getElementById('loading-state').style.display = 'none';
@@ -610,7 +627,7 @@
   }
 
   function cardHTML(p) {
-    const url = p.url || productUrl(p.asin);
+    const url = withPageTag(p.url || productUrl(p.asin));
     const img = p.image || productImg(p.asin);
     return `
       <div class="product-card" id="p-${p.asin}">
