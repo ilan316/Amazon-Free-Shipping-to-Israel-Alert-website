@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 264,
-    "indexable": 261,
-    "noindex": 3,
-    "cardsInHub": 261
+    "indexable": 264,
+    "noindex": 0,
+    "cardsInHub": 264
   },
   "buckets": [
     {
@@ -344,11 +344,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "dewalt-dcv501hb-vacuum-amazon-israel",
-    "milwaukee-2522-20-cut-off-tool-amazon-israel",
-    "reolink-rlc-1240a-camera-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "hacharot-amazon-israel": 73,
     "eich-ladaat-mishloach-hinam-amazon-israel": 73,
@@ -465,11 +461,7 @@
       "tenergy-60-pack-batteries-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "dewalt-dcv501hb-vacuum-amazon-israel",
-    "milwaukee-2522-20-cut-off-tool-amazon-israel",
-    "reolink-rlc-1240a-camera-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
