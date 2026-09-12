@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 262,
+    "reviews": 263,
     "indexable": 260,
-    "noindex": 2,
+    "noindex": 3,
     "cardsInHub": 260
   },
   "buckets": [
@@ -77,6 +77,7 @@
         "masterbee-kids-camera-h30-amazon-israel",
         "philips-4k-webcam-spl6418-amazon-israel",
         "reolink-duo-3-poe-amazon-israel",
+        "reolink-rlc-1240a-camera-amazon-israel",
         "reolink-rlc-810a-4k-camera-amazon-israel",
         "reolink-rln8-410-nvr-amazon-israel",
         "smartphone-gimbal-stabilizer-amazon-israel"
@@ -344,19 +345,20 @@
   ],
   "noindexDrafts": [
     "dewalt-dcv501hb-vacuum-amazon-israel",
-    "milwaukee-2522-20-cut-off-tool-amazon-israel"
+    "milwaukee-2522-20-cut-off-tool-amazon-israel",
+    "reolink-rlc-1240a-camera-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 73,
     "eich-ladaat-mishloach-hinam-amazon-israel": 73,
-    "mekhs-umaam-amazon-israel": 51,
+    "mekhs-umaam-amazon-israel": 52,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 50,
     "bikorot-mezuyafot-amazon": 50,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 49,
+    "10-tipim-lehisakhon-bamazon-israel": 50,
     "amazon-prime-mishloach-israel": 49,
     "madrikh-kahniot-amazon-israel-2026": 49,
     "black-friday-prime-day-israel": 49,
     "mutzarim-asurim-yevu-israel": 49,
-    "10-tipim-lehisakhon-bamazon-israel": 49,
     "amazon-vs-ebay-israel": 49,
     "amazon-vs-aliexpress-israel": 49,
     "maakav-mishlochim-amazon-israel": 49,
@@ -464,7 +466,8 @@
   },
   "missingFromHub": [
     "dewalt-dcv501hb-vacuum-amazon-israel",
-    "milwaukee-2522-20-cut-off-tool-amazon-israel"
+    "milwaukee-2522-20-cut-off-tool-amazon-israel",
+    "reolink-rlc-1240a-camera-amazon-israel"
   ],
   "keywordFallbacks": [
     {
