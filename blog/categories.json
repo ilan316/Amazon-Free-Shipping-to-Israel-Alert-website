@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 263,
-    "indexable": 260,
+    "reviews": 264,
+    "indexable": 261,
     "noindex": 3,
-    "cardsInHub": 260
+    "cardsInHub": 261
   },
   "buckets": [
     {
@@ -33,6 +33,7 @@
         "samsung-990-pro-ssd-2tb-amazon-israel",
         "samsung-t9-portable-ssd-1tb-amazon-israel",
         "seagate-ironwolf-pro-12tb-amazon-israel",
+        "ugreen-thunderbolt-4-dock-13-in-1-amazon-israel",
         "wavlink-umd309-docking-station-amazon-israel",
         "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
       ]
@@ -351,18 +352,18 @@
   "guideInbound": {
     "hacharot-amazon-israel": 73,
     "eich-ladaat-mishloach-hinam-amazon-israel": 73,
-    "mekhs-umaam-amazon-israel": 52,
+    "mekhs-umaam-amazon-israel": 53,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 50,
+    "amazon-prime-mishloach-israel": 50,
     "bikorot-mezuyafot-amazon": 50,
     "10-tipim-lehisakhon-bamazon-israel": 50,
-    "amazon-prime-mishloach-israel": 49,
+    "akhrayut-amazon-israel": 50,
     "madrikh-kahniot-amazon-israel-2026": 49,
     "black-friday-prime-day-israel": 49,
     "mutzarim-asurim-yevu-israel": 49,
     "amazon-vs-ebay-israel": 49,
     "amazon-vs-aliexpress-israel": 49,
     "maakav-mishlochim-amazon-israel": 49,
-    "akhrayut-amazon-israel": 49,
     "mocher-amin-amazon-israel": 49
   },
   "picks": {
