@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 264,
+    "reviews": 265,
     "indexable": 264,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 264
   },
   "buckets": [
@@ -19,6 +19,7 @@
         "blackview-scm6-screen-extender-amazon-israel",
         "dopesplay-15-6-portable-monitor-amazon-israel",
         "elecrow-10-1-portable-monitor-amazon-israel",
+        "fanxiang-4tb-sata-ssd-amazon-israel",
         "gigabyte-rx-9070-xt-gaming-oc-amazon-israel",
         "gmktec-m6-ultra-ryzen-7640hs-mini-pc-amazon-israel",
         "gmktec-mini-pc-m8-amazon-israel",
@@ -344,21 +345,23 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "fanxiang-4tb-sata-ssd-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 73,
     "eich-ladaat-mishloach-hinam-amazon-israel": 73,
     "mekhs-umaam-amazon-israel": 53,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 50,
     "amazon-prime-mishloach-israel": 50,
+    "black-friday-prime-day-israel": 50,
     "bikorot-mezuyafot-amazon": 50,
     "10-tipim-lehisakhon-bamazon-israel": 50,
+    "amazon-vs-ebay-israel": 50,
+    "amazon-vs-aliexpress-israel": 50,
     "akhrayut-amazon-israel": 50,
     "madrikh-kahniot-amazon-israel-2026": 49,
-    "black-friday-prime-day-israel": 49,
     "mutzarim-asurim-yevu-israel": 49,
-    "amazon-vs-ebay-israel": 49,
-    "amazon-vs-aliexpress-israel": 49,
     "maakav-mishlochim-amazon-israel": 49,
     "mocher-amin-amazon-israel": 49
   },
@@ -461,7 +464,9 @@
       "tenergy-60-pack-batteries-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "fanxiang-4tb-sata-ssd-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
