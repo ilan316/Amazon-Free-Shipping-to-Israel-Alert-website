@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 265,
-    "indexable": 264,
+    "reviews": 266,
+    "indexable": 265,
     "noindex": 1,
-    "cardsInHub": 264
+    "cardsInHub": 265
   },
   "buckets": [
     {
@@ -121,6 +121,7 @@
         "govee-cob-led-strip-pro-amazon-israel",
         "govee-envisual-tv-backlight-t2-amazon-israel",
         "govee-floor-lamp-3-luminblend-amazon-israel",
+        "govee-led-strip-h1a45-amazon-israel",
         "govee-rgbic-floor-lamp-h6076a-amazon-israel",
         "govee-rgbic-smart-table-lamp-2-h6022-amazon-israel",
         "govee-rgbwwic-strip-light-2-pro-matter-amazon-israel",
@@ -349,20 +350,20 @@
     "fanxiang-4tb-sata-ssd-amazon-israel"
   ],
   "guideInbound": {
+    "eich-ladaat-mishloach-hinam-amazon-israel": 74,
     "hacharot-amazon-israel": 73,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 73,
     "mekhs-umaam-amazon-israel": 53,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 50,
     "amazon-prime-mishloach-israel": 50,
+    "madrikh-kahniot-amazon-israel-2026": 50,
     "black-friday-prime-day-israel": 50,
     "bikorot-mezuyafot-amazon": 50,
     "10-tipim-lehisakhon-bamazon-israel": 50,
     "amazon-vs-ebay-israel": 50,
     "amazon-vs-aliexpress-israel": 50,
+    "maakav-mishlochim-amazon-israel": 50,
     "akhrayut-amazon-israel": 50,
-    "madrikh-kahniot-amazon-israel-2026": 49,
     "mutzarim-asurim-yevu-israel": 49,
-    "maakav-mishlochim-amazon-israel": 49,
     "mocher-amin-amazon-israel": 49
   },
   "picks": {
