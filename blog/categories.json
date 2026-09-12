@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 260,
+    "reviews": 262,
     "indexable": 260,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 260
   },
   "buckets": [
@@ -90,6 +90,7 @@
         "baseus-70w-travel-adapter-amazon-israel",
         "bestek-220v-110v-converter-usb-c-amazon-israel",
         "cheerair-gt02-fan-amazon-israel",
+        "dewalt-dcv501hb-vacuum-amazon-israel",
         "doace-100w-gan-travel-adapter-amazon-israel",
         "esr-iphone-17-pro-max-case-stand-amazon-israel",
         "feeki-magsafe-charger-25w-amazon-israel",
@@ -288,6 +289,7 @@
         "lamicall-tire-inflator-vhep02-amazon-israel",
         "lexivon-lx191-bike-torque-wrench-amazon-israel",
         "magic-shield-graphene-spray-amazon-israel",
+        "milwaukee-2522-20-cut-off-tool-amazon-israel",
         "milwaukee-48-22-9482-socket-set-amazon-israel",
         "miracase-magsafe-car-holder-amazon-israel",
         "noco-genius5-charger-amazon-israel",
@@ -340,23 +342,26 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "dewalt-dcv501hb-vacuum-amazon-israel",
+    "milwaukee-2522-20-cut-off-tool-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 73,
-    "eich-ladaat-mishloach-hinam-amazon-israel": 72,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 73,
     "mekhs-umaam-amazon-israel": 51,
+    "bikorot-mezuyafot-amazon": 50,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 49,
     "amazon-prime-mishloach-israel": 49,
+    "madrikh-kahniot-amazon-israel-2026": 49,
     "black-friday-prime-day-israel": 49,
-    "bikorot-mezuyafot-amazon": 49,
+    "mutzarim-asurim-yevu-israel": 49,
     "10-tipim-lehisakhon-bamazon-israel": 49,
     "amazon-vs-ebay-israel": 49,
     "amazon-vs-aliexpress-israel": 49,
+    "maakav-mishlochim-amazon-israel": 49,
     "akhrayut-amazon-israel": 49,
-    "madrikh-kahniot-amazon-israel-2026": 48,
-    "mutzarim-asurim-yevu-israel": 48,
-    "maakav-mishlochim-amazon-israel": 48,
-    "mocher-amin-amazon-israel": 48
+    "mocher-amin-amazon-israel": 49
   },
   "picks": {
     "guides": 15,
@@ -457,7 +462,10 @@
       "tenergy-60-pack-batteries-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "dewalt-dcv501hb-vacuum-amazon-israel",
+    "milwaukee-2522-20-cut-off-tool-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
