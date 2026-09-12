@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 266,
-    "indexable": 265,
-    "noindex": 1,
-    "cardsInHub": 265
+    "indexable": 266,
+    "noindex": 0,
+    "cardsInHub": 266
   },
   "buckets": [
     {
@@ -346,9 +346,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "fanxiang-4tb-sata-ssd-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 74,
     "hacharot-amazon-israel": 73,
@@ -465,9 +463,7 @@
       "tenergy-60-pack-batteries-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "fanxiang-4tb-sata-ssd-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
