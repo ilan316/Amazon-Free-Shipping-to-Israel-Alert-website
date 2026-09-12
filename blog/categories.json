@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 266,
+    "reviews": 269,
     "indexable": 266,
-    "noindex": 0,
+    "noindex": 3,
     "cardsInHub": 266
   },
   "buckets": [
@@ -90,7 +90,9 @@
       "label": "גאדג'טים, טעינה וחשמל",
       "posts": [
         "acer-3in1-magsafe-charger-amazon-israel",
+        "anker-prime-charging-base-150w-amazon-israel",
         "baseus-70w-travel-adapter-amazon-israel",
+        "benks-galaxy-z-fold-8-case-amazon-israel",
         "bestek-220v-110v-converter-usb-c-amazon-israel",
         "cheerair-gt02-fan-amazon-israel",
         "dewalt-dcv501hb-vacuum-amazon-israel",
@@ -128,6 +130,7 @@
         "govee-skyline-rgbwwic-strip-light-amazon-israel",
         "govee-star-projector-h6095-amazon-israel",
         "govee-tv-backlight-3-lite-h6099-amazon-israel",
+        "inia-red-light-therapy-mask-amazon-israel",
         "wowatt-ceiling-light-amazon-israel"
       ]
     },
@@ -346,23 +349,27 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "anker-prime-charging-base-150w-amazon-israel",
+    "benks-galaxy-z-fold-8-case-amazon-israel",
+    "inia-red-light-therapy-mask-amazon-israel"
+  ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 74,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
-    "mekhs-umaam-amazon-israel": 53,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 50,
-    "amazon-prime-mishloach-israel": 50,
+    "mekhs-umaam-amazon-israel": 54,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 51,
+    "amazon-prime-mishloach-israel": 51,
+    "bikorot-mezuyafot-amazon": 51,
+    "10-tipim-lehisakhon-bamazon-israel": 51,
+    "akhrayut-amazon-israel": 51,
     "madrikh-kahniot-amazon-israel-2026": 50,
     "black-friday-prime-day-israel": 50,
-    "bikorot-mezuyafot-amazon": 50,
-    "10-tipim-lehisakhon-bamazon-israel": 50,
+    "mutzarim-asurim-yevu-israel": 50,
     "amazon-vs-ebay-israel": 50,
     "amazon-vs-aliexpress-israel": 50,
     "maakav-mishlochim-amazon-israel": 50,
-    "akhrayut-amazon-israel": 50,
-    "mutzarim-asurim-yevu-israel": 49,
-    "mocher-amin-amazon-israel": 49
+    "mocher-amin-amazon-israel": 50
   },
   "picks": {
     "guides": 15,
@@ -463,7 +470,11 @@
       "tenergy-60-pack-batteries-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "anker-prime-charging-base-150w-amazon-israel",
+    "benks-galaxy-z-fold-8-case-amazon-israel",
+    "inia-red-light-therapy-mask-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
