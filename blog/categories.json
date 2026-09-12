@@ -1,10 +1,10 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 271,
-    "indexable": 266,
-    "noindex": 5,
-    "cardsInHub": 266
+    "reviews": 272,
+    "indexable": 272,
+    "noindex": 0,
+    "cardsInHub": 272
   },
   "buckets": [
     {
@@ -199,6 +199,7 @@
         "ouai-detox-shampoo-amazon-israel",
         "paulas-choice-bha-liquid-exfoliant-amazon-israel",
         "philips-norelco-oneblade-360-blades-amazon-israel",
+        "philips-oneblade-pro-360-amazon-israel",
         "philips-sonicare-6700-electric-toothbrush-amazon-israel",
         "philips-sonicare-diamondclean-smart-9750-amazon-israel",
         "remington-vacuum-beard-trimmer-mb6850a-amazon-israel",
@@ -351,29 +352,23 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "anker-prime-charging-base-150w-amazon-israel",
-    "benks-galaxy-z-fold-8-case-amazon-israel",
-    "ceptics-voltage-converter-lx-c2000-amazon-israel",
-    "inia-red-light-therapy-mask-amazon-israel",
-    "torras-galaxy-z-fold-8-magnetic-case-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
     "mekhs-umaam-amazon-israel": 54,
+    "bikorot-mezuyafot-amazon": 52,
+    "10-tipim-lehisakhon-bamazon-israel": 52,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 51,
     "amazon-prime-mishloach-israel": 51,
     "madrikh-kahniot-amazon-israel-2026": 51,
     "black-friday-prime-day-israel": 51,
-    "bikorot-mezuyafot-amazon": 51,
-    "10-tipim-lehisakhon-bamazon-israel": 51,
+    "mutzarim-asurim-yevu-israel": 51,
     "amazon-vs-ebay-israel": 51,
     "amazon-vs-aliexpress-israel": 51,
     "maakav-mishlochim-amazon-israel": 51,
     "akhrayut-amazon-israel": 51,
-    "mocher-amin-amazon-israel": 51,
-    "mutzarim-asurim-yevu-israel": 50
+    "mocher-amin-amazon-israel": 51
   },
   "picks": {
     "guides": 15,
@@ -474,13 +469,7 @@
       "tenergy-60-pack-batteries-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "anker-prime-charging-base-150w-amazon-israel",
-    "benks-galaxy-z-fold-8-case-amazon-israel",
-    "ceptics-voltage-converter-lx-c2000-amazon-israel",
-    "inia-red-light-therapy-mask-amazon-israel",
-    "torras-galaxy-z-fold-8-magnetic-case-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
