@@ -108,11 +108,51 @@ def load_config():
     return cfg
 
 
+def _parse_sitemap(xml):
+    return re.findall(r"<loc>\s*(.*?)\s*</loc>", xml)
+
+
+_sitemap_cache = None
+
+
 def sitemap_urls():
-    """Every URL in the committed sitemap. This is the monitored universe —
-    no dependency on a hand-downloaded CSV."""
-    sitemap = (PROJECT_DIR / "sitemap.xml").read_text(encoding="utf-8")
-    return re.findall(r"<loc>\s*(.*?)\s*</loc>", sitemap)
+    """Every URL in the live sitemap. This is the monitored universe.
+
+    Fetched over the network, not read from the working copy. The sitemap is
+    regenerated and committed by a GitHub Action, so nothing ever pulls it back
+    down to this machine — the local clone drifts behind by however long it has
+    been since the last manual `git pull`. On 2026-09-13 it was 47 commits and
+    12 URLs behind, which silently shrank the inspected universe, shifted every
+    coverage bucket, and left the newest reviews out of index-status.json — the
+    exact pages the internal-link builder most needs to prioritise.
+
+    Falls back to the committed file if the fetch fails or returns something
+    implausibly small, so a network blip degrades to the old behaviour instead
+    of crashing the scheduled run.
+    """
+    global _sitemap_cache
+    if _sitemap_cache is not None:
+        return _sitemap_cache
+
+    local = _parse_sitemap((PROJECT_DIR / "sitemap.xml").read_text(encoding="utf-8"))
+    try:
+        resp = requests.get(SITE + "sitemap.xml", timeout=30)
+        resp.raise_for_status()
+        live = _parse_sitemap(resp.text)
+    except Exception as e:
+        print(f"אזהרה: שליפת sitemap חי נכשלה ({type(e).__name__}) — נעשה שימוש בעותק המקומי ({len(local)})")
+        live = []
+
+    if len(live) < 50:
+        if live:
+            print(f"אזהרה: sitemap חי החזיר רק {len(live)} כתובות — נעשה שימוש בעותק המקומי ({len(local)})")
+        _sitemap_cache = local
+    else:
+        if len(live) != len(local):
+            print(f"sitemap: חי {len(live)} מול מקומי {len(local)} — העותק המקומי מפגר, "
+                  f"הרץ `git pull` כדי לסנכרן את index-status.json")
+        _sitemap_cache = live
+    return _sitemap_cache
 
 
 def gsc_service(cfg):
