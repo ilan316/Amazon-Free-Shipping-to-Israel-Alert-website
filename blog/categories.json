@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 275,
-    "indexable": 274,
-    "noindex": 1,
-    "cardsInHub": 274
+    "indexable": 275,
+    "noindex": 0,
+    "cardsInHub": 275
   },
   "buckets": [
     {
@@ -355,9 +355,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "ugreen-95583-nvme-enclosure-mac-mini-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
@@ -473,9 +471,7 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "ugreen-95583-nvme-enclosure-mac-mini-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
