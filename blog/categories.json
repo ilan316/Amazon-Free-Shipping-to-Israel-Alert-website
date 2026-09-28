@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 277,
+    "reviews": 278,
     "indexable": 277,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 277
   },
   "buckets": [
@@ -80,6 +80,7 @@
         "kodak-ultramax-400-35mm-film-6pack-amazon-israel",
         "logitech-c920x-webcam-amazon-israel",
         "masterbee-kids-camera-h30-amazon-israel",
+        "obsbot-meet-flip-webcam-amazon-israel",
         "philips-4k-webcam-spl6418-amazon-israel",
         "reolink-duo-3-poe-amazon-israel",
         "reolink-rlc-1240a-camera-amazon-israel",
@@ -357,14 +358,17 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "obsbot-meet-flip-webcam-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
-    "mekhs-umaam-amazon-israel": 57,
+    "mekhs-umaam-amazon-israel": 58,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 53,
     "bikorot-mezuyafot-amazon": 53,
     "10-tipim-lehisakhon-bamazon-israel": 53,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 52,
+    "akhrayut-amazon-israel": 53,
     "amazon-prime-mishloach-israel": 52,
     "madrikh-kahniot-amazon-israel-2026": 52,
     "black-friday-prime-day-israel": 52,
@@ -372,7 +376,6 @@
     "amazon-vs-ebay-israel": 52,
     "amazon-vs-aliexpress-israel": 52,
     "maakav-mishlochim-amazon-israel": 52,
-    "akhrayut-amazon-israel": 52,
     "mocher-amin-amazon-israel": 52
   },
   "picks": {
@@ -473,7 +476,9 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "obsbot-meet-flip-webcam-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
