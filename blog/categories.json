@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 274,
-    "indexable": 273,
-    "noindex": 1,
-    "cardsInHub": 273
+    "indexable": 274,
+    "noindex": 0,
+    "cardsInHub": 274
   },
   "buckets": [
     {
@@ -354,9 +354,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "ugreen-maxidok-thunderbolt5-dock-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
@@ -472,9 +470,7 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "ugreen-maxidok-thunderbolt5-dock-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
