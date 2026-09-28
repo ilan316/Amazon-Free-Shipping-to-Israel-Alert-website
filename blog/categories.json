@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 279,
-    "indexable": 278,
-    "noindex": 1,
-    "cardsInHub": 278
+    "indexable": 279,
+    "noindex": 0,
+    "cardsInHub": 279
   },
   "buckets": [
     {
@@ -359,9 +359,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "ugreen-nexode-200w-gan-8-port-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
@@ -477,9 +475,7 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "ugreen-nexode-200w-gan-8-port-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
