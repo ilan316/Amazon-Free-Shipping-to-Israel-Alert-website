@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 277,
-    "indexable": 275,
-    "noindex": 2,
-    "cardsInHub": 275
+    "indexable": 277,
+    "noindex": 0,
+    "cardsInHub": 277
   },
   "buckets": [
     {
@@ -357,10 +357,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "horl3-cruise-knife-sharpener-amazon-israel",
-    "ugreen-docking-station-90912-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
@@ -476,10 +473,7 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "horl3-cruise-knife-sharpener-amazon-israel",
-    "ugreen-docking-station-90912-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
