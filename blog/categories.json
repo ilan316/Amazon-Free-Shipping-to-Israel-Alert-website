@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 278,
+    "reviews": 279,
     "indexable": 278,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 278
   },
   "buckets": [
@@ -114,6 +114,7 @@
         "tenergy-60-pack-batteries-amazon-israel",
         "torras-galaxy-z-fold-8-magnetic-case-amazon-israel",
         "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
+        "ugreen-nexode-200w-gan-8-port-amazon-israel",
         "vylee-travel-adapter-pd45w-gan-amazon-israel",
         "waterproof-phone-pouch-unbreakcable-amazon-israel",
         "whatook-handheld-fan-amazon-israel"
@@ -358,21 +359,23 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "ugreen-nexode-200w-gan-8-port-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
     "mekhs-umaam-amazon-israel": 58,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 53,
+    "amazon-prime-mishloach-israel": 53,
     "bikorot-mezuyafot-amazon": 53,
     "10-tipim-lehisakhon-bamazon-israel": 53,
+    "amazon-vs-ebay-israel": 53,
+    "amazon-vs-aliexpress-israel": 53,
     "akhrayut-amazon-israel": 53,
-    "amazon-prime-mishloach-israel": 52,
     "madrikh-kahniot-amazon-israel-2026": 52,
     "black-friday-prime-day-israel": 52,
     "mutzarim-asurim-yevu-israel": 52,
-    "amazon-vs-ebay-israel": 52,
-    "amazon-vs-aliexpress-israel": 52,
     "maakav-mishlochim-amazon-israel": 52,
     "mocher-amin-amazon-israel": 52
   },
@@ -474,7 +477,9 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "ugreen-nexode-200w-gan-8-port-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
