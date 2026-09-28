@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 274,
-    "indexable": 272,
-    "noindex": 2,
-    "cardsInHub": 272
+    "indexable": 273,
+    "noindex": 1,
+    "cardsInHub": 273
   },
   "buckets": [
     {
@@ -355,7 +355,6 @@
     }
   ],
   "noindexDrafts": [
-    "milwaukee-m18-fuel-brad-nailer-amazon-israel",
     "ugreen-maxidok-thunderbolt5-dock-amazon-israel"
   ],
   "guideInbound": {
@@ -474,7 +473,6 @@
     }
   },
   "missingFromHub": [
-    "milwaukee-m18-fuel-brad-nailer-amazon-israel",
     "ugreen-maxidok-thunderbolt5-dock-amazon-israel"
   ],
   "keywordFallbacks": [
