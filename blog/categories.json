@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 282,
-    "indexable": 279,
-    "noindex": 3,
-    "cardsInHub": 279
+    "indexable": 282,
+    "noindex": 0,
+    "cardsInHub": 282
   },
   "buckets": [
     {
@@ -362,11 +362,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "bosgame-e5-mini-pc-amazon-israel",
-    "satechi-thunderbolt-5-cubedock-amazon-israel",
-    "ugreen-nexode-pro-300w-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
@@ -482,11 +478,7 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "bosgame-e5-mini-pc-amazon-israel",
-    "satechi-thunderbolt-5-cubedock-amazon-israel",
-    "ugreen-nexode-pro-300w-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
