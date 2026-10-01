@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 279,
+    "reviews": 281,
     "indexable": 279,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 279
   },
   "buckets": [
@@ -17,6 +17,7 @@
         "asrock-radeon-rx-9070-xt-challenger-amazon-israel",
         "asus-rog-strix-b850-g-gaming-wifi-amazon-israel",
         "blackview-scm6-screen-extender-amazon-israel",
+        "bosgame-e5-mini-pc-amazon-israel",
         "dopesplay-15-6-portable-monitor-amazon-israel",
         "elecrow-10-1-portable-monitor-amazon-israel",
         "fanxiang-4tb-sata-ssd-amazon-israel",
@@ -115,6 +116,7 @@
         "torras-galaxy-z-fold-8-magnetic-case-amazon-israel",
         "torras-unbreakable-s26-ultra-screen-protector-amazon-israel",
         "ugreen-nexode-200w-gan-8-port-amazon-israel",
+        "ugreen-nexode-pro-300w-amazon-israel",
         "vylee-travel-adapter-pd45w-gan-amazon-israel",
         "waterproof-phone-pouch-unbreakcable-amazon-israel",
         "whatook-handheld-fan-amazon-israel"
@@ -359,23 +361,26 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "bosgame-e5-mini-pc-amazon-israel",
+    "ugreen-nexode-pro-300w-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
     "mekhs-umaam-amazon-israel": 58,
+    "10-tipim-lehisakhon-bamazon-israel": 54,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 53,
     "amazon-prime-mishloach-israel": 53,
+    "madrikh-kahniot-amazon-israel-2026": 53,
+    "black-friday-prime-day-israel": 53,
     "bikorot-mezuyafot-amazon": 53,
-    "10-tipim-lehisakhon-bamazon-israel": 53,
+    "mutzarim-asurim-yevu-israel": 53,
     "amazon-vs-ebay-israel": 53,
     "amazon-vs-aliexpress-israel": 53,
+    "maakav-mishlochim-amazon-israel": 53,
     "akhrayut-amazon-israel": 53,
-    "madrikh-kahniot-amazon-israel-2026": 52,
-    "black-friday-prime-day-israel": 52,
-    "mutzarim-asurim-yevu-israel": 52,
-    "maakav-mishlochim-amazon-israel": 52,
-    "mocher-amin-amazon-israel": 52
+    "mocher-amin-amazon-israel": 53
   },
   "picks": {
     "guides": 15,
@@ -475,7 +480,10 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "bosgame-e5-mini-pc-amazon-israel",
+    "ugreen-nexode-pro-300w-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
