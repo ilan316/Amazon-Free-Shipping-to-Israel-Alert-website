@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 281,
+    "reviews": 282,
     "indexable": 279,
-    "noindex": 2,
+    "noindex": 3,
     "cardsInHub": 279
   },
   "buckets": [
@@ -34,6 +34,7 @@
         "samsung-990-pro-ssd-1tb-amazon-israel",
         "samsung-990-pro-ssd-2tb-amazon-israel",
         "samsung-t9-portable-ssd-1tb-amazon-israel",
+        "satechi-thunderbolt-5-cubedock-amazon-israel",
         "seagate-ironwolf-pro-12tb-amazon-israel",
         "ugreen-95583-nvme-enclosure-mac-mini-amazon-israel",
         "ugreen-docking-station-90912-amazon-israel",
@@ -363,19 +364,20 @@
   ],
   "noindexDrafts": [
     "bosgame-e5-mini-pc-amazon-israel",
+    "satechi-thunderbolt-5-cubedock-amazon-israel",
     "ugreen-nexode-pro-300w-amazon-israel"
   ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 73,
-    "mekhs-umaam-amazon-israel": 58,
+    "mekhs-umaam-amazon-israel": 59,
+    "bikorot-mezuyafot-amazon": 54,
+    "mutzarim-asurim-yevu-israel": 54,
     "10-tipim-lehisakhon-bamazon-israel": 54,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 53,
     "amazon-prime-mishloach-israel": 53,
     "madrikh-kahniot-amazon-israel-2026": 53,
     "black-friday-prime-day-israel": 53,
-    "bikorot-mezuyafot-amazon": 53,
-    "mutzarim-asurim-yevu-israel": 53,
     "amazon-vs-ebay-israel": 53,
     "amazon-vs-aliexpress-israel": 53,
     "maakav-mishlochim-amazon-israel": 53,
@@ -482,6 +484,7 @@
   },
   "missingFromHub": [
     "bosgame-e5-mini-pc-amazon-israel",
+    "satechi-thunderbolt-5-cubedock-amazon-israel",
     "ugreen-nexode-pro-300w-amazon-israel"
   ],
   "keywordFallbacks": [
