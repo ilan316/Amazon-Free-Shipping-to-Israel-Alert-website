@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 283,
+    "reviews": 284,
     "indexable": 282,
-    "noindex": 1,
+    "noindex": 2,
     "cardsInHub": 282
   },
   "buckets": [
@@ -346,6 +346,7 @@
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
         "cryptnox-fido2-security-key-amazon-israel",
         "deesoo-20x52-binoculars-amazon-israel",
+        "ecovacs-winbot-mini-window-robot-amazon-israel",
         "ecovacs-winbot-mini2-window-robot-amazon-israel",
         "fantik-grill-brush-my117-amazon-israel",
         "horl3-cruise-knife-sharpener-amazon-israel",
@@ -364,6 +365,7 @@
     }
   ],
   "noindexDrafts": [
+    "ecovacs-winbot-mini-window-robot-amazon-israel",
     "under-armour-assert-11-running-shoes-amazon-israel"
   ],
   "guideInbound": {
@@ -371,15 +373,15 @@
     "hacharot-amazon-israel": 74,
     "mekhs-umaam-amazon-israel": 59,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 54,
+    "amazon-prime-mishloach-israel": 54,
     "bikorot-mezuyafot-amazon": 54,
     "mutzarim-asurim-yevu-israel": 54,
     "10-tipim-lehisakhon-bamazon-israel": 54,
+    "amazon-vs-ebay-israel": 54,
+    "amazon-vs-aliexpress-israel": 54,
     "akhrayut-amazon-israel": 54,
-    "amazon-prime-mishloach-israel": 53,
     "madrikh-kahniot-amazon-israel-2026": 53,
     "black-friday-prime-day-israel": 53,
-    "amazon-vs-ebay-israel": 53,
-    "amazon-vs-aliexpress-israel": 53,
     "maakav-mishlochim-amazon-israel": 53,
     "mocher-amin-amazon-israel": 53
   },
@@ -482,6 +484,7 @@
     }
   },
   "missingFromHub": [
+    "ecovacs-winbot-mini-window-robot-amazon-israel",
     "under-armour-assert-11-running-shoes-amazon-israel"
   ],
   "keywordFallbacks": [
@@ -577,6 +580,7 @@
     "אימוג'י לא ממופה \"🧥\" (leaf: \"b21c23e8-ac46-41ab-bfed-a824ad1360c0_8501\") — camel-crown-ski-jacket-mens-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔐\" (leaf: \"Cards\") — cryptnox-fido2-security-key-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔭\" (leaf: \"Binoculars\") — deesoo-20x52-binoculars-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🪟\" (leaf: \"Robotic Vacuums\") — ecovacs-winbot-mini-window-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🏠\" (leaf: \"Home & Kitchen\") — ecovacs-winbot-mini2-window-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔥\" (leaf: \"Grilling & Barbecue Utensils\") — fantik-grill-brush-my117-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔪\" (leaf: \"Knife Sharpeners\") — horl3-cruise-knife-sharpener-amazon-israel שויך ל-misc",
