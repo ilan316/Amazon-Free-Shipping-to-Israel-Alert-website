@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 282,
+    "reviews": 283,
     "indexable": 282,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 282
   },
   "buckets": [
@@ -275,6 +275,7 @@
         "tommy-hilfiger-mens-socks-10pack-amazon-israel",
         "tommy-hilfiger-polo-white-amazon-israel",
         "tommy-hilfiger-womens-12pack-no-show-socks-amazon-israel",
+        "under-armour-assert-11-running-shoes-amazon-israel",
         "under-armour-charged-assert-11-amazon-israel",
         "under-armour-matchplay-polo-black-amazon-israel",
         "zionor-g1-air-swim-goggles-amazon-israel",
@@ -362,22 +363,24 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "under-armour-assert-11-running-shoes-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
-    "hacharot-amazon-israel": 73,
+    "hacharot-amazon-israel": 74,
     "mekhs-umaam-amazon-israel": 59,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 54,
     "bikorot-mezuyafot-amazon": 54,
     "mutzarim-asurim-yevu-israel": 54,
     "10-tipim-lehisakhon-bamazon-israel": 54,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 53,
+    "akhrayut-amazon-israel": 54,
     "amazon-prime-mishloach-israel": 53,
     "madrikh-kahniot-amazon-israel-2026": 53,
     "black-friday-prime-day-israel": 53,
     "amazon-vs-ebay-israel": 53,
     "amazon-vs-aliexpress-israel": 53,
     "maakav-mishlochim-amazon-israel": 53,
-    "akhrayut-amazon-israel": 53,
     "mocher-amin-amazon-israel": 53
   },
   "picks": {
@@ -478,7 +481,9 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "under-armour-assert-11-running-shoes-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
