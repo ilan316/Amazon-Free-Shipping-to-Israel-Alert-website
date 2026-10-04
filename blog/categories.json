@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 285,
-    "indexable": 282,
-    "noindex": 3,
-    "cardsInHub": 282
+    "indexable": 285,
+    "noindex": 0,
+    "cardsInHub": 285
   },
   "buckets": [
     {
@@ -365,11 +365,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "ecovacs-winbot-mini-window-robot-amazon-israel",
-    "hozo-neosander-detail-sander-amazon-israel",
-    "under-armour-assert-11-running-shoes-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "hacharot-amazon-israel": 74,
@@ -485,11 +481,7 @@
       "yubikey-5c-nfc-fips-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "ecovacs-winbot-mini-window-robot-amazon-israel",
-    "hozo-neosander-detail-sander-amazon-israel",
-    "under-armour-assert-11-running-shoes-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
