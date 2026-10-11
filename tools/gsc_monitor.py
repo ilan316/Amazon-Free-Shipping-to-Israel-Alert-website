@@ -62,6 +62,9 @@ OBSIDIAN_INBOX = Path(r"C:\Users\ilan\2nd Brain\Claude Code\אינבוקס")
 
 # The service-account file name embeds the GCP project id, and this repo is
 # public — glob the folder instead of naming it. GSC_KEY_JSON in config.env wins.
+# The folder also holds gsc_report*.json / gsc_snapshot*.json, which sort before
+# the key, so pick the file by content: only a service-account key has this.
+KEY_MARKER = '"type": "service_account"'
 KEY_DIR = Path(r"C:\Users\ilan\Claude\gsc-service-account")
 
 # Google's inspection API returns these verbatim. Anything not listed here is
@@ -99,7 +102,9 @@ def load_config():
         if os.environ.get(k):
             cfg[k] = os.environ[k]
     if not cfg.get("GSC_KEY_JSON"):
-        found = sorted(KEY_DIR.glob("*.json")) if KEY_DIR.is_dir() else []
+        found = sorted(p for p in KEY_DIR.glob("*.json")
+                       if KEY_MARKER in p.read_text(encoding="utf-8", errors="ignore")
+                       ) if KEY_DIR.is_dir() else []
         if not found:
             sys.exit(f"לא נמצא מפתח חשבון שירות ב-{KEY_DIR} ואין GSC_KEY_JSON ב-{CONFIG_FILE}")
         cfg["GSC_KEY_JSON"] = str(found[0])
