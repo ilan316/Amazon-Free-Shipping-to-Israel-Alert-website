@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 292,
+    "reviews": 293,
     "indexable": 292,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 292
   },
   "buckets": [
@@ -142,6 +142,7 @@
         "govee-rgbic-floor-lamp-h6076a-amazon-israel",
         "govee-rgbic-smart-table-lamp-2-h6022-amazon-israel",
         "govee-rgbwwic-strip-light-2-pro-matter-amazon-israel",
+        "govee-s14-outdoor-string-lights-h702b-amazon-israel",
         "govee-skyline-rgbwwic-strip-light-amazon-israel",
         "govee-star-projector-h6095-amazon-israel",
         "govee-tv-backlight-3-lite-h6099-amazon-israel",
@@ -372,21 +373,23 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "govee-s14-outdoor-string-lights-h702b-amazon-israel"
+  ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 76,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 77,
     "hacharot-amazon-israel": 75,
     "mekhs-umaam-amazon-israel": 61,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 57,
+    "amazon-prime-mishloach-israel": 56,
     "10-tipim-lehisakhon-bamazon-israel": 56,
+    "amazon-vs-aliexpress-israel": 56,
     "akhrayut-amazon-israel": 56,
-    "amazon-prime-mishloach-israel": 55,
     "madrikh-kahniot-amazon-israel-2026": 55,
     "black-friday-prime-day-israel": 55,
     "bikorot-mezuyafot-amazon": 55,
     "mutzarim-asurim-yevu-israel": 55,
     "amazon-vs-ebay-israel": 55,
-    "amazon-vs-aliexpress-israel": 55,
     "maakav-mishlochim-amazon-israel": 55,
     "mocher-amin-amazon-israel": 55
   },
@@ -489,7 +492,9 @@
       "torras-galaxy-z-fold-8-magnetic-case-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "govee-s14-outdoor-string-lights-h702b-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
