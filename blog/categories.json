@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 294,
+    "reviews": 296,
     "indexable": 293,
-    "noindex": 1,
+    "noindex": 3,
     "cardsInHub": 293
   },
   "buckets": [
@@ -305,6 +305,7 @@
         "fanttik-f2-pro-rotary-tool-amazon-israel",
         "fanttik-k2-ultra-drill-amazon-israel",
         "fanttik-slim-v10-apex-vacuum-amazon-israel",
+        "fanttik-v8-apex-car-vacuum-amazon-israel",
         "fanttik-x9-ace-bike-pump-amazon-israel",
         "fanttik-x9-apex-air-compressor-amazon-israel",
         "fanttik-x9-pro-tire-inflator-amazon-israel",
@@ -329,6 +330,7 @@
       "label": "ילדים ותינוקות",
       "posts": [
         "alpine-muffy-kids-hearing-protection-amazon-israel",
+        "boba-bliss-baby-wrap-carrier-amazon-israel",
         "elemental-kids-water-bottle-amazon-israel",
         "fimibuke-kids-insulated-water-bottle-amazon-israel",
         "fimibuke-toddler-water-bottle-amazon-israel",
@@ -375,23 +377,25 @@
     }
   ],
   "noindexDrafts": [
+    "boba-bliss-baby-wrap-carrier-amazon-israel",
+    "fanttik-v8-apex-car-vacuum-amazon-israel",
     "yubikey-5c-security-key-amazon-israel"
   ],
   "guideInbound": {
-    "eich-ladaat-mishloach-hinam-amazon-israel": 77,
-    "hacharot-amazon-israel": 75,
+    "eich-ladaat-mishloach-hinam-amazon-israel": 78,
+    "hacharot-amazon-israel": 76,
     "mekhs-umaam-amazon-israel": 61,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 58,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 59,
     "amazon-prime-mishloach-israel": 56,
+    "madrikh-kahniot-amazon-israel-2026": 56,
+    "black-friday-prime-day-israel": 56,
     "bikorot-mezuyafot-amazon": 56,
     "10-tipim-lehisakhon-bamazon-israel": 56,
     "amazon-vs-ebay-israel": 56,
     "amazon-vs-aliexpress-israel": 56,
+    "maakav-mishlochim-amazon-israel": 56,
     "akhrayut-amazon-israel": 56,
-    "madrikh-kahniot-amazon-israel-2026": 55,
-    "black-friday-prime-day-israel": 55,
     "mutzarim-asurim-yevu-israel": 55,
-    "maakav-mishlochim-amazon-israel": 55,
     "mocher-amin-amazon-israel": 55
   },
   "picks": {
@@ -494,9 +498,17 @@
     }
   },
   "missingFromHub": [
+    "boba-bliss-baby-wrap-carrier-amazon-israel",
+    "fanttik-v8-apex-car-vacuum-amazon-israel",
     "yubikey-5c-security-key-amazon-israel"
   ],
   "keywordFallbacks": [
+    {
+      "slug": "boba-bliss-baby-wrap-carrier-amazon-israel",
+      "emoji": "👶",
+      "keyword": "-baby-",
+      "bucket": "kids"
+    },
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
       "emoji": "🌬️",
@@ -513,6 +525,12 @@
       "slug": "fanttik-k2-ultra-drill-amazon-israel",
       "emoji": "🛠️",
       "keyword": "drill",
+      "bucket": "auto"
+    },
+    {
+      "slug": "fanttik-v8-apex-car-vacuum-amazon-israel",
+      "emoji": "🧹",
+      "keyword": "car-",
       "bucket": "auto"
     },
     {
