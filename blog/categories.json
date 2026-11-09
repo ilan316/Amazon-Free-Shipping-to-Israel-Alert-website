@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 293,
-    "indexable": 292,
-    "noindex": 1,
-    "cardsInHub": 292
+    "indexable": 293,
+    "noindex": 0,
+    "cardsInHub": 293
   },
   "buckets": [
     {
@@ -373,9 +373,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "govee-s14-outdoor-string-lights-h702b-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 77,
     "hacharot-amazon-israel": 75,
@@ -492,9 +490,7 @@
       "torras-galaxy-z-fold-8-magnetic-case-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "govee-s14-outdoor-string-lights-h702b-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
