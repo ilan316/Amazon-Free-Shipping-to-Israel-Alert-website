@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 291,
-    "indexable": 286,
-    "noindex": 5,
-    "cardsInHub": 286
+    "indexable": 289,
+    "noindex": 2,
+    "cardsInHub": 288
   },
   "buckets": [
     {
@@ -372,9 +372,6 @@
     }
   ],
   "noindexDrafts": [
-    "dji-osmo-action-4-essential-combo-amazon-israel",
-    "inair-pod-fan-cooling-amazon-israel",
-    "kodak-slide-n-scan-film-scanner-amazon-israel",
     "yubikey-bio-c-fido-amazon-israel",
     "yubikey-bio-fido-amazon-israel"
   ],
@@ -495,9 +492,7 @@
     }
   },
   "missingFromHub": [
-    "dji-osmo-action-4-essential-combo-amazon-israel",
     "inair-pod-fan-cooling-amazon-israel",
-    "kodak-slide-n-scan-film-scanner-amazon-israel",
     "yubikey-bio-c-fido-amazon-israel",
     "yubikey-bio-fido-amazon-israel"
   ],
