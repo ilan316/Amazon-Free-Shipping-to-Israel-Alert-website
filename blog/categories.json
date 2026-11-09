@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 287,
+    "reviews": 289,
     "indexable": 286,
-    "noindex": 1,
+    "noindex": 3,
     "cardsInHub": 286
   },
   "buckets": [
@@ -67,6 +67,7 @@
         "aajk-120in-outdoor-projector-screen-amazon-israel",
         "acer-4k-webcam-wbc-0e01-amazon-israel",
         "aochuan-smart-xe-gimbal-amazon-israel",
+        "dji-osmo-action-4-essential-combo-amazon-israel",
         "dji-osmo-mobile-8-advanced-tracking-combo-amazon-israel",
         "emeet-c960-webcam-amazon-israel",
         "fujifilm-instax-mini-film-50-shoots-amazon-israel",
@@ -109,6 +110,7 @@
         "esr-iphone-17-pro-max-case-stand-amazon-israel",
         "feeki-magsafe-charger-25w-amazon-israel",
         "garmin-inreach-mini-2-amazon-israel",
+        "inair-pod-fan-cooling-amazon-israel",
         "minix-100w-gan-charger-p5010-amazon-israel",
         "minix-neo-p3-100w-gan-charger-amazon-israel",
         "minix-p1-66w-gan-charger-amazon-israel",
@@ -368,22 +370,24 @@
     }
   ],
   "noindexDrafts": [
+    "dji-osmo-action-4-essential-combo-amazon-israel",
+    "inair-pod-fan-cooling-amazon-israel",
     "kodak-slide-n-scan-film-scanner-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 75,
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
-    "mekhs-umaam-amazon-israel": 60,
+    "mekhs-umaam-amazon-israel": 61,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 55,
+    "amazon-prime-mishloach-israel": 55,
     "bikorot-mezuyafot-amazon": 55,
+    "mutzarim-asurim-yevu-israel": 55,
     "10-tipim-lehisakhon-bamazon-israel": 55,
+    "amazon-vs-ebay-israel": 55,
+    "amazon-vs-aliexpress-israel": 55,
     "akhrayut-amazon-israel": 55,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 54,
-    "amazon-prime-mishloach-israel": 54,
     "madrikh-kahniot-amazon-israel-2026": 54,
     "black-friday-prime-day-israel": 54,
-    "mutzarim-asurim-yevu-israel": 54,
-    "amazon-vs-ebay-israel": 54,
-    "amazon-vs-aliexpress-israel": 54,
     "maakav-mishlochim-amazon-israel": 54,
     "mocher-amin-amazon-israel": 54
   },
@@ -487,6 +491,8 @@
     }
   },
   "missingFromHub": [
+    "dji-osmo-action-4-essential-combo-amazon-israel",
+    "inair-pod-fan-cooling-amazon-israel",
     "kodak-slide-n-scan-film-scanner-amazon-israel"
   ],
   "keywordFallbacks": [
@@ -513,6 +519,12 @@
       "emoji": "🫒",
       "keyword": "שמן זית",
       "bucket": "kitchen"
+    },
+    {
+      "slug": "inair-pod-fan-cooling-amazon-israel",
+      "emoji": "👓",
+      "keyword": "-fan-",
+      "bucket": "gadgets"
     },
     {
       "slug": "jorest-19in1-multibit-screwdriver-amazon-israel",
