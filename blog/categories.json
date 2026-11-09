@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 293,
+    "reviews": 294,
     "indexable": 293,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 293
   },
   "buckets": [
@@ -368,26 +368,29 @@
         "tub-works-bath-color-pops-120-amazon-israel",
         "yubikey-5-nano-c-amazon-israel",
         "yubikey-5c-nfc-fips-amazon-israel",
+        "yubikey-5c-security-key-amazon-israel",
         "yubikey-bio-c-fido-amazon-israel",
         "yubikey-bio-fido-amazon-israel"
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "yubikey-5c-security-key-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 77,
     "hacharot-amazon-israel": 75,
     "mekhs-umaam-amazon-israel": 61,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 57,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 58,
     "amazon-prime-mishloach-israel": 56,
+    "bikorot-mezuyafot-amazon": 56,
     "10-tipim-lehisakhon-bamazon-israel": 56,
+    "amazon-vs-ebay-israel": 56,
     "amazon-vs-aliexpress-israel": 56,
     "akhrayut-amazon-israel": 56,
     "madrikh-kahniot-amazon-israel-2026": 55,
     "black-friday-prime-day-israel": 55,
-    "bikorot-mezuyafot-amazon": 55,
     "mutzarim-asurim-yevu-israel": 55,
-    "amazon-vs-ebay-israel": 55,
     "maakav-mishlochim-amazon-israel": 55,
     "mocher-amin-amazon-israel": 55
   },
@@ -490,7 +493,9 @@
       "torras-galaxy-z-fold-8-magnetic-case-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "yubikey-5c-security-key-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
@@ -605,6 +610,7 @@
     "אימוג'י לא ממופה \"🛁\" (leaf: \"Mom's spa night\") — tub-works-bath-color-pops-120-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔐\" (leaf: \"USB Gadgets\") — yubikey-5-nano-c-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔐\" (leaf: \"RFID Supplies\") — yubikey-5c-nfc-fips-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🔐\" (leaf: \"Keyboards\") — yubikey-5c-security-key-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔐\" (leaf: \"Biometrics\") — yubikey-bio-c-fido-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔐\" (leaf: \"Biometrics\") — yubikey-bio-fido-amazon-israel שויך ל-misc"
   ]
