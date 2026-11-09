@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 286,
+    "reviews": 287,
     "indexable": 286,
-    "noindex": 0,
+    "noindex": 1,
     "cardsInHub": 286
   },
   "buckets": [
@@ -80,6 +80,7 @@
         "kf-concept-tripod-a305a1-amazon-israel",
         "kodak-ektar-h35-camera-amazon-israel",
         "kodak-pixpro-fz55-amazon-israel",
+        "kodak-slide-n-scan-film-scanner-amazon-israel",
         "kodak-ultramax-400-35mm-film-6pack-amazon-israel",
         "logitech-c920x-webcam-amazon-israel",
         "masterbee-kids-camera-h30-amazon-israel",
@@ -366,22 +367,24 @@
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "kodak-slide-n-scan-film-scanner-amazon-israel"
+  ],
   "guideInbound": {
     "hacharot-amazon-israel": 75,
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
-    "mekhs-umaam-amazon-israel": 59,
+    "mekhs-umaam-amazon-israel": 60,
+    "bikorot-mezuyafot-amazon": 55,
     "10-tipim-lehisakhon-bamazon-israel": 55,
+    "akhrayut-amazon-israel": 55,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 54,
     "amazon-prime-mishloach-israel": 54,
     "madrikh-kahniot-amazon-israel-2026": 54,
     "black-friday-prime-day-israel": 54,
-    "bikorot-mezuyafot-amazon": 54,
     "mutzarim-asurim-yevu-israel": 54,
     "amazon-vs-ebay-israel": 54,
     "amazon-vs-aliexpress-israel": 54,
     "maakav-mishlochim-amazon-israel": 54,
-    "akhrayut-amazon-israel": 54,
     "mocher-amin-amazon-israel": 54
   },
   "picks": {
@@ -483,7 +486,9 @@
       "torras-galaxy-z-fold-8-magnetic-case-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "kodak-slide-n-scan-film-scanner-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "cheerair-gt02-fan-amazon-israel",
