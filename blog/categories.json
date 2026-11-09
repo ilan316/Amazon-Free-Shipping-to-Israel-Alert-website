@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 289,
+    "reviews": 291,
     "indexable": 286,
-    "noindex": 3,
+    "noindex": 5,
     "cardsInHub": 286
   },
   "buckets": [
@@ -365,31 +365,35 @@
         "saker-camping-light-ld10-amazon-israel",
         "tub-works-bath-color-pops-120-amazon-israel",
         "yubikey-5-nano-c-amazon-israel",
-        "yubikey-5c-nfc-fips-amazon-israel"
+        "yubikey-5c-nfc-fips-amazon-israel",
+        "yubikey-bio-c-fido-amazon-israel",
+        "yubikey-bio-fido-amazon-israel"
       ]
     }
   ],
   "noindexDrafts": [
     "dji-osmo-action-4-essential-combo-amazon-israel",
     "inair-pod-fan-cooling-amazon-israel",
-    "kodak-slide-n-scan-film-scanner-amazon-israel"
+    "kodak-slide-n-scan-film-scanner-amazon-israel",
+    "yubikey-bio-c-fido-amazon-israel",
+    "yubikey-bio-fido-amazon-israel"
   ],
   "guideInbound": {
     "hacharot-amazon-israel": 75,
     "eich-ladaat-mishloach-hinam-amazon-israel": 75,
     "mekhs-umaam-amazon-israel": 61,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 55,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 57,
     "amazon-prime-mishloach-israel": 55,
+    "madrikh-kahniot-amazon-israel-2026": 55,
+    "black-friday-prime-day-israel": 55,
     "bikorot-mezuyafot-amazon": 55,
     "mutzarim-asurim-yevu-israel": 55,
     "10-tipim-lehisakhon-bamazon-israel": 55,
     "amazon-vs-ebay-israel": 55,
     "amazon-vs-aliexpress-israel": 55,
+    "maakav-mishlochim-amazon-israel": 55,
     "akhrayut-amazon-israel": 55,
-    "madrikh-kahniot-amazon-israel-2026": 54,
-    "black-friday-prime-day-israel": 54,
-    "maakav-mishlochim-amazon-israel": 54,
-    "mocher-amin-amazon-israel": 54
+    "mocher-amin-amazon-israel": 55
   },
   "picks": {
     "guides": 15,
@@ -493,7 +497,9 @@
   "missingFromHub": [
     "dji-osmo-action-4-essential-combo-amazon-israel",
     "inair-pod-fan-cooling-amazon-israel",
-    "kodak-slide-n-scan-film-scanner-amazon-israel"
+    "kodak-slide-n-scan-film-scanner-amazon-israel",
+    "yubikey-bio-c-fido-amazon-israel",
+    "yubikey-bio-fido-amazon-israel"
   ],
   "keywordFallbacks": [
     {
@@ -608,6 +614,8 @@
     "אימוג'י לא ממופה \"🏕️\" (leaf: \"Electric Lanterns\") — saker-camping-light-ld10-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🛁\" (leaf: \"Mom's spa night\") — tub-works-bath-color-pops-120-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔐\" (leaf: \"USB Gadgets\") — yubikey-5-nano-c-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🔐\" (leaf: \"RFID Supplies\") — yubikey-5c-nfc-fips-amazon-israel שויך ל-misc"
+    "אימוג'י לא ממופה \"🔐\" (leaf: \"RFID Supplies\") — yubikey-5c-nfc-fips-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🔐\" (leaf: \"Biometrics\") — yubikey-bio-c-fido-amazon-israel שויך ל-misc",
+    "אימוג'י לא ממופה \"🔐\" (leaf: \"Biometrics\") — yubikey-bio-fido-amazon-israel שויך ל-misc"
   ]
 }
