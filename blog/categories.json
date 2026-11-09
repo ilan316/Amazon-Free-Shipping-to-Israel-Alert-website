@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 296,
-    "indexable": 293,
-    "noindex": 3,
-    "cardsInHub": 293
+    "indexable": 296,
+    "noindex": 0,
+    "cardsInHub": 296
   },
   "buckets": [
     {
@@ -376,11 +376,7 @@
       ]
     }
   ],
-  "noindexDrafts": [
-    "boba-bliss-baby-wrap-carrier-amazon-israel",
-    "fanttik-v8-apex-car-vacuum-amazon-israel",
-    "yubikey-5c-security-key-amazon-israel"
-  ],
+  "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 78,
     "hacharot-amazon-israel": 76,
@@ -497,11 +493,7 @@
       "torras-galaxy-z-fold-8-magnetic-case-amazon-israel": 1
     }
   },
-  "missingFromHub": [
-    "boba-bliss-baby-wrap-carrier-amazon-israel",
-    "fanttik-v8-apex-car-vacuum-amazon-israel",
-    "yubikey-5c-security-key-amazon-israel"
-  ],
+  "missingFromHub": [],
   "keywordFallbacks": [
     {
       "slug": "boba-bliss-baby-wrap-carrier-amazon-israel",
