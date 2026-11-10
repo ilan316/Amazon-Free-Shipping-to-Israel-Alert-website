@@ -33,26 +33,28 @@
 
     "📷": "photo", "📸": "photo", "📹": "photo", "🎥": "photo", "🎬": "photo",
 
-    "🔌": "gadgets", "🔋": "gadgets", "📱": "gadgets", "🌀": "gadgets", "🛰️": "gadgets",
+    "🔌": "gadgets", "🔋": "gadgets", "📱": "gadgets", "🌀": "gadgets", "🛰️": "gadgets", "🔦": "gadgets",
 
     "💡": "lighting", "🌌": "lighting", "🌟": "lighting",
 
     "🍳": "kitchen", "🧂": "kitchen", "🧀": "kitchen", "🍽️": "kitchen", "🍿": "kitchen",
     "☕": "kitchen", "🥤": "kitchen", "💧": "kitchen", "🕯️": "kitchen", "🪑": "kitchen", "🚿": "kitchen",
-    "🌡️": "kitchen",
+    "🌡️": "kitchen", "🍴": "kitchen", "🍱": "kitchen", "🔥": "kitchen", "🔪": "kitchen",
+    "🪟": "kitchen", "🏠": "kitchen",
 
-    "🛏️": "sleep",
+    "🛏️": "sleep", "😴": "sleep",
 
     "🪒": "grooming", "🧔": "grooming", "🧴": "grooming", "🦷": "grooming",
-    "🪥": "grooming", "😁": "grooming", "💆": "grooming",
+    "🪥": "grooming", "😁": "grooming", "💆": "grooming", "💅": "grooming", "🛁": "grooming",
 
     "🧦": "fashion", "👕": "fashion", "👖": "fashion", "👟": "fashion", "👡": "fashion",
     "🎒": "fashion", "🧳": "fashion", "🏊": "fashion", "🥊": "fashion", "🥋": "fashion", "🏀": "fashion",
-    "🏋️": "fashion", "🏖️": "fashion",
+    "🏋️": "fashion", "🏖️": "fashion", "🧥": "fashion", "🕶️": "fashion", "👓": "fashion",
+    "🏕️": "fashion", "🔭": "fashion",
 
-    "🚗": "auto", "🔧": "auto", "🚲": "auto", "🚴": "auto",
+    "🚗": "auto", "🔧": "auto", "🚲": "auto", "🚴": "auto", "🔨": "auto", "🛠️": "auto",
 
-    "🍼": "kids", "🧃": "kids",
+    "🍼": "kids", "🧃": "kids", "🔬": "kids",
 
     "🎨": "misc", "🦟": "misc"
   },
@@ -89,7 +91,8 @@
   },
 
   "overrides": {
-    "alpine-muffy-kids-hearing-protection-amazon-israel": "kids"
+    "alpine-muffy-kids-hearing-protection-amazon-israel": "kids",
+    "tub-works-bath-color-pops-120-amazon-israel": "kids"
   },
 
   "guides": {
