@@ -20,6 +20,7 @@
         "blackview-scm6-screen-extender-amazon-israel",
         "bosgame-e5-mini-pc-amazon-israel",
         "bosgame-e5-mini-pc-ryzen-5300u-amazon-israel",
+        "cryptnox-fido2-security-key-amazon-israel",
         "dopesplay-15-6-portable-monitor-amazon-israel",
         "elecrow-10-1-portable-monitor-amazon-israel",
         "fanxiang-4tb-sata-ssd-amazon-israel",
@@ -43,7 +44,12 @@
         "ugreen-maxidok-thunderbolt5-dock-amazon-israel",
         "ugreen-thunderbolt-4-dock-13-in-1-amazon-israel",
         "wavlink-umd309-docking-station-amazon-israel",
-        "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel"
+        "wavlink-usb-dual-hdmi-4k-splitter-amazon-israel",
+        "yubikey-5-nano-c-amazon-israel",
+        "yubikey-5c-nfc-fips-amazon-israel",
+        "yubikey-5c-security-key-amazon-israel",
+        "yubikey-bio-c-fido-amazon-israel",
+        "yubikey-bio-fido-amazon-israel"
       ]
     },
     {
@@ -352,7 +358,6 @@
         "bottleboom-stem-13in1-solar-robot-amazon-israel",
         "camel-crown-ski-jacket-mens-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
-        "cryptnox-fido2-security-key-amazon-israel",
         "deesoo-20x52-binoculars-amazon-israel",
         "ecovacs-winbot-mini-window-robot-amazon-israel",
         "ecovacs-winbot-mini2-window-robot-amazon-israel",
@@ -367,12 +372,7 @@
         "ozlo-sleepbuds-2-amazon-israel",
         "posca-paint-markers-29-set-amazon-israel",
         "saker-camping-light-ld10-amazon-israel",
-        "tub-works-bath-color-pops-120-amazon-israel",
-        "yubikey-5-nano-c-amazon-israel",
-        "yubikey-5c-nfc-fips-amazon-israel",
-        "yubikey-5c-security-key-amazon-israel",
-        "yubikey-bio-c-fido-amazon-israel",
-        "yubikey-bio-fido-amazon-israel"
+        "tub-works-bath-color-pops-120-amazon-israel"
       ]
     }
   ],
@@ -380,18 +380,18 @@
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 78,
     "hacharot-amazon-israel": 76,
-    "mekhs-umaam-amazon-israel": 61,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 59,
+    "mekhs-umaam-amazon-israel": 67,
     "amazon-prime-mishloach-israel": 56,
-    "madrikh-kahniot-amazon-israel-2026": 56,
     "black-friday-prime-day-israel": 56,
     "bikorot-mezuyafot-amazon": 56,
     "10-tipim-lehisakhon-bamazon-israel": 56,
     "amazon-vs-ebay-israel": 56,
     "amazon-vs-aliexpress-israel": 56,
-    "maakav-mishlochim-amazon-israel": 56,
     "akhrayut-amazon-israel": 56,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 55,
+    "madrikh-kahniot-amazon-israel-2026": 55,
     "mutzarim-asurim-yevu-israel": 55,
+    "maakav-mishlochim-amazon-israel": 55,
     "mocher-amin-amazon-israel": 55
   },
   "picks": {
@@ -603,7 +603,6 @@
     "אימוג'י לא ממופה \"🍱\" (leaf: \"Home & Kitchen\") — blockhutte-stainless-steel-lunch-box-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔬\" (leaf: \"Solar Power Kits\") — bottleboom-stem-13in1-solar-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🧥\" (leaf: \"b21c23e8-ac46-41ab-bfed-a824ad1360c0_8501\") — camel-crown-ski-jacket-mens-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🔐\" (leaf: \"Cards\") — cryptnox-fido2-security-key-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🔭\" (leaf: \"Binoculars\") — deesoo-20x52-binoculars-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🪟\" (leaf: \"Robotic Vacuums\") — ecovacs-winbot-mini-window-robot-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🏠\" (leaf: \"Home & Kitchen\") — ecovacs-winbot-mini2-window-robot-amazon-israel שויך ל-misc",
@@ -617,11 +616,6 @@
     "אימוג'י לא ממופה \"🔦\" (leaf: \"Handheld Flashlights\") — olight-arkpro-lite-flashlight-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"😴\" (leaf: \"Sleep Earbuds\") — ozlo-sleepbuds-2-amazon-israel שויך ל-misc",
     "אימוג'י לא ממופה \"🏕️\" (leaf: \"Electric Lanterns\") — saker-camping-light-ld10-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🛁\" (leaf: \"Mom's spa night\") — tub-works-bath-color-pops-120-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🔐\" (leaf: \"USB Gadgets\") — yubikey-5-nano-c-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🔐\" (leaf: \"RFID Supplies\") — yubikey-5c-nfc-fips-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🔐\" (leaf: \"Keyboards\") — yubikey-5c-security-key-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🔐\" (leaf: \"Biometrics\") — yubikey-bio-c-fido-amazon-israel שויך ל-misc",
-    "אימוג'י לא ממופה \"🔐\" (leaf: \"Biometrics\") — yubikey-bio-fido-amazon-israel שויך ל-misc"
+    "אימוג'י לא ממופה \"🛁\" (leaf: \"Mom's spa night\") — tub-works-bath-color-pops-120-amazon-israel שויך ל-misc"
   ]
 }
