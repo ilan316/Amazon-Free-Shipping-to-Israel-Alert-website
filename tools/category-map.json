@@ -118,7 +118,8 @@
       { "slug": "maakav-mishlochim-amazon-israel",            "cat": "📦 מעקב משלוחים",     "read": "~5 דקות", "title": "מעקב משלוחים מאמזון לישראל — איפה החבילה שלי?" },
       { "slug": "akhrayut-amazon-israel",                     "cat": "🛡️ אחריות ותביעות",   "read": "~5 דקות", "title": "אחריות על מוצרים מאמזון לישראל — איך זה עובד" },
       { "slug": "mocher-amin-amazon-israel",                  "cat": "🕵️ הגנת הקונה",       "read": "~5 דקות", "title": "איך לזהות מוכר אמין באמזון" },
-      { "slug": "prime-video-israel",                         "cat": "📺 סטרימינג",        "read": "~5 דקות", "title": "<bdi>Prime Video</bdi> בישראל: כמה עולה ומה ההבדל מ-<bdi>Amazon Prime</bdi>" }
+      { "slug": "prime-video-israel",                         "cat": "📺 סטרימינג",        "read": "~5 דקות", "title": "<bdi>Prime Video</bdi> בישראל: כמה עולה ומה ההבדל מ-<bdi>Amazon Prime</bdi>" },
+      { "slug": "meeize-amazon-lehazmin-israel",              "cat": "🌍 השוואת חנויות",    "read": "~5 דקות", "title": "מאיזה אמזון להזמין לישראל — ארה\"ב, גרמניה או בריטניה" }
     ],
 
     "byBucket": {
@@ -155,6 +156,7 @@
     "mutzarim-asurim-yevu-israel",
     "akhrayut-amazon-israel",
     "mocher-amin-amazon-israel",
-    "prime-video-israel"
+    "prime-video-israel",
+    "meeize-amazon-lehazmin-israel"
   ]
 }
