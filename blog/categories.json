@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 298,
+    "reviews": 301,
     "indexable": 296,
-    "noindex": 2,
+    "noindex": 5,
     "cardsInHub": 296
   },
   "buckets": [
@@ -96,10 +96,12 @@
         "philips-4k-webcam-spl6418-amazon-israel",
         "reolink-duo-3-poe-amazon-israel",
         "reolink-rlc-1240a-camera-amazon-israel",
+        "reolink-rlc-510a-poe-camera-amazon-israel",
         "reolink-rlc-810a-4k-camera-amazon-israel",
         "reolink-rlc-811a-poe-camera-amazon-israel",
         "reolink-rln8-410-nvr-amazon-israel",
-        "smartphone-gimbal-stabilizer-amazon-israel"
+        "smartphone-gimbal-stabilizer-amazon-israel",
+        "ulanzi-tt31-tripod-monopod-amazon-israel"
       ]
     },
     {
@@ -124,6 +126,7 @@
         "mokpr-wireless-car-charger-amazon-israel",
         "momax-ua8a-travel-adapter-amazon-israel",
         "olight-arkpro-lite-flashlight-amazon-israel",
+        "qi2-3in1-wireless-charger-d5-amazon-israel",
         "spigen-slim-armor-pro-magfit-z-fold-8-amazon-israel",
         "tenergy-60-pack-batteries-amazon-israel",
         "torras-galaxy-z-fold-8-magnetic-case-amazon-israel",
@@ -379,26 +382,29 @@
     }
   ],
   "noindexDrafts": [
+    "qi2-3in1-wireless-charger-d5-amazon-israel",
     "red-dragon-inn-tales-coop-board-game-amazon-israel",
-    "reolink-rlc-811a-poe-camera-amazon-israel"
+    "reolink-rlc-510a-poe-camera-amazon-israel",
+    "reolink-rlc-811a-poe-camera-amazon-israel",
+    "ulanzi-tt31-tripod-monopod-amazon-israel"
   ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 88,
     "hacharot-amazon-israel": 81,
-    "mekhs-umaam-amazon-israel": 68,
+    "mekhs-umaam-amazon-israel": 70,
+    "10-tipim-lehisakhon-bamazon-israel": 52,
+    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 51,
     "amazon-prime-mishloach-israel": 51,
+    "madrikh-kahniot-amazon-israel-2026": 51,
+    "black-friday-prime-day-israel": 51,
     "bikorot-mezuyafot-amazon": 51,
     "mutzarim-asurim-yevu-israel": 51,
-    "10-tipim-lehisakhon-bamazon-israel": 51,
     "amazon-vs-ebay-israel": 51,
     "amazon-vs-aliexpress-israel": 51,
+    "maakav-mishlochim-amazon-israel": 51,
     "akhrayut-amazon-israel": 51,
-    "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 50,
-    "madrikh-kahniot-amazon-israel-2026": 50,
-    "black-friday-prime-day-israel": 50,
-    "maakav-mishlochim-amazon-israel": 50,
-    "mocher-amin-amazon-israel": 50,
-    "prime-video-israel": 50
+    "mocher-amin-amazon-israel": 51,
+    "prime-video-israel": 51
   },
   "picks": {
     "guides": 16,
@@ -506,8 +512,11 @@
     }
   },
   "missingFromHub": [
+    "qi2-3in1-wireless-charger-d5-amazon-israel",
     "red-dragon-inn-tales-coop-board-game-amazon-israel",
-    "reolink-rlc-811a-poe-camera-amazon-israel"
+    "reolink-rlc-510a-poe-camera-amazon-israel",
+    "reolink-rlc-811a-poe-camera-amazon-israel",
+    "ulanzi-tt31-tripod-monopod-amazon-israel"
   ],
   "keywordFallbacks": [
     {
