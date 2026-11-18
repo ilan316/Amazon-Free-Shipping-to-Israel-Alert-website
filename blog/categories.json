@@ -1,9 +1,9 @@
 {
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
-    "reviews": 296,
+    "reviews": 298,
     "indexable": 296,
-    "noindex": 0,
+    "noindex": 2,
     "cardsInHub": 296
   },
   "buckets": [
@@ -97,6 +97,7 @@
         "reolink-duo-3-poe-amazon-israel",
         "reolink-rlc-1240a-camera-amazon-israel",
         "reolink-rlc-810a-4k-camera-amazon-israel",
+        "reolink-rlc-811a-poe-camera-amazon-israel",
         "reolink-rln8-410-nvr-amazon-israel",
         "smartphone-gimbal-stabilizer-amazon-israel"
       ]
@@ -372,26 +373,30 @@
         "acrylic-paint-markers-168-colors-amazon-israel",
         "artistro-100-acrylic-paint-markers-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
-        "posca-paint-markers-29-set-amazon-israel"
+        "posca-paint-markers-29-set-amazon-israel",
+        "red-dragon-inn-tales-coop-board-game-amazon-israel"
       ]
     }
   ],
-  "noindexDrafts": [],
+  "noindexDrafts": [
+    "red-dragon-inn-tales-coop-board-game-amazon-israel",
+    "reolink-rlc-811a-poe-camera-amazon-israel"
+  ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 88,
     "hacharot-amazon-israel": 81,
-    "mekhs-umaam-amazon-israel": 67,
+    "mekhs-umaam-amazon-israel": 68,
+    "amazon-prime-mishloach-israel": 51,
+    "bikorot-mezuyafot-amazon": 51,
     "mutzarim-asurim-yevu-israel": 51,
     "10-tipim-lehisakhon-bamazon-israel": 51,
+    "amazon-vs-ebay-israel": 51,
+    "amazon-vs-aliexpress-israel": 51,
+    "akhrayut-amazon-israel": 51,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 50,
-    "amazon-prime-mishloach-israel": 50,
     "madrikh-kahniot-amazon-israel-2026": 50,
     "black-friday-prime-day-israel": 50,
-    "bikorot-mezuyafot-amazon": 50,
-    "amazon-vs-ebay-israel": 50,
-    "amazon-vs-aliexpress-israel": 50,
     "maakav-mishlochim-amazon-israel": 50,
-    "akhrayut-amazon-israel": 50,
     "mocher-amin-amazon-israel": 50,
     "prime-video-israel": 50
   },
@@ -500,7 +505,10 @@
       "tenergy-60-pack-batteries-amazon-israel": 1
     }
   },
-  "missingFromHub": [],
+  "missingFromHub": [
+    "red-dragon-inn-tales-coop-board-game-amazon-israel",
+    "reolink-rlc-811a-poe-camera-amazon-israel"
+  ],
   "keywordFallbacks": [
     {
       "slug": "boba-bliss-baby-wrap-carrier-amazon-israel",
@@ -581,5 +589,7 @@
       "bucket": "fashion"
     }
   ],
-  "warnings": []
+  "warnings": [
+    "אימוג'י לא ממופה \"🎲\" (leaf: \"Board Games\") — red-dragon-inn-tales-coop-board-game-amazon-israel שויך ל-misc"
+  ]
 }
