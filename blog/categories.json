@@ -2,9 +2,9 @@
   "generatedBy": "tools/build-internal-links.js",
   "totals": {
     "reviews": 301,
-    "indexable": 296,
-    "noindex": 5,
-    "cardsInHub": 296
+    "indexable": 299,
+    "noindex": 2,
+    "cardsInHub": 298
   },
   "buckets": [
     {
@@ -383,10 +383,7 @@
   ],
   "noindexDrafts": [
     "qi2-3in1-wireless-charger-d5-amazon-israel",
-    "red-dragon-inn-tales-coop-board-game-amazon-israel",
-    "reolink-rlc-510a-poe-camera-amazon-israel",
-    "reolink-rlc-811a-poe-camera-amazon-israel",
-    "ulanzi-tt31-tripod-monopod-amazon-israel"
+    "reolink-rlc-510a-poe-camera-amazon-israel"
   ],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 88,
@@ -514,9 +511,7 @@
   "missingFromHub": [
     "qi2-3in1-wireless-charger-d5-amazon-israel",
     "red-dragon-inn-tales-coop-board-game-amazon-israel",
-    "reolink-rlc-510a-poe-camera-amazon-israel",
-    "reolink-rlc-811a-poe-camera-amazon-israel",
-    "ulanzi-tt31-tripod-monopod-amazon-israel"
+    "reolink-rlc-510a-poe-camera-amazon-israel"
   ],
   "keywordFallbacks": [
     {
