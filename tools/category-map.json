@@ -22,6 +22,7 @@
     { "id": "fashion",   "label": "אופנה, ספורט וטיולים",  "emoji": "👕" },
     { "id": "auto",      "label": "רכב וכלי עבודה",        "emoji": "🚗" },
     { "id": "kids",      "label": "ילדים ותינוקות",        "emoji": "🍼" },
+    { "id": "games",     "label": "משחקים וצעצועים",       "emoji": "🎲" },
     { "id": "misc",      "label": "שונות",                 "emoji": "📦" }
   ],
 
@@ -56,13 +57,17 @@
 
     "🍼": "kids", "🧃": "kids", "🔬": "kids",
 
-    "🎨": "misc", "🦟": "misc", "🎲": "misc"
+    "🎲": "games", "🧩": "games", "🧸": "games", "🪀": "games", "🃏": "games", "♟️": "games", "🪁": "games", "🤖": "games",
+
+    "🎨": "misc", "🦟": "misc"
   },
 
   "keywords": [
     { "bucket": "lighting", "match": ["מקרן גלקסי", "galaxy-projector", "star-projector", "רצועת led", "led-strip", "strip-light", "backlight", "מנורת", "floor-lamp", "table-lamp", "תאורה"] },
 
     { "bucket": "photo",    "match": ["מצלמ", "camera", "webcam", "ג'ימבל", "gimbal", "instax", "פילם", "-nvr-", "projector-screen", "פרוג'קטור", "insta360", "reolink", "osmo", "selfie", "-poe-", "עדשה", "lens", "חצובה", "tripod"] },
+
+    { "bucket": "games",    "match": ["משחק קופסה", "board-game", "card-game", "משחק קלפים", "פאזל", "puzzle", "לגו", "lego", "צעצוע", "-toy-", "stem-", "רובוט", "robot"] },
 
     { "bucket": "kids",     "match": ["לילדים", "לתינוק", "לתינוקות", "-kids-", "kids-", "toddler", "-baby-"] },
 
@@ -92,7 +97,8 @@
 
   "overrides": {
     "alpine-muffy-kids-hearing-protection-amazon-israel": "kids",
-    "tub-works-bath-color-pops-120-amazon-israel": "kids"
+    "tub-works-bath-color-pops-120-amazon-israel": "kids",
+    "bottleboom-stem-13in1-solar-robot-amazon-israel": "games"
   },
 
   "guides": {
@@ -127,6 +133,7 @@
       "auto":      "eich-ladaat-mishloach-hinam-amazon-israel",
       "fashion":   "hacharot-amazon-israel",
       "kids":      "hacharot-amazon-israel",
+      "games":     "hacharot-amazon-israel",
       "misc":      "hamutzarim-hakhi-kedaim-laknot-bamazon-israel"
     }
   },

@@ -357,7 +357,6 @@
       "posts": [
         "alpine-muffy-kids-hearing-protection-amazon-israel",
         "boba-bliss-baby-wrap-carrier-amazon-israel",
-        "bottleboom-stem-13in1-solar-robot-amazon-israel",
         "elemental-kids-water-bottle-amazon-israel",
         "fimibuke-kids-insulated-water-bottle-amazon-israel",
         "fimibuke-toddler-water-bottle-amazon-israel",
@@ -365,6 +364,14 @@
         "oisiz-kids-water-bottle-14oz-amazon-israel",
         "similove-kids-water-bottle-18oz-amazon-israel",
         "tub-works-bath-color-pops-120-amazon-israel"
+      ]
+    },
+    {
+      "id": "games",
+      "label": "משחקים וצעצועים",
+      "posts": [
+        "bottleboom-stem-13in1-solar-robot-amazon-israel",
+        "red-dragon-inn-tales-coop-board-game-amazon-israel"
       ]
     },
     {
@@ -376,23 +383,22 @@
         "acrylic-paint-markers-168-colors-amazon-israel",
         "artistro-100-acrylic-paint-markers-amazon-israel",
         "cliganic-mosquito-repellent-bracelets-amazon-israel",
-        "posca-paint-markers-29-set-amazon-israel",
-        "red-dragon-inn-tales-coop-board-game-amazon-israel"
+        "posca-paint-markers-29-set-amazon-israel"
       ]
     }
   ],
   "noindexDrafts": [],
   "guideInbound": {
     "eich-ladaat-mishloach-hinam-amazon-israel": 88,
-    "hacharot-amazon-israel": 81,
+    "hacharot-amazon-israel": 82,
     "mekhs-umaam-amazon-israel": 70,
-    "10-tipim-lehisakhon-bamazon-israel": 52,
     "hamutzarim-hakhi-kedaim-laknot-bamazon-israel": 51,
     "amazon-prime-mishloach-israel": 51,
     "madrikh-kahniot-amazon-israel-2026": 51,
     "black-friday-prime-day-israel": 51,
     "bikorot-mezuyafot-amazon": 51,
     "mutzarim-asurim-yevu-israel": 51,
+    "10-tipim-lehisakhon-bamazon-israel": 51,
     "amazon-vs-ebay-israel": 51,
     "amazon-vs-aliexpress-israel": 51,
     "maakav-mishlochim-amazon-israel": 51,
